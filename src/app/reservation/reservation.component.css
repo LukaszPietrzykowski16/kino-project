@@ -32,3 +32,10 @@ main {
     align-items: center;
     width: 80vw;
 }
+
+.container-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
