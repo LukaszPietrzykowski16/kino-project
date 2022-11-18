@@ -9,7 +9,8 @@ import { FilmPanelComponent } from './film-panel/film-panel.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconsModule } from './icons/icons.module';
 import { AppRoutingModule } from './app-routing.module';
-import { AdminComponent } from './admin/admin.component'
+import { AdminComponent } from './admin/admin.component';
+import { ErrorPageComponent } from './error-page/error-page.component'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AdminComponent } from './admin/admin.component'
     FilmPanelComponent,
     FooterComponent,
     AdminComponent,
+    ErrorPageComponent,
     
     
   ],
