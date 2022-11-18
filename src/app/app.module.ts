@@ -7,7 +7,9 @@ import { MainComponent } from './main/main.component';
 import { DataPanelComponent } from './data-panel/data-panel.component';
 import { FilmPanelComponent } from './film-panel/film-panel.component';
 import { FooterComponent } from './footer/footer.component';
-import { IconsModule } from './icons/icons.module'
+import { IconsModule } from './icons/icons.module';
+import { AppRoutingModule } from './app-routing.module';
+import { AdminComponent } from './admin/admin.component'
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { IconsModule } from './icons/icons.module'
     DataPanelComponent,
     FilmPanelComponent,
     FooterComponent,
+    AdminComponent,
     
     
   ],
   imports: [
     BrowserModule,
-    IconsModule
+    IconsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

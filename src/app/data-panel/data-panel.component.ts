@@ -23,11 +23,9 @@ export class DataPanelComponent {
 
 
   ngOnInit(): void {
-    console.log(this.currentDay)
     for (let i = 0; i <= 6; i++) {
       this.days.push(moment(this.weekStart).add(i, 'days').format("D/MM"));
     }
-    
   }
   
 }
