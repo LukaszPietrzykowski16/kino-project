@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
+import { Moment } from 'moment';
 
 @Component({
   selector: 'app-film-panel',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./film-panel.component.css']
 })
 export class FilmPanelComponent {
-
+  
 }
