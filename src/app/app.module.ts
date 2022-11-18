@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { DataPanelComponent } from './data-panel/data-panel.component';
 import { FilmPanelComponent } from './film-panel/film-panel.component';
 import { FooterComponent } from './footer/footer.component';
+import { IconsModule } from './icons/icons.module'
 
 @NgModule({
   declarations: [
@@ -15,10 +16,13 @@ import { FooterComponent } from './footer/footer.component';
     MainComponent,
     DataPanelComponent,
     FilmPanelComponent,
-    FooterComponent
+    FooterComponent,
+    
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
