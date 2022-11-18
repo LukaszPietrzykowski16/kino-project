@@ -8,21 +8,26 @@ import { Moment } from 'moment';
   styleUrls: ['./data-panel.component.css']
 })
 export class DataPanelComponent {
+  // moment.js to handle a date 
   currentDate:any = moment();
+  // displaying days
   days:Array<string> = []
   
+  // current day
+  currentDay:string = moment().format("D/MM"); 
   
-  weekStart = this.currentDate.clone().startOf('isoWeek');
-  weekEnd = this.currentDate.clone().endOf('isoWeek');
+  weekStart:object = this.currentDate.clone().startOf('isoWeek');
+  weekEnd:object = this.currentDate.clone().endOf('isoWeek');
 
   constructor() {}
 
 
   ngOnInit(): void {
+    console.log(this.currentDay)
     for (let i = 0; i <= 6; i++) {
       this.days.push(moment(this.weekStart).add(i, 'days').format("D/MM"));
     }
-    console.log(this.days)
+    
   }
   
 }
