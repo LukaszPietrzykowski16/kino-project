@@ -1,0 +1,12 @@
+.data-panel {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-panel__day {
+    margin: 0.75em;
+}
+

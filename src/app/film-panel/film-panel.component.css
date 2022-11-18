@@ -1,0 +1,15 @@
+.container-film {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75em;
+    background-color: rgb(58, 58, 58);
+    margin-bottom: 1.75em;
+    border-radius: 1.75em;
+}
+
+.container-film__img img {
+    width:  70%;
+    object-fit: cover;
+}
