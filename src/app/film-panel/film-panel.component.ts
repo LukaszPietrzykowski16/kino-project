@@ -9,5 +9,12 @@ import { Moment } from 'moment';
   styleUrls: ['./film-panel.component.css']
 })
 export class FilmPanelComponent {
-  
+  description:string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!'
+
+  constructor() {}
+
+
+  ngOnInit(): void {
+    this.description.substring(0,10)
+  }
 }
