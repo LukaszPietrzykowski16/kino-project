@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.conainer-info {
+    width: 80vw;
+    text-align: center;
+}
+
+.container-places {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    }
+
+.container-places__seat {
+    padding: 0.25em;
+    border-radius: 0.25em;
+    background-color: grey;
+}
+
+.container-tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
