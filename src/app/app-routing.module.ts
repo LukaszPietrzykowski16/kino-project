@@ -6,12 +6,14 @@ import { AdminComponent } from './admin/admin.component';
 import { MainComponent } from './main/main.component'
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { FormsPanelComponent } from './forms-panel/forms-panel.component'
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'rezerwacja', component: ReservationComponent },
-  { path: '**', component: ErrorPageComponent }
+  { path: 'formularz', component: FormsPanelComponent},
+  { path: '**', component: ErrorPageComponent } 
 ];
 
 

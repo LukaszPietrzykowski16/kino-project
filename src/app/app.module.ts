@@ -11,7 +11,8 @@ import { IconsModule } from './icons/icons.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { ReservationComponent } from './reservation/reservation.component'
+import { ReservationComponent } from './reservation/reservation.component';
+import { FormsPanelComponent } from './forms-panel/forms-panel.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ReservationComponent } from './reservation/reservation.component'
     AdminComponent,
     ErrorPageComponent,
     ReservationComponent,
+    FormsPanelComponent,
     
     
   ],
