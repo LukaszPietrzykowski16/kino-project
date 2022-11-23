@@ -12,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
-import { FormsPanelComponent } from './forms-panel/forms-panel.component'
+import { FormsPanelComponent } from './forms-panel/forms-panel.component';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsPanelComponent } from './forms-panel/forms-panel.component'
     ErrorPageComponent,
     ReservationComponent,
     FormsPanelComponent,
+    LoginComponent,
     
     
   ],
