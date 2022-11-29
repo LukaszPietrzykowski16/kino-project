@@ -27,8 +27,8 @@ export class DataPanelComponent {
 
   constructor() {}
 
-  changeDay(){
-    console.log('test')
+  changeDay(day:any){
+    this.today = day
   }
 
   ngOnInit(): void {
