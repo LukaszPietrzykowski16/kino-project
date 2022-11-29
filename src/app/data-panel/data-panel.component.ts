@@ -21,6 +21,9 @@ export class DataPanelComponent {
 
   constructor() {}
 
+  changeDay(){
+    console.log('test')
+  }
 
   ngOnInit(): void {
     for (let i = 0; i <= 6; i++) {

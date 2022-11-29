@@ -9,6 +9,10 @@
     border-radius: 1.75em;
 }
 
+.container-film__about {
+    width: 100vw;
+}
+
 .container-film__img img {
     width:  70%;
     object-fit: cover;

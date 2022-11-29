@@ -1,7 +1,6 @@
 
-import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
-import { Moment } from 'moment';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-film-panel',
@@ -11,9 +10,9 @@ import { Moment } from 'moment';
 export class FilmPanelComponent {
   description:string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!'
 
-  shortDescription = this.description.substring(0,240)
+  shortDescription:string = this.description.substring(0,240)
 
-  flag = true
+  flag:boolean = true
 
   constructor() {}
 
@@ -23,7 +22,6 @@ export class FilmPanelComponent {
     } else {
       this.flag = true
     }
-    console.log(this.flag)
   }
 
   ngOnInit(): void {
