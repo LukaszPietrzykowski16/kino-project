@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./reservation.component.css']
 })
 export class ReservationComponent {
-
+  selectedSeat:string = ''
   seats: Array<Number> = []
   letters: Array<String> = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'F']
 
-  checkSeat(letter: any, seat: any){
-    console.log(letter, seat)
+  checkSeat(letter: String, seat: Number){
+    this.selectedSeat = `${letter}${seat}`
+    console.log(this.selectedSeat)
   }
 
 
@@ -20,6 +21,5 @@ export class ReservationComponent {
       // i can't do this with spread operator for some reason
       this.seats.push(i)
     }
-    console.log(this.seats)
   }
 }
