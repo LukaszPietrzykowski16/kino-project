@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Data } from '@angular/router';
-import * as moment from 'moment';
-import { Moment } from 'moment';
 
 @Component({
   selector: 'app-data-panel',
@@ -35,15 +32,12 @@ export class DataPanelComponent {
   }
 
   ngOnInit(): void {
- 
-    
    for(let i=0; i<7; i++){
       let nextDay:Date = new Date(this.nextDays);
       nextDay.setDate((this.nextDays.getDate()+i))
       let exactDay = this.formatDate(nextDay)
       this.arr.push(exactDay)
     }
-    console.log(this.arr)
   }
 
 }
