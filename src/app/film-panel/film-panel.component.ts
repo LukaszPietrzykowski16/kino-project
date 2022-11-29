@@ -25,6 +25,6 @@ export class FilmPanelComponent {
   }
 
   ngOnInit(): void {
-    this.description.substring(0,10)
+    
   }
 }

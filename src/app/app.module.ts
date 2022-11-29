@@ -13,7 +13,8 @@ import { AdminComponent } from './admin/admin.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LoginComponent } from './login/login.component'
     ReservationComponent,
     FormsPanelComponent,
     LoginComponent,
+    FilmPanelHourComponent,
     
     
   ],

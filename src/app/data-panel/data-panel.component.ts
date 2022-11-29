@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Data } from '@angular/router';
 import * as moment from 'moment';
 import { Moment } from 'moment';
 
@@ -9,15 +10,23 @@ import { Moment } from 'moment';
 })
 export class DataPanelComponent {
   // moment.js to handle a date 
-  currentDate:any = moment();
-  // displaying days
-  days:Array<string> = []
+ 
   
-  // current day
-  currentDay:string = moment().format("D/MM"); 
-  
-  weekStart:object = this.currentDate.clone().startOf('isoWeek');
-  weekEnd:object = this.currentDate.clone().endOf('isoWeek');
+  formatDate(date: { getMonth: () => number; getDate: () => any; getFullYear: () => any; }) {
+    return [
+      this.padTo2Digits(date.getDate()),
+      this.padTo2Digits(date.getMonth() + 1)
+    ].join('/');
+  }
+
+  padTo2Digits(num: { toString: () => string; }) {
+    return num.toString().padStart(2, '0');
+  }
+
+  today = this.formatDate(new Date());
+  nextDays = new Date();
+  arr:Array<string> = []
+ 
 
   constructor() {}
 
@@ -26,9 +35,15 @@ export class DataPanelComponent {
   }
 
   ngOnInit(): void {
-    for (let i = 0; i <= 6; i++) {
-      this.days.push(moment(this.weekStart).add(i, 'days').format("D/MM"));
+ 
+    
+   for(let i=0; i<7; i++){
+      let nextDay:Date = new Date(this.nextDays);
+      nextDay.setDate((this.nextDays.getDate()+i))
+      let exactDay = this.formatDate(nextDay)
+      this.arr.push(exactDay)
     }
+    console.log(this.arr)
   }
-  
+
 }

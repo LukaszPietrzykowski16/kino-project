@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./reservation.component.css']
 })
 export class ReservationComponent {
+  // i need to mock up this from server so it's basically a bad aproach to change!
   selectedSeat:string = ''
   seats: Array<Number> = []
   letters: Array<String> = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'F']
