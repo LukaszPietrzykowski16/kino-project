@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-panel.component.css']
 })
 export class DataPanelComponent {
-  // moment.js to handle a date 
- 
   
+  
+  // it should be in the service
+
   formatDate(date: { getMonth: () => number; getDate: () => any; getFullYear: () => any; }) {
     return [
       this.padTo2Digits(date.getDate()),
