@@ -15,6 +15,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';
 import { LoginComponent } from './login/login.component';
 import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.compon
   imports: [
     BrowserModule,
     IconsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
