@@ -14,7 +14,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';
 import { LoginComponent } from './login/login.component';
-import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component'
+import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.compon
     FormsPanelComponent,
     LoginComponent,
     FilmPanelHourComponent,
+
     
     
   ],

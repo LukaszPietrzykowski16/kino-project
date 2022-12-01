@@ -34,7 +34,7 @@ export class FilmPanelHourComponent {
           this.arr.push(this.hours[i])
         } 
       }
-      console.log(this.arr)
+ 
      
     }
 }

@@ -39,6 +39,8 @@ export class DataPanelComponent {
       let exactDay = this.formatDate(nextDay)
       this.arr.push(exactDay)
     }
+
   }
+
 
 }
