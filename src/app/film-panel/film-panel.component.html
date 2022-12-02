@@ -1,10 +1,10 @@
-<div class="container-film">
+<div class="container-film" *ngFor="let film of arr">
     <div class="container-film__img">
-        <img src="../../assets/image.webp" alt="film"/>
+        <img src={{film.image}} alt="film"/>
     </div>
-    <div class="container-film__about" *ngFor="let film of data">
-        <div class="container-film__about_title"> {{ film }}</div>
-        <div class="container-film__about_types"> Horror | Pg13 | Comedy</div>
+    <div class="container-film__about">
+        <div class="container-film__about_title"> {{film.title}} </div>
+        <div class="container-film__about_types"  > Horror | Pg13 | Comedy</div>
         <div class="container-film__about_paragraph"> 
         <div *ngIf="flag; else elseBlock"> {{shortDescription}} <button (click)="more()"> more </button> </div>
         <ng-template #elseBlock> {{description}} <button (click)="more()"> less </button> </ng-template>

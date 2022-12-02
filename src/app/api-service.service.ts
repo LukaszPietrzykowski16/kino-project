@@ -17,7 +17,7 @@ export class ApiServiceService {
   constructor(private http: HttpClient) { }
 
   getFilms(){
-    return this.http.get<Film>('http://localhost:3000/films');
+    return this.http.get<Array<Film>>(this.url);
   }
 
 }

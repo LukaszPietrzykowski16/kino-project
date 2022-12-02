@@ -2,6 +2,7 @@
 import { Component, Input} from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
 import { map } from 'rxjs';
+import { Film } from 'angular-feather/icons';
 
 
 
@@ -21,14 +22,15 @@ export interface Film {
 })
 export class FilmPanelComponent {
   description:string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!'
-  films: ApiServiceService | undefined
 
-  @Input() data: Film[] | undefined 
+  arr:Array<Film> = []
+
 
 
   shortDescription:string = this.description.substring(0,240)
 
   flag:boolean = true
+ 
 
   constructor(private apiService: ApiServiceService) {}
 
@@ -41,16 +43,20 @@ export class FilmPanelComponent {
   }
 
   ngOnInit(): void {
-    this.apiService.getFilms().subscribe(response => console.log(response))
-    /*
-    this.apiService.getFilms()
-      .pipe(map(response => ({
-          title: response.title,
-          imgUrl: response.image,
-          desc: response.description,
-      })))
+    
+    this.apiService.getFilms().subscribe(response => this.arr = response)
+
+     this.apiService.getFilms()
+   
+       .subscribe(test => this.arr = test);
+  /*
+      this.apiService.getFilms().pipe(map(response => response.map(film => ({
+        title: film.title,
+        imgUrl: film.image,
+        desc: film.description,
+    }))))
       .subscribe(test => console.log(test))
-      */
+    */
   }
 
 }
