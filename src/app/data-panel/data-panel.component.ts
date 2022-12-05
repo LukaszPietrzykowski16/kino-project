@@ -33,7 +33,9 @@ export class DataPanelComponent {
   constructor(private apiService: ApiServiceService) {}
 
   changeDay(day:any){
+    this.today = day
     this.buttonClicked.emit(this.today)
+  
   }
 
   ngOnInit(): void {

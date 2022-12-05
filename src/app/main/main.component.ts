@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-
-  currentItem = '01-12'
+  // i need here current day or something
+  currentItem = '05-12'
 
   showNextFilm($event: any) {
     this.currentItem = $event

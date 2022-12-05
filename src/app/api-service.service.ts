@@ -12,7 +12,7 @@ import { BehaviorSubject } from 'rxjs';
 
 
 export class ApiServiceService {
-  date:string = '01-12'
+  date:string = '05/12'
   url:string = `http://localhost:3000/films?date=${this.date}`
   
 
@@ -23,13 +23,15 @@ export class ApiServiceService {
 
   changeDate(newDate:string){
     this.date = newDate
-    this.url = `http://localhost:3000/films?date=${newDate}`
-    console.log(this.url)
+    
+    this.url = `http://localhost:3000/films?date=${newDate.replace(/\//g, "-")}`
+    
     return this.http.get<Array<Film>>(this.url);
     
   }
 
   getFilms(){
+    console.log(this.url)
     return this.http.get<Array<Film>>(this.url);
   }
 

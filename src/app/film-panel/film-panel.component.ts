@@ -25,7 +25,7 @@ export class FilmPanelComponent {
 
   arr:Array<Film> = []
 
-  @Input() item: string = '01/12'
+  @Input() item: string = '05/12'
 
  
 
@@ -46,10 +46,14 @@ export class FilmPanelComponent {
 
 
 
-  ngOnChanges() {
-    this.apiService.changeDate(this.item)
-  }
+  ngOnChanges():void {
+    this.apiService.changeDate(this.item).subscribe(response => this.arr = response)
 
+    this.apiService.getFilms()
+  
+      .subscribe(test => this.arr = test);
+  }
+/*
   ngOnInit(): void {
     
     this.apiService.getFilms().subscribe(response => this.arr = response)
@@ -57,6 +61,8 @@ export class FilmPanelComponent {
      this.apiService.getFilms()
    
        .subscribe(test => this.arr = test);
+  }
+  */
   /*
       this.apiService.getFilms().pipe(map(response => response.map(film => ({
         title: film.title,
@@ -64,7 +70,7 @@ export class FilmPanelComponent {
         desc: film.description,
     }))))
       .subscribe(test => console.log(test))
-    */
+  
   }
-
+  */
 }
