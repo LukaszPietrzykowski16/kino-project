@@ -1,5 +1,5 @@
 import { Film } from './film-panel/film-panel.component';
-import { Injectable } from '@angular/core';
+import { Injectable, OnChanges } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
@@ -15,6 +15,13 @@ export class ApiServiceService {
   url:string = `http://localhost:3000/films?date=${this.date}`
   
   constructor(private http: HttpClient) { }
+
+  changeDate(newDate:string){
+    this.date = newDate
+    this.url = `http://localhost:3000/films?date=${this.date}`
+    console.log(this.url)
+  }
+
 
   getFilms(){
     return this.http.get<Array<Film>>(this.url);

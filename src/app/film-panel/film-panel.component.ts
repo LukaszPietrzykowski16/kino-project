@@ -42,6 +42,7 @@ export class FilmPanelComponent {
     }
   }
 
+
   ngOnInit(): void {
     
     this.apiService.getFilms().subscribe(response => this.arr = response)

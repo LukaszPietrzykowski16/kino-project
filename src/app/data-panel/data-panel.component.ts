@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServiceService } from '../api-service.service';
+
 
 @Component({
   selector: 'app-data-panel',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-panel.component.css']
 })
 export class DataPanelComponent {
+
   
   
   // it should be in the service
@@ -26,10 +29,13 @@ export class DataPanelComponent {
   arr:Array<string> = []
  
 
-  constructor() {}
+
+  constructor(private apiService: ApiServiceService) {}
 
   changeDay(day:any){
     this.today = day
+    this.apiService.changeDate(this.today)
+
   }
 
   ngOnInit(): void {
