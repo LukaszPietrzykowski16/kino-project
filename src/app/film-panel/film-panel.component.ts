@@ -3,6 +3,7 @@ import { Component, Input} from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
 import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
+import { CinemaHallService } from '../cinema-hall.service';
 
 
 
@@ -34,7 +35,7 @@ export class FilmPanelComponent {
   flag:boolean = true
  
 
-  constructor(private apiService: ApiServiceService) {}
+  constructor(private apiService: ApiServiceService, private cinemaService: CinemaHallService) {}
 
   more(){
     if(this.flag === true) {
@@ -55,7 +56,7 @@ export class FilmPanelComponent {
   }
 
   moreDetails(title:string, hour:string){
-    console.log(title, this.item, hour)
+    this.cinemaService.setStrings(title, hour, this.item)
   }
 
 

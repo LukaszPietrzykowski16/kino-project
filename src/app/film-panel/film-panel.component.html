@@ -12,7 +12,7 @@
    
         </div>
         <div class="container-film__about_time" >
-            <button *ngFor="let hour of newArr" (click)="moreDetails(film.title, hour)"> {{hour}} </button>
+            <a routerLink="/rezerwacja"> <button *ngFor="let hour of newArr" (click)="moreDetails(film.title, hour)"> {{hour}} </button> </a>
         </div>
     </div>
     <div class="container-film__stats">
