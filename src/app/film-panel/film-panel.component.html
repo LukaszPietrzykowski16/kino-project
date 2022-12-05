@@ -12,7 +12,7 @@
    
         </div>
         <div class="container-film__about_time" >
-            <app-film-panel-hour></app-film-panel-hour>
+            <button *ngFor="let hour of newArr" (click)="moreDetails(film.title, hour)"> {{hour}} </button>
         </div>
     </div>
     <div class="container-film__stats">
