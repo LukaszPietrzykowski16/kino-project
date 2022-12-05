@@ -25,7 +25,9 @@ export class FilmPanelComponent {
 
   arr:Array<Film> = []
 
+  @Input() item: string = '01/12'
 
+ 
 
   shortDescription:string = this.description.substring(0,240)
 
@@ -42,6 +44,11 @@ export class FilmPanelComponent {
     }
   }
 
+
+
+  ngOnChanges() {
+    this.apiService.changeDate(this.item)
+  }
 
   ngOnInit(): void {
     

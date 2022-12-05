@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
 
 
@@ -9,7 +9,7 @@ import { ApiServiceService } from '../api-service.service';
 })
 export class DataPanelComponent {
 
-  
+  @Output() buttonClicked = new EventEmitter();
   
   // it should be in the service
 
@@ -33,9 +33,7 @@ export class DataPanelComponent {
   constructor(private apiService: ApiServiceService) {}
 
   changeDay(day:any){
-    this.today = day
-    this.apiService.changeDate(this.today)
-
+    this.buttonClicked.emit(this.today)
   }
 
   ngOnInit(): void {

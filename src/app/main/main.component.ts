@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  currentItem = '01-12'
+
+  showNextFilm($event: any) {
+    this.currentItem = $event
+  }
 }
