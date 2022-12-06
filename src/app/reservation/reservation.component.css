@@ -37,6 +37,12 @@ main {
     border-radius: 0.25em;
 }
 
+.container-places__seat--selected{
+    background-color: rgb(49, 110, 51);
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
 .container-places__row {
     padding: 0.25em;
     border-radius: 0.25em;

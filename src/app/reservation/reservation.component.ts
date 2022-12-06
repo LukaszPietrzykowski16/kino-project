@@ -23,13 +23,20 @@ export class ReservationComponent {
   seats: Array<Seat> = []
 
   selectedSeat:string = ''
- 
+  status: boolean = false;
 
+  active: boolean = false;
+
+  public styleArray=new Array<boolean>;
 
   checkSeat(seat: String){
     this.selectedSeat = `${seat}`
     console.log(this.selectedSeat)
-    
+    this.status = !this.status;   
+  }
+
+  changeColor(number:number){
+    this.styleArray[number]=true;
   }
 
   constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService) {}
