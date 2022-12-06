@@ -24,10 +24,12 @@ export class ReservationComponent {
 
   selectedSeat:string = ''
  
-  letters: Array<String> = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'F']
 
-  checkSeat(letter: String, seat: String){
-    this.selectedSeat = `${letter}${seat}`
+
+  checkSeat(seat: String){
+    this.selectedSeat = `${seat}`
+    console.log(this.selectedSeat)
+    
   }
 
   constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService) {}

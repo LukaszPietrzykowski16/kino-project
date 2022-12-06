@@ -1,13 +1,13 @@
 <main>
     <div class="conainer-info"> <h1 *ngFor="let info of header"> {{info}} </h1> </div>
     <div class="container-places" > 
-        <div class="container-places__seat" *ngFor="let seat of seats;" >
-            {{seat.seat}}
+        <div class="container-places__seat" *ngFor="let seat of seats;">
+            <div class="container-places__seat--active" *ngIf="seat.avaliable === true; else elseBlock"  (click)="checkSeat(seat.seat)"> {{seat.seat}} </div>
+            <ng-template #elseBlock> <div class="container-places__seat--unactive"> {{seat.seat}}  </div></ng-template>
         </div>
     </div>
 
     <div class="container-tickets">
-        <button> Dodaj </button>
         <div> <p> Rząd E Miejsce 6</p> </div>
         <div> 
           <select id="tickets">
