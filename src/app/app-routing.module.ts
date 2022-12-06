@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'logowanie', component: LoginComponent},
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsPanelComponent},
+  { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent},
   { path: '**', component: ErrorPageComponent } 
 ];
 
