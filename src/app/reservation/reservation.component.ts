@@ -36,7 +36,13 @@ export class ReservationComponent {
   }
 
   changeColor(number:number){
-    this.styleArray[number]=true;
+    if(this.styleArray[number] === true){
+      this.styleArray[number]=false;
+    } else {
+      this.styleArray[number]=true;
+    }
+
+    
   }
 
   constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService) {}
