@@ -15,10 +15,6 @@ export class ApiServiceService {
   date:string = '05/12'
   url:string = `http://localhost:3000/films?date=${this.date}`
   
-
- 
-
-
   constructor(private http: HttpClient) { }
 
   changeDate(newDate:string){
@@ -26,12 +22,12 @@ export class ApiServiceService {
     
     this.url = `http://localhost:3000/films?date=${newDate.replace(/\//g, "-")}`
     
+    // we can just getFilms() ???
     return this.http.get<Array<Film>>(this.url);
     
   }
 
   getFilms(){
-    console.log(this.url)
     return this.http.get<Array<Film>>(this.url);
   }
 

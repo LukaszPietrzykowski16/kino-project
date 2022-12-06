@@ -1,9 +1,8 @@
 <main>
     <div class="conainer-info"> <h1 *ngFor="let info of header"> {{info}} </h1> </div>
-    <div class="container-places" *ngFor="let letter of letters;"> 
-        <div class="container-places__row"> {{letter}} </div>
+    <div class="container-places" > 
         <div class="container-places__seat" *ngFor="let seat of seats;" >
-            <p (click)="checkSeat(letter, seat)"> {{ seat }} </p> 
+            {{seat.seat}}
         </div>
     </div>
 
