@@ -8,6 +8,11 @@ export interface Seat {
   avaliable: boolean
 }
 
+export interface Payload {
+  seat: string,
+  type: string
+}
+
 
 @Component({
   selector: 'app-reservation',
@@ -25,21 +30,28 @@ export class ReservationComponent {
   selectedSeat:string = ''
   status: boolean = false;
 
+  payload: string[][] = []
+
   active: boolean = false;
 
   public styleArray=new Array<boolean>;
 
   checkSeat(seat: String){
     this.selectedSeat = `${seat}`
-    console.log(this.selectedSeat)
     this.status = !this.status;   
+    
+  
   }
 
   changeColor(number:number){
+    console.log(this.payload)
     if(this.styleArray[number] === true){
       this.styleArray[number]=false;
+      this.payload.pop()
+  
     } else {
       this.styleArray[number]=true;
+      this.payload.push([this.selectedSeat, 'bilet normalny'])
     }
 
     
