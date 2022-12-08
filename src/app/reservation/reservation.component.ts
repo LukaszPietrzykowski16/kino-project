@@ -52,7 +52,7 @@ export class ReservationComponent {
 
   removeSeat(place: string){
     this.tickets = this.tickets.filter((el) => { return el.seat != place; }); 
-    console.log(this.tickets)
+    // this.changeColor() we need to add position of seat at the interaface
   }
 
   changeColor(number:number){
