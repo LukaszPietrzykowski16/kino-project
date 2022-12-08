@@ -51,7 +51,8 @@ export class ReservationComponent {
   }
 
   removeSeat(place: string){
-    console.log(place)
+    this.tickets = this.tickets.filter((el) => { return el.seat != place; }); 
+    console.log(this.tickets)
   }
 
   changeColor(number:number){
