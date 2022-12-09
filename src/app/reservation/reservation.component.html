@@ -20,9 +20,10 @@
         <div>  
             <i-feather name="trash-2" (click)="removeSeat(ticket.seat)" (click)="changeColor(ticket.position)"></i-feather> 
         </div>
+     
     </div>
-
     <div class="container-next">
-        <button class="conainer-next__btn"> Dalej </button>
+        <button class="conainer-next__btn" routerLink="/formularz" (click)="forms()"> Dalej </button>
     </div>
+   
 </main>

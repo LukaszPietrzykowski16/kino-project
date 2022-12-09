@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CinemaHallService } from '../cinema-hall.service';
 import { SeatsService } from '../seats.service';
-
+import { RouterLink } from '@angular/router';
 
 export interface Seat {
   seat: string,
@@ -58,7 +58,6 @@ export class ReservationComponent {
   }
 
   changeColor(number:number){
-    console.log(number)
     if(this.styleArray[number] === true){
       this.styleArray[number]=false;
       this.removeSeat(this.selectedSeat)    
@@ -79,6 +78,9 @@ export class ReservationComponent {
   
   }
 
+  forms(){
+    console.log(this.header, this.tickets)
+  }
 
  
 }
