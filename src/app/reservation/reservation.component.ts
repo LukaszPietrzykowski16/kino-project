@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CinemaHallService } from '../cinema-hall.service';
 import { SeatsService } from '../seats.service';
+import { FormService } from '../form.service';
 import { RouterLink } from '@angular/router';
 
 export interface Seat {
@@ -30,7 +31,7 @@ a5 = {
 
 export class ReservationComponent {
   // i need to mock up this from server so it's basically a bad aproach to change!
-
+ 
   header: Array<String> = []
   seats: Array<Seat> = []
 
@@ -69,7 +70,7 @@ export class ReservationComponent {
     
   }
 
-  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService) {}
+  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService, private formService: FormService) {}
 
   ngOnInit(){
     this.header = this.cinemaHall.displayInfo()
@@ -79,7 +80,7 @@ export class ReservationComponent {
   }
 
   forms(){
-    console.log(this.header, this.tickets)
+    this.formService.form(this.header, this.tickets)
   }
 
  
