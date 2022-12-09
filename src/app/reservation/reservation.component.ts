@@ -9,8 +9,9 @@ export interface Seat {
 }
 
 export interface Ticket {
-  seat: string 
-  type: string
+  seat: string,
+  type: string,
+  position: number
 }
 
 /*
@@ -51,17 +52,19 @@ export class ReservationComponent {
   }
 
   removeSeat(place: string){
+    
     this.tickets = this.tickets.filter((el) => { return el.seat != place; }); 
-    // this.changeColor() we need to add position of seat at the interaface
+   
   }
 
   changeColor(number:number){
+    console.log(number)
     if(this.styleArray[number] === true){
       this.styleArray[number]=false;
       this.removeSeat(this.selectedSeat)    
     } else {
       this.styleArray[number]=true;
-      this.tickets = [... this.tickets, {'seat': this.selectedSeat, 'type': 'bilet normalny'}]
+      this.tickets = [... this.tickets, {'seat': this.selectedSeat, 'type': 'bilet normalny', position: number}]
     }
 
     
