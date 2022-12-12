@@ -5,7 +5,7 @@ import { Ticket } from './reservation/reservation.component';
 })
 export class FormService {
 
-  info: Array<String> = []
+  info: Array<String> = [] 
   arrayTickets: Array<Ticket> = []
   
   form(information: Array<String>, tickets: Array<Ticket>){
@@ -13,8 +13,12 @@ export class FormService {
     this.arrayTickets = tickets
   }
 
-  displayInfo(){
-    
+  displayTitle(){
+    return this.info
+  }
+
+  displaySeats(){
+    return this.arrayTickets
   }
 
   constructor() { }
