@@ -19,6 +19,5 @@ export class FormsPanelComponent {
   ngOnInit() {
     this.title = this.formService.displayTitle()
     this.seats = this.formService.displaySeats()
-    console.log(this.seats)
   }
 }

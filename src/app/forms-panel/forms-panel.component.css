@@ -3,12 +3,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
 }
 
 .container-form {
     text-align: center;
-    width: 80vw;
+    
 }
 
 .container-form {

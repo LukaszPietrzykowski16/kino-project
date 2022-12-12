@@ -3,6 +3,8 @@ import { CinemaHallService } from '../cinema-hall.service';
 import { SeatsService } from '../seats.service';
 import { FormService } from '../form.service';
 import { RouterLink } from '@angular/router';
+import { ExtraApiService } from '../extra-api.service';
+import { Film } from '../film-panel/film-panel.component';
 
 export interface Seat {
   seat: string,
@@ -33,6 +35,7 @@ export class ReservationComponent {
   // i need to mock up this from server so it's basically a bad aproach to change!
  
   header: Array<String> = []
+  newHeader: Array<Film> = []
   seats: Array<Seat> = []
 
   selectedSeat:string = ''
@@ -70,13 +73,19 @@ export class ReservationComponent {
     
   }
 
-  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService, private formService: FormService) {}
+  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService, private formService: FormService, private extraCall: ExtraApiService) {}
 
   ngOnInit(){
+    
     this.header = this.cinemaHall.displayInfo()
     this.seatsService.getSeats()
     .subscribe(response => this.seats = response )
-  
+    if(this.header[0] === '' || this.header[1] === '' || this.header[2] === '' ){
+      this.extraCall.displayInfoFromUrl()
+        .subscribe(response => this.newHeader = response)
+    }
+    
+    
   }
 
   forms(){
