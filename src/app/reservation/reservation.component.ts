@@ -104,7 +104,20 @@ export class ReservationComponent {
   }
 
   forms(){
-    this.formService.form(this.header, this.tickets)
+   
+
+    if(this.header[0] === '' || this.header[1] === '' || this.header[2] === '' ){
+      const values = this.newHeader.map((test) => {
+        return [test.title, test.date, this.test(test.hours)]
+      })
+      
+ 
+   
+     this.formService.form(values[0], this.tickets)
+    } else {
+      this.formService.form(this.header, this.tickets)
+    }
+   
   }
 
  

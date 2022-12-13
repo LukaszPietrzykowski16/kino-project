@@ -11,7 +11,7 @@ import { Ticket } from '../reservation/reservation.component';
 export class FormsPanelComponent {
   // if there is no props from it renders something like 'go back buy a ticket first' idk
  
-  title: Array<String> = []
+  title: Array<String | undefined> = []
   seats: Array<Ticket> = []
 
   constructor(private formService: FormService) {}

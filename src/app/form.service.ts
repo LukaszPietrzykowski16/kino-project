@@ -5,10 +5,11 @@ import { Ticket } from './reservation/reservation.component';
 })
 export class FormService {
 
-  info: Array<String> = [] 
+  info: Array<String | undefined> = [] 
   arrayTickets: Array<Ticket> = []
   
-  form(information: Array<String>, tickets: Array<Ticket>){
+  form(information: Array<String | undefined>, tickets: Array<Ticket>){
+    console.log(information)
     this.info = information
     this.arrayTickets = tickets
   }
