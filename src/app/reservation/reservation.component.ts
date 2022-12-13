@@ -37,6 +37,7 @@ export class ReservationComponent {
   header: Array<String> = []
   newHeader: Array<Film> = []
   seats: Array<Seat> = []
+  exactHour: string = ''
 
   selectedSeat:string = ''
   status: boolean = false;
@@ -69,7 +70,7 @@ export class ReservationComponent {
       this.styleArray[number]=true;
       this.tickets = [... this.tickets, {'seat': this.selectedSeat, 'type': 'bilet normalny', position: number}]
     }
-
+    console.log(this.newHeader)
     
   }
 
@@ -83,6 +84,8 @@ export class ReservationComponent {
     if(this.header[0] === '' || this.header[1] === '' || this.header[2] === '' ){
       this.extraCall.displayInfoFromUrl()
         .subscribe(response => this.newHeader = response)
+      this.exactHour = this.extraCall.getExactDate()
+       
     }
     
     

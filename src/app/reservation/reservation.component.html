@@ -1,6 +1,6 @@
 <main>
     <div class="conainer-info"> <h1 *ngFor="let info of header"> {{info}} </h1> </div>
-    <div class="conainer-info"> <h1 *ngFor="let info of newHeader"> {{info.title}}, {{info.date.replace('-', '/')}}  </h1> </div>
+    <div class="conainer-info"> <h1 *ngFor="let info of newHeader"> {{info.title}}, {{info.date.replace('-', '/')}}, {{exactHour}}  </h1> </div>
     <div class="container-places" > 
         <div class="container-places__seat" *ngFor="let seat of seats; let i = index">
             <div  [style.backgroundColor]="styleArray[i] ? 'rgb(49, 110, 51)':'grey'" *ngIf="seat.avaliable === true; else elseBlock"  (click)="checkSeat(seat.seat)" (click)="changeColor(i)" class="container-places__seat--active"> {{seat.seat}} </div>
