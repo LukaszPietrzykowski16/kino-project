@@ -91,6 +91,18 @@ export class ReservationComponent {
     
   }
 
+  test(arrOfHours: Array<string>){
+    const statment = arrOfHours.map((oneHour) => oneHour.includes(this.exactHour))
+    if(statment.includes(true)){
+      return this.exactHour
+    } else {
+      return
+    }
+   
+  
+    
+  }
+
   forms(){
     this.formService.form(this.header, this.tickets)
   }
