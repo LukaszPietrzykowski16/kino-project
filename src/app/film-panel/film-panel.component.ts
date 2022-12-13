@@ -14,6 +14,7 @@ export interface Film {
   description: string
   rating: number
   date: string
+  hours: Array<string>
 }
 
 @Component({
@@ -38,6 +39,7 @@ export class FilmPanelComponent {
   constructor(private apiService: ApiServiceService, private cinemaService: CinemaHallService) {}
 
   more(){
+    console.log(this.arr)
     if(this.flag === true) {
       this.flag = false
     } else {
@@ -53,7 +55,9 @@ export class FilmPanelComponent {
     this.apiService.getFilms()
   
       .subscribe(test => this.arr = test);
+
   }
+
 
   moreDetails(title:string, hour:string){
     this.cinemaService.setStrings(title, hour, this.item)
@@ -78,17 +82,11 @@ export class FilmPanelComponent {
 
 
 
-  hours = ['09:00', '10:30', '13:30', '15:30', '17:00', '21:00', '22:00', '23:00', '23:00']
+  hours: Array<string> = []
 
   ngOnInit(){
     
-    for(let i=0; i<this.hours.length; i++){
-      
-      if(this.currentHour < this.hours[i]){
-        this.newArr.push(this.hours[i])
-      } 
-    }
-
+    
    
   }
 /*

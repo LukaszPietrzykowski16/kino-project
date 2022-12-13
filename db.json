@@ -12,7 +12,8 @@
         "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
         "rating": 5,
-        "date": "07-12"
+        "date": "07-12",
+        "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
         },
         {
             "title": "Szczęki 2", 
@@ -20,7 +21,8 @@
             "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
             "rating": 7,
-            "date": "10-12"
+            "date": "10-12",
+            "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
         }, 
         {
             "title": "Joker", 
@@ -28,7 +30,8 @@
             "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
             "rating": 7,
-            "date": "16-12"
+            "date": "16-12",
+            "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
         },
         {
           "title": "Joker", 
@@ -36,7 +39,8 @@
           "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
           "rating": 7,
-          "date": "18-12"
+          "date": "18-12", 
+          "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
       },
       {
         "title": "Joker", 
@@ -44,7 +48,8 @@
         "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
         "rating": 7,
-        "date": "15-12"
+        "date": "15-12", 
+        "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
     }
     ], 
     "reservation": 
