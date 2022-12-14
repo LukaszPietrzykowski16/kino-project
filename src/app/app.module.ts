@@ -16,6 +16,7 @@ import { FormsPanelComponent } from './forms-panel/forms-panel.component';
 import { LoginComponent } from './login/login.component';
 import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IconsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

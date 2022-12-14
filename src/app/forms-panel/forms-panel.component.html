@@ -15,15 +15,33 @@
     </div>
 
     <div class="container-form">
-        <form>
-            <input type="text" id="fname" name="fname" value="nazwisko">
-            <input type="text" id="lname" name="lname" value="imie">
-            <input type="tel" id="num" name="num" value="numer telefonu">
-            <input type="email" id="num" name="num" value="adres email">
-            <input type="email" id="num" name="num" value="powotrz adres email">
+        <form [formGroup]="profileForm">
+            <input type="text" id="fname" name="fname" value="nazwisko" formControlName="lastName" [class.error]="lastCtrl.touched && lastCtrl.errors">
+            <ng-container *ngIf="lastCtrl.errors as errors">
+                <ng-container *ngIf="lastCtrl.touched">
+                  <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+                  <p *ngIf="errors['minlength'] as milLength">
+                    Podałeś {{ milLength.actualLength }} znaki, minimum to
+                    {{ milLength.requiredLength }}
+                  </p>
+                </ng-container>
+            </ng-container>
+            <input type="text" id="lname" name="lname" value="imie" formControlName="firstName" [class.error]="firstCtrl.touched && firstCtrl.errors">
+            <ng-container *ngIf="firstCtrl.errors as errors">
+                <ng-container *ngIf="firstCtrl.touched">
+                  <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+                  <p *ngIf="errors['minlength'] as milLength">
+                    Podałeś {{ milLength.actualLength }} znaki, minimum to
+                    {{ milLength.requiredLength }}
+                  </p>
+                </ng-container>
+            </ng-container>
+            <input type="tel" id="num" name="num" value="numer telefonu" formControlName="phoneNumber">
+            <input type="email" id="email" name="num" value="adres email" formControlName="email">
+            <input type="email" id="emailAgain" name="num" value="powotrz adres email" formControlName="emailAgain">
             <div>
                 chce otrzymywac informacje o znizkach itp
-                <label class="switch">
+                <label class="switch" formControlName="checkbox">
                 
                     <input type="checkbox">
                     
@@ -31,7 +49,7 @@
                 </label>
             </div>
            
-            <input type="text" id="code" name="code" value="kod znizkowy">
+            <input type="text" id="code" name="code" value="kod znizkowy" formControlName="bonusCode">
             <input type="submit" value="zamawiam">
             <a href="/rezerwacja"> Wróć do wyboru miejsc </a>
         </form>
