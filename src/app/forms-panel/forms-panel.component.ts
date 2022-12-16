@@ -67,6 +67,10 @@ export class FormsPanelComponent {
     }
     // console.log(inputChar)
   }
+
+  showBlik(){
+    console.log(this.profileForm.controls.checkbox.value)
+  }
   
   get lastCtrl() {
     return this.profileForm.controls.lastName;
