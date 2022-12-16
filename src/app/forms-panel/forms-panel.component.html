@@ -16,7 +16,7 @@
 
     <div class="container-form">
         <form [formGroup]="profileForm">
-            <input type="text" id="fname" name="fname" value="nazwisko" formControlName="lastName" [class.error]="lastCtrl.touched && lastCtrl.errors">
+            <input type="text" id="fname" name="fname" placeholder="nazwisko" formControlName="lastName" [class.error]="lastCtrl.touched && lastCtrl.errors">
             <ng-container *ngIf="lastCtrl.errors as errors">
                 <ng-container *ngIf="lastCtrl.touched">
                   <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
@@ -26,7 +26,7 @@
                   </p>
                 </ng-container>
             </ng-container>
-            <input type="text" id="lname" name="lname" value="imie" formControlName="firstName" [class.error]="firstCtrl.touched && firstCtrl.errors">
+            <input type="text" id="lname" name="lname" placeholder="imie" formControlName="firstName" [class.error]="firstCtrl.touched && firstCtrl.errors">
             <ng-container *ngIf="firstCtrl.errors as errors">
                 <ng-container *ngIf="firstCtrl.touched">
                   <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
@@ -36,9 +36,17 @@
                   </p>
                 </ng-container>
             </ng-container>
-            <input type="tel" id="num" name="num" value="numer telefonu" formControlName="phoneNumber">
-            <input type="email" id="email" name="num" value="adres email" formControlName="email">
-            <input type="email" id="emailAgain" name="num" value="powotrz adres email" formControlName="emailAgain">
+            <input type="tel" id="num" name="num" placeholder="numer telefonu" formControlName="phoneNumber" (keypress)="keyPress($event)" maxlength="9">
+            <input type="email" id="email" name="num" placeholder="adres email" formControlName="email">
+            <div *ngIf="(email.invalid && email.touched) || email.dirty">
+                <small *ngIf="email.errors?.required" class="text-danger"> To pole jest wymagane </small>
+                <small *ngIf="email.errors?.pattern" class="text-danger"> Proszę podać maila </small>
+              </div>
+            <input type="email" id="emailAgain" name="num" placeholder="powotrz adres email" formControlName="emailAgain">
+            <div *ngIf="(emailAgain.invalid && emailAgain.touched) || emailAgain.dirty">
+                <small *ngIf="emailAgain.errors?.required" class="text-danger">Secondary email is required</small>
+                <small *ngIf="emailAgain.errors?.pattern" class="text-danger">Please provide a valid email address</small>
+              </div>
             <div>
                 chce otrzymywac informacje o znizkach itp
                 <label class="switch" formControlName="checkbox">
@@ -49,8 +57,8 @@
                 </label>
             </div>
            
-            <input type="text" id="code" name="code" value="kod znizkowy" formControlName="bonusCode">
-            <input type="submit" value="zamawiam">
+            <input type="text" id="code" name="code" placeholder="kod znizkowy" formControlName="bonusCode">
+            <button type="button" placeholder="zamawiam"> zamawiam </button>
             <a href="/rezerwacja"> Wróć do wyboru miejsc </a>
         </form>
     </div>

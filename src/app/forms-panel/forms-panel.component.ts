@@ -18,6 +18,8 @@ export class FormsPanelComponent {
 
   constructor(private formService: FormService) {}
 
+  
+
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
       validators: [
@@ -37,11 +39,34 @@ export class FormsPanelComponent {
         Validators.minLength(9),
       ]
     }),
-    email: new FormControl(''),
-    emailAgain: new FormControl(''),
+    email: new FormControl('', {
+      validators: [
+        Validators.required,
+  	    Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
+      ]
+    }),
+    emailAgain: new FormControl('', {
+      validators: [
+        Validators.required,
+  	    Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"),
+      ]
+    }),
     checkbox: new FormControl(''),
-    bonusCode: new FormControl(''),
+    bonusCode: new FormControl('', {
+      validators: [
+        Validators.minLength(6),
+      ]
+    }),
   })
+  
+  keyPress(event: any) {
+    const pattern = /[0-9\+\-\ ]/;
+    let inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode != 8 && !pattern.test(inputChar)) {
+      event.preventDefault();
+    }
+    // console.log(inputChar)
+  }
   
   get lastCtrl() {
     return this.profileForm.controls.lastName;
@@ -49,6 +74,14 @@ export class FormsPanelComponent {
 
   get firstCtrl() {
     return this.profileForm.controls.firstName;
+  }
+
+  get emailAgain(){
+    return this.profileForm.controls.emailAgain;
+  }
+
+  get email(){
+    return this.profileForm.controls.email;
   }
 
   ngOnInit() {
