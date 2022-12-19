@@ -11,12 +11,7 @@
     <div class="container-tickets" *ngFor="let ticket of tickets">
         <div> <p> Rząd {{ticket.seat[0]}} Miejsce {{ticket.seat[1]}}</p> </div>
         <div> 
-          <select id="tickets">
-            <option value="normal"> bilet normalny </option>
-            <option value="family"> bliet rodzinny </option>
-            <option value="discount"> bilet ulgowy </option>
-            <option value="voucher"> voucher </option>
-          </select>
+            <app-tickets-price></app-tickets-price>
         </div>
         <div>  
             <i-feather name="trash-2" (click)="removeSeat(ticket.seat)" (click)="changeColor(ticket.position)"></i-feather> 

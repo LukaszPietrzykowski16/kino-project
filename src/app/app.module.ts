@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsTitleComponent } from './forms-title/forms-title.component';
 import { FormsMainComponent } from './forms-main/forms-main.component';
+import { TicketsPriceComponent } from './tickets-price/tickets-price.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { FormsMainComponent } from './forms-main/forms-main.component';
     FilmPanelHourComponent,
     FormsTitleComponent,
     FormsMainComponent,
+    TicketsPriceComponent,
 
     
     
