@@ -11,14 +11,9 @@ import { Ticket } from '../reservation/reservation.component';
 })
 export class FormsPanelComponent {
   // if there is no props from it renders something like 'go back buy a ticket first' idk
+
+
  
-  title: Array<String | undefined> = []
-  seats: Array<Ticket> = []
-
-
-  constructor(private formService: FormService) {}
-
-  
 
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
@@ -88,8 +83,5 @@ export class FormsPanelComponent {
     return this.profileForm.controls.email;
   }
 
-  ngOnInit() {
-    this.title = this.formService.displayTitle()
-    this.seats = this.formService.displaySeats()
-  }
+ 
 }

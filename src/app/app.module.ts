@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { FilmPanelHourComponent } from './film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsTitleComponent } from './forms-title/forms-title.component';
+import { FormsMainComponent } from './forms-main/forms-main.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsPanelComponent,
     LoginComponent,
     FilmPanelHourComponent,
+    FormsTitleComponent,
+    FormsMainComponent,
 
     
     
