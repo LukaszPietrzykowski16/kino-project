@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import TicketApiService from '../ticket-api.service';
 
 export interface TicketType {
@@ -17,5 +18,12 @@ export interface TicketType {
 
 
 export class TicketsPriceComponent {
+  test: Array<TicketType> = []
+
   constructor(private ticketApi: TicketApiService) {}  
+
+  ngOnInit(){
+    this.ticketApi.getTickets().subscribe(res => this.test.push(res))
+    console.log(this.test)
+}
 }

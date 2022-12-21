@@ -1,6 +1,4 @@
-<select id="tickets">
-    <option value="normal"> bilet normalny </option>
-    <option value="family"> bliet rodzinny </option>
-    <option value="discount"> bilet ulgowy </option>
-    <option value="voucher"> voucher </option>
-  </select>
+<select id="tickets"  >
+  <option *ngFor="let plsWork of test[0] | keyvalue"> {{plsWork.key}}</option>
+  
+</select>
