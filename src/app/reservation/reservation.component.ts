@@ -44,6 +44,7 @@ export class ReservationComponent {
   test2: Array<TicketType> = []
   name: String = ''
 
+
   header: Array<String> = []
   newHeader: Array<Film> = []
   seats: Array<Seat> = []
@@ -59,32 +60,23 @@ export class ReservationComponent {
 
   public styleArray=new Array<boolean>;
 
+
   checkSeat(seat: String){
     this.selectedSeat = `${seat}`
     this.status = !this.status;   
-    
-  
   }
 
   changeKey(position: string, keyValue: string){
     // this.tickets[this.ticketss.seat] = keyValue
-    console.log(this.tickets)
+    // somebody will kill me for that 
+
+   
 
     for (let key in this.tickets) {
       if (this.tickets[key].seat === position){
         this.tickets[key].type = keyValue
       }
     }
-    /*
-    Object.keys(this.tickets).forEach((item) => {
-      this.tickets[seat]
-     
-  })
-  */
-/*
-    console.log(this.tickets)
-    console.log(position, keyValue)
-    */
   }
 
   removeSeat(place: string){
@@ -100,8 +92,9 @@ export class ReservationComponent {
     } else {
       this.styleArray[number]=true;
       this.tickets = [... this.tickets, {'seat': this.selectedSeat, 'type': 'bilet normalny', position: number}]
+
     }
-    console.log(this.newHeader)
+
     
   }
 

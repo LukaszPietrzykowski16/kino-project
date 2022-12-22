@@ -12,7 +12,7 @@
         <div> <p> Rząd {{ticket.seat[0]}} Miejsce {{ticket.seat[1]}}</p> </div>
         <div> 
             <select #ticketType (change)="changeKey(ticket.seat, ticketType.value)">
-                <option *ngFor="let plsWork of test2[0] | keyvalue" > {{plsWork.key}}</option>
+                <option *ngFor="let plsWork of test2[0] | keyvalue" > {{plsWork.key}} {{plsWork.value}}zł </option>
             </select>
         </div>
         <div>  
@@ -20,6 +20,7 @@
         </div>
      
     </div>
+
     <div class="container-next">
         <button class="conainer-next__btn" routerLink="/formularz" (click)="forms()"> Dalej </button>
     </div>
