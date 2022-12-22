@@ -9,10 +9,17 @@ import { Ticket } from '../reservation/reservation.component';
 })
 export class FormsTitleComponent {
 
-
+  ticketPrice: number = 0
    
   title: Array<String | undefined> = []
   seats: Array<Ticket> = []
+
+  price(){
+    this.seats.forEach((elem) => {
+      this.ticketPrice += Number(elem.type.match(/\d+/g))
+    })
+    console.log(this.ticketPrice)
+  }
 
 
   constructor(private formService: FormService) {}
@@ -20,5 +27,6 @@ export class FormsTitleComponent {
   ngOnInit() {
     this.title = this.formService.displayTitle()
     this.seats = this.formService.displaySeats()
+    this.price()
   }
 }
