@@ -5,6 +5,7 @@ import { FormService } from '../form.service';
 import { RouterLink } from '@angular/router';
 import { ExtraApiService } from '../extra-api.service';
 import { Film } from '../film-panel/film-panel.component';
+import TicketApiService from '../ticket-api.service';
 
 export interface Seat {
   seat: string,
@@ -15,6 +16,13 @@ export interface Ticket {
   seat: string,
   type: string,
   position: number
+}
+
+export interface TicketType {
+  "bilet normalny": number
+  "bilet rodzinny": number
+  "bilet ulgowy": number
+  "voucher": number
 }
 
 /*
@@ -33,7 +41,9 @@ a5 = {
 
 export class ReservationComponent {
   // i need to mock up this from server so it's basically a bad aproach to change!
- 
+  test2: Array<TicketType> = []
+  name: String = ''
+
   header: Array<String> = []
   newHeader: Array<Film> = []
   seats: Array<Seat> = []
@@ -56,6 +66,27 @@ export class ReservationComponent {
   
   }
 
+  changeKey(position: string, keyValue: string){
+    // this.tickets[this.ticketss.seat] = keyValue
+    console.log(this.tickets)
+
+    for (let key in this.tickets) {
+      if (this.tickets[key].seat === position){
+        this.tickets[key].type = keyValue
+      }
+    }
+    /*
+    Object.keys(this.tickets).forEach((item) => {
+      this.tickets[seat]
+     
+  })
+  */
+/*
+    console.log(this.tickets)
+    console.log(position, keyValue)
+    */
+  }
+
   removeSeat(place: string){
     
     this.tickets = this.tickets.filter((el) => { return el.seat != place; }); 
@@ -74,7 +105,7 @@ export class ReservationComponent {
     
   }
 
-  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService, private formService: FormService, private extraCall: ExtraApiService) {}
+  constructor(private cinemaHall: CinemaHallService, private seatsService: SeatsService, private formService: FormService, private extraCall: ExtraApiService, private ticketApi: TicketApiService) {}
 
   ngOnInit(){
     
@@ -87,9 +118,11 @@ export class ReservationComponent {
       this.exactHour = this.extraCall.getExactDate()
        
     }
-    
+    this.ticketApi.getTickets().subscribe(res => this.test2.push(res))
     
   }
+
+  
 
   test(arrOfHours: Array<string>){
     const statment = arrOfHours.map((oneHour) => oneHour.includes(this.exactHour))

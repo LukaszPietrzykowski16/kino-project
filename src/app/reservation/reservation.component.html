@@ -11,7 +11,9 @@
     <div class="container-tickets" *ngFor="let ticket of tickets">
         <div> <p> Rząd {{ticket.seat[0]}} Miejsce {{ticket.seat[1]}}</p> </div>
         <div> 
-            <app-tickets-price></app-tickets-price>
+            <select #ticketType (change)="changeKey(ticket.seat, ticketType.value)">
+                <option *ngFor="let plsWork of test2[0] | keyvalue" > {{plsWork.key}}</option>
+            </select>
         </div>
         <div>  
             <i-feather name="trash-2" (click)="removeSeat(ticket.seat)" (click)="changeColor(ticket.position)"></i-feather> 
