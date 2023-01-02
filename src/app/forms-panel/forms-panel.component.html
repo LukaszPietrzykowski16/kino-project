@@ -47,8 +47,8 @@
             <a href="/rezerwacja"> Wróć do wyboru miejsc </a>
         </form>
         <div *ngIf="blik; else elseBlock">Podaj kod blik: 
-        <form>
-          <input type="text" id="blik-code" placeholder="BLIK" formControlName="blikCode">
+        <form [formGroup]="blikForm">
+          <input type="text" id="blik-code" placeholder="BLIK" formControlName="blikCodeInput">
           <button type="button" placeholder="płace" (click)="pay()"> Płacę </button>
         </form>
         </div>

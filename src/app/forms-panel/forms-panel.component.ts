@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormService } from '../form.service';
 import { Ticket } from '../reservation/reservation.component';
+import { BlikService } from '../blik.service';
 
+export interface BlikCode{
+  code: number
+}
 
 @Component({
   selector: 'app-forms-panel',
@@ -13,7 +17,9 @@ export class FormsPanelComponent {
   // if there is no props from it renders something like 'go back buy a ticket first' idk
 
   blik: boolean = false
+  blikCode: number = NaN
  
+  blikServiceCode = inject(BlikService)
 
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
@@ -54,6 +60,10 @@ export class FormsPanelComponent {
     }),
   })
   
+  blikForm = new FormGroup({
+    blikCodeInput: new FormControl('')
+  })
+
   keyPress(event: any) {
     const pattern = /[0-9\+\-\ ]/;
     let inputChar = String.fromCharCode(event.charCode);
@@ -68,7 +78,16 @@ export class FormsPanelComponent {
   }
 
   pay(){
-    
+    if(this.blikCode === Number(this.blikForm.value.blikCodeInput)){
+      console.log('good code')
+    }
+  }
+
+  ngOnInit(){
+    this.blikServiceCode.getBlik().subscribe((num) => {
+      this.blikCode = num.code 
+    })
+  
   }
   
   get lastCtrl() {
