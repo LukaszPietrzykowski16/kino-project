@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { FormService } from '../form.service';
+import { QrService } from '../qr.service';
 import { Ticket } from '../reservation/reservation.component';
+
+export interface qrCode {
+    url: string
+}
 
 @Component({
   selector: 'app-summary',
@@ -8,14 +13,18 @@ import { Ticket } from '../reservation/reservation.component';
   styleUrls: ['./summary.component.css']
 })
 export class SummaryComponent {
-  title: Array<String | undefined> = []
-  seats: Array<Ticket> = []
+  title: Array<String | undefined> = [];
+  seats: Array<Ticket> = [];
 
+  url: string | undefined;
 
-  constructor(private formService: FormService) {}
+  constructor(private formService: FormService, private qrService: QrService) {}
 
   ngOnInit() {
-    this.title = this.formService.displayTitle()
-    this.seats = this.formService.displaySeats()
+    this.title = this.formService.displayTitle();
+    this.seats = this.formService.displaySeats();
+    this.qrService.getQr().subscribe((qrCode) => {
+     this.url = qrCode.url 
+    });
   }
 }
