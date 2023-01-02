@@ -67,10 +67,6 @@ export class ReservationComponent {
   }
 
   changeKey(position: string, keyValue: string){
-    // this.tickets[this.ticketss.seat] = keyValue
-    // somebody will kill me for that 
-
-   
 
     for (let key in this.tickets) {
       if (this.tickets[key].seat === position){

@@ -12,7 +12,7 @@ import { Ticket } from '../reservation/reservation.component';
 export class FormsPanelComponent {
   // if there is no props from it renders something like 'go back buy a ticket first' idk
 
-
+  blik: boolean = false
  
 
   profileForm = new FormGroup({
@@ -64,7 +64,11 @@ export class FormsPanelComponent {
   }
 
   showBlik(){
-    console.log(this.profileForm.controls.checkbox.value)
+    this.blik = true
+  }
+
+  pay(){
+    
   }
   
   get lastCtrl() {

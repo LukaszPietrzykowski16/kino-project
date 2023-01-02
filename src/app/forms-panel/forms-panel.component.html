@@ -46,5 +46,12 @@
             <button type="button" placeholder="zamawiam" (click)="showBlik()"> zamawiam </button>
             <a href="/rezerwacja"> Wróć do wyboru miejsc </a>
         </form>
+        <div *ngIf="blik; else elseBlock">Podaj kod blik: 
+        <form>
+          <input type="text" id="blik-code" placeholder="BLIK" formControlName="blikCode">
+          <button type="button" placeholder="płace" (click)="pay()"> Płacę </button>
+        </form>
+        </div>
+        <ng-template #elseBlock></ng-template>
     </div>
 

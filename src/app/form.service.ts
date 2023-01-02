@@ -9,7 +9,6 @@ export class FormService {
   arrayTickets: Array<Ticket> = []
   
   form(information: Array<String | undefined>, tickets: Array<Ticket>){
-    console.log(information)
     this.info = information
     this.arrayTickets = tickets
   }
