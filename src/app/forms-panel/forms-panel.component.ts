@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormService } from '../form.service';
 import { Ticket } from '../reservation/reservation.component';
 import { BlikService } from '../blik.service';
+import { Router } from '@angular/router';
 
 export interface BlikCode{
   code: number
@@ -20,6 +21,7 @@ export class FormsPanelComponent {
   blikCode: number = NaN
  
   blikServiceCode = inject(BlikService)
+  private router = inject(Router)
 
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
@@ -79,7 +81,7 @@ export class FormsPanelComponent {
 
   pay(){
     if(this.blikCode === Number(this.blikForm.value.blikCodeInput)){
-      console.log('good code')
+      this.router.navigate(['/podsumowanie']);
     }
   }
 

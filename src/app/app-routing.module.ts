@@ -9,6 +9,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component'
 import { LoginComponent } from './login/login.component';
 import { FormsMainComponent } from './forms-main/forms-main.component';
+import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'logowanie', component: LoginComponent},
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent},
+  { path: 'podsumowanie', component: SummaryComponent},
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent},
   { path: '**', component: ErrorPageComponent } 
 ];
