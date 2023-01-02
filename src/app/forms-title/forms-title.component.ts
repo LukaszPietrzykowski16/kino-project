@@ -18,7 +18,6 @@ export class FormsTitleComponent {
     this.seats.forEach((elem) => {
       this.ticketPrice += Number(elem.type.match(/\d+/g))
     })
-    console.log(this.ticketPrice)
   }
 
 
