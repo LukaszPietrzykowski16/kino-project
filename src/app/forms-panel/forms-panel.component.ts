@@ -108,5 +108,9 @@ export class FormsPanelComponent {
     return this.profileForm.controls.email;
   }
 
+  getClientInformation(){
+    return this.profileForm.controls.firstName.value
+  }
+
  
 }
