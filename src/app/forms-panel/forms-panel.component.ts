@@ -5,6 +5,7 @@ import { Ticket } from '../reservation/reservation.component';
 import { BlikService } from '../blik.service';
 import { Router } from '@angular/router';
 import { FormInfoService } from '../form-info.service';
+import { SeatPostService } from '../seat-post.service';
 
 
 
@@ -23,10 +24,11 @@ export class FormsPanelComponent {
   blik: boolean = false
   blikCode: number = NaN
  
-  blikServiceCode = inject(BlikService)
+  private blikServiceCode = inject(BlikService)
   private router = inject(Router)
   private formInfo = inject(FormInfoService)
-
+  private seatPostService = inject(SeatPostService)
+  private formService = inject(FormService)
 
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
@@ -88,6 +90,7 @@ export class FormsPanelComponent {
   
     if(this.blikCode === Number(this.blikForm.value.blikCodeInput)){
       this.formInfo.setInformation(this.profileForm.controls.firstName.value, this.profileForm.controls.lastName.value, this.profileForm.controls.email.value, this.profileForm.controls.phoneNumber.value)
+      this.seatPostService.sendSeats(this.formService.displaySeats())
       this.router.navigate(['/podsumowanie']);
     }
   }

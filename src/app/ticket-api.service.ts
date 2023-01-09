@@ -17,5 +17,4 @@ export default class TicketApiService {
     return this.http.get<TicketType>(this.url);
   }
 
-  // dlaskkdsaldaklsd
 }

@@ -9,7 +9,8 @@ import TicketApiService from '../ticket-api.service';
 
 export interface Seat {
   seat: string,
-  avaliable: boolean
+  avaliable: boolean,
+  id: number
 }
 
 export interface Ticket {
