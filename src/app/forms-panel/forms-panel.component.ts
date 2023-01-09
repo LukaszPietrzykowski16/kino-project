@@ -4,6 +4,9 @@ import { FormService } from '../form.service';
 import { Ticket } from '../reservation/reservation.component';
 import { BlikService } from '../blik.service';
 import { Router } from '@angular/router';
+import { FormInfoService } from '../form-info.service';
+
+
 
 export interface BlikCode{
   code: number
@@ -22,6 +25,8 @@ export class FormsPanelComponent {
  
   blikServiceCode = inject(BlikService)
   private router = inject(Router)
+  private formInfo = inject(FormInfoService)
+
 
   profileForm = new FormGroup({
     lastName: new FormControl('',  {
@@ -80,7 +85,9 @@ export class FormsPanelComponent {
   }
 
   pay(){
+  
     if(this.blikCode === Number(this.blikForm.value.blikCodeInput)){
+      this.formInfo.setInformation(this.profileForm.controls.firstName.value)
       this.router.navigate(['/podsumowanie']);
     }
   }
@@ -108,9 +115,6 @@ export class FormsPanelComponent {
     return this.profileForm.controls.email;
   }
 
-  getClientInformation(){
-    return this.profileForm.controls.firstName.value
-  }
 
  
 }
