@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class FormInfoService {
 
-  info: string | null = ''
+  info: Array<String | null> = []
 
-
-  setInformation(information: string | null){
-    this.info = information
+  // it should be change
+  setInformation(name: string | null, secondName: string | null, email: string | null, phoneNumber: string | null) {
+    this.info = [...this.info, name, secondName, email, phoneNumber]
   }
 
   getInformation(){

@@ -1,7 +1,10 @@
 <h1> Zakupiono bilet na film </h1>
 <div>
     <h2> Na dane: </h2>
-    {{name}}
+    <div *ngFor="let exactValue of name">
+        {{exactValue}}
+    </div>
+
 </div>
 <div class="container-form"> 
     <div *ngFor="let information of title"> {{information}} </div>

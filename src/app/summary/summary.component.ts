@@ -20,7 +20,8 @@ export class SummaryComponent {
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
 
-  name: string | null = ''
+  name: Array<String | null> = []
+  
   url: string | undefined;
 
   constructor(private formService: FormService, private qrService: QrService, private formInfoService: FormInfoService) {}

@@ -87,7 +87,7 @@ export class FormsPanelComponent {
   pay(){
   
     if(this.blikCode === Number(this.blikForm.value.blikCodeInput)){
-      this.formInfo.setInformation(this.profileForm.controls.firstName.value)
+      this.formInfo.setInformation(this.profileForm.controls.firstName.value, this.profileForm.controls.lastName.value, this.profileForm.controls.email.value, this.profileForm.controls.phoneNumber.value)
       this.router.navigate(['/podsumowanie']);
     }
   }
