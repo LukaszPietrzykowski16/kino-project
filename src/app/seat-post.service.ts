@@ -12,15 +12,14 @@ export class SeatPostService {
 
   sendSeats(arrayOfSeats: Array<Ticket>){
     arrayOfSeats.map((exactSeat) => {
-      console.log(exactSeat.position)
-      this.postSeat(exactSeat.seat)
+      this.postSeat(exactSeat.seat, exactSeat.position)
     })
   }
 
-  postSeat(exactSeat: string){
+  postSeat(exactSeat: string, position: number){
     console.log(exactSeat)
     return this.http
-        .patch<Seat>('http://localhost:3000/reservation', {
+        .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
         seat: exactSeat,
         avaliable: false
     }).subscribe()
