@@ -228,7 +228,7 @@
     },
     {
       "seat": "C1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 23
     },
     {
@@ -293,7 +293,7 @@
     },
     {
       "seat": "D3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 36
     },
     {
@@ -343,7 +343,7 @@
     },
     {
       "seat": "E2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 46
     },
     {
@@ -358,7 +358,7 @@
     },
     {
       "seat": "E5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 49
     },
     {
@@ -368,7 +368,7 @@
     },
     {
       "seat": "E7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 51
     },
     {
@@ -468,7 +468,7 @@
     },
     {
       "seat": "G5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 71
     },
     {
@@ -603,7 +603,7 @@
     },
     {
       "seat": "I10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 98
     }
   ],

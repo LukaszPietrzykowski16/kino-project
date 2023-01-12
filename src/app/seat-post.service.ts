@@ -1,29 +1,31 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Seat, Ticket } from './reservation/reservation.component';
+import {
+  Seat,
+  Ticket,
+} from './domains/cinema-hall/reservation/reservation.component';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SeatPostService {
+  private http = inject(HttpClient);
 
-  private http = inject(HttpClient)
-
-
-  sendSeats(arrayOfSeats: Array<Ticket>){
+  sendSeats(arrayOfSeats: Array<Ticket>) {
     arrayOfSeats.map((exactSeat) => {
-      this.postSeat(exactSeat.seat, exactSeat.position)
-    })
+      this.postSeat(exactSeat.seat, exactSeat.position);
+    });
   }
 
-  postSeat(exactSeat: string, position: number){
-    console.log(exactSeat)
+  postSeat(exactSeat: string, position: number) {
+    console.log(exactSeat);
     return this.http
-        .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
+      .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
         seat: exactSeat,
-        avaliable: false
-    }).subscribe()
+        avaliable: false,
+      })
+      .subscribe();
   }
 
-  constructor() { }
+  constructor() {}
 }
