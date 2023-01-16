@@ -1,16 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { qrCode } from './domains/summary/summary/summary.component';
+import { qrCode } from './summary/summary.component';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class QrService {
-  url: string = `http://localhost:3000/qr`;
-
+  url:string = `http://localhost:3000/qr`
+  
   constructor(private http: HttpClient) {}
-
-  getQr() {
+  
+  getQr(){
     return this.http.get<qrCode>(this.url);
   }
+
 }

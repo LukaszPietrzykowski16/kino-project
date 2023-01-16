@@ -1,0 +1,60 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.conainer-info {
+    width: 80vw;
+    text-align: center;
+}
+
+.container-places {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(11, 0.5fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    }
+
+.container-places__seat {
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+.container-places__seat--active{
+   
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+.container-places__seat--unactive{
+    background-color: rgb(53, 53, 53);
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+
+
+.container-places__row {
+    padding: 0.25em;
+    border-radius: 0.25em;
+    background-color: rgb(58, 57, 57);
+}
+
+.container-tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.container-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}

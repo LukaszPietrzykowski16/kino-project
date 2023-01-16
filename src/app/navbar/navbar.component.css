@@ -1,0 +1,17 @@
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid grey;
+}
+
+/*
+.navbar__logo {
+    width: 60vw;
+}
+
+.navbar__settings {
+    width: 40vw;
+}
+*/

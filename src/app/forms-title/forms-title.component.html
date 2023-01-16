@@ -1,0 +1,15 @@
+<div class="container-form"> 
+    <h1 *ngFor="let information of title"> {{information}} </h1>
+    <div *ngFor="let exactSeat of seats"> 
+        <div>
+            Rząd {{exactSeat.seat[0]}} siedzenie {{exactSeat.seat[1]}}
+        </div>
+        <div>
+            {{exactSeat.type}}
+        </div>
+        <div>
+           
+        </div>
+    </div>
+    {{ticketPrice}}
+</div>
