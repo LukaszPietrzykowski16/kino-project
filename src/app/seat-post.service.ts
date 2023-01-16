@@ -3,28 +3,25 @@ import { inject, Injectable } from '@angular/core';
 import { Seat, Ticket } from './reservation/reservation.component';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SeatPostService {
+  private http = inject(HttpClient);
 
-  private http = inject(HttpClient)
-
-
-  sendSeats(arrayOfSeats: Array<Ticket>){
+  sendSeats(arrayOfSeats: Array<Ticket>) {
     arrayOfSeats.map((exactSeat) => {
-      console.log(exactSeat.position)
-      this.postSeat(exactSeat.seat)
-    })
+      this.postSeat(exactSeat.seat, exactSeat.position);
+    });
   }
 
-  postSeat(exactSeat: string){
-    console.log(exactSeat)
+  postSeat(exactSeat: string, position: number) {
     return this.http
-        .patch<Seat>('http://localhost:3000/reservation', {
+      .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
         seat: exactSeat,
-        avaliable: false
-    }).subscribe()
+        avaliable: false,
+      })
+      .subscribe();
   }
 
-  constructor() { }
+  constructor() {}
 }

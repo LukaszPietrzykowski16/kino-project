@@ -1,72 +1,622 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "films": [
-        {
-        "title": "Szczęki", 
-        "types": "Horror | Pg13 | Comedy",
-        "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-        "rating": 5,
-        "date": "11-01",
-        "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
-        },
-        {
-            "title": "Szczęki 2", 
-            "types": "Horror | Pg13 | Comedy",
-            "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-            "rating": 7,
-            "date": "12-01",
-            "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
-        }, 
-        {
-            "title": "Joker", 
-            "types": "Comedy?",
-            "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-            "rating": 7,
-            "date": "13-01",
-            "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
-        },
-        {
-          "title": "Joker", 
-          "types": "Comedy?",
-          "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-          "rating": 7,
-          "date": "14-01", 
-          "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
-      },
-      {
-        "title": "Joker", 
-        "types": "Comedy?",
-        "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-        "rating": 7,
-        "date": "15-01", 
-        "hours": ["09:00", "10:30", "13:30", "15:30", "17:00", "21:00", "22:00", "23:00", "23:00"]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
-    ], 
-    "reservation": 
-      [ {"seat": "A0", "avaliable": true, "id": 0}, {"seat": "A1", "avaliable": true, "id": 1}, {"seat": "A2", "avaliable": true, "id": 2}, {"seat": "A3", "avaliable": true, "id": 3}, {"seat": "A4", "avaliable": true, "id": 4}, {"seat": "A5", "avaliable": true, "id": 5}, {"seat": "A6", "avaliable": true, "id": 6}, {"seat": "A7", "avaliable": true, "id": 7}, {"seat": "A8", "avaliable": true, "id": 8}, {"seat": "A9", "avaliable": true, "id": 9}, {"seat": "A10", "avaliable": true, "id": 10}, {"seat": "B0", "avaliable": true, "id": 11}, {"seat": "B1", "avaliable": true, "id": 12}, {"seat": "B2", "avaliable": true, "id": 13}, {"seat": "B3", "avaliable": true, "id": 14}, {"seat": "B4", "avaliable": true, "id": 15}, {"seat": "B5", "avaliable": true, "id": 16}, {"seat": "B6", "avaliable": true, "id": 17}, {"seat": "B7", "avaliable": false, "id": 18}, {"seat": "B8", "avaliable": false, "id": 19}, {"seat": "B9", "avaliable": true, "id": 20}, {"seat": "B10", "avaliable": true, "id": 21},{"seat": "C0", "avaliable": true, "id": 22}, {"seat": "C1", "avaliable": true, "id": 23}, {"seat": "C2", "avaliable": true, "id": 24}, {"seat": "C3", "avaliable": true, "id": 25}, {"seat": "C4", "avaliable": true, "id": 26}, {"seat": "C5", "avaliable": false, "id": 27}, {"seat": "C6", "avaliable": true, "id": 28}, {"seat": "C7", "avaliable": true, "id": 29}, {"seat": "C8", "avaliable": true, "id": 30}, {"seat": "C9", "avaliable": true, "id": 31}, {"seat": "C10", "avaliable": true, "id": 32}, {"seat": "D0", "avaliable": true, "id": 33}, {"seat": "D1", "avaliable": true, "id": 34}, {"seat": "D2", "avaliable": true, "id": 35}, {"seat": "D3", "avaliable": true, "id": 36}, {"seat": "D4", "avaliable": true, "id": 37}, {"seat": "D5", "avaliable": true, "id": 38}, {"seat": "D6", "avaliable": true, "id": 39}, {"seat": "D7", "avaliable": true, "id": 40}, {"seat": "D8", "avaliable": true, "id": 41}, {"seat": "D9", "avaliable": true, "id": 42}, {"seat": "D10", "avaliable": true, "id": 43}, {"seat": "E0", "avaliable": true, "id": 44}, {"seat": "E1", "avaliable": true, "id": 45}, {"seat": "E2", "avaliable": true, "id": 46}, {"seat": "E3", "avaliable": true, "id": 47}, {"seat": "E4", "avaliable": true, "id": 48}, {"seat": "E5", "avaliable": true, "id": 49}, {"seat": "E6", "avaliable": true, "id": 50}, {"seat": "E7", "avaliable": true, "id": 51}, {"seat": "E8", "avaliable": true, "id": 52}, {"seat": "E9", "avaliable": true, "id": 53}, {"seat": "E10", "avaliable": true, "id": 54}, {"seat": "F0", "avaliable": true, "id": 55}, {"seat": "F1", "avaliable": true, "id": 56}, {"seat": "F2", "avaliable": true, "id": 57}, {"seat": "F3", "avaliable": true, "id": 58}, {"seat": "F4", "avaliable": true, "id": 59}, {"seat": "F5", "avaliable": true, "id": 60}, {"seat": "F6", "avaliable": true, "id": 61}, {"seat": "F7", "avaliable": true, "id": 62}, {"seat": "F8", "avaliable": true, "id": 63}, {"seat": "F9", "avaliable": true, "id": 64}, {"seat": "F10", "avaliable": true, "id": 65}, {"seat": "G0", "avaliable": true, "id": 66}, {"seat": "G1", "avaliable": true, "id": 67}, {"seat": "G2", "avaliable": true, "id": 68}, {"seat": "G3", "avaliable": true, "id": 69}, {"seat": "G4", "avaliable": true, "id": 70}, {"seat": "G5", "avaliable": true, "id": 71}, {"seat": "G6", "avaliable": true, "id": 72}, {"seat": "G7", "avaliable": true, "id": 73}, {"seat": "G8", "avaliable": true, "id": 74}, {"seat": "G9", "avaliable": true, "id": 75}, {"seat": "G10", "avaliable": true, "id": 76}, {"seat": "H0", "avaliable": true, "id": 77}, {"seat": "H1", "avaliable": true, "id": 78}, {"seat": "H2", "avaliable": true, "id": 79}, {"seat": "H3", "avaliable": true, "id": 80}, {"seat": "H4", "avaliable": true, "id": 81}, {"seat": "H5", "avaliable": true, "id": 82}, {"seat": "H6", "avaliable": true, "id": 83}, {"seat": "H7", "avaliable": true, "id": 84}, {"seat": "H8", "avaliable": true, "id": 85}, {"seat": "H9", "avaliable": true, "id": 86}, {"seat": "H10", "avaliable": true, "id": 87}, {"seat": "I0", "avaliable": true, "id": 88}, {"seat": "I1", "avaliable": true, "id": 89}, {"seat": "I2", "avaliable": true, "id": 90}, {"seat": "I3", "avaliable": true, "id": 91}, {"seat": "I4", "avaliable": true, "id": 92}, {"seat": "I5", "avaliable": true, "id": 93}, {"seat": "I6", "avaliable": true, "id": 94}, {"seat": "I7", "avaliable": true, "id": 95}, {"seat": "I8", "avaliable": true, "id": 96}, {"seat": "I9", "avaliable": true, "id": 97}, {"seat": "I10", "avaliable": true, "id": 98}],
-    "ticket-types": {
-      "bilet normalny": 25,
-      "bilet rodzinny": 20,
-      "bilet ulgowy": 18,
-      "voucher": 15
-    },
-    "blik": {
-      "code": 123456
-    },
-    "qr": {
-      "url": "https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png"
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
-    
-    
-    
+  ],
+  "films": [
+    {
+      "title": "Szczęki",
+      "types": "Horror | Pg13 | Comedy",
+      "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 5,
+      "date": "11-01",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    },
+    {
+      "title": "Szczęki 2",
+      "types": "Horror | Pg13 | Comedy",
+      "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7,
+      "date": "12-01",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    },
+    {
+      "title": "Joker",
+      "types": "Comedy?",
+      "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7,
+      "date": "13-01",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    },
+    {
+      "title": "Joker",
+      "types": "Comedy?",
+      "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7,
+      "date": "20-01",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    },
+    {
+      "title": "Joker",
+      "types": "Comedy?",
+      "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7,
+      "date": "21-01",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    }
+  ],
+  "reservation": [
+    {
+      "seat": "A0",
+      "avaliable": false,
+      "id": 0
+    },
+    {
+      "seat": "A1",
+      "avaliable": false,
+      "id": 1
+    },
+    {
+      "seat": "A2",
+      "avaliable": false,
+      "id": 2
+    },
+    {
+      "seat": "A3",
+      "avaliable": false,
+      "id": 3
+    },
+    {
+      "seat": "A4",
+      "avaliable": true,
+      "id": 4
+    },
+    {
+      "seat": "A5",
+      "avaliable": true,
+      "id": 5
+    },
+    {
+      "seat": "A6",
+      "avaliable": true,
+      "id": 6
+    },
+    {
+      "seat": "A7",
+      "avaliable": true,
+      "id": 7
+    },
+    {
+      "seat": "A8",
+      "avaliable": true,
+      "id": 8
+    },
+    {
+      "seat": "A9",
+      "avaliable": true,
+      "id": 9
+    },
+    {
+      "seat": "A10",
+      "avaliable": true,
+      "id": 10
+    },
+    {
+      "seat": "B0",
+      "avaliable": true,
+      "id": 11
+    },
+    {
+      "seat": "B1",
+      "avaliable": true,
+      "id": 12
+    },
+    {
+      "seat": "B2",
+      "avaliable": true,
+      "id": 13
+    },
+    {
+      "seat": "B3",
+      "avaliable": true,
+      "id": 14
+    },
+    {
+      "seat": "B4",
+      "avaliable": true,
+      "id": 15
+    },
+    {
+      "seat": "B5",
+      "avaliable": true,
+      "id": 16
+    },
+    {
+      "seat": "B6",
+      "avaliable": true,
+      "id": 17
+    },
+    {
+      "seat": "B7",
+      "avaliable": false,
+      "id": 18
+    },
+    {
+      "seat": "B8",
+      "avaliable": false,
+      "id": 19
+    },
+    {
+      "seat": "B9",
+      "avaliable": true,
+      "id": 20
+    },
+    {
+      "seat": "B10",
+      "avaliable": true,
+      "id": 21
+    },
+    {
+      "seat": "C0",
+      "avaliable": true,
+      "id": 22
+    },
+    {
+      "seat": "C1",
+      "avaliable": true,
+      "id": 23
+    },
+    {
+      "seat": "C2",
+      "avaliable": true,
+      "id": 24
+    },
+    {
+      "seat": "C3",
+      "avaliable": true,
+      "id": 25
+    },
+    {
+      "seat": "C4",
+      "avaliable": true,
+      "id": 26
+    },
+    {
+      "seat": "C5",
+      "avaliable": false,
+      "id": 27
+    },
+    {
+      "seat": "C6",
+      "avaliable": true,
+      "id": 28
+    },
+    {
+      "seat": "C7",
+      "avaliable": true,
+      "id": 29
+    },
+    {
+      "seat": "C8",
+      "avaliable": true,
+      "id": 30
+    },
+    {
+      "seat": "C9",
+      "avaliable": true,
+      "id": 31
+    },
+    {
+      "seat": "C10",
+      "avaliable": true,
+      "id": 32
+    },
+    {
+      "seat": "D0",
+      "avaliable": true,
+      "id": 33
+    },
+    {
+      "seat": "D1",
+      "avaliable": true,
+      "id": 34
+    },
+    {
+      "seat": "D2",
+      "avaliable": true,
+      "id": 35
+    },
+    {
+      "seat": "D3",
+      "avaliable": true,
+      "id": 36
+    },
+    {
+      "seat": "D4",
+      "avaliable": true,
+      "id": 37
+    },
+    {
+      "seat": "D5",
+      "avaliable": true,
+      "id": 38
+    },
+    {
+      "seat": "D6",
+      "avaliable": true,
+      "id": 39
+    },
+    {
+      "seat": "D7",
+      "avaliable": true,
+      "id": 40
+    },
+    {
+      "seat": "D8",
+      "avaliable": true,
+      "id": 41
+    },
+    {
+      "seat": "D9",
+      "avaliable": true,
+      "id": 42
+    },
+    {
+      "seat": "D10",
+      "avaliable": true,
+      "id": 43
+    },
+    {
+      "seat": "E0",
+      "avaliable": true,
+      "id": 44
+    },
+    {
+      "seat": "E1",
+      "avaliable": true,
+      "id": 45
+    },
+    {
+      "seat": "E2",
+      "avaliable": true,
+      "id": 46
+    },
+    {
+      "seat": "E3",
+      "avaliable": true,
+      "id": 47
+    },
+    {
+      "seat": "E4",
+      "avaliable": true,
+      "id": 48
+    },
+    {
+      "seat": "E5",
+      "avaliable": true,
+      "id": 49
+    },
+    {
+      "seat": "E6",
+      "avaliable": true,
+      "id": 50
+    },
+    {
+      "seat": "E7",
+      "avaliable": true,
+      "id": 51
+    },
+    {
+      "seat": "E8",
+      "avaliable": true,
+      "id": 52
+    },
+    {
+      "seat": "E9",
+      "avaliable": true,
+      "id": 53
+    },
+    {
+      "seat": "E10",
+      "avaliable": true,
+      "id": 54
+    },
+    {
+      "seat": "F0",
+      "avaliable": true,
+      "id": 55
+    },
+    {
+      "seat": "F1",
+      "avaliable": true,
+      "id": 56
+    },
+    {
+      "seat": "F2",
+      "avaliable": true,
+      "id": 57
+    },
+    {
+      "seat": "F3",
+      "avaliable": true,
+      "id": 58
+    },
+    {
+      "seat": "F4",
+      "avaliable": true,
+      "id": 59
+    },
+    {
+      "seat": "F5",
+      "avaliable": true,
+      "id": 60
+    },
+    {
+      "seat": "F6",
+      "avaliable": true,
+      "id": 61
+    },
+    {
+      "seat": "F7",
+      "avaliable": true,
+      "id": 62
+    },
+    {
+      "seat": "F8",
+      "avaliable": true,
+      "id": 63
+    },
+    {
+      "seat": "F9",
+      "avaliable": true,
+      "id": 64
+    },
+    {
+      "seat": "F10",
+      "avaliable": true,
+      "id": 65
+    },
+    {
+      "seat": "G0",
+      "avaliable": true,
+      "id": 66
+    },
+    {
+      "seat": "G1",
+      "avaliable": true,
+      "id": 67
+    },
+    {
+      "seat": "G2",
+      "avaliable": true,
+      "id": 68
+    },
+    {
+      "seat": "G3",
+      "avaliable": true,
+      "id": 69
+    },
+    {
+      "seat": "G4",
+      "avaliable": true,
+      "id": 70
+    },
+    {
+      "seat": "G5",
+      "avaliable": true,
+      "id": 71
+    },
+    {
+      "seat": "G6",
+      "avaliable": true,
+      "id": 72
+    },
+    {
+      "seat": "G7",
+      "avaliable": true,
+      "id": 73
+    },
+    {
+      "seat": "G8",
+      "avaliable": true,
+      "id": 74
+    },
+    {
+      "seat": "G9",
+      "avaliable": true,
+      "id": 75
+    },
+    {
+      "seat": "G10",
+      "avaliable": true,
+      "id": 76
+    },
+    {
+      "seat": "H0",
+      "avaliable": true,
+      "id": 77
+    },
+    {
+      "seat": "H1",
+      "avaliable": true,
+      "id": 78
+    },
+    {
+      "seat": "H2",
+      "avaliable": true,
+      "id": 79
+    },
+    {
+      "seat": "H3",
+      "avaliable": true,
+      "id": 80
+    },
+    {
+      "seat": "H4",
+      "avaliable": true,
+      "id": 81
+    },
+    {
+      "seat": "H5",
+      "avaliable": true,
+      "id": 82
+    },
+    {
+      "seat": "H6",
+      "avaliable": true,
+      "id": 83
+    },
+    {
+      "seat": "H7",
+      "avaliable": true,
+      "id": 84
+    },
+    {
+      "seat": "H8",
+      "avaliable": true,
+      "id": 85
+    },
+    {
+      "seat": "H9",
+      "avaliable": true,
+      "id": 86
+    },
+    {
+      "seat": "H10",
+      "avaliable": true,
+      "id": 87
+    },
+    {
+      "seat": "I0",
+      "avaliable": true,
+      "id": 88
+    },
+    {
+      "seat": "I1",
+      "avaliable": true,
+      "id": 89
+    },
+    {
+      "seat": "I2",
+      "avaliable": true,
+      "id": 90
+    },
+    {
+      "seat": "I3",
+      "avaliable": true,
+      "id": 91
+    },
+    {
+      "seat": "I4",
+      "avaliable": true,
+      "id": 92
+    },
+    {
+      "seat": "I5",
+      "avaliable": true,
+      "id": 93
+    },
+    {
+      "seat": "I6",
+      "avaliable": true,
+      "id": 94
+    },
+    {
+      "seat": "I7",
+      "avaliable": true,
+      "id": 95
+    },
+    {
+      "seat": "I8",
+      "avaliable": true,
+      "id": 96
+    },
+    {
+      "seat": "I9",
+      "avaliable": false,
+      "id": 97
+    },
+    {
+      "seat": "I10",
+      "avaliable": false,
+      "id": 98
+    }
+  ],
+  "ticket-types": {
+    "bilet normalny": 25,
+    "bilet rodzinny": 20,
+    "bilet ulgowy": 18,
+    "voucher": 15
+  },
+  "blik": {
+    "code": 123456
+  },
+  "qr": {
+    "url": "https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png"
+  }
 }
