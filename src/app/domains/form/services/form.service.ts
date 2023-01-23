@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ticket } from './domains/cinema-hall/reservation/reservation.component';
+import { Ticket } from '../../../domains/cinema-hall/reservation/reservation.component';
 @Injectable({
   providedIn: 'root',
 })

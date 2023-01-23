@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CinemaHallService } from '../services/cinema-hall.service';
 import { SeatsService } from '../../../seats.service';
-import { FormService } from '../../../form.service';
+import { FormService } from '../../../domains/form/services/form.service';
 import { RouterLink } from '@angular/router';
 import { ExtraApiService } from '../services/extra-api.service';
 import { Film } from '../../../home/film-panel/film-panel.component';
