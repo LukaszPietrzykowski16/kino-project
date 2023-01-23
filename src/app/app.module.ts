@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MainComponent } from './main/main.component';
@@ -13,7 +12,6 @@ import { AdminComponent } from './auth/admin/admin/admin.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';
-import { LoginComponent } from './login/login.component';
 import { FilmPanelHourComponent } from './home/film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -34,7 +32,6 @@ import { SummaryComponent } from './summary/summary.component';
     ErrorPageComponent,
     ReservationComponent,
     FormsPanelComponent,
-    LoginComponent,
     FilmPanelHourComponent,
     FormsTitleComponent,
     FormsMainComponent,

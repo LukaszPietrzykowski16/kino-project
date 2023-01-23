@@ -7,14 +7,12 @@ import { MainComponent } from './main/main.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';
-import { LoginComponent } from './login/login.component';
 import { FormsMainComponent } from './forms-main/forms-main.component';
 import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'logowanie', component: LoginComponent },
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
