@@ -618,5 +618,65 @@
   },
   "qr": {
     "url": "https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png"
-  }
+  },
+  "users": [
+    {
+      "email": "jakis@gmail.com",
+      "password": "2313",
+      "id": 1
+    },
+    {
+      "email": "jakis@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "jakis@gmail.com",
+      "password": "qwerty",
+      "id": 3
+    },
+    {
+      "email": "jakis@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "email": "jakis@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "email": "jakis@gmail.com",
+      "password": "qwer",
+      "id": 6
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$AokV5I9cQzXy3vFzw4NdZe.dc.egtSbE5hnFN/NGHVZ2LIr8x7x8q",
+      "id": 7
+    },
+    {
+      "email": "nowy@gmail.com",
+      "password": "$2a$10$iCPdzDufVi53551v5mBS0eYrFzwsYiHy9snzjm1uatxuFTj57DobS",
+      "id": 8
+    },
+    {
+      "email": "new@gmail.com",
+      "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
+      "type": "user",
+      "id": 9
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$7ZM9.8iMGRSUnIUmguB7s.tC75NP51Mob2khxdnvagWJddbHXnE26",
+      "type": "admin",
+      "id": 10
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$vDgnZZv8Jb8J2d0bWPTqXunIWRhJB4yUbOREwZgws4E38.rK1/yMm",
+      "type": "user",
+      "id": 11
+    }
+  ]
 }

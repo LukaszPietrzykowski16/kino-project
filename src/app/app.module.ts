@@ -14,13 +14,14 @@ import { ReservationComponent } from './domains/cinema-hall/reservation/reservat
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FilmPanelHourComponent } from './home/film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 
 import { SummaryComponent } from './domains/summary/summary.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
 import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
+import AuthModule from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,8 @@ import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/ticke
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
