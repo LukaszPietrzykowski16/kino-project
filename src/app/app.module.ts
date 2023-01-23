@@ -24,6 +24,11 @@ import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/ticke
 import AuthModule from './auth/auth.module';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { UserState } from './auth/store/user.interface';
+
+export interface User {
+  User: UserState;
+}
 
 @NgModule({
   declarations: [
