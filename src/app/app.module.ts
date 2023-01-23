@@ -48,7 +48,6 @@ import AuthModule from './auth/auth.module';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
