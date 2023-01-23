@@ -22,6 +22,8 @@ import { SummaryComponent } from './domains/summary/summary.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
 import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
 import AuthModule from './auth/auth.module';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import AuthModule from './auth/auth.module';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent],
