@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './home/main/main.component';
 import { DataPanelComponent } from './home/data-panel/data-panel.component';
 import { FilmPanelComponent } from './home/film-panel/film-panel.component';
 import { FooterComponent } from './shared/footer/footer.component';
