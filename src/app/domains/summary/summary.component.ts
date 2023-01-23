@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { FormService } from '../form.service';
-import { QrService } from '../qr.service';
-import { Ticket } from '../reservation/reservation.component';
-import { FormsPanelComponent } from '../domains/form/forms-panel/forms-panel.component';
+import { FormService } from '../../form.service';
+import { QrService } from '../../qr.service';
+import { Ticket } from '../cinema-hall/reservation/reservation.component';
+import { FormsPanelComponent } from '../form/forms-panel/forms-panel.component';
 import { FormControl, NonNullableFormBuilder } from '@angular/forms';
-import { FormInfoService } from '../form-info.service';
+import { FormInfoService } from '../../form-info.service';
 
 export interface qrCode {
   url: string;

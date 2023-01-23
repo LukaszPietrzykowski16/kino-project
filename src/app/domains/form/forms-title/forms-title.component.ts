@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormService } from '../../../form.service';
-import { Ticket } from '../../../reservation/reservation.component';
+import { Ticket } from '../../cinema-hall/reservation/reservation.component';
 
 @Component({
   selector: 'app-forms-title',

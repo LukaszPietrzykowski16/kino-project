@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormService } from '../../../form.service';
-import { Ticket } from '../../../reservation/reservation.component';
+import { Ticket } from '../../cinema-hall/reservation/reservation.component';
 import { BlikService } from '../../../blik.service';
 import { Router } from '@angular/router';
 import { FormInfoService } from '../../../form-info.service';

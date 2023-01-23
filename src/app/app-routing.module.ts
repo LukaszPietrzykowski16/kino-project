@@ -5,10 +5,10 @@ import { FilmPanelComponent } from './home/film-panel/film-panel.component';
 import { AdminComponent } from './auth/admin/admin/admin.component';
 import { MainComponent } from './home/main/main.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
-import { ReservationComponent } from './reservation/reservation.component';
+import { ReservationComponent } from './domains/cinema-hall/reservation/reservation.component';
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
-import { SummaryComponent } from './summary/summary.component';
+import { SummaryComponent } from './domains/summary/summary.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CinemaHallService } from '../cinema-hall.service';
-import { SeatsService } from '../seats.service';
-import { FormService } from '../form.service';
+import { CinemaHallService } from '../../../cinema-hall.service';
+import { SeatsService } from '../../../seats.service';
+import { FormService } from '../../../form.service';
 import { RouterLink } from '@angular/router';
-import { ExtraApiService } from '../extra-api.service';
-import { Film } from '../home/film-panel/film-panel.component';
-import TicketApiService from '../ticket-api.service';
+import { ExtraApiService } from '../../../extra-api.service';
+import { Film } from '../../../home/film-panel/film-panel.component';
+import TicketApiService from '../../../ticket-api.service';
 
 export interface Seat {
   seat: string;
