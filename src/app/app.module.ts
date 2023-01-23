@@ -17,9 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
-import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
+
 import { SummaryComponent } from './domains/summary/summary.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
+import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
 
 @NgModule({
   declarations: [

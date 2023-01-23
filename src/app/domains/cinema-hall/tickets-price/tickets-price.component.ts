@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import TicketApiService from '../../../ticket-api.service';
+import TicketApiService from '../services/ticket-api.service';
 
 export interface TicketType {
   'bilet normalny': number;

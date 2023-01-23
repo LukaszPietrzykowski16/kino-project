@@ -3,8 +3,9 @@ import { CinemaHallService } from '../services/cinema-hall.service';
 import { FormService } from '../../../domains/form/services/form.service';
 import { ExtraApiService } from '../services/extra-api.service';
 import { Film } from '../../../home/film-panel/film-panel.component';
-import TicketApiService from '../../../ticket-api.service';
+
 import { SeatsService } from './services/seats.service';
+import TicketApiService from '../services/ticket-api.service';
 
 export interface Seat {
   seat: string;
