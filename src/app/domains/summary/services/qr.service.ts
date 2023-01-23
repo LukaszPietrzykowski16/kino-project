@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { qrCode } from './domains/summary/summary.component';
+import { qrCode } from '../summary.component';
 
 @Injectable({
   providedIn: 'root',
