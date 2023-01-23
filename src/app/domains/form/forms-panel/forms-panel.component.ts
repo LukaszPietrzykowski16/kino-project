@@ -2,9 +2,10 @@ import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BlikService } from '../services/blik.service';
 import { Router } from '@angular/router';
-import { SeatPostService } from '../../../seat-post.service';
+
 import { FormInfoService } from '../services/form-info.service';
 import { FormService } from '../services/form.service';
+import { SeatPostService } from '../services/seat-post.service';
 
 export interface BlikCode {
   code: number;

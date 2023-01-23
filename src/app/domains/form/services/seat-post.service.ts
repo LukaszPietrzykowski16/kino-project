@@ -3,7 +3,7 @@ import { inject, Injectable } from '@angular/core';
 import {
   Seat,
   Ticket,
-} from './domains/cinema-hall/reservation/reservation.component';
+} from '../../cinema-hall/reservation/reservation.component';
 
 @Injectable({
   providedIn: 'root',
