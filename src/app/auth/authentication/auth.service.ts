@@ -16,6 +16,8 @@ export class AuthService {
   private router = inject(Router);
   private url = 'http://localhost:3000/login';
 
+  user$ = this.store.select((state) => state.User.type);
+
   private auth$$ = new BehaviorSubject<{ hasAuth: boolean }>({
     hasAuth: false,
   });
@@ -34,7 +36,10 @@ export class AuthService {
             localStorage.setItem('token', accessToken);
             localStorage.setItem('user', JSON.stringify(user));
             this.decideRole(user.type);
-            this.router.navigate(['/theme']);
+            // this.router.navigate(['/']);
+            this.user$.subscribe((test) => {
+              console.log(test);
+            });
           },
         })
       );

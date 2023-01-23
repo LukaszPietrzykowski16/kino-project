@@ -39,8 +39,6 @@ export class LoginComponent {
   }
 
   checkValidationAndAuth() {
-    console.log(this.emailCtrl.value, this.passwordCtrl.value);
-
     this.authService
       .logIn(this.emailCtrl.value, this.passwordCtrl.value)
       .subscribe();
