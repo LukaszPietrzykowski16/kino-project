@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { FormService } from '../form.service';
 import { QrService } from '../qr.service';
 import { Ticket } from '../reservation/reservation.component';
-import { FormsPanelComponent } from '../forms-panel/forms-panel.component';
+import { FormsPanelComponent } from '../domains/form/forms-panel/forms-panel.component';
 import { FormControl, NonNullableFormBuilder } from '@angular/forms';
 import { FormInfoService } from '../form-info.service';
 
-
 export interface qrCode {
-    url: string,
+  url: string;
 }
 
 @Component({
@@ -20,18 +19,22 @@ export class SummaryComponent {
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
 
-  name: Array<String | null> = []
-  
+  name: Array<String | null> = [];
+
   url: string | undefined;
 
-  constructor(private formService: FormService, private qrService: QrService, private formInfoService: FormInfoService) {}
+  constructor(
+    private formService: FormService,
+    private qrService: QrService,
+    private formInfoService: FormInfoService
+  ) {}
 
   ngOnInit() {
     this.title = this.formService.displayTitle();
     this.seats = this.formService.displaySeats();
-    this.name = this.formInfoService.getInformation()
+    this.name = this.formInfoService.getInformation();
     this.qrService.getQr().subscribe((qrCode) => {
-     this.url = qrCode.url 
+      this.url = qrCode.url;
     });
   }
 }

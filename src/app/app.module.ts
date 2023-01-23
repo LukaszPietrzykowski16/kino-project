@@ -11,12 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './auth/admin/admin/admin.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
-import { FormsPanelComponent } from './forms-panel/forms-panel.component';
+import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FilmPanelHourComponent } from './home/film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsTitleComponent } from './forms-title/forms-title.component';
-import { FormsMainComponent } from './forms-main/forms-main.component';
+import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
+import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { TicketsPriceComponent } from './tickets-price/tickets-price.component';
 import { SummaryComponent } from './summary/summary.component';
 

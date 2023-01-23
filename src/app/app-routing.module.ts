@@ -6,8 +6,8 @@ import { AdminComponent } from './auth/admin/admin/admin.component';
 import { MainComponent } from './home/main/main.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
-import { FormsPanelComponent } from './forms-panel/forms-panel.component';
-import { FormsMainComponent } from './forms-main/forms-main.component';
+import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
+import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
