@@ -9,12 +9,14 @@ import { ReservationComponent } from './domains/cinema-hall/reservation/reservat
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { SummaryComponent } from './domains/summary/summary.component';
+import { LoginComponent } from './auth/login/login.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
+  { path: 'logowanie', component: LoginComponent },
   { path: 'podsumowanie', component: SummaryComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
   { path: '**', component: ErrorPageComponent },
