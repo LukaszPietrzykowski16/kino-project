@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormService } from '../../../form.service';
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
-import { BlikService } from '../../../blik.service';
+import { BlikService } from '../services/blik.service';
 import { Router } from '@angular/router';
 import { FormInfoService } from '../../../form-info.service';
 import { SeatPostService } from '../../../seat-post.service';
