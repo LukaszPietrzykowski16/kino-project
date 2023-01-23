@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Seat } from './domains/cinema-hall/reservation/reservation.component';
+import { Seat } from '../reservation.component';
 
 @Injectable({
   providedIn: 'root',
