@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ApiServiceService } from '../../api-service.service';
+import { ApiServiceService } from '../services/api-service.service';
 import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../cinema-hall.service';
@@ -79,24 +79,4 @@ export class FilmPanelComponent {
   hours: Array<string> = [];
 
   ngOnInit() {}
-  /*
-  ngOnInit(): void {
-    
-    this.apiService.getFilms().subscribe(response => this.arr = response)
-
-     this.apiService.getFilms()
-   
-       .subscribe(test => this.arr = test);
-  }
-  */
-  /*
-      this.apiService.getFilms().pipe(map(response => response.map(film => ({
-        title: film.title,
-        imgUrl: film.image,
-        desc: film.description,
-    }))))
-      .subscribe(test => console.log(test))
-  
-  }
-  */
 }

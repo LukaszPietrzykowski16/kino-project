@@ -1,5 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ApiServiceService } from '../../api-service.service';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { ApiServiceService } from '../services/api-service.service';
 
 @Component({
   selector: 'app-data-panel',
