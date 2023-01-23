@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { ApiServiceService } from '../services/api-service.service';
 import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
-import { CinemaHallService } from '../../cinema-hall.service';
+import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 
 export interface Film {
   title: string;

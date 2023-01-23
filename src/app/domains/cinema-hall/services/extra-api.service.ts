@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Film } from './home/film-panel/film-panel.component';
+import { Film } from '../../../home/film-panel/film-panel.component';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
