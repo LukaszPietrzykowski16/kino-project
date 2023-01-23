@@ -9,7 +9,7 @@ import { FilmPanelComponent } from './home/film-panel/film-panel.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { IconsModule } from './icons/icons.module';
 import { AppRoutingModule } from './app-routing.module';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './auth/admin/admin/admin.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { FormsPanelComponent } from './forms-panel/forms-panel.component';

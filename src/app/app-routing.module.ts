@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { FilmPanelComponent } from './home/film-panel/film-panel.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './auth/admin/admin/admin.component';
 import { MainComponent } from './main/main.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './reservation/reservation.component';
