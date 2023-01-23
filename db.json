@@ -58,7 +58,7 @@
       "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7,
-      "date": "13-01",
+      "date": "24-01",
       "hours": [
         "09:00",
         "10:30",
@@ -77,7 +77,7 @@
       "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7,
-      "date": "20-01",
+      "date": "26-01",
       "hours": [
         "09:00",
         "10:30",
@@ -96,7 +96,7 @@
       "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7,
-      "date": "21-01",
+      "date": "27-01",
       "hours": [
         "09:00",
         "10:30",
@@ -353,7 +353,7 @@
     },
     {
       "seat": "E4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 48
     },
     {
