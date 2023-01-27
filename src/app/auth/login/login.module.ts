@@ -17,7 +17,7 @@ import { userReducer } from '../store/user.reducer';
     StoreModule.forFeature('User', userReducer),
     RouterModule.forChild([
       {
-        path: '',
+        path: '/logowanie',
         component: LoginComponent,
       },
     ]),
