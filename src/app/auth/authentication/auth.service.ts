@@ -4,27 +4,31 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
-import { User } from 'src/app/app.module';
+
 import { LoginData } from './auth.interface';
+import { AppState } from 'src/app/app.module';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
   private http = inject(HttpClient);
-  private store = inject<Store<User>>(Store);
+  private store = inject<Store<AppState>>(Store);
   private router = inject(Router);
-  private url = 'http://localhost:3000/login';
-
-  user$ = this.store.select((state) => state.User.type);
+  private apiUrl = 'http://localhost:3000';
+  private url = '/login';
 
   private auth$$ = new BehaviorSubject<{ hasAuth: boolean }>({
     hasAuth: false,
   });
 
+  get isAuth$() {
+    return this.auth$$.asObservable();
+  }
+
   logIn(email: string, password: string) {
     return this.http
-      .post<LoginData>(this.url, {
+      .post<LoginData>(this.apiUrl + this.url, {
         email: email,
         password: password,
       })
@@ -35,22 +39,11 @@ export class AuthService {
             this.auth$$.next({ hasAuth: true });
             localStorage.setItem('token', accessToken);
             localStorage.setItem('user', JSON.stringify(user));
-            this.decideRole(user.type);
-            // this.router.navigate(['/']);
-            this.user$.subscribe((test) => {
-              console.log(test);
-            });
+            this.store.dispatch(userActions.changeRole({ role: user.type }));
+            this.router.navigate(['/theme']);
           },
         })
-      );
-  }
-
-  decideRole(role: string) {
-    if (role === 'user') {
-      this.store.dispatch(userActions.changeDefaultToUser());
-    }
-    if (role === 'admin') {
-      this.store.dispatch(userActions.changeDefaultToAdmin());
-    }
+      )
+      .subscribe();
   }
 }

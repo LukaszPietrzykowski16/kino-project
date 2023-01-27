@@ -4,15 +4,8 @@ import { initialUserState } from './user.state';
 
 export const userReducer = createReducer(
   initialUserState,
-  on(userActions.changeDefaultToUser, (state) => ({
+  on(userActions.changeRole, (state, { role }) => ({
     ...state,
-    type: 'user',
-  })),
-  on(userActions.changeDefaultToVisitor, () => ({
-    ...initialUserState,
-  })),
-  on(userActions.changeDefaultToAdmin, (state) => ({
-    ...state,
-    type: 'admin',
+    type: role,
   }))
 );

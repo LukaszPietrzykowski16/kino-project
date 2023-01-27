@@ -1,6 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NonNullableFormBuilder, Validators } from '@angular/forms';
+import { Store } from '@ngrx/store';
+import { AppState } from 'src/app/app.module';
 import { AuthService } from '../authentication/auth.service';
+import { UserState } from '../store/user.interface';
 import { emailValidatorRegex } from './emailValidatorPattern';
 
 @Component({
@@ -13,6 +16,7 @@ import { emailValidatorRegex } from './emailValidatorPattern';
 export class LoginComponent {
   private fb = inject(NonNullableFormBuilder);
   private authService = inject(AuthService);
+  private store = inject<Store<AppState>>(Store);
 
   loginForm = this.createControlGroup();
 
@@ -31,6 +35,8 @@ export class LoginComponent {
     });
   }
 
+  user$ = this.store.select((state) => state);
+
   get passwordCtrl() {
     return this.loginForm.controls.password;
   }
@@ -39,13 +45,18 @@ export class LoginComponent {
   }
 
   checkValidationAndAuth() {
-    this.authService
-      .logIn(this.emailCtrl.value, this.passwordCtrl.value)
-      .subscribe();
+    this.authService.logIn(this.emailCtrl.value, this.passwordCtrl.value);
 
+    this.user$.subscribe((test) => {
+      console.log(test.User.type);
+    });
     this.loginForm.markAllAsTouched();
     if (this.loginForm.invalid) {
       return;
     }
+  }
+
+  ngOnInit() {
+    console.log(this.store.select('User'));
   }
 }
