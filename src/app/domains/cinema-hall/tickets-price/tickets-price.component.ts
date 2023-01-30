@@ -21,6 +21,5 @@ export class TicketsPriceComponent {
 
   ngOnInit() {
     this.ticketApi.getTickets().subscribe((res) => this.test.push(res));
-    console.log('hello');
   }
 }

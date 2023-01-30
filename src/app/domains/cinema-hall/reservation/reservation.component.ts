@@ -26,13 +26,6 @@ export interface TicketType {
   voucher: number;
 }
 
-/*
-a5 = {
-  type: 'normal'
-}
-
-*/
-
 @Component({
   selector: 'app-reservation',
   templateUrl: './reservation.component.html',
@@ -85,7 +78,11 @@ export class ReservationComponent {
       this.styleArray[number] = true;
       this.tickets = [
         ...this.tickets,
-        { seat: this.selectedSeat, type: 'bilet normalny', position: number },
+        {
+          seat: this.selectedSeat,
+          type: 'bilet normalny 25zł',
+          position: number,
+        },
       ];
     }
   }
@@ -136,7 +133,7 @@ export class ReservationComponent {
       const values = this.newHeader.map((test) => {
         return [test.title, test.date, this.test(test.hours)];
       });
-
+      console.log(this.tickets);
       this.formService.form(values[0], this.tickets);
     } else {
       this.formService.form(this.header, this.tickets);
