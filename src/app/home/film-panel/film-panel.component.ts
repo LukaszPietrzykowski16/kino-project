@@ -3,6 +3,7 @@ import { ApiServiceService } from '../services/api-service.service';
 import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
+import { AuthService } from 'src/app/auth/authentication/auth.service';
 
 export interface Film {
   title: string;
@@ -24,6 +25,7 @@ export class FilmPanelComponent {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!';
 
   arr: Array<Film> = [];
+  isLogin = false;
 
   @Input() item: string = '05/12';
 
@@ -33,11 +35,11 @@ export class FilmPanelComponent {
 
   constructor(
     private apiService: ApiServiceService,
-    private cinemaService: CinemaHallService
+    private cinemaService: CinemaHallService,
+    private authService: AuthService
   ) {}
 
   more() {
-    console.log(this.arr);
     if (this.flag === true) {
       this.flag = false;
     } else {
@@ -78,5 +80,9 @@ export class FilmPanelComponent {
 
   hours: Array<string> = [];
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.authService.isAuth$.subscribe((login) => {
+      this.isLogin = login.hasAuth;
+    });
+  }
 }
