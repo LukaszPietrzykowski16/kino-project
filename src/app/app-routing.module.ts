@@ -8,6 +8,7 @@ import { ReservationComponent } from './domains/cinema-hall/reservation/reservat
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { SummaryComponent } from './domains/summary/summary.component';
+import { LoginComponent } from './auth/login.component/login-form.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -15,7 +16,6 @@ const routes: Routes = [
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
-  { path: '**', component: ErrorPageComponent },
 ];
 
 @NgModule({

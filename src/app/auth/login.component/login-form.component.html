@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm">
+  <div>
+    <input formControlName="email" />
+
+    <input type="password" formControlName="password" />
+  </div>
+
+  <ng-container *ngIf="loginForm.controls.email.errors as errors">
+    <p *ngIf="errors['maxlength']">
+      Email nie może być dłuższy niż 100 znaków.
+    </p>
+    <p *ngIf="errors['pattern']">
+      Podaj poprawny adres email według wzoru: nazwa@domena.pl
+    </p>
+  </ng-container>
+  <p
+    *ngIf="(passwordCtrl.errors?.['required'] &&
+       passwordCtrl.touched) ||
+      (emailCtrl.errors?.['required'] &&
+       emailCtrl.touched)
+    "
+  >
+    Pola nie mogą byc puste.
+  </p>
+
+  <button (click)="checkValidationAndAuth()">Zaloguj</button>
+</form>

@@ -15,17 +15,19 @@ import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.comp
 import { FilmPanelHourComponent } from './home/film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
-
 import { SummaryComponent } from './domains/summary/summary.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
 import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
-
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-
 import { RouterModule } from '@angular/router';
+import { UserState } from './auth/store/user.interface';
+import AuthModule from './auth/auth.module';
+
+export interface AppState {
+  User: UserState;
+}
 
 @NgModule({
   declarations: [
@@ -51,9 +53,22 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    AuthModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
+    RouterModule.forRoot([
+      {
+        path: '',
+        children: [
+          {
+            path: 'logowanie',
+            loadChildren: () => import('./auth/auth.module'),
+          },
+        ],
+      },
+    ]),
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })

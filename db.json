@@ -20,7 +20,7 @@
       "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 5,
-      "date": "11-01",
+      "date": "28-01",
       "hours": [
         "09:00",
         "10:30",
@@ -39,7 +39,7 @@
       "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7,
-      "date": "12-01",
+      "date": "29-01",
       "hours": [
         "09:00",
         "10:30",
@@ -223,12 +223,12 @@
     },
     {
       "seat": "C0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 22
     },
     {
       "seat": "C1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 23
     },
     {
@@ -238,7 +238,7 @@
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25
     },
     {
