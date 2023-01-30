@@ -80,6 +80,10 @@ export class FilmPanelComponent {
 
   hours: Array<string> = [];
 
+  sendMovie(filmId: any) {
+    console.log(filmId.id);
+  }
+
   ngOnInit() {
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;
