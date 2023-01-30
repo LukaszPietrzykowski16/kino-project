@@ -38,8 +38,6 @@ export class ExtraApiService {
     const data = replacing.split(' ');
     return data[1];
   }
-  //http://localhost:3000/films?title=Joker&date=18/12
-  //http://localhost:3000/films?title=Joker&date=15-12
 
   getFilms() {
     return this.http.get<Array<Film>>(this.url);

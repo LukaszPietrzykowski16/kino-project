@@ -32,7 +32,6 @@ export interface TicketType {
   styleUrls: ['./reservation.component.css'],
 })
 export class ReservationComponent {
-  // i need to mock up this from server so it's basically a bad aproach to change!
   test2: Array<TicketType> = [];
   name: String = '';
 
@@ -43,8 +42,6 @@ export class ReservationComponent {
 
   selectedSeat: string = '';
   status: boolean = false;
-
-  // change this array of objecs
   tickets: Array<Ticket> = [];
 
   active: boolean = false;
@@ -70,10 +67,27 @@ export class ReservationComponent {
     });
   }
 
-  changeColor(number: number) {
+  removeSingleSeat(number: number) {
     if (this.styleArray[number] === true) {
       this.styleArray[number] = false;
       this.removeSeat(this.selectedSeat);
+    } else {
+      this.styleArray[number] = true;
+      this.tickets = [
+        ...this.tickets,
+        {
+          seat: this.selectedSeat,
+          type: 'bilet normalny 25zł',
+          position: number,
+        },
+      ];
+    }
+  }
+
+  changeColor(number: number) {
+    if (this.styleArray[number] === true) {
+      this.styleArray[number] = false;
+      // this.removeSeat(this.selectedSeat);
     } else {
       this.styleArray[number] = true;
       this.tickets = [

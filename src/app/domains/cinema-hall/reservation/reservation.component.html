@@ -1,28 +1,62 @@
 <main>
-    <div class="conainer-info"> <h1 *ngFor="let info of header"> {{info}} </h1> </div>
-    <div class="conainer-info"> <h1 *ngFor="let info of newHeader"> {{info.title}}, {{info.date.replace('-', '/')}}, {{test(info.hours)}}  </h1> </div>
-    <div class="container-places" > 
-        <div class="container-places__seat" *ngFor="let seat of seats; let i = index">
-            <div  [style.backgroundColor]="styleArray[i] ? 'rgb(49, 110, 51)':'grey'" *ngIf="seat.avaliable === true; else elseBlock"  (click)="checkSeat(seat.seat)" (click)="changeColor(i)" class="container-places__seat--active"> {{seat.seat}} </div>
-            <ng-template #elseBlock> <div class="container-places__seat--unactive"> {{seat.seat}}  </div></ng-template>
-        </div>
+  <div class="conainer-info">
+    <h1 *ngFor="let info of header">{{ info }}</h1>
+  </div>
+  <div class="conainer-info">
+    <h1 *ngFor="let info of newHeader">
+      {{ info.title }}, {{ info.date.replace("-", "/") }},
+      {{ test(info.hours) }}
+    </h1>
+  </div>
+  <div class="container-places">
+    <div
+      class="container-places__seat"
+      *ngFor="let seat of seats; let i = index"
+    >
+      <div
+        [style.backgroundColor]="styleArray[i] ? 'rgb(49, 110, 51)' : 'grey'"
+        *ngIf="seat.avaliable === true; else elseBlock"
+        (click)="checkSeat(seat.seat)"
+        (click)="removeSingleSeat(i)"
+        class="container-places__seat--active"
+      >
+        {{ seat.seat }}
+      </div>
+      <ng-template #elseBlock>
+        <div class="container-places__seat--unactive">
+          {{ seat.seat }}
+        </div></ng-template
+      >
     </div>
+  </div>
 
-    <div class="container-tickets" *ngFor="let ticket of tickets">
-        <div> <p> Rząd {{ticket.seat[0]}} Miejsce {{ticket.seat[1]}}</p> </div>
-        <div> 
-            <select #ticketType (change)="changeKey(ticket.seat, ticketType.value)">
-                <option *ngFor="let plsWork of test2[0] | keyvalue" > {{plsWork.key}} {{plsWork.value}}zł </option>
-            </select>
-        </div>
-        <div>  
-            <i-feather name="trash-2" (click)="removeSeat(ticket.seat)" (click)="changeColor(ticket.position)"></i-feather> 
-        </div>
-     
+  <div class="container-tickets" *ngFor="let ticket of tickets">
+    <div>
+      <p>Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
     </div>
+    <div>
+      <select #ticketType (change)="changeKey(ticket.seat, ticketType.value)">
+        <option *ngFor="let plsWork of test2[0] | keyvalue">
+          {{ plsWork.key }} {{ plsWork.value }}zł
+        </option>
+      </select>
+    </div>
+    <div>
+      <i-feather
+        name="trash-2"
+        (click)="removeSeat(ticket.seat)"
+        (click)="changeColor(ticket.position)"
+      ></i-feather>
+    </div>
+  </div>
 
-    <div class="container-next">
-        <button class="conainer-next__btn" routerLink="/formularz" (click)="forms()"> Dalej </button>
-    </div>
-   
+  <div class="container-next">
+    <button
+      class="conainer-next__btn"
+      routerLink="/formularz"
+      (click)="forms()"
+    >
+      Dalej
+    </button>
+  </div>
 </main>
