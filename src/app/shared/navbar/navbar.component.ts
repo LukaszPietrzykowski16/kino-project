@@ -9,10 +9,15 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 export class NavbarComponent {
   authService = inject(AuthService);
   login = false;
+  userId: number = NaN;
 
   ngOnInit() {
     this.authService.isAuth$.subscribe((test) => {
       this.login = test.hasAuth;
+    });
+
+    this.authService.user$.subscribe((user) => {
+      this.userId = user.id;
     });
   }
 }

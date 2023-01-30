@@ -3,11 +3,11 @@
   <div *ngIf="login; else elseBlock">
     <div class="navbar__settings">
       <i-feather name="shopping-cart"></i-feather>
-      <select name="cars" id="cars">
-        <option value="volvo">Cześć user</option>
-        <option value="saab">Chcę obejrzeć</option>
-        <option value="opel">Ustawienia</option>
-        <option value="audi">Wyloguj</option>
+      <select name="user" id="user">
+        <option value="user">Cześć {{ userId }}</option>
+        <option value="watch">Chcę obejrzeć</option>
+        <option value="settings">Ustawienia</option>
+        <option value="logout">Wyloguj</option>
       </select>
     </div>
   </div>
