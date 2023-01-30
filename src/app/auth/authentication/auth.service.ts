@@ -44,10 +44,7 @@ export class AuthService {
             this.store.dispatch(
               userActions.changeRole({ role: user.type, id: user.id })
             );
-            // this.router.navigate(['/']);
-            this.user$.subscribe((test) => {
-              console.log(test.type);
-            });
+            this.router.navigate(['/']);
           },
         })
       )
