@@ -5,6 +5,7 @@ import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
+import { UserService } from './services/user.service';
 
 export interface Film {
   title: string;
@@ -38,7 +39,8 @@ export class FilmPanelComponent {
     private apiService: ApiServiceService,
     private cinemaService: CinemaHallService,
     private authService: AuthService,
-    private movieService: SendMovieService
+    private movieService: SendMovieService,
+    private userService: UserService
   ) {}
 
   more() {
@@ -83,19 +85,29 @@ export class FilmPanelComponent {
   hours: Array<string> = [];
 
   userId: number = NaN;
+  moviesArray: Array<Number> = [];
 
-  sendMovie(filmArray: any) {
-    this.authService.user$.subscribe((user) => {
-      this.userId = user.id;
-    });
-    this.userId = 11;
+  sendMovie(filmId: any) {
+    this.moviesArray = [...this.moviesArray, ...[filmId.id]];
 
-    this.movieService.postMovie(this.userId, [0]);
+    const set = new Set(this.moviesArray);
+    console.log(set);
+    this.movieService.postMovie(this.userId, Array.from(set));
   }
 
   ngOnInit() {
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;
     });
+
+    if (this.isLogin === true) {
+      this.authService.user$.subscribe((user) => {
+        this.userId = user.id;
+      });
+
+      this.userService.getUser(this.userId).subscribe((movie) => {
+        this.moviesArray = [...this.moviesArray, ...movie.movies];
+      });
+    }
   }
 }
