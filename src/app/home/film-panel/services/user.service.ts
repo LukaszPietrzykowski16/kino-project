@@ -11,7 +11,7 @@ interface UserMovies {
 export class UserService {
   private http = inject(HttpClient);
 
-  getUser(userId: number) {
+  getUser(userId: number | undefined) {
     return this.http.get<UserMovies>(`http://localhost:3000/users/${userId}`);
   }
 

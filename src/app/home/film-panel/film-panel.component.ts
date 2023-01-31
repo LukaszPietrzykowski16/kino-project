@@ -95,8 +95,6 @@ export class FilmPanelComponent {
     this.movieService.postMovie(this.userId, Array.from(set));
   }
 
-  changeRoute() {}
-
   ngOnInit() {
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;

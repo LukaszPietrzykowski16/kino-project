@@ -9,13 +9,14 @@ import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.comp
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { SummaryComponent } from './domains/summary/summary.component';
 import { LoginComponent } from './auth/login.component/login-form.component';
+import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
-  { path: 'chce-obejrzec', component: ReservationComponent },
+  { path: 'chce-obejrzec', component: WantWatchComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 ];
 

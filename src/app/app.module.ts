@@ -24,6 +24,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { RouterModule } from '@angular/router';
 import { UserState } from './auth/store/user.interface';
 import AuthModule from './auth/auth.module';
+import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 
 export interface AppState {
   User: UserState;
@@ -45,6 +46,7 @@ export interface AppState {
     FormsMainComponent,
     TicketsPriceComponent,
     SummaryComponent,
+    WantWatchComponent,
   ],
   imports: [
     BrowserModule,
