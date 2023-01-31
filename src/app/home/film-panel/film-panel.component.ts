@@ -4,6 +4,7 @@ import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
+import { SendMovieService } from './services/send-movie.service';
 
 export interface Film {
   title: string;
@@ -36,7 +37,8 @@ export class FilmPanelComponent {
   constructor(
     private apiService: ApiServiceService,
     private cinemaService: CinemaHallService,
-    private authService: AuthService
+    private authService: AuthService,
+    private movieService: SendMovieService
   ) {}
 
   more() {
@@ -80,8 +82,15 @@ export class FilmPanelComponent {
 
   hours: Array<string> = [];
 
-  sendMovie(filmId: any) {
-    console.log(filmId.id);
+  userId: number = NaN;
+
+  sendMovie(filmArray: any) {
+    this.authService.user$.subscribe((user) => {
+      this.userId = user.id;
+    });
+    this.userId = 11;
+
+    this.movieService.postMovie(this.userId, [0]);
   }
 
   ngOnInit() {
