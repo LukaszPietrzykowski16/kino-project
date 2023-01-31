@@ -21,7 +21,7 @@ export class WantWatchComponent {
       this.userId = user.id;
     });
 
-    this.userService.getUser(11).subscribe((movie) => {
+    this.userService.getUser(this.userId).subscribe((movie) => {
       this.moviesArray = [...this.moviesArray, ...movie.movies];
     });
   }
