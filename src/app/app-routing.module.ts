@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
+  { path: 'chce-obejrzec', component: ReservationComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 ];
 

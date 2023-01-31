@@ -3,18 +3,17 @@
   <div *ngIf="login; else elseBlock">
     <div class="navbar__settings">
       <i-feather name="shopping-cart"></i-feather>
-      <select name="user" id="user">
-        <option value="user">Cześć {{ userId }}</option>
-        <option value="watch">Chcę obejrzeć</option>
-        <option value="settings">Ustawienia</option>
-        <option value="logout">Wyloguj</option>
+      <select name="user" id="user" (change)="navigateTo($event.target)">
+        <option value="/">Cześć {{ userId }}</option>
+        <option value="chce-obejrzec">Chcę obejrzeć</option>
+        <option value="ustawienia">Ustawienia</option>
+        <option value="wyloguj">Wyloguj</option>
       </select>
     </div>
   </div>
   <ng-template #elseBlock>
     <div class="navbar__settings">
       <i-feather name="shopping-cart"></i-feather>
-
       <button>
         <a
           routerLink="/logowanie"
