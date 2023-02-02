@@ -1,11 +1,15 @@
 <div class="container-form">
-  <h1 *ngFor="let information of title">{{ information }}</h1>
+  <h1>
+    <ng-container *ngFor="let information of title"
+      >{{ information + " " }}
+    </ng-container>
+  </h1>
+
   <div *ngFor="let exactSeat of seats">
-    <div>Rząd {{ exactSeat.seat[0] }} siedzenie {{ exactSeat.seat[1] }}</div>
     <div>
+      Rząd {{ exactSeat.seat[0] }} siedzenie {{ exactSeat.seat[1] }} Typ biletu:
       {{ exactSeat.type }}
     </div>
-    <div></div>
   </div>
   Razem: {{ ticketPrice }} zł
 </div>
