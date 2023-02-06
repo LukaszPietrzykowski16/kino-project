@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
 import { ChangeHoursService } from './services/change-hours.service';
+import { ChangeDayService } from '../data-panel/services/change-day.service';
 
 export interface Film {
   title: string;
@@ -29,7 +30,7 @@ export class FilmPanelComponent {
 
   arr: Array<Film> = [];
   isLogin = false;
-  @Input() item: string = '05/12';
+  @Input() item: string = '';
   shortDescription: string = this.description.substring(0, 240);
   flag: boolean = true;
   newArr: Array<string> = [];
@@ -44,7 +45,8 @@ export class FilmPanelComponent {
     private authService: AuthService,
     private movieService: SendMovieService,
     private userService: UserService,
-    private changeHoursService: ChangeHoursService
+    private changeHoursService: ChangeHoursService,
+    private changeDayService: ChangeDayService
   ) {}
 
   sendMovie(filmId: any) {

@@ -21,7 +21,6 @@ export class DataPanelComponent {
   }
 
   ngOnInit(): void {
-    console.log(this.today);
     for (let i = 0; i < 7; i++) {
       let nextDay: Date = new Date(this.nextDays);
       nextDay.setDate(this.nextDays.getDate() + i);
