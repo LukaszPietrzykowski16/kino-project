@@ -7,7 +7,7 @@ import { ChangeDayService } from '../data-panel/services/change-day.service';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent {
-  changeDayService = inject(ChangeDayService);
+  private changeDayService = inject(ChangeDayService);
 
   currentItem = this.changeDayService.formatDate(new Date());
 

@@ -19,7 +19,6 @@ export class ApiServiceService {
       '-'
     )}`;
 
-    // we can just getFilms() ???
     return this.http.get<Array<Film>>(this.url);
   }
 
