@@ -6,7 +6,7 @@ import { BlikCode } from '../forms-panel/forms-panel.component';
   providedIn: 'root',
 })
 export class BlikService {
-  url: string = `http://localhost:3000/blik`;
+  private url: string = `http://localhost:3000/blik`;
 
   constructor(private http: HttpClient) {}
 

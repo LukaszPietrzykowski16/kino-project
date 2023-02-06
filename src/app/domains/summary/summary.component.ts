@@ -30,7 +30,7 @@ export class SummaryComponent {
   ngOnInit() {
     this.title = this.formService.displayTitle();
     this.seats = this.formService.displaySeats();
-    this.name = this.formInfoService.getInformation();
+    this.name = this.formInfoService.getInformation;
     this.qrService.getQr().subscribe((qrCode) => {
       this.url = qrCode.url;
     });

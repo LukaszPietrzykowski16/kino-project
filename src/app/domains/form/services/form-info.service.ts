@@ -1,20 +1,23 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FormInfoService {
+  info: Array<String | null> = [];
 
-  info: Array<String | null> = []
-
-  // it should be change
-  setInformation(name: string | null, secondName: string | null, email: string | null, phoneNumber: string | null) {
-    this.info = [...this.info, name, secondName, email, phoneNumber]
+  setInformation(
+    name: string | null,
+    secondName: string | null,
+    email: string | null,
+    phoneNumber: string | null
+  ) {
+    this.info = [...this.info, name, secondName, email, phoneNumber];
   }
 
-  getInformation(){
-    return this.info
+  get getInformation() {
+    return this.info;
   }
 
-  constructor() { }
+  constructor() {}
 }

@@ -17,8 +17,6 @@ export interface BlikCode {
   styleUrls: ['./forms-panel.component.css'],
 })
 export class FormsPanelComponent {
-  // if there is no props from it renders something like 'go back buy a ticket first' idk
-
   blik: boolean = false;
   blikCode: number = NaN;
 
@@ -66,7 +64,6 @@ export class FormsPanelComponent {
     if (event.keyCode != 8 && !pattern.test(inputChar)) {
       event.preventDefault();
     }
-    // console.log(inputChar)
   }
 
   showBlik() {
