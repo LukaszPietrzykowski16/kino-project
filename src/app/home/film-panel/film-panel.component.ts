@@ -6,6 +6,7 @@ import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hal
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
+import { ChangeHoursService } from './services/change-hours.service';
 
 export interface Film {
   title: string;
@@ -28,20 +29,29 @@ export class FilmPanelComponent {
 
   arr: Array<Film> = [];
   isLogin = false;
-
   @Input() item: string = '05/12';
-
   shortDescription: string = this.description.substring(0, 240);
-
   flag: boolean = true;
+  newArr: Array<string> = [];
+  currentHour = this.changeHoursService.formatDate(new Date());
+  hours: Array<string> = [];
+  userId: number = NaN;
+  moviesArray: Array<Number> = [];
 
   constructor(
     private apiService: ApiServiceService,
     private cinemaService: CinemaHallService,
     private authService: AuthService,
     private movieService: SendMovieService,
-    private userService: UserService
+    private userService: UserService,
+    private changeHoursService: ChangeHoursService
   ) {}
+
+  sendMovie(filmId: any) {
+    this.moviesArray = [...this.moviesArray, ...[filmId.id]];
+    const set = new Set(this.moviesArray);
+    this.movieService.postMovie(this.userId, Array.from(set));
+  }
 
   more() {
     if (this.flag === true) {
@@ -56,43 +66,11 @@ export class FilmPanelComponent {
       .changeDate(this.item)
       .subscribe((response) => (this.arr = response));
 
-    this.apiService
-      .getFilms()
-
-      .subscribe((test) => (this.arr = test));
+    this.apiService.getFilms().subscribe((test) => (this.arr = test));
   }
 
   moreDetails(title: string, hour: string) {
     this.cinemaService.setStrings(title, hour, this.item);
-  }
-
-  // hours of films
-  newArr: Array<string> = [];
-
-  currentHour = this.formatDate(new Date());
-
-  formatDate(date: { getHours: () => number; getMinutes: () => any }) {
-    return [
-      this.padTo2Digits(date.getHours()),
-      this.padTo2Digits(date.getMinutes() + 1),
-    ].join(':');
-  }
-
-  padTo2Digits(num: { toString: () => string }) {
-    return num.toString().padStart(2, '0');
-  }
-
-  hours: Array<string> = [];
-
-  userId: number = NaN;
-  moviesArray: Array<Number> = [];
-
-  sendMovie(filmId: any) {
-    this.moviesArray = [...this.moviesArray, ...[filmId.id]];
-
-    const set = new Set(this.moviesArray);
-
-    this.movieService.postMovie(this.userId, Array.from(set));
   }
 
   ngOnInit() {

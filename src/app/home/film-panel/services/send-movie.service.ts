@@ -23,6 +23,4 @@ export class SendMovieService {
       })
       .subscribe();
   }
-
-  constructor() {}
 }

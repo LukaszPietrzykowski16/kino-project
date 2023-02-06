@@ -8,11 +8,9 @@ import { FilmPanelComponent } from './home/film-panel/film-panel.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { IconsModule } from './icons/icons.module';
 import { AppRoutingModule } from './app-routing.module';
-
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './domains/cinema-hall/reservation/reservation.component';
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
-import { FilmPanelHourComponent } from './home/film-panel-hour/film-panel-hour.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
@@ -41,7 +39,6 @@ export interface AppState {
     ErrorPageComponent,
     ReservationComponent,
     FormsPanelComponent,
-    FilmPanelHourComponent,
     FormsTitleComponent,
     FormsMainComponent,
     TicketsPriceComponent,
