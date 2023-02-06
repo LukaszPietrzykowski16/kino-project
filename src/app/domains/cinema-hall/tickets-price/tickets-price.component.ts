@@ -15,11 +15,15 @@ export interface TicketType {
   styleUrls: ['./tickets-price.component.css'],
 })
 export class TicketsPriceComponent {
-  test: Array<TicketType> = [];
+  ticketsArray: Array<TicketType> = [];
 
   constructor(private ticketApi: TicketApiService) {}
 
   ngOnInit() {
-    this.ticketApi.getTickets().subscribe((res) => this.test.push(res));
+    this.ticketApi
+      .getTickets()
+      .subscribe(
+        (res) => (this.ticketsArray = [...this.ticketsArray, ...[res]])
+      );
   }
 }
