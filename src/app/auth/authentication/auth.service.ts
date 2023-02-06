@@ -50,4 +50,10 @@ export class AuthService {
       )
       .subscribe();
   }
+
+  logOut() {
+    this.auth$$.next({ hasAuth: false });
+    this.store.dispatch(userActions.changeRole({ role: 'visitor', id: NaN }));
+    this.router.navigate(['/']);
+  }
 }

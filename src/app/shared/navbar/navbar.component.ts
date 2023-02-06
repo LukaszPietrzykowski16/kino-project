@@ -18,6 +18,9 @@ export class NavbarComponent {
     if (value) {
       this.router.navigate([value.value]);
     }
+    if (value.value === 'wyloguj') {
+      this.authService.logOut();
+    }
     return false;
   }
 

@@ -5,7 +5,7 @@ import { emailValidatorRegex } from './emailValidatorPattern';
 @Component({
   selector: 'app-login',
   templateUrl: './login-form.component.html',
-  styleUrls: ['./login.component.scss'],
+  styleUrls: ['./login.component.css'],
 
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
