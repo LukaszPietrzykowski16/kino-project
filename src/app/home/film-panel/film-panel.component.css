@@ -1,40 +1,39 @@
 .container-film {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.75em;
-    background-color: rgb(58, 58, 58);
-    margin-bottom: 1.75em;
-    border-radius: 1.75em;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75em;
+  background-color: #000000;
+  margin-bottom: 1.75em;
+  border-radius: 1.75em;
 }
 
 .container-film__about {
-    width: 100vw;
+  width: 100vw;
 }
 
 .container-film__img img {
-    width:  70%;
-    object-fit: cover;
+  width: 70%;
+  object-fit: cover;
 }
 
 @media (max-width: 850px) {
-    .container-film {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  .container-film {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .container-film__img {
-        display: flex;
-        justify-content: center;
-    }
+  .container-film__img {
+    display: flex;
+    justify-content: center;
+  }
 
-    .container-film__img img {
-        width:  50%;
-        
-        object-fit: cover;
-    }
-    
+  .container-film__img img {
+    width: 50%;
+
+    object-fit: cover;
+  }
 }

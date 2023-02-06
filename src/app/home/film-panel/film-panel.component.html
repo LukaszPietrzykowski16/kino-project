@@ -3,7 +3,9 @@
     <img src="{{ film.image }}" alt="film" />
   </div>
   <div class="container-film__about">
-    <div class="container-film__about_title">{{ film.title }}</div>
+    <div class="container-film__about_title">
+      <h1>{{ film.title }}</h1>
+    </div>
     <div class="container-film__about_types">Horror | Pg13 | Comedy</div>
     <div class="container-film__about_paragraph">
       <div *ngIf="flag; else elseBlock">

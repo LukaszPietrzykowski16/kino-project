@@ -1,6 +1,16 @@
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
 }
+
+/* 
+
+colors:
+#000000
+5800FF
+E900FF
+FFC600
+*/

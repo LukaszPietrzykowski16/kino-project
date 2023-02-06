@@ -14,7 +14,7 @@
       *ngFor="let seat of seats; let i = index"
     >
       <div
-        [style.backgroundColor]="styleArray[i] ? 'rgb(49, 110, 51)' : 'grey'"
+        [style.backgroundColor]="styleArray[i] ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
         (click)="checkSeat(seat.seat)"
         (click)="removeSingleSeat(i)"

@@ -1,32 +1,26 @@
 .data-panel {
-    width: 80vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .data-panel__day {
-    margin: 0.75em;
+  margin: 0.75em;
 }
 
-
-
 .data-panel__day_current {
-    padding: 0.75em;
-    border-radius: 1.75em;
-    border: 2px solid grey;
+  padding: 0.75em;
+  border: 2px solid #5800ff;
 }
 
 @media (max-width: 850px) {
-    .data-panel {
-        flex-wrap: wrap;
-    }
+  .data-panel {
+    flex-wrap: wrap;
+  }
 
-
-    .data-panel__day {
-        margin: 0.25em;
-        
-    }
-    
+  .data-panel__day {
+    margin: 0.25em;
+  }
 }

@@ -348,12 +348,12 @@
     },
     {
       "seat": "E2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 46
     },
     {
       "seat": "E3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 47
     },
     {
@@ -368,7 +368,7 @@
     },
     {
       "seat": "E6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 50
     },
     {
@@ -413,7 +413,7 @@
     },
     {
       "seat": "F4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 59
     },
     {
