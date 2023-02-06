@@ -18,6 +18,4 @@ export class FormInfoService {
   get getInformation() {
     return this.info;
   }
-
-  constructor() {}
 }

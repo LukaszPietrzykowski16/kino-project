@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { ApiServiceService } from '../services/api-service.service';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { ChangeDayService } from './services/change-day.service';
 
 @Component({
   selector: 'app-data-panel',
@@ -7,41 +7,25 @@ import { ApiServiceService } from '../services/api-service.service';
   styleUrls: ['./data-panel.component.css'],
 })
 export class DataPanelComponent {
+  changeDayService = inject(ChangeDayService);
+
   @Output() buttonClicked = new EventEmitter();
 
-  // it should be in the service
-
-  formatDate(date: {
-    getMonth: () => number;
-    getDate: () => any;
-    getFullYear: () => any;
-  }) {
-    return [
-      this.padTo2Digits(date.getDate()),
-      this.padTo2Digits(date.getMonth() + 1),
-    ].join('/');
-  }
-
-  padTo2Digits(num: { toString: () => string }) {
-    return num.toString().padStart(2, '0');
-  }
-
-  today = this.formatDate(new Date());
+  today = this.changeDayService.formatDate(new Date());
   nextDays = new Date();
   arr: Array<string> = [];
 
-  constructor(private apiService: ApiServiceService) {}
-
-  changeDay(day: any) {
+  changeDay(day: string) {
     this.today = day;
     this.buttonClicked.emit(this.today);
   }
 
   ngOnInit(): void {
+    console.log(this.today);
     for (let i = 0; i < 7; i++) {
       let nextDay: Date = new Date(this.nextDays);
       nextDay.setDate(this.nextDays.getDate() + i);
-      let exactDay = this.formatDate(nextDay);
+      let exactDay = this.changeDayService.formatDate(nextDay);
       this.arr.push(exactDay);
     }
   }

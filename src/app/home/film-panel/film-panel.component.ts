@@ -91,7 +91,7 @@ export class FilmPanelComponent {
     this.moviesArray = [...this.moviesArray, ...[filmId.id]];
 
     const set = new Set(this.moviesArray);
-    console.log(set);
+
     this.movieService.postMovie(this.userId, Array.from(set));
   }
 

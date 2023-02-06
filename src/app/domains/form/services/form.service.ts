@@ -19,6 +19,4 @@ export class FormService {
   displaySeats() {
     return this.arrayTickets;
   }
-
-  constructor() {}
 }
