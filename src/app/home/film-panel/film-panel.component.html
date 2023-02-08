@@ -20,7 +20,12 @@
         [routerLink]="['/rezerwacja', item, hour, film.title]"
         *ngFor="let hour of film.hours"
       >
-        <button (click)="moreDetails(film.title, hour)">{{ hour }}</button>
+        <button
+          (click)="moreDetails(film.title, hour)"
+          *ngIf="changeToString(hour) > now"
+        >
+          {{ hour }}
+        </button>
       </a>
     </div>
   </div>

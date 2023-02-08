@@ -34,10 +34,12 @@ export class FilmPanelComponent {
   shortDescription: string = this.description.substring(0, 240);
   flag: boolean = true;
   newArr: Array<string> = [];
-  currentHour = this.changeHoursService.formatDate(new Date());
+
   hours: Array<string> = [];
   userId: number = NaN;
   moviesArray: Array<Number> = [];
+  d = new Date();
+  now = this.d.getHours();
 
   constructor(
     private apiService: ApiServiceService,
@@ -69,6 +71,11 @@ export class FilmPanelComponent {
       .subscribe((response) => (this.arr = response));
 
     this.apiService.getFilms().subscribe((test) => (this.arr = test));
+  }
+
+  changeToString(test: any) {
+    // god forgive me for i have sinned
+    return Number(test[0] + test[1]);
   }
 
   moreDetails(title: string, hour: string) {
