@@ -37,6 +37,14 @@
       "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7
+    },
+    {
+      "id": 3,
+      "title": "Avatar: Istota wody",
+      "types": "Animowany Przygodowy",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7
     }
   ],
   "screening": [
@@ -131,7 +139,7 @@
       ]
     },
     {
-      "filmId": 3,
+      "filmId": 1,
       "date": "10-02",
       "hours": [
         "09:00",

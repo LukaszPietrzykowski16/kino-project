@@ -1,6 +1,4 @@
-<!--
 <div class="container-film" *ngFor="let film of arr">
-
   <div class="container-film__img">
     <img src="{{ film.image }}" alt="film" />
   </div>
@@ -17,10 +15,11 @@
         {{ description }} <button (click)="more()">less</button>
       </ng-template>
     </div>
+    <!--
     <div class="container-film__about_time">
       <a
         [routerLink]="['/rezerwacja', item, hour, film.title]"
-        *ngFor="let hour of film.hours"
+        *ngFor="let hour of screeningData.hours"
       >
         <button
           (click)="moreDetails(film.title, hour)"
@@ -30,6 +29,7 @@
         </button>
       </a>
     </div>
+    -->
   </div>
   <div class="container-film__stats">
     <div *ngIf="isLogin; else elseB">
@@ -42,4 +42,3 @@
     </ng-template>
   </div>
 </div>
--->

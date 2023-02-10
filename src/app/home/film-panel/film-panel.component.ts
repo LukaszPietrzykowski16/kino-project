@@ -38,7 +38,7 @@ export class FilmPanelComponent {
   shortDescription: string = this.description.substring(0, 240);
   flag: boolean = true;
   newArr: Array<string> = [];
-  arr: Array<Film> = [];
+  arr: Array<any> = [];
   hours: Array<string> = [];
   userId: number = NaN;
   moviesArray: Array<Number> = [];
@@ -70,15 +70,15 @@ export class FilmPanelComponent {
   }
 
   ngOnChanges(): void {
+    this.arr = [];
     this.apiService
       .changeDate(this.item)
       .subscribe((response) => (this.screeningData = response));
     this.screeningData.map((test) => {
       this.apiService
         .getFilms(test.filmId)
-        .subscribe((test) => (this.arr = test));
+        .subscribe((test) => this.arr.push(test));
     });
-    console.log(this.arr);
   }
 
   changeToString(test: any) {

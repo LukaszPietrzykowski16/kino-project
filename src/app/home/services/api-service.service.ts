@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApiServiceService {
   date: string = '';
   url: string = `http://localhost:3000/screening?date=${this.date}`;
+  arrayTest: Array<any> = [];
 
   constructor(private http: HttpClient) {}
 
@@ -23,8 +24,7 @@ export class ApiServiceService {
   }
 
   getFilms(id: number) {
-    return this.http.get<Array<Film>>(
-      `http://localhost:3000/films?filmId=${id}`
-    );
+    console.log(this.arrayTest);
+    return this.http.get<Array<any>>(`http://localhost:3000/films/${id}`);
   }
 }
