@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CinemaHallService } from '../services/cinema-hall.service';
 import { FormService } from '../../../domains/form/services/form.service';
 import { ExtraApiService } from '../services/extra-api.service';
-import { Film } from '../../../home/film-panel/film-panel.component';
+import { Screening } from '../../../home/film-panel/film-panel.component';
 
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
@@ -36,7 +36,7 @@ export class ReservationComponent {
   name: String = '';
 
   header: Array<String> = [];
-  newHeader: Array<Film> = [];
+  newHeader: Array<Screening> = [];
   seats: Array<Seat> = [];
   exactHour: string = '';
 
@@ -108,7 +108,7 @@ export class ReservationComponent {
     private extraCall: ExtraApiService,
     private ticketApi: TicketApiService
   ) {}
-
+  /*
   ngOnInit() {
     this.header = this.cinemaHall.displayInfo();
     this.seatsService
@@ -153,4 +153,5 @@ export class ReservationComponent {
       this.formService.form(this.header, this.tickets);
     }
   }
+  */
 }

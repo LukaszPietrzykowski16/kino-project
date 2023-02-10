@@ -9,14 +9,18 @@ import { UserService } from './services/user.service';
 import { ChangeHoursService } from './services/change-hours.service';
 import { ChangeDayService } from '../data-panel/services/change-day.service';
 
+export interface Screening {
+  filmId: number;
+  rating: number;
+  date: string;
+  hours: Array<string>;
+}
+
 export interface Film {
   title: string;
   types: string;
   image: string;
   description: string;
-  rating: number;
-  date: string;
-  hours: Array<string>;
 }
 
 @Component({

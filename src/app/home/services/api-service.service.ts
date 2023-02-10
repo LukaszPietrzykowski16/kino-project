@@ -7,14 +7,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiServiceService {
   date: string = '05/12';
-  url: string = `http://localhost:3000/films?date=${this.date}`;
+  url: string = `http://localhost:3000/screening?date=${this.date}`;
 
   constructor(private http: HttpClient) {}
 
   changeDate(newDate: string) {
     this.date = newDate;
 
-    this.url = `http://localhost:3000/films?date=${newDate.replace(
+    this.url = `http://localhost:3000/screening?date=${newDate.replace(
       /\//g,
       '-'
     )}`;
