@@ -20,7 +20,7 @@ export class ApiServiceService {
       '-'
     )}`;
 
-    return this.http.get<Array<Screening>>(this.url);
+    return this.http.get<Array<any>>(this.url);
   }
 
   getFilms(id: number) {

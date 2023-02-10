@@ -50,9 +50,7 @@ export class FilmPanelComponent {
     private cinemaService: CinemaHallService,
     private authService: AuthService,
     private movieService: SendMovieService,
-    private userService: UserService,
-    private changeHoursService: ChangeHoursService,
-    private changeDayService: ChangeDayService
+    private userService: UserService
   ) {}
 
   sendMovie(filmId: any) {
@@ -79,6 +77,7 @@ export class FilmPanelComponent {
         .getFilms(test.filmId)
         .subscribe((test) => this.arr.push(test));
     });
+    console.log(this.screeningData);
   }
 
   changeToString(test: any) {
