@@ -32,13 +32,13 @@ export class FilmPanelComponent {
   description: string =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!';
 
-  arr: Array<Film> = [];
+  screeningData: Array<Screening> = [];
   isLogin = false;
   @Input() item: string = '';
   shortDescription: string = this.description.substring(0, 240);
   flag: boolean = true;
   newArr: Array<string> = [];
-
+  arr: Array<Film> = [];
   hours: Array<string> = [];
   userId: number = NaN;
   moviesArray: Array<Number> = [];
@@ -72,9 +72,13 @@ export class FilmPanelComponent {
   ngOnChanges(): void {
     this.apiService
       .changeDate(this.item)
-      .subscribe((response) => (this.arr = response));
-
-    this.apiService.getFilms().subscribe((test) => (this.arr = test));
+      .subscribe((response) => (this.screeningData = response));
+    this.screeningData.map((test) => {
+      this.apiService
+        .getFilms(test.filmId)
+        .subscribe((test) => (this.arr = test));
+    });
+    console.log(this.arr);
   }
 
   changeToString(test: any) {

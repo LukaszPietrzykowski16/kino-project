@@ -1,4 +1,4 @@
-import { Film } from '../film-panel/film-panel.component';
+import { Film, Screening } from '../film-panel/film-panel.component';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ApiServiceService {
-  date: string = '05/12';
+  date: string = '';
   url: string = `http://localhost:3000/screening?date=${this.date}`;
 
   constructor(private http: HttpClient) {}
@@ -19,10 +19,12 @@ export class ApiServiceService {
       '-'
     )}`;
 
-    return this.http.get<Array<Film>>(this.url);
+    return this.http.get<Array<Screening>>(this.url);
   }
 
-  getFilms() {
-    return this.http.get<Array<Film>>(this.url);
+  getFilms(id: number) {
+    return this.http.get<Array<Film>>(
+      `http://localhost:3000/films?filmId=${id}`
+    );
   }
 }
