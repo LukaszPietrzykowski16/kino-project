@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { FormInfoService } from '../services/form-info.service';
 import { FormService } from '../services/form.service';
 import { SeatPostService } from '../services/seat-post.service';
+import { validatorCompareEmail } from './email-chech.service';
 
 export interface BlikCode {
   code: number;
@@ -26,33 +27,38 @@ export class FormsPanelComponent {
   private seatPostService = inject(SeatPostService);
   private formService = inject(FormService);
 
-  profileForm = new FormGroup({
-    lastName: new FormControl('', {
-      validators: [Validators.required, Validators.minLength(3)],
-    }),
-    firstName: new FormControl('', {
-      validators: [Validators.required, Validators.minLength(3)],
-    }),
-    phoneNumber: new FormControl('', {
-      validators: [Validators.required, Validators.minLength(9)],
-    }),
-    email: new FormControl('', {
-      validators: [
-        Validators.required,
-        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
-      ],
-    }),
-    emailAgain: new FormControl('', {
-      validators: [
-        Validators.required,
-        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
-      ],
-    }),
-    checkbox: new FormControl(''),
-    bonusCode: new FormControl('', {
-      validators: [Validators.minLength(6)],
-    }),
-  });
+  profileForm = new FormGroup(
+    {
+      lastName: new FormControl('', {
+        validators: [Validators.required, Validators.minLength(3)],
+      }),
+      firstName: new FormControl('', {
+        validators: [Validators.required, Validators.minLength(3)],
+      }),
+      phoneNumber: new FormControl('', {
+        validators: [Validators.required, Validators.minLength(9)],
+      }),
+      email: new FormControl('', {
+        validators: [
+          Validators.required,
+          Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+        ],
+      }),
+      emailAgain: new FormControl('', {
+        validators: [
+          Validators.required,
+          Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+        ],
+      }),
+      checkbox: new FormControl(''),
+      bonusCode: new FormControl('', {
+        validators: [Validators.minLength(6)],
+      }),
+    },
+    {
+      validators: validatorCompareEmail('email', 'emailAgain'),
+    }
+  );
 
   blikForm = new FormGroup({
     blikCodeInput: new FormControl(''),

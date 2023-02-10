@@ -66,11 +66,14 @@
       formControlName="emailAgain"
     />
     <div *ngIf="(emailAgain.invalid && emailAgain.touched) || emailAgain.dirty">
-      <small *ngIf="emailAgain.errors?.required" class="text-danger"
-        >Secondary email is required</small
+      <small *ngIf="emailAgain.errors?.required" class="text-danger">
+        Wymagane potwierdzenie emailu</small
       >
-      <small *ngIf="emailAgain.errors?.pattern" class="text-danger"
-        >Please provide a valid email address</small
+      <small *ngIf="emailAgain.errors?.pattern" class="text-danger">
+        Podaj właściwy adres email</small
+      >
+      <small *ngIf="profileForm.errors as error" class="text-danger">
+        Podaj właściwy drugi email</small
       >
     </div>
     <div>
