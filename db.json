@@ -15,13 +15,34 @@
   ],
   "films": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Szczęki",
       "types": "Horror | Pg13 | Comedy",
       "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 5,
-      "date": "06-02",
+      "rating": 5
+    },
+    {
+      "id": 1,
+      "title": "Kot w butach 2",
+      "types": "Animowany",
+      "image": "https://fwcdn.pl/fpo/44/79/714479/8044659.3.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7
+    },
+    {
+      "id": 2,
+      "title": "Avatar: Istota wody",
+      "types": "Animowany Przygodowy",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
+      "rating": 7
+    }
+  ],
+  "screening": [
+    {
+      "filmId": 0,
+      "date": "10-02",
       "hours": [
         "09:00",
         "10:30",
@@ -35,12 +56,7 @@
       ]
     },
     {
-      "id": 2,
-      "title": "Szczęki 2",
-      "types": "Horror | Pg13 | Comedy",
-      "image": "https://eplakaty.pl/img/towary/1/2019_04/fp4815-jaws-key-art-jpg.jpg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 0,
       "date": "13-02",
       "hours": [
         "09:00",
@@ -55,12 +71,7 @@
       ]
     },
     {
-      "id": 3,
-      "title": "Joker",
-      "types": "Comedy?",
-      "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 0,
       "date": "07-02",
       "hours": [
         "09:00",
@@ -75,12 +86,7 @@
       ]
     },
     {
-      "id": 4,
-      "title": "Joker",
-      "types": "Comedy?",
-      "image": "https://a.allegroimg.com/s1024/0c6f2b/dfd15ce4480db10f3962f8dd7c2c",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 2,
       "date": "09-02",
       "hours": [
         "09:00",
@@ -95,12 +101,7 @@
       ]
     },
     {
-      "id": 6,
-      "title": "Kot w butach 2",
-      "types": "Animowany",
-      "image": "https://fwcdn.pl/fpo/44/79/714479/8044659.3.jpg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 3,
       "date": "12-02",
       "hours": [
         "09:00",
@@ -115,12 +116,7 @@
       ]
     },
     {
-      "id": 6,
-      "title": "Kot w butach 2",
-      "types": "Animowany",
-      "image": "https://fwcdn.pl/fpo/44/79/714479/8044659.3.jpg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 2,
       "date": "08-02",
       "hours": [
         "09:00",
@@ -135,12 +131,7 @@
       ]
     },
     {
-      "id": 5,
-      "title": "Avatar: Istota wody",
-      "types": "Animowany Przygodowy",
-      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 3,
       "date": "10-02",
       "hours": [
         "09:00",
@@ -155,12 +146,7 @@
       ]
     },
     {
-      "id": 6,
-      "title": "Kot w butach 2",
-      "types": "Animowany",
-      "image": "https://fwcdn.pl/fpo/44/79/714479/8044659.3.jpg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 2,
       "date": "10-02",
       "hours": [
         "09:00",
@@ -175,12 +161,7 @@
       ]
     },
     {
-      "id": 5,
-      "title": "Avatar: Istota wody",
-      "types": "Animowany Przygodowy",
-      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
-      "rating": 7,
+      "filmId": 2,
       "date": "08-02",
       "hours": [
         "09:00",
