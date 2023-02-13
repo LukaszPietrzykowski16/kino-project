@@ -119,9 +119,11 @@ export class ReservationComponent {
       this.header[1] === '' ||
       this.header[2] === ''
     ) {
-      this.extraCall
-        .displayInfoFromUrl()
-        .subscribe((response) => (this.newHeader = response));
+      this.extraCall.displayInfoFromUrl().subscribe((response) =>
+        response.map((res) => {
+          this.newHeader = [...this.newHeader, ...res.title];
+        })
+      );
       this.exactHour = this.extraCall.getExactDate();
     }
     this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));

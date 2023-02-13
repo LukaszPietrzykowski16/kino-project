@@ -24,7 +24,6 @@ export class ApiServiceService {
   }
 
   getFilms(id: number) {
-    console.log(this.arrayTest);
     return this.http.get<Array<any>>(`http://localhost:3000/films/${id}`);
   }
 }
