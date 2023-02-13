@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
+import { PromotionService } from '../promotion.service';
 import { FormService } from '../services/form.service';
 
 @Component({
@@ -10,9 +11,10 @@ import { FormService } from '../services/form.service';
 })
 export class FormsTitleComponent {
   ticketPrice: number = 0;
-
+  private promotionService = inject(PromotionService);
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
+  promotion = false;
 
   price() {
     this.seats.forEach((elem) => {

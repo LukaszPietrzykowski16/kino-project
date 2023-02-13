@@ -9,14 +9,19 @@ import { UserService } from './services/user.service';
 import { ChangeHoursService } from './services/change-hours.service';
 import { ChangeDayService } from '../data-panel/services/change-day.service';
 
+export interface Screening {
+  title: any;
+  filmId: number;
+  rating: number;
+  date: string;
+  hours: Array<string>;
+}
+
 export interface Film {
   title: string;
   types: string;
   image: string;
   description: string;
-  rating: number;
-  date: string;
-  hours: Array<string>;
 }
 
 @Component({
@@ -28,16 +33,17 @@ export class FilmPanelComponent {
   description: string =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!';
 
-  arr: Array<Film> = [];
+  screeningData: Array<Screening> = [];
   isLogin = false;
   @Input() item: string = '';
   shortDescription: string = this.description.substring(0, 240);
   flag: boolean = true;
   newArr: Array<string> = [];
-
+  arr: Array<any> = [];
   hours: Array<string> = [];
   userId: number = NaN;
   moviesArray: Array<Number> = [];
+  hoursArr: Array<string> | undefined;
   d = new Date();
   now = this.d.getHours();
 
@@ -46,9 +52,7 @@ export class FilmPanelComponent {
     private cinemaService: CinemaHallService,
     private authService: AuthService,
     private movieService: SendMovieService,
-    private userService: UserService,
-    private changeHoursService: ChangeHoursService,
-    private changeDayService: ChangeDayService
+    private userService: UserService
   ) {}
 
   sendMovie(filmId: any) {
@@ -66,11 +70,18 @@ export class FilmPanelComponent {
   }
 
   ngOnChanges(): void {
+    this.arr = [];
     this.apiService
       .changeDate(this.item)
-      .subscribe((response) => (this.arr = response));
-
-    this.apiService.getFilms().subscribe((test) => (this.arr = test));
+      .subscribe((response) => (this.screeningData = response));
+    this.screeningData.map((test) => {
+      this.apiService
+        .getFilms(test.filmId)
+        .subscribe((test) => this.arr.push(test));
+    });
+    this.screeningData.map((test) => {
+      this.hoursArr = test.hours;
+    });
   }
 
   changeToString(test: any) {

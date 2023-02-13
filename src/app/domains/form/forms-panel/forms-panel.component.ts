@@ -7,6 +7,7 @@ import { FormInfoService } from '../services/form-info.service';
 import { FormService } from '../services/form.service';
 import { SeatPostService } from '../services/seat-post.service';
 import { validatorCompareEmail } from './email-chech.service';
+import { PromotionService } from '../promotion.service';
 
 export interface BlikCode {
   code: number;
@@ -26,6 +27,8 @@ export class FormsPanelComponent {
   private formInfo = inject(FormInfoService);
   private seatPostService = inject(SeatPostService);
   private formService = inject(FormService);
+
+  isBonus = false;
 
   profileForm = new FormGroup(
     {
@@ -89,6 +92,12 @@ export class FormsPanelComponent {
     }
   }
 
+  promotionCode() {
+    if (this.bonusCode.value === '123456') {
+      this.isBonus = true;
+    }
+  }
+
   ngOnInit() {
     this.blikServiceCode.getBlik().subscribe((num) => {
       this.blikCode = num.code;
@@ -97,6 +106,10 @@ export class FormsPanelComponent {
 
   get lastCtrl() {
     return this.profileForm.controls.lastName;
+  }
+
+  get bonusCode() {
+    return this.profileForm.controls.bonusCode;
   }
 
   get firstCtrl() {

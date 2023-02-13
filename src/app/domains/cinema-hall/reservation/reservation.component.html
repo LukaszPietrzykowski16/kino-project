@@ -3,10 +3,7 @@
     <h1 *ngFor="let info of header">{{ info }}</h1>
   </div>
   <div class="conainer-info">
-    <h1 *ngFor="let info of newHeader">
-      {{ info.title }}, {{ info.date.replace("-", "/") }},
-      {{ test(info.hours) }}
-    </h1>
+    <h1>{{ newHeader.join(" ") }} {{ exactHour }}</h1>
   </div>
   <div class="container-places">
     <div
@@ -53,8 +50,8 @@
   <div class="container-next">
     <button
       class="conainer-next__btn"
-      routerLink="/formularz"
       (click)="forms()"
+      routerLink="/formularz"
     >
       Dalej
     </button>
