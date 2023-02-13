@@ -25,6 +25,20 @@ export class ExtraApiService {
     this.date = data[0];
     this.hour = data[1];
     this.title = data[2];
+    this.secondUrl = `http://localhost:3000/screening?date=${this.date}&?hours=${this.hour}`;
+    return this.getScreening();
+  }
+
+  displayInfoFromUrl2() {
+    this.newUrl = this.router.url;
+    const replacing = this.newUrl
+      .replace('/rezerwacja/', '')
+      .replace(/\//g, ' ')
+      .replace('%2F', '-');
+    const data = replacing.split(' ');
+    this.date = data[0];
+    this.hour = data[1];
+    this.title = data[2];
     this.url = `http://localhost:3000/films?title=${this.title}`;
     return this.getFilms();
   }
