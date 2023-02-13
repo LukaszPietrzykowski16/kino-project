@@ -36,7 +36,7 @@ export class ReservationComponent {
   name: String = '';
 
   header: Array<String> = [];
-  newHeader: Array<Screening> = [];
+  newHeader: Array<any> = [];
   seats: Array<Seat> = [];
   exactHour: string = '';
 
@@ -108,7 +108,7 @@ export class ReservationComponent {
     private extraCall: ExtraApiService,
     private ticketApi: TicketApiService
   ) {}
-  /*
+
   ngOnInit() {
     this.header = this.cinemaHall.displayInfo();
     this.seatsService
@@ -147,11 +147,9 @@ export class ReservationComponent {
       const values = this.newHeader.map((test) => {
         return [test.title, test.date, this.test(test.hours)];
       });
-      console.log(this.tickets);
       this.formService.form(values[0], this.tickets);
     } else {
       this.formService.form(this.header, this.tickets);
     }
   }
-  */
 }

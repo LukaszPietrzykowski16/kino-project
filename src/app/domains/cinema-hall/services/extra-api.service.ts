@@ -40,7 +40,7 @@ export class ExtraApiService {
   }
 
   getFilms() {
-    return this.http.get<Array<Film>>(this.url);
+    return this.http.get<Array<any>>(this.url);
   }
 
   constructor(private router: Router, private http: HttpClient) {}
