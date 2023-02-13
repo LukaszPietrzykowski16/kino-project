@@ -42,6 +42,7 @@ export class FilmPanelComponent {
   hours: Array<string> = [];
   userId: number = NaN;
   moviesArray: Array<Number> = [];
+  hoursArr: Array<string> | undefined;
   d = new Date();
   now = this.d.getHours();
 
@@ -77,7 +78,9 @@ export class FilmPanelComponent {
         .getFilms(test.filmId)
         .subscribe((test) => this.arr.push(test));
     });
-    console.log(this.screeningData);
+    this.screeningData.map((test) => {
+      this.hoursArr = test.hours;
+    });
   }
 
   changeToString(test: any) {

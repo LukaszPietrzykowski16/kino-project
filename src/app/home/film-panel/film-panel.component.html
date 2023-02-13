@@ -19,16 +19,12 @@
     <div class="container-film__about_time">
       <a
         [routerLink]="['/rezerwacja', item, hour, film.title]"
-        *ngFor="let hour of screeningData"
+        *ngFor="let hour of hoursArr"
       >
-        <!--
         <button
           (click)="moreDetails(film.title, hour)"
           *ngIf="changeToString(hour) > now"
         >
-        -->
-        {{ hour }}
-        <button>
           {{ hour }}
         </button>
       </a>
