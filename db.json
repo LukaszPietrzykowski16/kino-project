@@ -65,7 +65,7 @@
     },
     {
       "filmId": 1,
-      "date": "13-02",
+      "date": "12-02",
       "hours": [
         "09:00",
         "10:30",
@@ -96,6 +96,21 @@
     {
       "filmId": 2,
       "date": "16-02",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00",
+        "23:00"
+      ]
+    },
+    {
+      "filmId": 2,
+      "date": "13-02",
       "hours": [
         "09:00",
         "10:30",
@@ -327,7 +342,7 @@
     },
     {
       "seat": "C6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 28
     },
     {
@@ -739,12 +754,7 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
@@ -757,14 +767,7 @@
       "password": "$2a$10$vDgnZZv8Jb8J2d0bWPTqXunIWRhJB4yUbOREwZgws4E38.rK1/yMm",
       "type": "user",
       "id": 11,
-      "movies": [
-        0,
-        2,
-        1,
-        3,
-        4,
-        5
-      ]
+      "movies": [0, 2, 1, 3, 4, 5]
     },
     {
       "email": "email@gmail.com",

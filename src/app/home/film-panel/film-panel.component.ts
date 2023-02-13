@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { ApiServiceService } from '../services/api-service.service';
 import { map } from 'rxjs';
 import { Film } from 'angular-feather/icons';
@@ -33,6 +33,8 @@ export class FilmPanelComponent {
   description: string =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!';
 
+  apiService = inject(ApiServiceService);
+
   screeningData: Array<Screening> = [];
   isLogin = false;
   @Input() item: string = '';
@@ -48,7 +50,6 @@ export class FilmPanelComponent {
   now = this.d.getHours();
 
   constructor(
-    private apiService: ApiServiceService,
     private cinemaService: CinemaHallService,
     private authService: AuthService,
     private movieService: SendMovieService,
@@ -69,7 +70,7 @@ export class FilmPanelComponent {
     }
   }
 
-  ngOnChanges(): void {
+  getFilms() {
     this.arr = [];
     this.apiService
       .changeDate(this.item)
@@ -78,10 +79,12 @@ export class FilmPanelComponent {
       this.apiService
         .getFilms(test.filmId)
         .subscribe((test) => this.arr.push(test));
-    });
-    this.screeningData.map((test) => {
       this.hoursArr = test.hours;
     });
+  }
+
+  ngOnChanges(): void {
+    this.getFilms();
   }
 
   changeToString(test: any) {
@@ -94,6 +97,12 @@ export class FilmPanelComponent {
   }
 
   ngOnInit() {
+    // god forgive me for i have sinned
+    setTimeout(() => {
+      this.getFilms();
+    }, 50);
+    this.getFilms();
+
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;
     });

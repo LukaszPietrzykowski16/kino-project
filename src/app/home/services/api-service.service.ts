@@ -19,11 +19,11 @@ export class ApiServiceService {
       /\//g,
       '-'
     )}`;
-
-    return this.http.get<Array<any>>(this.url);
+    console.log(this.url);
+    return this.http.get<Array<Screening>>(this.url);
   }
 
   getFilms(id: number) {
-    return this.http.get<Array<any>>(`http://localhost:3000/films/${id}`);
+    return this.http.get<Array<Film>>(`http://localhost:3000/films/${id}`);
   }
 }
