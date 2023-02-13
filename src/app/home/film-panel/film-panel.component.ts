@@ -10,6 +10,7 @@ import { ChangeHoursService } from './services/change-hours.service';
 import { ChangeDayService } from '../data-panel/services/change-day.service';
 
 export interface Screening {
+  title: any;
   filmId: number;
   rating: number;
   date: string;

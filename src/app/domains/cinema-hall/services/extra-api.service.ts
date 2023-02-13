@@ -12,7 +12,7 @@ export class ExtraApiService {
   date: string = '';
   newUrl = '';
 
-  url = `http://localhost:3000/films?date=${this.date}?title=${this.title}`;
+  private url = `http://localhost:3000/films?date=${this.date}?title=${this.title}`;
 
   displayInfoFromUrl() {
     this.newUrl = this.router.url;
@@ -21,11 +21,11 @@ export class ExtraApiService {
       .replace(/\//g, ' ')
       .replace('%2F', '-');
     const data = replacing.split(' ');
-
+    console.log(data);
     this.date = data[0];
     this.hour = data[1];
     this.title = data[2];
-    this.url = `http://localhost:3000/films?title=${this.title}&date=${this.date}&date=${this.hour}`;
+    this.url = `http://localhost:3000/films?title=${this.title}&screening?date=${this.date}&screening?date=${this.hour}`;
     return this.getFilms();
   }
 
