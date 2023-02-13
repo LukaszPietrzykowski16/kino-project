@@ -15,10 +15,11 @@
         {{ description }} <button (click)="more()">less</button>
       </ng-template>
     </div>
+
     <div class="container-film__about_time">
       <a
         [routerLink]="['/rezerwacja', item, hour, film.title]"
-        *ngFor="let hour of film.hours"
+        *ngFor="let hour of hoursArr"
       >
         <button
           (click)="moreDetails(film.title, hour)"

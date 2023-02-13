@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CinemaHallService } from '../services/cinema-hall.service';
 import { FormService } from '../../../domains/form/services/form.service';
 import { ExtraApiService } from '../services/extra-api.service';
-import { Film } from '../../../home/film-panel/film-panel.component';
+import { Screening } from '../../../home/film-panel/film-panel.component';
 
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
@@ -36,7 +36,7 @@ export class ReservationComponent {
   name: String = '';
 
   header: Array<String> = [];
-  newHeader: Array<Film> = [];
+  newHeader: Array<any> = [];
   seats: Array<Seat> = [];
   exactHour: string = '';
 
@@ -119,9 +119,17 @@ export class ReservationComponent {
       this.header[1] === '' ||
       this.header[2] === ''
     ) {
+      this.extraCall.displayInfoFromUrl2().subscribe((response) =>
+        response.map((res) => {
+          this.newHeader = [...this.newHeader, ...[res.title]];
+        })
+      );
       this.extraCall
         .displayInfoFromUrl()
-        .subscribe((response) => (this.newHeader = response));
+        .subscribe(
+          (res) => (this.newHeader = [...this.newHeader, ...[res[0].date]])
+        );
+
       this.exactHour = this.extraCall.getExactDate();
     }
     this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));
@@ -144,11 +152,10 @@ export class ReservationComponent {
       this.header[1] === '' ||
       this.header[2] === ''
     ) {
-      const values = this.newHeader.map((test) => {
-        return [test.title, test.date, this.test(test.hours)];
-      });
-      console.log(this.tickets);
-      this.formService.form(values[0], this.tickets);
+      this.formService.form(
+        [...this.newHeader, ...this.exactHour],
+        this.tickets
+      );
     } else {
       this.formService.form(this.header, this.tickets);
     }
