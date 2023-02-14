@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { CartTicketComponent } from './cart-ticket/cart-ticket.components';
 import { CartService } from './service/cart.service';
 

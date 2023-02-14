@@ -1,5 +1,5 @@
 export interface CartState {
-  cart: Cart[];
+  cart: [string];
 }
 
 export interface Cart {

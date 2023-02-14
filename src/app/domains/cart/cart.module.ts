@@ -18,7 +18,7 @@ import { cartReducer } from './store/cart.reducer';
         component: CartComponent,
       },
     ]),
-    StoreModule.forFeature('Cart', cartReducer),
+    StoreModule.forFeature('cart', cartReducer),
   ],
 })
 export default class AuthModule {}
