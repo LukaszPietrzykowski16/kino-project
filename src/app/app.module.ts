@@ -23,6 +23,7 @@ import { RouterModule } from '@angular/router';
 import { UserState } from './auth/store/user.interface';
 import AuthModule from './auth/auth.module';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
+import { LoginGuard } from './auth/guards/login.guard';
 
 export interface AppState {
   User: UserState;
@@ -62,6 +63,7 @@ export interface AppState {
           {
             path: 'logowanie',
             loadChildren: () => import('./auth/auth.module'),
+            canActivate: [LoginGuard],
           },
         ],
       },
