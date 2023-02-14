@@ -13,13 +13,3 @@ export const CartActions = createActionGroup({
     }>(),
   },
 });
-/*
- id: number;
-  userId: number;
-  date: string;
-  hour: string;
-  place: string;
-
-
-
-*/

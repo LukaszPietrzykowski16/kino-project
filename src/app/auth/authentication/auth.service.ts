@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
-
 import { LoginData } from './auth.interface';
 import { AppState } from 'src/app/app.module';
 

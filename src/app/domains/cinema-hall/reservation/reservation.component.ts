@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CinemaHallService } from '../services/cinema-hall.service';
 import { FormService } from '../../../domains/form/services/form.service';
 import { ExtraApiService } from '../services/extra-api.service';
 import { Screening } from '../../../home/film-panel/film-panel.component';
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
+import { select, Store } from '@ngrx/store';
+import { CartState } from '../../cart/cart.interface';
+import { CartActions } from '../../cart/store/cart.action';
 
 export interface Seat {
   seat: string;
@@ -44,11 +47,22 @@ export class ReservationComponent {
   status: boolean = false;
   active: boolean = false;
 
+  private store = inject<Store<CartState>>(Store);
+
   public styleArray = new Array<boolean>();
 
   checkSeat(seat: String) {
     this.selectedSeat = `${seat}`;
     this.status = !this.status;
+    this.store.dispatch(
+      CartActions.addToCart({
+        id: 0,
+        userId: 11, // testing variables
+        place: this.selectedSeat,
+        date: '14-02',
+        hour: '16:00',
+      })
+    );
   }
 
   changeKey(position: string, keyValue: string) {
