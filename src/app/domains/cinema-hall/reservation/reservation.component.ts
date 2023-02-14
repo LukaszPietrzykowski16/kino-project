@@ -3,7 +3,6 @@ import { CinemaHallService } from '../services/cinema-hall.service';
 import { FormService } from '../../../domains/form/services/form.service';
 import { ExtraApiService } from '../services/extra-api.service';
 import { Screening } from '../../../home/film-panel/film-panel.component';
-
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
 
