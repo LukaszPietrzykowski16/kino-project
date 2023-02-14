@@ -33,17 +33,16 @@ export interface TicketType {
 })
 export class ReservationComponent {
   test2: Array<TicketType> = [];
-  name: String = '';
-
   header: Array<String> = [];
   newHeader: Array<any> = [];
   seats: Array<Seat> = [];
-  exactHour: string = '';
-
-  selectedSeat: string = '';
-  status: boolean = false;
   tickets: Array<Ticket> = [];
 
+  exactHour: string = '';
+  selectedSeat: string = '';
+  name: String = '';
+
+  status: boolean = false;
   active: boolean = false;
 
   public styleArray = new Array<boolean>();
@@ -87,7 +86,6 @@ export class ReservationComponent {
   changeColor(number: number) {
     if (this.styleArray[number] === true) {
       this.styleArray[number] = false;
-      // this.removeSeat(this.selectedSeat);
     } else {
       this.styleArray[number] = true;
       this.tickets = [
