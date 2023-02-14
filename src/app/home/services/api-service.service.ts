@@ -19,7 +19,6 @@ export class ApiServiceService {
       /\//g,
       '-'
     )}`;
-    console.log(this.url);
     return this.http.get<Array<Screening>>(this.url);
   }
 

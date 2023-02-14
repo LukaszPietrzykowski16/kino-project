@@ -57,7 +57,7 @@ export class FilmPanelComponent {
   ) {}
 
   sendMovie(filmId: any) {
-    this.moviesArray = [...this.moviesArray, ...[filmId.id]];
+    this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
   }
@@ -78,7 +78,7 @@ export class FilmPanelComponent {
     this.screeningData.map((test) => {
       this.apiService
         .getFilms(test.filmId)
-        .subscribe((test) => this.arr.push(test));
+        .subscribe((test) => (this.arr = [...this.arr, ...[test]]));
       this.hoursArr = test.hours;
     });
   }

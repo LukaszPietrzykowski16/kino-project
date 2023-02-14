@@ -1,1 +1,5 @@
-<p *ngFor="let movie of moviesArray">{{ movie }}</p>
+<h1>Chcę obejrzeć:</h1>
+<div *ngFor="let movie of arr">
+  <p>{{ movie.title }}</p>
+  <img src="{{ movie.image }}" alt="{{ movie.title }}" />
+</div>
