@@ -10,6 +10,7 @@ import { FormsMainComponent } from './domains/form/forms-main/forms-main.compone
 import { SummaryComponent } from './domains/summary/summary.component';
 import { LoginComponent } from './auth/login.component/login-form.component';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
+import { CartComponent } from './domains/cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
   { path: 'chce-obejrzec', component: WantWatchComponent },
+  { path: 'koszyk', component: CartComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 ];
 

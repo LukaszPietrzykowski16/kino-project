@@ -772,7 +772,8 @@
     {
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
-      "id": 12
+      "id": 12,
+      "movies": [0]
     }
   ]
 }
