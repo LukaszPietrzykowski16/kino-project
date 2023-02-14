@@ -67,6 +67,10 @@ export interface AppState {
             loadChildren: () => import('./auth/auth.module'),
             canActivate: [LoginGuard],
           },
+          {
+            path: 'koszyk',
+            loadChildren: () => import('./domains/cart/cart.module'),
+          },
         ],
       },
     ]),

@@ -18,7 +18,6 @@ const routes: Routes = [
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
   { path: 'chce-obejrzec', component: WantWatchComponent },
-  { path: 'koszyk', component: CartComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 ];
 

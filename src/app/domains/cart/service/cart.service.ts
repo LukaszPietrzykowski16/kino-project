@@ -10,5 +10,5 @@ export class CartService {
 
   constructor() {}
 
-  cart$ = this.store.select('Cart');
+  cart$ = this.store.select('cart');
 }
