@@ -8,10 +8,19 @@
     align-items: center;
   "
 >
-  <div *ngFor="let star of numberOfStars" style="padding: 8px">
+  <div
+    *ngFor="let star of numberOfStars"
+    style="padding: 8px"
+    (click)="setStar(star)"
+  >
     {{ star }}
   </div>
+  <p *ngIf="starValue !== 0">Twoja ocena: {{ starValue }}</p>
 </div>
+
 <div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button mat-dialog-close>Zamknij</button>
+  <button mat-button mat-dialog-close (click)="sendRating()">
+    Wyślij ocenę
+  </button>
 </div>
