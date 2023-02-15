@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RatingService } from './services/rating.service';
 
 @Component({
   selector: 'stars-modal',
@@ -10,8 +11,9 @@ import { Component } from '@angular/core';
 export class starsModal {
   numberOfStars: Array<number> = [];
   starValue = 0;
-
   status: boolean = false;
+
+  private ratingService = inject(RatingService);
 
   setStar(numberOfStar: number) {
     this.status = !this.status;
@@ -22,8 +24,8 @@ export class starsModal {
     if (this.starValue === 0) {
       return;
     }
-    console.log('hello');
-    // sendRatingToBackend()
+    // mocking 11 for testing porpuse
+    this.ratingService.sendRating(11, this.starValue, 1);
   }
 
   ngOnInit() {
