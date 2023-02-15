@@ -26,6 +26,7 @@ import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { LoginGuard } from './auth/guards/login.guard';
 import { HighlightDirective } from './highlight.directive';
 
+import { MatDialogModule } from '@angular/material/dialog';
 export interface AppState {
   User: UserState;
 }
@@ -55,7 +56,9 @@ export interface AppState {
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+
     AuthModule,
+    MatDialogModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([

@@ -36,7 +36,7 @@
   <div class="container-film__stats">
     <div *ngIf="isLogin; else elseB">
       <div class="container-film__stats_number">2/10</div>
-      <button>Oceń ten film</button>
+      <button (click)="showModal()">Oceń ten film</button>
       <button (click)="sendMovie(film.id)">Chcę obejrzeć!</button>
     </div>
     <ng-template #elseB>

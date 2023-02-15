@@ -6,8 +6,8 @@ import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hal
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
-import { ChangeHoursService } from './services/change-hours.service';
-import { ChangeDayService } from '../data-panel/services/change-day.service';
+import { MatDialog } from '@angular/material/dialog';
+import { starsModal } from './stars-modal.component';
 
 export interface Screening {
   title: any;
@@ -54,7 +54,8 @@ export class FilmPanelComponent {
     private cinemaService: CinemaHallService,
     private authService: AuthService,
     private movieService: SendMovieService,
-    private userService: UserService
+    private userService: UserService,
+    public dialog: MatDialog
   ) {}
 
   sendMovie(filmId: any) {
@@ -89,6 +90,10 @@ export class FilmPanelComponent {
 
   ngOnChanges(): void {
     this.getFilms();
+  }
+
+  showModal() {
+    const dialogRef = this.dialog.open(starsModal);
   }
 
   changeToString(test: any) {
