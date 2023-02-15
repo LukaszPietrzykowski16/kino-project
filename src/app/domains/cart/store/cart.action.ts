@@ -5,10 +5,6 @@ export const CartActions = createActionGroup({
   source: 'Cart',
   events: {
     'add to cart': props<{
-      id: number;
-      userId: number;
-      date: string;
-      hour: string;
       place: string;
     }>(),
   },

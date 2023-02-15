@@ -12,6 +12,7 @@ import { ChangeDayService } from '../data-panel/services/change-day.service';
 export interface Screening {
   title: any;
   filmId: number;
+  premiere: boolean;
   rating: number;
   date: string;
   hours: Array<string>;
@@ -70,6 +71,8 @@ export class FilmPanelComponent {
     }
   }
 
+  isPremiere = false;
+
   getFilms() {
     this.arr = [];
     this.apiService
@@ -80,6 +83,7 @@ export class FilmPanelComponent {
         .getFilms(test.filmId)
         .subscribe((test) => (this.arr = [...this.arr, ...[test]]));
       this.hoursArr = test.hours;
+      this.isPremiere = test.premiere;
     });
   }
 

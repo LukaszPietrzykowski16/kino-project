@@ -50,6 +50,7 @@
   "screening": [
     {
       "filmId": 0,
+      "premiere": true,
       "date": "14-02",
       "hours": [
         "09:00",
@@ -66,6 +67,7 @@
     {
       "filmId": 1,
       "date": "12-02",
+      "premiere": false,
       "hours": [
         "09:00",
         "10:30",
@@ -81,6 +83,7 @@
     {
       "filmId": 0,
       "date": "15-02",
+      "premiere": true,
       "hours": [
         "09:00",
         "10:30",
@@ -96,6 +99,7 @@
     {
       "filmId": 2,
       "date": "16-02",
+      "premiere": false,
       "hours": [
         "09:00",
         "10:30",
@@ -111,6 +115,7 @@
     {
       "filmId": 2,
       "date": "13-02",
+      "premiere": true,
       "hours": [
         "09:00",
         "10:30",
@@ -126,6 +131,7 @@
     {
       "filmId": 3,
       "date": "17-02",
+      "premiere": false,
       "hours": [
         "09:00",
         "10:30",
@@ -141,6 +147,7 @@
     {
       "filmId": 2,
       "date": "15-02",
+      "premiere": true,
       "hours": [
         "09:00",
         "10:30",
@@ -156,6 +163,7 @@
     {
       "filmId": 1,
       "date": "18-02",
+      "premiere": false,
       "hours": [
         "09:00",
         "10:30",
@@ -171,6 +179,7 @@
     {
       "filmId": 2,
       "date": "14-02",
+      "premiere": true,
       "hours": [
         "09:00",
         "10:30",
@@ -186,6 +195,7 @@
     {
       "filmId": 1,
       "date": "16-02",
+      "premiere": true,
       "hours": [
         "09:00",
         "10:30",
@@ -412,7 +422,7 @@
     },
     {
       "seat": "D9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 42
     },
     {
@@ -472,7 +482,7 @@
     },
     {
       "seat": "E10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 54
     },
     {
@@ -527,7 +537,7 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65
     },
     {

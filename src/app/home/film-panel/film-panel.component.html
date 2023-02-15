@@ -1,6 +1,9 @@
 <div class="container-film" *ngFor="let film of arr">
   <div class="container-film__img">
     <img src="{{ film.image }}" alt="film" />
+    <div *ngFor="let data of screeningData">
+      <p *ngIf="data">Premiera</p>
+    </div>
   </div>
   <div class="container-film__about">
     <div class="container-film__about_title">

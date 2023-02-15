@@ -5,9 +5,11 @@ import { ExtraApiService } from '../services/extra-api.service';
 import { Screening } from '../../../home/film-panel/film-panel.component';
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
-import { select, Store } from '@ngrx/store';
+import { select, Store, StoreModule } from '@ngrx/store';
 import { CartState } from '../../cart/cart.interface';
 import { CartActions } from '../../cart/store/cart.action';
+import { CartService } from '../../cart/service/cart.service';
+import { cartReducer } from '../../cart/store/cart.reducer';
 
 export interface Seat {
   seat: string;
@@ -39,6 +41,7 @@ export class ReservationComponent {
   newHeader: Array<any> = [];
   seats: Array<Seat> = [];
   tickets: Array<Ticket> = [];
+  cartService = inject(CartService);
 
   exactHour: string = '';
   selectedSeat: string = '';
@@ -56,11 +59,7 @@ export class ReservationComponent {
     this.status = !this.status;
     this.store.dispatch(
       CartActions.addToCart({
-        id: 0,
-        userId: 11, // testing variables
         place: this.selectedSeat,
-        date: '14-02',
-        hour: '16:00',
       })
     );
   }
