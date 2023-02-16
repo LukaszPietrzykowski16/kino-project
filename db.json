@@ -764,7 +764,12 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [2, 1, 3, 7]
+      "movies": [
+        2,
+        1,
+        3,
+        7
+      ]
     },
     {
       "email": "admin@gmail.com",
@@ -780,11 +785,14 @@
       "lastName": "Kowalski",
       "phoneNumber": 489394930,
       "id": 11,
-      "movies": [0, 1],
+      "movies": [
+        0,
+        1
+      ],
       "ratings": [
         {
           "filmId": 1,
-          "rating": 8
+          "rating": 5
         }
       ]
     },
@@ -792,7 +800,9 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [0]
+      "movies": [
+        0
+      ]
     }
   ]
 }

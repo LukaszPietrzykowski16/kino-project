@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 export class NavbarComponent {
   authService = inject(AuthService);
   login = false;
-  userId: number = NaN;
+  userName: string = '';
 
   constructor(private router: Router) {}
 
@@ -30,7 +30,7 @@ export class NavbarComponent {
     });
 
     this.authService.user$.subscribe((user) => {
-      this.userId = user.id;
+      this.userName = user.firstName;
     });
   }
 }

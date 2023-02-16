@@ -41,7 +41,14 @@ export class AuthService {
             localStorage.setItem('token', accessToken);
             localStorage.setItem('user', JSON.stringify(user));
             this.store.dispatch(
-              userActions.changeRole({ role: user.type, id: user.id })
+              userActions.changeRole({
+                role: user.type,
+                id: user.id,
+                email: user.email,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                phoneNumber: user.phoneNumber,
+              })
             );
             this.router.navigate(['/']);
           },
@@ -52,7 +59,16 @@ export class AuthService {
 
   logOut() {
     this.auth$$.next({ hasAuth: false });
-    this.store.dispatch(userActions.changeRole({ role: 'visitor', id: NaN }));
+    this.store.dispatch(
+      userActions.changeRole({
+        role: 'visitor',
+        id: NaN,
+        email: '',
+        firstName: '',
+        lastName: '',
+        phoneNumber: NaN,
+      })
+    );
     this.router.navigate(['/']);
   }
 }
