@@ -10,12 +10,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { starsModal } from './stars-modal.component';
 
 export interface Screening {
-  title: any;
   filmId: number;
   premiere: boolean;
   rating: number;
   date: string;
   hours: Array<string>;
+  film: Film;
 }
 
 export interface Film {
@@ -23,6 +23,16 @@ export interface Film {
   types: string;
   image: string;
   description: string;
+  rating: number;
+}
+
+export interface Repertoire {
+  filmId: number;
+  premiere: boolean;
+  rating: number;
+  date: string;
+  hours: Array<string>;
+  film: Film;
 }
 
 @Component({

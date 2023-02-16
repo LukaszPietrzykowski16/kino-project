@@ -1,6 +1,6 @@
 <div *ngIf="screenings$ | async as screenings">
   <div *ngFor="let screen of screenings">
-    {{ screen.filmId }}
+    <app-film [film]="screen.film"></app-film>
     <div *ngFor="let hour of screen.hours">
       <button>{{ hour }}</button>
     </div>

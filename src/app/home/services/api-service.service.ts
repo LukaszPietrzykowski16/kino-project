@@ -1,4 +1,8 @@
-import { Film, Screening } from '../film-panel/film-panel.component';
+import {
+  Film,
+  Repertoire,
+  Screening,
+} from '../film-panel/film-panel.component';
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
@@ -11,16 +15,23 @@ export class ApiServiceService {
 
   date = '16-02';
 
-  private films$$ = new BehaviorSubject<Film[]>(
-    []
+  private films$$ = new BehaviorSubject<Film[]>([
+    {
+      title: '',
+      types: '',
+      image: '',
+      description: '',
+      rating: NaN,
+    },
+  ]);
 
-    //   {
-    //   title: '',
-    //   types: '',
-    //   image: '',
-    //   description: '',
-    // }
-  );
+  private film$$ = new BehaviorSubject<Film>({
+    title: '',
+    types: '',
+    image: '',
+    description: '',
+    rating: NaN,
+  });
 
   private screenings$$ = new BehaviorSubject<Screening[]>(
     []
@@ -43,6 +54,11 @@ export class ApiServiceService {
   get films$() {
     // do asyncpipe
     return this.films$$.asObservable();
+  }
+
+  get film$() {
+    // do asyncpipe
+    return this.film$$.asObservable();
   }
 
   get screenings$() {
@@ -71,14 +87,25 @@ export class ApiServiceService {
         this.films$$.next(value);
       });
   }
-
+  // http://localhost:3000/screening?_expand=film
   getShowing() {
     return this.http
-      .get<Array<Screening>>(
-        `http://localhost:3000/screening?date=${this.date}`
+      .get<Array<Repertoire>>(
+        `http://localhost:3000/screening?date=${this.date}&_expand=film`
+        // `http://localhost:3000/screening?date=${this.date}`
       )
       .subscribe((value) => {
+        console.log(value);
         this.screenings$$.next(value);
+      });
+  }
+
+  getFilm(filmId: number) {
+    return this.http
+      .get<Film>(`http://localhost:3000/films/${filmId}`)
+      .subscribe((value) => {
+        console.log(value);
+        this.film$$.next(value);
       });
   }
 }

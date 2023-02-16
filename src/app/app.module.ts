@@ -27,6 +27,7 @@ import { LoginGuard } from './auth/guards/login.guard';
 import { HighlightDirective } from './highlight.directive';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { FilmComponent } from './home/film-panel/film/film.component';
 export interface AppState {
   User: UserState;
 }
@@ -48,6 +49,7 @@ export interface AppState {
     SummaryComponent,
     WantWatchComponent,
     HighlightDirective,
+    FilmComponent,
   ],
   imports: [
     BrowserModule,
