@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
+import { StateObservable } from '@ngrx/store';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PromotionService {
-  private promotion = false;
+  private promotion$ = new Subject();
 
   getPromotion() {
-    return this.promotion;
-  }
-
-  changePromotion() {
-    this.promotion = true;
+    return this.promotion$;
   }
 }

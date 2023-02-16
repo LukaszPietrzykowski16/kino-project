@@ -14,7 +14,7 @@ export class FormsTitleComponent {
   private promotionService = inject(PromotionService);
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
-  promotion = false;
+  promotion: any = false;
 
   price() {
     this.seats.forEach((elem) => {
@@ -25,6 +25,9 @@ export class FormsTitleComponent {
   constructor(private formService: FormService) {}
 
   ngOnInit() {
+    this.promotionService.getPromotion().subscribe((test) => {
+      this.promotion = test;
+    });
     this.title = this.formService.displayTitle();
     this.seats = this.formService.displaySeats();
     this.price();

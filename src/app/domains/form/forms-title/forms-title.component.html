@@ -11,5 +11,6 @@
       {{ exactSeat.type }}
     </div>
   </div>
-  Razem: {{ ticketPrice }} zł {{ promotion }}
+  <div *ngIf="promotion; else elseBlock">Razem: {{ ticketPrice / 1.2 }} zł</div>
+  <ng-template #elseBlock> Razem: {{ ticketPrice }} zł </ng-template>
 </div>

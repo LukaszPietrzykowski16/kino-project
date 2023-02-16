@@ -27,6 +27,7 @@ export class FormsPanelComponent {
   private formInfo = inject(FormInfoService);
   private seatPostService = inject(SeatPostService);
   private formService = inject(FormService);
+  private promotionService = inject(PromotionService);
 
   isBonus = false;
 
@@ -94,7 +95,7 @@ export class FormsPanelComponent {
 
   promotionCode() {
     if (this.bonusCode.value === '123456') {
-      this.isBonus = true;
+      this.promotionService.getPromotion().next(true);
     }
   }
 
