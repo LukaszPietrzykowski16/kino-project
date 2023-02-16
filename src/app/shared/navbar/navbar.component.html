@@ -1,6 +1,6 @@
 <nav>
   <a routerLink="/"> <div class="navbar__logo" appHighlight>AleKino</div> </a>
-  <div *ngIf="login; else elseBlock">
+  <div *ngIf="login$ | async; else elseBlock">
     <div class="navbar__settings">
       <i-feather name="shopping-cart"></i-feather>
       <select name="user" id="user" (change)="navigateTo($event.target)">

@@ -10,8 +10,8 @@ import { FormService } from '../services/form.service';
   styleUrls: ['./forms-title.component.css'],
 })
 export class FormsTitleComponent {
-  ticketPrice: number = 0;
   private promotionService = inject(PromotionService);
+  ticketPrice: number = 0;
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
   promotion: any = false;

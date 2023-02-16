@@ -1,16 +1,58 @@
 import { Film, Screening } from '../film-panel/film-panel.component';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiServiceService {
-  date: string = '';
+  http = inject(HttpClient);
+
+  date = '16-02';
+
+  private films$$ = new BehaviorSubject<Film[]>(
+    []
+
+    //   {
+    //   title: '',
+    //   types: '',
+    //   image: '',
+    //   description: '',
+    // }
+  );
+
+  private screenings$$ = new BehaviorSubject<Screening[]>(
+    []
+    // [
+    //   {
+    //     filmId: NaN,
+    //     premiere: false,
+    //     date: '',
+    //     hours: [],
+    //   },
+    // ]
+    //   {
+    //   title: '',
+    //   types: '',
+    //   image: '',
+    //   description: '',
+    // }
+  );
+
+  get films$() {
+    // do asyncpipe
+    return this.films$$.asObservable();
+  }
+
+  get screenings$() {
+    return this.screenings$$.asObservable();
+  }
+
   url: string = `http://localhost:3000/screening?date=${this.date}`;
   arrayTest: Array<any> = [];
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   changeDate(newDate: string) {
     this.date = newDate;
@@ -22,7 +64,21 @@ export class ApiServiceService {
     return this.http.get<Array<Screening>>(this.url);
   }
 
-  getFilms(id: number) {
-    return this.http.get<Array<Film>>(`http://localhost:3000/films/${id}`);
+  getFilms() {
+    return this.http
+      .get<Array<Film>>(`http://localhost:3000/films`)
+      .subscribe((value) => {
+        this.films$$.next(value);
+      });
+  }
+
+  getShowing() {
+    return this.http
+      .get<Array<Screening>>(
+        `http://localhost:3000/screening?date=${this.date}`
+      )
+      .subscribe((value) => {
+        this.screenings$$.next(value);
+      });
   }
 }

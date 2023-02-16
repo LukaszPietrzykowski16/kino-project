@@ -557,12 +557,12 @@
     },
     {
       "seat": "G3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 69
     },
     {
       "seat": "G4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 70
     },
     {
@@ -787,12 +787,13 @@
       "id": 11,
       "movies": [
         0,
-        1
+        1,
+        2
       ],
       "ratings": [
         {
           "filmId": 1,
-          "rating": 5
+          "rating": 9
         }
       ]
     },

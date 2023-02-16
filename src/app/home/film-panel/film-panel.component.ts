@@ -58,6 +58,9 @@ export class FilmPanelComponent {
     public dialog: MatDialog
   ) {}
 
+  films$ = this.apiService.films$;
+  screenings$ = this.apiService.screenings$;
+
   sendMovie(filmId: any) {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
@@ -79,6 +82,7 @@ export class FilmPanelComponent {
     this.apiService
       .changeDate(this.item)
       .subscribe((response) => (this.screeningData = response));
+    /*
     this.screeningData.map((test) => {
       this.apiService
         .getFilms(test.filmId)
@@ -86,10 +90,7 @@ export class FilmPanelComponent {
       this.hoursArr = test.hours;
       this.isPremiere = test.premiere;
     });
-  }
-
-  ngOnChanges(): void {
-    this.getFilms();
+    */
   }
 
   showModal() {
@@ -106,11 +107,8 @@ export class FilmPanelComponent {
   }
 
   ngOnInit() {
-    // god forgive me for i have sinned
-    setTimeout(() => {
-      this.getFilms();
-    }, 50);
-    this.getFilms();
+    this.apiService.getFilms();
+    this.apiService.getShowing();
 
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;

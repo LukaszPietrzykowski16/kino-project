@@ -30,7 +30,7 @@ export class WantWatchComponent {
     this.userService.getUser(this.userId).subscribe((movie) => {
       this.moviesArray = [...this.moviesArray, ...movie.movies];
       for (let i = 0; i < this.moviesArray.length; i++) {
-        this.apiService.getFilms(i).subscribe((test) => this.arr.push(test));
+        // this.apiService.getFilms(i).subscribe((test) => this.arr.push(test));
       }
     });
   }

@@ -9,7 +9,7 @@ import { ChangeDayService } from './services/change-day.service';
 export class DataPanelComponent {
   changeDayService = inject(ChangeDayService);
 
-  @Output() buttonClicked = new EventEmitter();
+  @Output() buttonClicked = new EventEmitter<string>();
 
   today = this.changeDayService.formatDate(new Date());
   nextDays = new Date();

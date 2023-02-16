@@ -1,11 +1,24 @@
+<div *ngIf="screenings$ | async as screenings">
+  <div *ngFor="let screen of screenings">
+    {{ screen.filmId }}
+    <div *ngFor="let hour of screen.hours">
+      <button>{{ hour }}</button>
+    </div>
+  </div>
+</div>
+<!--
+  <div *ngIf="films$ | async as film">
+  {{ film[0].title }}
+</div>
+
 <div class="container-film" *ngFor="let film of arr">
   <div class="container-film__img">
     <img src="{{ film.image }}" alt="film" />
-    <!--
+    
 <div *ngFor="let data of screeningData">
       <p *ngIf="data">Premiera</p>
     </div>
-    -->
+   
   </div>
   <div class="container-film__about">
     <div class="container-film__about_title">
@@ -46,3 +59,4 @@
     </ng-template>
   </div>
 </div>
+ -->
