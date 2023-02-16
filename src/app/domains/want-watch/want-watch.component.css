@@ -1,0 +1,9 @@
+.want-watch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.want-watch img {
+  width: 200px;
+}
