@@ -11,10 +11,14 @@ import { Film, Repertoire, Screening } from '../film-panel.component';
 export class FilmComponent {
   private apiService = inject(ApiServiceService);
   @Input() film!: Film;
-
+  flag: boolean = true;
   film$ = this.apiService.film$;
 
-  ngOnInit() {
-    console.log(this.film);
+  more() {
+    if (this.flag === true) {
+      this.flag = false;
+    } else {
+      this.flag = true;
+    }
   }
 }

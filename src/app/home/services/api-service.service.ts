@@ -17,6 +17,7 @@ export class ApiServiceService {
 
   private films$$ = new BehaviorSubject<Film[]>([
     {
+      id: NaN,
       title: '',
       types: '',
       image: '',
@@ -26,6 +27,7 @@ export class ApiServiceService {
   ]);
 
   private film$$ = new BehaviorSubject<Film>({
+    id: NaN,
     title: '',
     types: '',
     image: '',

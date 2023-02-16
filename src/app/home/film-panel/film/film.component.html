@@ -1,4 +1,15 @@
 {{ film.title }}
 <img src="{{ film.image }}" />
+<div class="container-film__about_types">Horror | Pg13 | Comedy</div>
+<div class="container-film__about_paragraph">
+  <div *ngIf="flag; else elseBlock">
+    {{ film.description.substring(0, 240) }}
+    <button (click)="more()">more</button>
+  </div>
+  <ng-template #elseBlock>
+    {{ film.description }} <button (click)="more()">less</button>
+  </ng-template>
+</div>
+
 {{ film.description }}
 {{ film.rating }} / 10

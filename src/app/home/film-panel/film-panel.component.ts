@@ -19,6 +19,7 @@ export interface Screening {
 }
 
 export interface Film {
+  id: number;
   title: string;
   types: string;
   image: string;
@@ -50,7 +51,6 @@ export class FilmPanelComponent {
   isLogin = false;
   @Input() item: string = '';
   shortDescription: string = this.description.substring(0, 240);
-  flag: boolean = true;
   newArr: Array<string> = [];
   arr: Array<any> = [];
   hours: Array<string> = [];
@@ -77,14 +77,6 @@ export class FilmPanelComponent {
     this.movieService.postMovie(this.userId, Array.from(set));
   }
 
-  more() {
-    if (this.flag === true) {
-      this.flag = false;
-    } else {
-      this.flag = true;
-    }
-  }
-
   isPremiere = false;
 
   getFilms() {
@@ -92,15 +84,6 @@ export class FilmPanelComponent {
     this.apiService
       .changeDate(this.item)
       .subscribe((response) => (this.screeningData = response));
-    /*
-    this.screeningData.map((test) => {
-      this.apiService
-        .getFilms(test.filmId)
-        .subscribe((test) => (this.arr = [...this.arr, ...[test]]));
-      this.hoursArr = test.hours;
-      this.isPremiere = test.premiere;
-    });
-    */
   }
 
   showModal() {

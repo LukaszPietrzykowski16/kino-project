@@ -1,62 +1,30 @@
 <div *ngIf="screenings$ | async as screenings">
   <div *ngFor="let screen of screenings">
+    <p *ngIf="screen.premiere">Premiera</p>
     <app-film [film]="screen.film"></app-film>
     <div *ngFor="let hour of screen.hours">
-      <button>{{ hour }}</button>
-    </div>
-  </div>
-</div>
-<!--
-  <div *ngIf="films$ | async as film">
-  {{ film[0].title }}
-</div>
-
-<div class="container-film" *ngFor="let film of arr">
-  <div class="container-film__img">
-    <img src="{{ film.image }}" alt="film" />
-    
-<div *ngFor="let data of screeningData">
-      <p *ngIf="data">Premiera</p>
-    </div>
-   
-  </div>
-  <div class="container-film__about">
-    <div class="container-film__about_title">
-      <h1>{{ film.title }}</h1>
-    </div>
-    <div class="container-film__about_types">Horror | Pg13 | Comedy</div>
-    <div class="container-film__about_paragraph">
-      <div *ngIf="flag; else elseBlock">
-        {{ shortDescription }} <button (click)="more()">more</button>
-      </div>
-      <ng-template #elseBlock>
-        {{ description }} <button (click)="more()">less</button>
-      </ng-template>
-    </div>
-
-    <div class="container-film__about_time">
-      <a
-        [routerLink]="['/rezerwacja', item, hour, film.title]"
-        *ngFor="let hour of hoursArr"
-      >
+      <a [routerLink]="['/rezerwacja', item, hour, screen.film.title]">
         <button
-          (click)="moreDetails(film.title, hour)"
+          (click)="moreDetails(screen.film.title, hour)"
           *ngIf="changeToString(hour) > now"
         >
           {{ hour }}
         </button>
       </a>
     </div>
+    <div *ngIf="isLogin">
+      <button (click)="showModal()">Oceń ten film</button>
+      <button (click)="sendMovie(screen.film.id)">Chcę obejrzeć!</button>
+    </div>
+  </div>
+</div>
+<!--
+   
+   
   </div>
   <div class="container-film__stats">
-    <div *ngIf="isLogin; else elseB">
-      <div class="container-film__stats_number">2/10</div>
-      <button (click)="showModal()">Oceń ten film</button>
-      <button (click)="sendMovie(film.id)">Chcę obejrzeć!</button>
-    </div>
-    <ng-template #elseB>
-      <div class="container-film__stats_number">2/10</div>
-    </ng-template>
+ 
+  
   </div>
 </div>
  -->
