@@ -776,6 +776,9 @@
       "email": "user@gmail.com",
       "password": "$2a$10$vDgnZZv8Jb8J2d0bWPTqXunIWRhJB4yUbOREwZgws4E38.rK1/yMm",
       "type": "user",
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "phoneNumber": 489394930,
       "id": 11,
       "movies": [0, 1],
       "ratings": [

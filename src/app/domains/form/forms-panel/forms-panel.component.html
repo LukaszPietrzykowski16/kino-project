@@ -99,7 +99,7 @@
     <button type="button" placeholder="zamawiam" (click)="showBlik()">
       zamawiam
     </button>
-    <a href="/rezerwacja"> Wróć do wyboru miejsc </a>
+    <ng-container *ngIf="checkout; else elseBlock2"> </ng-container>
     <div *ngIf="blik; else elseBlock">
       Podaj kod blik:
       <form [formGroup]="blikForm">
@@ -112,8 +112,10 @@
         <button type="button" placeholder="płace" (click)="pay()">Płacę</button>
       </form>
     </div>
+    <ng-template #elseBlock2> Wprowadź prawidłowe dane </ng-template>
   </form>
 
   <ng-template #elseBlock></ng-template>
 </div>
+<a href="/rezerwacja"> Wróć do wyboru miejsc </a>
 <router-outlet></router-outlet>

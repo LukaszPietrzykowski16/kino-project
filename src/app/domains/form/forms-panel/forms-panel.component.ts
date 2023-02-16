@@ -40,7 +40,7 @@ export class FormsPanelComponent {
         validators: [Validators.required, Validators.minLength(3)],
       }),
       phoneNumber: new FormControl('', {
-        validators: [Validators.required, Validators.minLength(9)],
+        validators: [Validators.minLength(9)],
       }),
       email: new FormControl('', {
         validators: [
@@ -76,8 +76,15 @@ export class FormsPanelComponent {
     }
   }
 
+  checkout = true;
+
   showBlik() {
-    this.blik = true;
+    if (this.profileForm.valid) {
+      this.checkout = true;
+      this.blik = true;
+    } else {
+      this.checkout = false;
+    }
   }
 
   pay() {
