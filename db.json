@@ -51,7 +51,7 @@
     {
       "filmId": 0,
       "premiere": true,
-      "date": "14-02",
+      "date": "20-02",
       "hours": [
         "09:00",
         "10:30",
@@ -66,7 +66,7 @@
     },
     {
       "filmId": 1,
-      "date": "12-02",
+      "date": "17-02",
       "premiere": false,
       "hours": [
         "09:00",
@@ -82,7 +82,7 @@
     },
     {
       "filmId": 0,
-      "date": "15-02",
+      "date": "18-02",
       "premiere": true,
       "hours": [
         "09:00",
@@ -114,7 +114,7 @@
     },
     {
       "filmId": 2,
-      "date": "13-02",
+      "date": "22-02",
       "premiere": true,
       "hours": [
         "09:00",
@@ -146,7 +146,7 @@
     },
     {
       "filmId": 2,
-      "date": "15-02",
+      "date": "21-02",
       "premiere": true,
       "hours": [
         "09:00",
@@ -178,7 +178,7 @@
     },
     {
       "filmId": 2,
-      "date": "14-02",
+      "date": "20-02",
       "premiere": true,
       "hours": [
         "09:00",
@@ -764,12 +764,7 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
@@ -782,10 +777,7 @@
       "password": "$2a$10$vDgnZZv8Jb8J2d0bWPTqXunIWRhJB4yUbOREwZgws4E38.rK1/yMm",
       "type": "user",
       "id": 11,
-      "movies": [
-        0,
-        1
-      ],
+      "movies": [0, 1],
       "ratings": [
         {
           "filmId": 1,
@@ -797,9 +789,7 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [
-        0
-      ]
+      "movies": [0]
     }
   ]
 }
