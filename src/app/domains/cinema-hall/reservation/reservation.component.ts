@@ -37,12 +37,10 @@ export interface TicketType {
   styleUrls: ['./reservation.component.css'],
 })
 export class ReservationComponent {
-  // private cartService = inject(CartService);
   private ticketsService = inject(TicketsService);
 
   test2: Array<TicketType> = [];
   seats: Array<Seat> = [];
-  tickets: Array<Ticket> = [];
 
   exactHour: string = '';
   selectedSeat: string = '';
@@ -54,19 +52,11 @@ export class ReservationComponent {
   status: boolean = false;
   active: boolean = false;
 
-  // private store = inject<Store<CartState>>(Store);
-
   public styleArray = new Array<boolean>();
 
   checkSeat(seat: string) {
     this.selectedSeat = `${seat}`;
     this.status = !this.status;
-    // this.store.dispatch(
-    //   CartActions.addToCart({
-    //     place: this.selectedSeat,
-    //   })
-    // );
-    //console.log(this.tickets);
   }
 
   addSeat(seat: string, position: number, isAvailiable: boolean | undefined) {
@@ -82,35 +72,23 @@ export class ReservationComponent {
     }
   }
 
-  changeKey(position: string, keyValue: string) {
-    for (let key in this.tickets) {
-      if (this.tickets[key].seat === position) {
-        this.tickets[key].type = keyValue;
-      }
-    }
-  }
+  // changeKey(position: string, keyValue: string) {
+  //   for (let key in this.tickets) {
+  //     if (this.tickets[key].seat === position) {
+  //       this.tickets[key].type = keyValue;
+  //     }
+  //   }
+  // }
 
   removeSeat(position: number) {
     this.ticketsService.removeTicket(position);
-    // this.tickets = this.tickets.filter((el) => {
-    //   return el.seat != place;
-    // });
   }
 
   removeSingleSeat(number: number) {
     if (this.styleArray[number] === true) {
       this.styleArray[number] = false;
-      // this.removeSeat(this.selectedSeat);
     } else {
       this.styleArray[number] = true;
-      // this.tickets = [
-      //   ...this.tickets,
-      //   {
-      //     seat: this.selectedSeat,
-      //     type: 'bilet normalny 25zł',
-      //     position: number,
-      //   },
-      //];
     }
   }
 
@@ -119,14 +97,6 @@ export class ReservationComponent {
       this.styleArray[number] = false;
     } else {
       this.styleArray[number] = true;
-      this.tickets = [
-        ...this.tickets,
-        {
-          seat: this.selectedSeat,
-          type: 'bilet normalny 25zł',
-          position: number,
-        },
-      ];
     }
   }
 
@@ -150,15 +120,4 @@ export class ReservationComponent {
     this.displaySeats();
     this.getTickets();
   }
-
-  // test(arrOfHours: Array<string>) {
-  //   const statment = arrOfHours.map((oneHour) =>
-  //     oneHour.includes(this.exactHour)
-  //   );
-  //   if (statment.includes(true)) {
-  //     return this.exactHour;
-  //   } else {
-  //     return;
-  //   }
-  // }
 }

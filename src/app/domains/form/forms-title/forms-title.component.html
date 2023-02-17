@@ -2,13 +2,16 @@
   <h1 *ngIf="reservation$ | async as reservation">
     {{ reservation.title }} {{ reservation.hour }} {{ reservation.day }}
   </h1>
-
-  <div *ngFor="let exactSeat of seats">
-    <div>
-      Rząd {{ exactSeat.seat[0] }} siedzenie {{ exactSeat.seat[1] }} Typ biletu:
-      {{ exactSeat.type }}
+  <div *ngIf="tickets$ | async as tickets">
+    <div *ngFor="let ticket of tickets">
+      <div>
+        Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+        {{ ticket.type }}
+      </div>
     </div>
+    <div *ngIf="promotion; else elseBlock">
+      Razem: {{ ticketPrice / 1.2 }} zł
+    </div>
+    <ng-template #elseBlock> Razem: {{ ticketPrice }} zł </ng-template>
   </div>
-  <div *ngIf="promotion; else elseBlock">Razem: {{ ticketPrice / 1.2 }} zł</div>
-  <ng-template #elseBlock> Razem: {{ ticketPrice }} zł </ng-template>
 </div>

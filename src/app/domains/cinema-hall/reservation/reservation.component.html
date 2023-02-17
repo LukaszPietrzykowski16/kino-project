@@ -62,16 +62,13 @@
     </div>
   </div>
   --->
+  <!--
+
+
 
   <div class="container-next">
     <div class="container-next" *ngIf="tickets.length !== 0; else elseBlock">
-      <button
-        *ngIf="tickets.length < 10; else elseBlock1"
-        class="conainer-next__btn"
-        routerLink="/formularz"
-      >
-        Dalej
-      </button>
+     
     </div>
     <ng-template #elseBlock>
       <button class="disabled">Kup bilety by przejść dalej</button></ng-template
@@ -79,5 +76,9 @@
     <ng-template #elseBlock1>
       Hola, hola, dla więcej niż 10 osób napisz na ten adres: adres@gmail.com
     </ng-template>
+  </div>
+-->
+  <div class="container-next">
+    <button class="conainer-next__btn" routerLink="/formularz">Dalej</button>
   </div>
 </main>
