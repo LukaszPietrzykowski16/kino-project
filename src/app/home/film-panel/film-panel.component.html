@@ -5,7 +5,7 @@
     <div *ngFor="let hour of screen.hours">
       <a [routerLink]="['/rezerwacja', item, hour, screen.film.title]">
         <button
-          (click)="moreDetails(screen.film.title, hour)"
+          (click)="moreDetails(screen.film.title, hour, '17-02')"
           *ngIf="changeToString(hour) > now"
         >
           {{ hour }}

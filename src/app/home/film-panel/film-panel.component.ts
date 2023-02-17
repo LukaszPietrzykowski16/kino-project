@@ -76,8 +76,8 @@ export class FilmPanelComponent {
     return Number(test[0] + test[1]);
   }
 
-  moreDetails(title: string, hour: string) {
-    this.cinemaService.setStrings(title, hour, this.item);
+  moreDetails(title: string, hour: string, dateString: string) {
+    this.cinemaService.setStrings(title, hour, dateString);
   }
 
   ngOnInit() {

@@ -14,23 +14,23 @@ export class ApiServiceService {
     dateString: '17-02',
   });
 
-  private screenings$$ = new BehaviorSubject<Repertoire[]>(
-    []
-    // [
-    //   {
-    //     filmId: NaN,
-    //     premiere: false,
-    //     date: '',
-    //     hours: [],
-    //   },
-    // ]
-    //   {
-    //   title: '',
-    //   types: '',
-    //   image: '',
-    //   description: '',
-    // }
-  );
+  private screenings$$ = new BehaviorSubject<Repertoire[]>([
+    {
+      filmId: NaN,
+      premiere: true,
+      rating: NaN,
+      date: '',
+      hours: [],
+      film: {
+        id: NaN,
+        title: '',
+        types: '',
+        image: '',
+        description: '',
+        rating: NaN,
+      },
+    },
+  ]);
 
   get date$() {
     return this.date$$.asObservable();
@@ -41,10 +41,8 @@ export class ApiServiceService {
   }
 
   updateDate(newDate: string) {
-    console.log(newDate);
     this.date$$.next({ dateString: newDate });
     this.getShowing();
-    console.log(this.date);
   }
 
   getShowing() {

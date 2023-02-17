@@ -1,6 +1,8 @@
 <main>
-  <div class="conainer-info">
-    <h1 *ngFor="let info of header">{{ info }}</h1>
+  <div class="conainer-info" *ngIf="reservation$ | async as reservation">
+    <h1>
+      {{ reservation.day }} {{ reservation.hour }} {{ reservation.title }}
+    </h1>
   </div>
   <div class="conainer-info">
     <h1>{{ newHeader.join(" ") }} {{ exactHour }}</h1>

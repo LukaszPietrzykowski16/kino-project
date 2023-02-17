@@ -36,16 +36,19 @@ export interface TicketType {
   styleUrls: ['./reservation.component.css'],
 })
 export class ReservationComponent {
+  cartService = inject(CartService);
+
   test2: Array<TicketType> = [];
   header: Array<String> = [];
   newHeader: Array<any> = [];
   seats: Array<Seat> = [];
   tickets: Array<Ticket> = [];
-  cartService = inject(CartService);
 
   exactHour: string = '';
   selectedSeat: string = '';
   name: String = '';
+
+  reservation$ = this.cinemaHall.reservation$;
 
   status: boolean = false;
   active: boolean = false;
