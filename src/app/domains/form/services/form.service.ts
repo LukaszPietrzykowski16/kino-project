@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Ticket } from '../../../domains/cinema-hall/reservation/reservation.component';
+import { CinemaHallService } from '../../cinema-hall/services/cinema-hall.service';
 @Injectable({
   providedIn: 'root',
 })
@@ -10,10 +11,6 @@ export class FormService {
   form(information: Array<String | undefined>, tickets: Array<Ticket>) {
     this.info = information;
     this.arrayTickets = tickets;
-  }
-
-  displayTitle() {
-    return this.info;
   }
 
   displaySeats() {

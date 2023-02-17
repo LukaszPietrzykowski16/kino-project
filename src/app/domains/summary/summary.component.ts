@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Ticket } from '../cinema-hall/reservation/reservation.component';
 import { FormService } from '../form/services/form.service';
 import { FormInfoService } from '../form/services/form-info.service';
 import { QrService } from './services/qr.service';
+import { CinemaHallService } from '../cinema-hall/services/cinema-hall.service';
 
 export interface qrCode {
   url: string;
@@ -14,6 +15,8 @@ export interface qrCode {
   styleUrls: ['./summary.component.css'],
 })
 export class SummaryComponent {
+  cinemaHall = inject(CinemaHallService);
+  reservation$ = this.cinemaHall.reservation$;
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
 
@@ -28,7 +31,6 @@ export class SummaryComponent {
   ) {}
 
   ngOnInit() {
-    this.title = this.formService.displayTitle();
     this.seats = this.formService.displaySeats();
     this.name = this.formInfoService.getInformation;
     this.qrService.getQr().subscribe((qrCode) => {

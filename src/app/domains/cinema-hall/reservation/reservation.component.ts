@@ -39,14 +39,12 @@ export class ReservationComponent {
   cartService = inject(CartService);
 
   test2: Array<TicketType> = [];
-  header: Array<String> = [];
-  newHeader: Array<any> = [];
   seats: Array<Seat> = [];
   tickets: Array<Ticket> = [];
 
   exactHour: string = '';
   selectedSeat: string = '';
-  name: String = '';
+  name: string = '';
 
   reservation$ = this.cinemaHall.reservation$;
 
@@ -122,30 +120,41 @@ export class ReservationComponent {
     private ticketApi: TicketApiService
   ) {}
 
-  ngOnInit() {
-    this.header = this.cinemaHall.displayInfo();
+  displaySeats() {
     this.seatsService
       .getSeats()
-      .subscribe((response) => (this.seats = response));
-    if (
-      this.header[0] === '' ||
-      this.header[1] === '' ||
-      this.header[2] === ''
-    ) {
-      this.extraCall.displayInfoFromUrl2().subscribe((response) =>
-        response.map((res) => {
-          this.newHeader = [...this.newHeader, ...[res.title]];
-        })
-      );
-      this.extraCall
-        .displayInfoFromUrl()
-        .subscribe(
-          (res) => (this.newHeader = [...this.newHeader, ...[res[0].date]])
-        );
+      .subscribe((response: Seat[]) => (this.seats = response));
+  }
 
-      this.exactHour = this.extraCall.getExactDate();
-    }
+  getTickets() {
     this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));
+  }
+
+  ngOnInit() {
+    this.displaySeats();
+    this.getTickets();
+    // this.header = this.cinemaHall.displayInfo();
+    // this.seatsService
+    //   .getSeats()
+    //   .subscribe((response) => (this.seats = response));
+    // if (
+    //   this.header[0] === '' ||
+    //   this.header[1] === '' ||
+    //   this.header[2] === ''
+    // ) {
+    //   this.extraCall.displayInfoFromUrl2().subscribe((response) =>
+    //     response.map((res) => {
+    //       this.newHeader = [...this.newHeader, ...[res.title]];
+    //     })
+    //   );
+    //   this.extraCall
+    //     .displayInfoFromUrl()
+    //     .subscribe(
+    //       (res) => (this.newHeader = [...this.newHeader, ...[res[0].date]])
+    //     );
+    //   this.exactHour = this.extraCall.getExactDate();
+    // }
+    // this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));
   }
 
   test(arrOfHours: Array<string>) {
@@ -160,17 +169,17 @@ export class ReservationComponent {
   }
 
   forms() {
-    if (
-      this.header[0] === '' ||
-      this.header[1] === '' ||
-      this.header[2] === ''
-    ) {
-      this.formService.form(
-        [...this.newHeader, ...this.exactHour],
-        this.tickets
-      );
-    } else {
-      this.formService.form(this.header, this.tickets);
-    }
+    // if (
+    //   this.header[0] === '' ||
+    //   this.header[1] === '' ||
+    //   this.header[2] === ''
+    // ) {
+    //   this.formService.form(
+    //     [...this.newHeader, ...this.exactHour],
+    //     this.tickets
+    //   );
+    // } else {
+    //   this.formService.form(this.header, this.tickets);
+    // }
   }
 }

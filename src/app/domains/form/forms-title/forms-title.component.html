@@ -1,8 +1,6 @@
 <div class="container-form">
-  <h1>
-    <ng-container *ngFor="let information of title"
-      >{{ information + " " }}
-    </ng-container>
+  <h1 *ngIf="reservation$ | async as reservation">
+    {{ reservation.title }} {{ reservation.hour }} {{ reservation.day }}
   </h1>
 
   <div *ngFor="let exactSeat of seats">

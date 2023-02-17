@@ -1,23 +1,18 @@
-<h1> Zakupiono bilet na film </h1>
+<h1>Zakupiono bilet na film</h1>
 <div>
-    <h2> Na dane: </h2>
-    <div *ngFor="let exactValue of name">
-        {{exactValue}}
-    </div>
-
+  <h2>Na dane:</h2>
+  <div *ngIf="reservation$ | async as reservation">
+    {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
+  </div>
 </div>
-<div class="container-form"> 
-    <div *ngFor="let information of title"> {{information}} </div>
-    <div *ngFor="let exactSeat of seats"> 
-        <div>
-            Rząd {{exactSeat.seat[0]}} siedzenie {{exactSeat.seat[1]}}
-        </div>
-        <div>
-            {{exactSeat.type}}
-        </div>
-        <div>
-           
-        </div>
+<div class="container-form">
+  <div *ngFor="let information of title">{{ information }}</div>
+  <div *ngFor="let exactSeat of seats">
+    <div>Rząd {{ exactSeat.seat[0] }} siedzenie {{ exactSeat.seat[1] }}</div>
+    <div>
+      {{ exactSeat.type }}
     </div>
+    <div></div>
+  </div>
 </div>
-<img src={{url}} alt="kod qr" class="qr-code"/>
+<img src="{{ url }}" alt="kod qr" class="qr-code" />

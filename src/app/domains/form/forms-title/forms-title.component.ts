@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
+import { CinemaHallService } from '../../cinema-hall/services/cinema-hall.service';
 import { PromotionService } from '../promotion.service';
 import { FormService } from '../services/form.service';
 
@@ -11,6 +12,8 @@ import { FormService } from '../services/form.service';
 })
 export class FormsTitleComponent {
   private promotionService = inject(PromotionService);
+  cinemaHall = inject(CinemaHallService);
+  reservation$ = this.cinemaHall.reservation$;
   ticketPrice: number = 0;
   title: Array<String | undefined> = [];
   seats: Array<Ticket> = [];
@@ -28,7 +31,6 @@ export class FormsTitleComponent {
     this.promotionService.getPromotion().subscribe((test) => {
       this.promotion = test;
     });
-    this.title = this.formService.displayTitle();
     this.seats = this.formService.displaySeats();
     this.price();
   }
