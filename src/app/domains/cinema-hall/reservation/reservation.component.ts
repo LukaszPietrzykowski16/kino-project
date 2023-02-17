@@ -69,8 +69,17 @@ export class ReservationComponent {
     //console.log(this.tickets);
   }
 
-  addSeat(seat: string, index: number) {
-    this.ticketsService.addTickets(seat, index, 'bilet normalny');
+  addSeat(seat: string, index: number, isAvailiable: any) {
+    if (isAvailiable === false || isAvailiable === undefined) {
+      this.ticketsService.addTicket({
+        seat: seat,
+        position: index,
+        type: 'bilet normalny',
+      });
+    }
+    if (isAvailiable === true) {
+      this.ticketsService.removeTicket(index);
+    }
   }
 
   changeKey(position: string, keyValue: string) {

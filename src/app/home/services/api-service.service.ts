@@ -14,23 +14,7 @@ export class ApiServiceService {
     dateString: '17-02',
   });
 
-  private screenings$$ = new BehaviorSubject<Repertoire[]>([
-    {
-      filmId: NaN,
-      premiere: true,
-      rating: NaN,
-      date: '',
-      hours: [],
-      film: {
-        id: NaN,
-        title: '',
-        types: '',
-        image: '',
-        description: '',
-        rating: NaN,
-      },
-    },
-  ]);
+  private screenings$$ = new BehaviorSubject<Repertoire[]>([]);
 
   get date$() {
     return this.date$$.asObservable();

@@ -12,11 +12,16 @@ export class TicketsService {
     return this.tickets$$.asObservable();
   }
 
-  addTickets(seat: string, index: number, type: string) {
-    this.tickets$$.next([
-      ...this.tickets$$.getValue(),
-      ...[{ seat: seat, position: index, type: type }],
-    ]);
+  removeTicket(position: number) {
+    let filtrated = this.tickets$$.value.filter(
+      (elem) => elem.position !== position
+    );
+    this.tickets$$.next([]);
+    this.tickets$$.next([...this.tickets$$.getValue(), ...filtrated]);
+  }
+
+  addTicket(ticketInfo: Ticket) {
+    this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
   }
 
   constructor() {}

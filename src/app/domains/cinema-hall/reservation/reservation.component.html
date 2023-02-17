@@ -13,7 +13,7 @@
         [style.backgroundColor]="styleArray[i] ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
         (click)="checkSeat(seat.seat)"
-        (click)="addSeat(seat.seat, i)"
+        (click)="addSeat(seat.seat, i, styleArray[i])"
         (click)="removeSingleSeat(i)"
         class="container-places__seat--active"
       >
