@@ -1,6 +1,14 @@
-<div class="data-panel"> 
-    <div class="data-panel__day" *ngFor="let exactDay of arr;"> 
-            <div *ngIf="exactDay === today; else elseBlock" class="data-panel__day_current" (click)="changeDay(exactDay)"> {{exactDay}} </div>
-            <ng-template #elseBlock> <div (click)="changeDay(exactDay)">  {{exactDay}}  </div></ng-template>
-    </div> 
+<div class="data-panel">
+  <div class="data-panel__day" *ngFor="let exactDay of arr">
+    <div
+      *ngIf="exactDay === today; else elseBlock"
+      class="data-panel__day_current"
+      (click)="changeDay(exactDay)"
+    >
+      {{ exactDay }}
+    </div>
+    <ng-template #elseBlock>
+      <div (click)="changeDay(exactDay)">{{ exactDay }}</div></ng-template
+    >
+  </div>
 </div>

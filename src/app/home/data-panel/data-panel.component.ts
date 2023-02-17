@@ -1,4 +1,5 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { ApiServiceService } from '../services/api-service.service';
 import { ChangeDayService } from './services/change-day.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { ChangeDayService } from './services/change-day.service';
 })
 export class DataPanelComponent {
   changeDayService = inject(ChangeDayService);
+  apiService = inject(ApiServiceService);
 
   @Output() buttonClicked = new EventEmitter<string>();
 
@@ -17,6 +19,7 @@ export class DataPanelComponent {
 
   changeDay(day: string) {
     this.today = day;
+    this.apiService.updateDate(this.today);
     this.buttonClicked.emit(this.today);
   }
 

@@ -9,10 +9,8 @@ import { Film, Repertoire, Screening } from '../film-panel.component';
   styleUrls: ['./film.component.css'],
 })
 export class FilmComponent {
-  private apiService = inject(ApiServiceService);
   @Input() film!: Film;
   flag: boolean = true;
-  film$ = this.apiService.film$;
 
   more() {
     if (this.flag === true) {
