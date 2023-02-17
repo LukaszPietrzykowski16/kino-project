@@ -6,16 +6,17 @@ import { Ticket } from '../reservation.component';
   providedIn: 'root',
 })
 export class TicketsService {
-  private tickets$$ = new BehaviorSubject<Ticket[]>([
-    {
-      seat: '',
-      type: '',
-      position: NaN,
-    },
-  ]);
+  private tickets$$ = new BehaviorSubject<Ticket[]>([]);
 
   get tickets$() {
     return this.tickets$$.asObservable();
+  }
+
+  addTickets(seat: string, index: number, type: string) {
+    this.tickets$$.next([
+      ...this.tickets$$.getValue(),
+      ...[{ seat: seat, position: index, type: type }],
+    ]);
   }
 
   constructor() {}

@@ -13,6 +13,7 @@
         [style.backgroundColor]="styleArray[i] ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
         (click)="checkSeat(seat.seat)"
+        (click)="addSeat(seat.seat, i)"
         (click)="removeSingleSeat(i)"
         class="container-places__seat--active"
       >
@@ -25,8 +26,10 @@
       >
     </div>
   </div>
-  <div *ngIf="tickets$ | async as ticket">
-    {{ ticket[0].seat }}
+  <div *ngIf="tickets$ | async as tickets">
+    <div *ngFor="let ticket of tickets">
+      {{ ticket.seat }}
+    </div>
   </div>
   <div class="container-tickets" *ngFor="let ticket of tickets">
     <div>

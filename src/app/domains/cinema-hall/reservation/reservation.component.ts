@@ -58,7 +58,7 @@ export class ReservationComponent {
 
   public styleArray = new Array<boolean>();
 
-  checkSeat(seat: String) {
+  checkSeat(seat: string) {
     this.selectedSeat = `${seat}`;
     this.status = !this.status;
     // this.store.dispatch(
@@ -66,7 +66,11 @@ export class ReservationComponent {
     //     place: this.selectedSeat,
     //   })
     // );
-    console.log(this.tickets);
+    //console.log(this.tickets);
+  }
+
+  addSeat(seat: string, index: number) {
+    this.ticketsService.addTickets(seat, index, 'bilet normalny');
   }
 
   changeKey(position: string, keyValue: string) {
