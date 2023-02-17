@@ -27,11 +27,22 @@
     </div>
   </div>
   <div *ngIf="tickets$ | async as tickets">
-    <div *ngFor="let ticket of tickets">
-      {{ ticket.seat }}
+    <div *ngFor="let ticket of tickets" class="container-tickets">
+      Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+      <select>
+        <option>{{ ticket.type }}</option>
+      </select>
+      <div>
+        <i-feather
+          name="trash-2"
+          (click)="removeSeat(ticket.position)"
+          (click)="changeColor(ticket.position)"
+        ></i-feather>
+      </div>
     </div>
   </div>
-  <div class="container-tickets" *ngFor="let ticket of tickets">
+  <!---
+    <div class="container-tickets" *ngFor="let ticket of tickets">
     <div>
       <p>Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
     </div>
@@ -43,13 +54,14 @@
       </select>
     </div>
     <div>
-      <i-feather
+       <i-feather
         name="trash-2"
         (click)="removeSeat(ticket.seat)"
         (click)="changeColor(ticket.position)"
       ></i-feather>
     </div>
   </div>
+  --->
 
   <div class="container-next">
     <div class="container-next" *ngIf="tickets.length !== 0; else elseBlock">

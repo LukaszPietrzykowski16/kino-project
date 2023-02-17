@@ -16,7 +16,7 @@ export class TicketsService {
     let filtrated = this.tickets$$.value.filter(
       (elem) => elem.position !== position
     );
-    this.tickets$$.next([]);
+    this.tickets$$.next([]); // is it really good aproach?
     this.tickets$$.next([...this.tickets$$.getValue(), ...filtrated]);
   }
 

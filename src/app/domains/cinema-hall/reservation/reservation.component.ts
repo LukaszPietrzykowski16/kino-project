@@ -69,16 +69,16 @@ export class ReservationComponent {
     //console.log(this.tickets);
   }
 
-  addSeat(seat: string, index: number, isAvailiable: any) {
+  addSeat(seat: string, position: number, isAvailiable: boolean | undefined) {
     if (isAvailiable === false || isAvailiable === undefined) {
       this.ticketsService.addTicket({
         seat: seat,
-        position: index,
+        position: position,
         type: 'bilet normalny',
       });
     }
     if (isAvailiable === true) {
-      this.ticketsService.removeTicket(index);
+      this.removeSeat(position);
     }
   }
 
@@ -90,26 +90,27 @@ export class ReservationComponent {
     }
   }
 
-  removeSeat(place: string) {
-    this.tickets = this.tickets.filter((el) => {
-      return el.seat != place;
-    });
+  removeSeat(position: number) {
+    this.ticketsService.removeTicket(position);
+    // this.tickets = this.tickets.filter((el) => {
+    //   return el.seat != place;
+    // });
   }
 
   removeSingleSeat(number: number) {
     if (this.styleArray[number] === true) {
       this.styleArray[number] = false;
-      this.removeSeat(this.selectedSeat);
+      // this.removeSeat(this.selectedSeat);
     } else {
       this.styleArray[number] = true;
-      this.tickets = [
-        ...this.tickets,
-        {
-          seat: this.selectedSeat,
-          type: 'bilet normalny 25zł',
-          position: number,
-        },
-      ];
+      // this.tickets = [
+      //   ...this.tickets,
+      //   {
+      //     seat: this.selectedSeat,
+      //     type: 'bilet normalny 25zł',
+      //     position: number,
+      //   },
+      //];
     }
   }
 
@@ -150,14 +151,14 @@ export class ReservationComponent {
     this.getTickets();
   }
 
-  test(arrOfHours: Array<string>) {
-    const statment = arrOfHours.map((oneHour) =>
-      oneHour.includes(this.exactHour)
-    );
-    if (statment.includes(true)) {
-      return this.exactHour;
-    } else {
-      return;
-    }
-  }
+  // test(arrOfHours: Array<string>) {
+  //   const statment = arrOfHours.map((oneHour) =>
+  //     oneHour.includes(this.exactHour)
+  //   );
+  //   if (statment.includes(true)) {
+  //     return this.exactHour;
+  //   } else {
+  //     return;
+  //   }
+  // }
 }
