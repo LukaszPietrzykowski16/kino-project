@@ -6,12 +6,4 @@ import { ChangeDayService } from '../data-panel/services/change-day.service';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
 })
-export class MainComponent {
-  private changeDayService = inject(ChangeDayService);
-
-  currentItem = this.changeDayService.formatDate(new Date());
-
-  showNextFilm($event: any) {
-    this.currentItem = $event;
-  }
-}
+export class MainComponent {}

@@ -29,6 +29,7 @@ export class DataPanelComponent {
       let nextDay: Date = new Date(this.nextDays);
       nextDay.setDate(this.nextDays.getDate() + i);
       let exactDay = this.changeDayService.formatDate(nextDay);
+      // to change
       this.arr.push(exactDay);
     }
   }

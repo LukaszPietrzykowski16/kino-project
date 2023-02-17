@@ -60,14 +60,13 @@ export class FilmPanelComponent {
   ) {}
 
   screenings$ = this.apiService.screenings$;
+  date$ = this.apiService.date$;
 
   sendMovie(filmId: any) {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
   }
-
-  isPremiere = false;
 
   showModal() {
     const dialogRef = this.dialog.open(starsModal);
