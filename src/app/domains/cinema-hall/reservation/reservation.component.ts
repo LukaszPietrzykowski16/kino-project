@@ -10,6 +10,7 @@ import { CartState } from '../../cart/cart.interface';
 import { CartActions } from '../../cart/store/cart.action';
 import { CartService } from '../../cart/service/cart.service';
 import { cartReducer } from '../../cart/store/cart.reducer';
+import { TicketsService } from './services/tickets.service';
 
 export interface Seat {
   seat: string;
@@ -36,7 +37,8 @@ export interface TicketType {
   styleUrls: ['./reservation.component.css'],
 })
 export class ReservationComponent {
-  cartService = inject(CartService);
+  // private cartService = inject(CartService);
+  private ticketsService = inject(TicketsService);
 
   test2: Array<TicketType> = [];
   seats: Array<Seat> = [];
@@ -47,22 +49,24 @@ export class ReservationComponent {
   name: string = '';
 
   reservation$ = this.cinemaHall.reservation$;
+  tickets$ = this.ticketsService.tickets$;
 
   status: boolean = false;
   active: boolean = false;
 
-  private store = inject<Store<CartState>>(Store);
+  // private store = inject<Store<CartState>>(Store);
 
   public styleArray = new Array<boolean>();
 
   checkSeat(seat: String) {
     this.selectedSeat = `${seat}`;
     this.status = !this.status;
-    this.store.dispatch(
-      CartActions.addToCart({
-        place: this.selectedSeat,
-      })
-    );
+    // this.store.dispatch(
+    //   CartActions.addToCart({
+    //     place: this.selectedSeat,
+    //   })
+    // );
+    console.log(this.tickets);
   }
 
   changeKey(position: string, keyValue: string) {
@@ -115,8 +119,6 @@ export class ReservationComponent {
   constructor(
     private cinemaHall: CinemaHallService,
     private seatsService: SeatsService,
-    private formService: FormService,
-    private extraCall: ExtraApiService,
     private ticketApi: TicketApiService
   ) {}
 
@@ -133,28 +135,6 @@ export class ReservationComponent {
   ngOnInit() {
     this.displaySeats();
     this.getTickets();
-    // this.header = this.cinemaHall.displayInfo();
-    // this.seatsService
-    //   .getSeats()
-    //   .subscribe((response) => (this.seats = response));
-    // if (
-    //   this.header[0] === '' ||
-    //   this.header[1] === '' ||
-    //   this.header[2] === ''
-    // ) {
-    //   this.extraCall.displayInfoFromUrl2().subscribe((response) =>
-    //     response.map((res) => {
-    //       this.newHeader = [...this.newHeader, ...[res.title]];
-    //     })
-    //   );
-    //   this.extraCall
-    //     .displayInfoFromUrl()
-    //     .subscribe(
-    //       (res) => (this.newHeader = [...this.newHeader, ...[res[0].date]])
-    //     );
-    //   this.exactHour = this.extraCall.getExactDate();
-    // }
-    // this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));
   }
 
   test(arrOfHours: Array<string>) {
@@ -166,20 +146,5 @@ export class ReservationComponent {
     } else {
       return;
     }
-  }
-
-  forms() {
-    // if (
-    //   this.header[0] === '' ||
-    //   this.header[1] === '' ||
-    //   this.header[2] === ''
-    // ) {
-    //   this.formService.form(
-    //     [...this.newHeader, ...this.exactHour],
-    //     this.tickets
-    //   );
-    // } else {
-    //   this.formService.form(this.header, this.tickets);
-    // }
   }
 }

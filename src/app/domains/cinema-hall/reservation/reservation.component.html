@@ -25,7 +25,9 @@
       >
     </div>
   </div>
-
+  <div *ngIf="tickets$ | async as ticket">
+    {{ ticket[0].seat }}
+  </div>
   <div class="container-tickets" *ngFor="let ticket of tickets">
     <div>
       <p>Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
@@ -51,7 +53,6 @@
       <button
         *ngIf="tickets.length < 10; else elseBlock1"
         class="conainer-next__btn"
-        (click)="forms()"
         routerLink="/formularz"
       >
         Dalej
