@@ -13,7 +13,7 @@ export class FilmComponent {
   flag: boolean = true;
 
   more() {
-    if (this.flag === true) {
+    if (this.flag) {
       this.flag = false;
     } else {
       this.flag = true;

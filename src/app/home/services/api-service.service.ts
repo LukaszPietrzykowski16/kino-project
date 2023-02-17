@@ -42,12 +42,16 @@ export class ApiServiceService {
 
   updateDate(newDate: string) {
     console.log(newDate);
+    this.date$$.next({ dateString: newDate });
+    this.getShowing();
+    console.log(this.date);
   }
 
   getShowing() {
     this.date$.subscribe((test) => {
       this.date = test.dateString;
     });
+
     return this.http
       .get<Array<Repertoire>>(
         `http://localhost:3000/screening?date=${this.date}&_expand=film`

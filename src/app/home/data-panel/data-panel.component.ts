@@ -19,6 +19,7 @@ export class DataPanelComponent {
 
   changeDay(day: string) {
     this.today = day;
+
     this.apiService.updateDate(this.today);
     this.buttonClicked.emit(this.today);
   }

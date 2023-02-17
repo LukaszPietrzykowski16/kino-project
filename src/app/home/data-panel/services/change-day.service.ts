@@ -6,13 +6,13 @@ import { Injectable } from '@angular/core';
 export class ChangeDayService {
   formatDate(date: {
     getMonth: () => number;
-    getDate: () => any;
-    getFullYear: () => any;
+    getDate: () => number;
+    getFullYear: () => number;
   }) {
     return [
       this.padTo2Digits(date.getDate()),
       this.padTo2Digits(date.getMonth() + 1),
-    ].join('/');
+    ].join('-');
   }
 
   padTo2Digits(num: { toString: () => string }) {
