@@ -64,7 +64,7 @@ export class ReservationComponent {
       this.ticketsService.addTicket({
         seat: seat,
         position: position,
-        type: 'bilet normalny',
+        type: 'bilet normalny 25zł',
       });
     }
     if (isAvailiable === true) {
@@ -72,13 +72,10 @@ export class ReservationComponent {
     }
   }
 
-  // changeKey(position: string, keyValue: string) {
-  //   for (let key in this.tickets) {
-  //     if (this.tickets[key].seat === position) {
-  //       this.tickets[key].type = keyValue;
-  //     }
-  //   }
-  // }
+  changeKey(position: number, keyValue: string) {
+    this.tickets$.subscribe((test) => console.log(test));
+    this.ticketsService.changeTicketType(position, keyValue);
+  }
 
   removeSeat(position: number) {
     this.ticketsService.removeTicket(position);

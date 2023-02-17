@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { relativeTimeRounding } from 'moment';
 import { BehaviorSubject } from 'rxjs';
 import { Ticket } from '../reservation.component';
 
@@ -19,6 +20,30 @@ export class TicketsService {
     this.tickets$$.next([]); // is it really good aproach?
     this.tickets$$.next([...this.tickets$$.getValue(), ...filtrated]);
   }
+
+  changeTicketType(position: number, ticketType: string) {
+    let updatedTicket = {};
+    updatedTicket = this.tickets$$.value.map((val) => {
+      if (val.position === position) {
+        // this logic could be better optymaized
+        this.addTicket({
+          position: val.position,
+          type: ticketType,
+          seat: val.seat,
+        });
+        this.removeTicket(val.position);
+        this.addTicket({
+          position: val.position,
+          type: ticketType,
+          seat: val.seat,
+        });
+      }
+    });
+  }
+
+  // updateTicket(ticketInfo: Ticket) {
+  //   this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
+  // }
 
   addTicket(ticketInfo: Ticket) {
     this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);

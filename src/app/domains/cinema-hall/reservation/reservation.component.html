@@ -29,8 +29,13 @@
   <div *ngIf="tickets$ | async as tickets">
     <div *ngFor="let ticket of tickets" class="container-tickets">
       Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
-      <select>
-        <option>{{ ticket.type }}</option>
+      <select
+        #ticketType
+        (change)="changeKey(ticket.position, ticketType.value)"
+      >
+        <option *ngFor="let ticketType of test2[0] | keyvalue">
+          {{ ticketType.key }} {{ ticketType.value }}zł
+        </option>
       </select>
       <div>
         <i-feather
