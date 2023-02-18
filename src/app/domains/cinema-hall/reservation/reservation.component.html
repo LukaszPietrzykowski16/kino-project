@@ -4,7 +4,7 @@
       {{ reservation.day }} {{ reservation.hour }} {{ reservation.title }}
     </h1>
   </div>
-  <div class="container-places">
+  <div class="container-places" *ngIf="seats$ | async as seats">
     <div
       class="container-places__seat"
       *ngFor="let seat of seats; let i = index"

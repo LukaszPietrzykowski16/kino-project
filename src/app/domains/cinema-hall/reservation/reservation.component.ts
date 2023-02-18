@@ -34,10 +34,10 @@ export class ReservationComponent {
   private ticketsService = inject(TicketsService);
 
   ticketTypeArray: Array<TicketType> = [];
-  seats: Array<Seat> = [];
 
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketsService.tickets$;
+  seats$ = this.seatsService.seats$;
 
   changeKey(position: number, keyValue: string) {
     this.ticketsService.changeTicketType(position, keyValue);
@@ -61,7 +61,6 @@ export class ReservationComponent {
         type: 'bilet normalny 25zł',
       });
     }
-    console.log(this.seats);
   }
 
   constructor(
@@ -69,12 +68,6 @@ export class ReservationComponent {
     private seatsService: SeatsService,
     private ticketApi: TicketApiService
   ) {}
-
-  displaySeats() {
-    this.seatsService
-      .getSeats() // it 's cold observable so we can just leave it is how it is
-      .subscribe((response: Seat[]) => (this.seats = response));
-  }
 
   getTickets() {
     this.ticketApi
@@ -85,7 +78,7 @@ export class ReservationComponent {
   }
 
   ngOnInit() {
-    this.displaySeats();
+    this.seatsService.createSeats();
     this.getTickets();
   }
 }
