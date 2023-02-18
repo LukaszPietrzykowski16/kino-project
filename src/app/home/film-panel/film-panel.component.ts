@@ -62,7 +62,7 @@ export class FilmPanelComponent {
   screenings$ = this.apiService.screenings$;
   date$ = this.apiService.date$;
 
-  sendMovie(filmId: any) {
+  sendMovie(filmId: number) {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
@@ -72,7 +72,7 @@ export class FilmPanelComponent {
     const dialogRef = this.dialog.open(starsModal);
   }
 
-  changeToString(test: any) {
+  changeToString(test: string) {
     return Number(test[0] + test[1]);
   }
 

@@ -12,10 +12,4 @@ import { CartService } from './service/cart.service';
 export class CartComponent {
   cartService = inject(CartService);
   // component logic
-
-  ngOnInit() {
-    this.cartService.cart$.subscribe((test) => {
-      console.log(test);
-    });
-  }
 }
