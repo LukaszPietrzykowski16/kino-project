@@ -55,8 +55,22 @@ export class TicketsService {
     this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
   }
 
-  addSeat(seatInfo: ReservedSeats) {
-    this.reservedSeats$$.next([...this.reservedSeats$$.getValue(), seatInfo]);
+  addSeat(seatNumber: number) {
+    this.reservedSeats$$.next([
+      ...this.reservedSeats$$.getValue(),
+      { position: seatNumber, isReserved: true },
+    ]);
+  }
+
+  removeSeat(position: number) {
+    let filtrated = this.reservedSeats$$.value.filter(
+      (elem) => elem.position !== position
+    );
+    this.reservedSeats$$.next([]); // is it really good aproach?
+    this.reservedSeats$$.next([
+      ...this.reservedSeats$$.getValue(),
+      ...filtrated,
+    ]);
   }
 
   // removeSeat(position: number) {

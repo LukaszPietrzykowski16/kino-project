@@ -42,23 +42,11 @@ export class ReservationComponent {
   ticketTypeArray: Array<TicketType> = [];
   seats: Array<Seat> = [];
 
-  exactHour: string = '';
-  selectedSeat: string = '';
-  name: string = '';
-
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketsService.tickets$;
-  reservedSeats$ = this.ticketsService.tickets$;
-
-  status: boolean = false;
-  active: boolean = false;
+  reservedSeats$ = this.ticketsService.reservedSeats$;
 
   public styleArray = new Array<boolean>();
-
-  checkSeat(seat: string) {
-    this.selectedSeat = `${seat}`;
-    this.status = !this.status;
-  }
 
   addSeat(seat: string, position: number, isAvailiable: boolean | undefined) {
     if (isAvailiable === false || isAvailiable === undefined) {
@@ -69,7 +57,7 @@ export class ReservationComponent {
       });
     }
     if (isAvailiable === true) {
-      this.removeSeat(position);
+      this.removeTicket(position);
     }
   }
 
@@ -77,16 +65,22 @@ export class ReservationComponent {
     this.ticketsService.changeTicketType(position, keyValue);
   }
 
-  removeSeat(position: number) {
+  removeTicket(position: number) {
     this.ticketsService.removeTicket(position);
   }
 
   changeColor(number: number) {
     if (this.styleArray[number] === true) {
+      this.ticketsService.removeSeat(number);
       this.styleArray[number] = false;
     } else {
+      this.ticketsService.addSeat(number);
       this.styleArray[number] = true;
     }
+    console.log(this.styleArray);
+    this.reservedSeats$.subscribe((test) => {
+      console.log(test);
+    });
   }
 
   constructor(
