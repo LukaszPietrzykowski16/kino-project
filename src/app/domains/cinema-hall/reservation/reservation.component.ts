@@ -51,15 +51,29 @@ export class ReservationComponent {
     return this.ticketsService.getSeat(number);
   }
 
-  changeColor(position: number, index: string) {
+  changeColor(
+    position: number,
+    seatIndex: string
+    //avaliable: boolean,
+
+    //isChoosen: boolean,
+    //reservation: boolean
+  ) {
     if (this.getPosition(position) === true) {
       this.removeTicket(position);
     } else {
       this.ticketsService.addTicket({
-        seat: index,
+        seat: seatIndex,
         position: position,
         type: 'bilet normalny 25zł',
       });
+      // this.seatsService.addSeat({
+      //   seat: seatIndex,
+      //   avaliable: avaliable,
+      //   id: position,
+      //   isChoosen: true,
+      //   reservation: reservation,
+      // });
     }
   }
 

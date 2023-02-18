@@ -18,6 +18,12 @@ export class SeatsService {
       this.seats$$.next(value);
     });
   }
+
+  addSeat(seatInfo: Seat) {
+    this.seats$$.next([...this.seats$$.getValue(), ...[seatInfo]]);
+  }
+
+  removeSeat() {}
   // it should be in seperatre file?
   private url: string = `http://localhost:3000/reservation`;
 

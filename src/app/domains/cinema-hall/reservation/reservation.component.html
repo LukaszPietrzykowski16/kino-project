@@ -9,10 +9,17 @@
       class="container-places__seat"
       *ngFor="let seat of seats; let i = index"
     >
+      <!--
+        seat: string;
+  avaliable: boolean;
+  id: number;
+  isChoosen: boolean;
+  reservation: boolean;
+    -->
       <div
-        [style.backgroundColor]="false ? '#5800ff' : 'grey'"
+        [style.backgroundColor]="seat.isChoosen ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
-        (click)="changeColor(i, seat.seat)"
+        (click)="changeColor(seat.id, seat.seat)"
         class="container-places__seat--active"
       >
         {{ seat.seat }}
