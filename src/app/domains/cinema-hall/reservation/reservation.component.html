@@ -5,11 +5,11 @@
     </h1>
   </div>
   <div class="container-places">
-    <div
+    <!--
+       <div
       class="container-places__seat"
       *ngFor="let seat of seats; let i = index"
     >
-      <ng-container> </ng-container>
       <div
         [style.backgroundColor]="styleArray[i] ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
@@ -22,8 +22,68 @@
       <ng-template #elseBlock>
         <div class="container-places__seat--unactive">
           {{ seat.seat }}
-        </div></ng-template
-      >
+        </div>
+      </ng-template>
+      {{ i }}
+    </div>
+    -->
+    <div
+      class="container-places__seat"
+      *ngFor="let seat of seats; let i = index"
+    >
+      <ng-container *ngIf="reservedSeats$ | async as reserv">
+        <ng-container *ngFor="let ticket of reserv">
+          <div
+            [style.backgroundColor]="ticket[i] ? '#5800ff' : 'grey'"
+            class="container-places__seat--active"
+            *ngIf="seat.avaliable === true; else elseBlock"
+            (click)="addSeat(seat.seat, i, ticket[i])"
+            (click)="changeColor(i)"
+          >
+            {{ seat.seat }}
+          </div>
+        </ng-container>
+      </ng-container>
+
+      <ng-template #elseBlock>
+        <div class="container-places__seat--unactive">
+          {{ seat.seat }}
+        </div>
+      </ng-template>
+      <!-- <div *ngIf="tickets$ | async as tickets">
+
+        <div *ngFor="let ticket of tickets">
+          <div
+            [style.backgroundColor]="
+              styleArray[ticket.position] ? 'grey' : '#5800ff'
+            "
+            *ngIf="seat.avaliable === true; else elseBlock"
+            (click)="addSeat(seat.seat, i, styleArray[i])"
+            (click)="changeColor(i)"
+            class="container-places__seat--active"
+          >
+            {{ seat.seat }}
+          </div>
+          <ng-template #elseBlock>
+            <div class="container-places__seat--unactive">
+              {{ seat.seat }}
+            </div>
+          </ng-template>
+        </div>
+        <div
+          *ngIf="seat.avaliable === true; else elseBlock"
+          (click)="addSeat(seat.seat, i, styleArray[i])"
+          (click)="changeColor(i)"
+          class="container-places__seat--active"
+        >
+          {{ seat.seat }}
+        </div>
+        <ng-template #elseBlock>
+          <div class="container-places__seat--unactive">
+            {{ seat.seat }}
+          </div>
+        </ng-template>
+      </div> -->
     </div>
   </div>
   <div *ngIf="tickets$ | async as tickets">

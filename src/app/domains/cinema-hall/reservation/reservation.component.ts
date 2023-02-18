@@ -77,10 +77,6 @@ export class ReservationComponent {
       this.ticketsService.addSeat(number);
       this.styleArray[number] = true;
     }
-    console.log(this.styleArray);
-    this.reservedSeats$.subscribe((test) => {
-      console.log(test);
-    });
   }
 
   constructor(
@@ -106,5 +102,6 @@ export class ReservationComponent {
   ngOnInit() {
     this.displaySeats();
     this.getTickets();
+    //this.ticketsService.inicializationOfSeatMap();
   }
 }

@@ -3,17 +3,21 @@ import { relativeTimeRounding } from 'moment';
 import { BehaviorSubject } from 'rxjs';
 import { Ticket } from '../reservation.component';
 
-interface ReservedSeats {
-  position: number;
-  isReserved: boolean;
-}
+// map type
+type ReservedSeats = {
+  [key: number]: boolean;
+};
 
 @Injectable({
   providedIn: 'root',
 })
 export class TicketsService {
   private tickets$$ = new BehaviorSubject<Ticket[]>([]);
-  private reservedSeats$$ = new BehaviorSubject<ReservedSeats[]>([]);
+  private reservedSeats$$ = new BehaviorSubject<ReservedSeats[]>([
+    {
+      [NaN]: true,
+    },
+  ]);
 
   get tickets$() {
     return this.tickets$$.asObservable();
@@ -58,19 +62,19 @@ export class TicketsService {
   addSeat(seatNumber: number) {
     this.reservedSeats$$.next([
       ...this.reservedSeats$$.getValue(),
-      { position: seatNumber, isReserved: true },
+      { [seatNumber]: true },
     ]);
   }
 
   removeSeat(position: number) {
-    let filtrated = this.reservedSeats$$.value.filter(
-      (elem) => elem.position !== position
-    );
-    this.reservedSeats$$.next([]); // is it really good aproach?
-    this.reservedSeats$$.next([
-      ...this.reservedSeats$$.getValue(),
-      ...filtrated,
-    ]);
+    // let filtrated = this.reservedSeats$$.value.filter((elem) =>
+    //   console.log(elem)
+    // );
+    // this.reservedSeats$$.next([]); // is it really good aproach?
+    // this.reservedSeats$$.next([
+    //   ...this.reservedSeats$$.getValue(),
+    //   ...filtrated,
+    // ]);
   }
 
   // removeSeat(position: number) {
