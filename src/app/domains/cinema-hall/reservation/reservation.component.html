@@ -9,12 +9,12 @@
       class="container-places__seat"
       *ngFor="let seat of seats; let i = index"
     >
+      <ng-container> </ng-container>
       <div
         [style.backgroundColor]="styleArray[i] ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
-        (click)="checkSeat(seat.seat)"
         (click)="addSeat(seat.seat, i, styleArray[i])"
-        (click)="removeSingleSeat(i)"
+        (click)="changeColor(i)"
         class="container-places__seat--active"
       >
         {{ seat.seat }}
@@ -33,7 +33,7 @@
         #ticketType
         (change)="changeKey(ticket.position, ticketType.value)"
       >
-        <option *ngFor="let ticketType of test2[0] | keyvalue">
+        <option *ngFor="let ticketType of ticketTypeArray[0] | keyvalue">
           {{ ticketType.key }} {{ ticketType.value }}zł
         </option>
       </select>

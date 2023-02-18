@@ -6,7 +6,7 @@ import { Seat } from '../reservation.component';
   providedIn: 'root',
 })
 export class SeatsService {
-  url: string = `http://localhost:3000/reservation`;
+  private url: string = `http://localhost:3000/reservation`;
 
   constructor(private http: HttpClient) {}
 

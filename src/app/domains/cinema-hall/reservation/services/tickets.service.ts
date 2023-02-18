@@ -3,14 +3,24 @@ import { relativeTimeRounding } from 'moment';
 import { BehaviorSubject } from 'rxjs';
 import { Ticket } from '../reservation.component';
 
+interface ReservedSeats {
+  position: number;
+  isReserved: boolean;
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class TicketsService {
   private tickets$$ = new BehaviorSubject<Ticket[]>([]);
+  private reservedSeats$$ = new BehaviorSubject<ReservedSeats[]>([]);
 
   get tickets$() {
     return this.tickets$$.asObservable();
+  }
+
+  get reservedSeats$() {
+    return this.reservedSeats$$.asObservable();
   }
 
   removeTicket(position: number) {
@@ -41,13 +51,21 @@ export class TicketsService {
     });
   }
 
-  // updateTicket(ticketInfo: Ticket) {
-  //   this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
-  // }
-
   addTicket(ticketInfo: Ticket) {
     this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
   }
+
+  addSeat(seatInfo: ReservedSeats) {
+    this.reservedSeats$$.next([...this.reservedSeats$$.getValue(), seatInfo]);
+  }
+
+  // removeSeat(position: number) {
+  //   let filtrated = this.tickets$$.value.filter(
+  //     (elem) => elem.position !== position
+  //   );
+  //   this.tickets$$.next([]); // is it really good aproach?
+  //   this.tickets$$.next([...this.tickets$$.getValue(), ...filtrated]);
+  // }
 
   constructor() {}
 }

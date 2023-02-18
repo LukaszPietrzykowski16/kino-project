@@ -39,7 +39,7 @@ export interface TicketType {
 export class ReservationComponent {
   private ticketsService = inject(TicketsService);
 
-  test2: Array<TicketType> = [];
+  ticketTypeArray: Array<TicketType> = [];
   seats: Array<Seat> = [];
 
   exactHour: string = '';
@@ -48,6 +48,7 @@ export class ReservationComponent {
 
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketsService.tickets$;
+  reservedSeats$ = this.ticketsService.tickets$;
 
   status: boolean = false;
   active: boolean = false;
@@ -73,20 +74,11 @@ export class ReservationComponent {
   }
 
   changeKey(position: number, keyValue: string) {
-    this.tickets$.subscribe((test) => console.log(test));
     this.ticketsService.changeTicketType(position, keyValue);
   }
 
   removeSeat(position: number) {
     this.ticketsService.removeTicket(position);
-  }
-
-  removeSingleSeat(number: number) {
-    if (this.styleArray[number] === true) {
-      this.styleArray[number] = false;
-    } else {
-      this.styleArray[number] = true;
-    }
   }
 
   changeColor(number: number) {
@@ -105,12 +97,16 @@ export class ReservationComponent {
 
   displaySeats() {
     this.seatsService
-      .getSeats()
+      .getSeats() // it 's cold observable so we can just leave it is how it is
       .subscribe((response: Seat[]) => (this.seats = response));
   }
 
   getTickets() {
-    this.ticketApi.getTickets().subscribe((res) => this.test2.push(res));
+    this.ticketApi
+      .getTickets()
+      .subscribe(
+        (res) => (this.ticketTypeArray = [...this.ticketTypeArray, ...[res]])
+      );
   }
 
   ngOnInit() {
