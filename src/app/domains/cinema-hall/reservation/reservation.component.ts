@@ -1,21 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { CinemaHallService } from '../services/cinema-hall.service';
-import { FormService } from '../../../domains/form/services/form.service';
-import { ExtraApiService } from '../services/extra-api.service';
-import { Screening } from '../../../home/film-panel/film-panel.component';
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
-import { select, Store, StoreModule } from '@ngrx/store';
-import { CartState } from '../../cart/cart.interface';
-import { CartActions } from '../../cart/store/cart.action';
-import { CartService } from '../../cart/service/cart.service';
-import { cartReducer } from '../../cart/store/cart.reducer';
 import { TicketsService } from './services/tickets.service';
 
 export interface Seat {
   seat: string;
   avaliable: boolean;
   id: number;
+  isChoosen: boolean;
+  reservation: boolean;
 }
 
 export interface Ticket {
@@ -44,22 +38,6 @@ export class ReservationComponent {
 
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketsService.tickets$;
-  reservedSeats$ = this.ticketsService.reservedSeats$;
-
-  public styleArray = new Array<boolean>();
-
-  addSeat(seat: string, position: number, isAvailiable: boolean | undefined) {
-    if (isAvailiable === false || isAvailiable === undefined) {
-      this.ticketsService.addTicket({
-        seat: seat,
-        position: position,
-        type: 'bilet normalny 25zł',
-      });
-    }
-    if (isAvailiable === true) {
-      this.removeTicket(position);
-    }
-  }
 
   changeKey(position: number, keyValue: string) {
     this.ticketsService.changeTicketType(position, keyValue);
@@ -69,14 +47,21 @@ export class ReservationComponent {
     this.ticketsService.removeTicket(position);
   }
 
-  changeColor(number: number) {
-    if (this.styleArray[number] === true) {
-      this.ticketsService.removeSeat(number);
-      this.styleArray[number] = false;
+  getPosition(number: number) {
+    return this.ticketsService.getSeat(number);
+  }
+
+  changeColor(position: number, index: string) {
+    if (this.getPosition(position) === true) {
+      this.removeTicket(position);
     } else {
-      this.ticketsService.addSeat(number);
-      this.styleArray[number] = true;
+      this.ticketsService.addTicket({
+        seat: index,
+        position: position,
+        type: 'bilet normalny 25zł',
+      });
     }
+    console.log(this.seats);
   }
 
   constructor(
@@ -102,6 +87,5 @@ export class ReservationComponent {
   ngOnInit() {
     this.displaySeats();
     this.getTickets();
-    //this.ticketsService.inicializationOfSeatMap();
   }
 }
