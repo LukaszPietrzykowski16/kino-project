@@ -2,15 +2,17 @@ import { Repertoire } from '../film-panel/film-panel.component';
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
+import { ChangeDayService } from '../data-panel/services/change-day.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiServiceService {
   private http = inject(HttpClient);
+  private changeDayService = inject(ChangeDayService);
 
   private date$$ = new BehaviorSubject<{ dateString: string }>({
-    dateString: '19-02',
+    dateString: this.changeDayService.formatDate(new Date()),
   });
 
   private screenings$$ = new BehaviorSubject<Repertoire[]>([]);

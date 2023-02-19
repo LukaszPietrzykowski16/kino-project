@@ -12,8 +12,6 @@ export class DataPanelComponent {
   private changeDayService = inject(ChangeDayService);
   private apiService = inject(ApiServiceService);
 
-  id: string | undefined;
-
   @Output() buttonClicked = new EventEmitter<string>();
 
   constructor(private activatedRoute: ActivatedRoute) {}
