@@ -1,0 +1,30 @@
+.film-container__image {
+  width: 20vw;
+}
+
+.film-container__description {
+  width: 60vw;
+  padding: 32px;
+}
+
+.film-container__image img {
+  width: 100%;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.film {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .film {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

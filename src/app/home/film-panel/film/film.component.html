@@ -1,15 +1,22 @@
-{{ film.title }}
-<img src="{{ film.image }}" />
-<div class="container-film__about_types">Horror | Pg13 | Comedy</div>
-<div class="container-film__about_paragraph">
-  <div *ngIf="flag; else elseBlock">
-    {{ film.description.substring(0, 240) }}
-    <button (click)="more()">more</button>
+<div class="film">
+  <div class="film-container__image">
+    <img src="{{ film.image }}" />
   </div>
-  <ng-template #elseBlock>
-    {{ film.description }} <button (click)="more()">less</button>
-  </ng-template>
-</div>
+  <div class="film-container__description">
+    <h1>
+      {{ film.title }}
+    </h1>
+    <div class="film-container__about_types">Horror | Pg13 | Comedy</div>
+    <div class="film-container__about_paragraph">
+      <div *ngIf="flag; else elseBlock">
+        {{ film.description.substring(0, 240) }}
+        <button (click)="more()">more</button>
+      </div>
+      <ng-template #elseBlock>
+        {{ film.description }} <button (click)="more()">less</button>
+      </ng-template>
+    </div>
 
-{{ film.description }}
-{{ film.rating }} / 10
+    <h2>{{ film.rating }} / 10</h2>
+  </div>
+</div>
