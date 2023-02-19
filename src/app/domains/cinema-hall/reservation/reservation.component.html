@@ -9,13 +9,6 @@
       class="container-places__seat"
       *ngFor="let seat of seats; let i = index"
     >
-      <!--
-        seat: string;
-  avaliable: boolean;
-  id: number;
-  isChoosen: boolean;
-  reservation: boolean;
-    -->
       <div
         [style.backgroundColor]="seat.isChoosen ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
@@ -50,43 +43,6 @@
       </div>
     </div>
   </div>
-  <!---
-    <div class="container-tickets" *ngFor="let ticket of tickets">
-    <div>
-      <p>Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
-    </div>
-    <div>
-      <select #ticketType (change)="changeKey(ticket.seat, ticketType.value)">
-        <option *ngFor="let plsWork of test2[0] | keyvalue">
-          {{ plsWork.key }} {{ plsWork.value }}zł
-        </option>
-      </select>
-    </div>
-    <div>
-       <i-feather
-        name="trash-2"
-        (click)="removeSeat(ticket.seat)"
-        (click)="changeColor(ticket.position)"
-      ></i-feather>
-    </div>
-  </div>
-  --->
-  <!--
-
-
-
-  <div class="container-next">
-    <div class="container-next" *ngIf="tickets.length !== 0; else elseBlock">
-     
-    </div>
-    <ng-template #elseBlock>
-      <button class="disabled">Kup bilety by przejść dalej</button></ng-template
-    >
-    <ng-template #elseBlock1>
-      Hola, hola, dla więcej niż 10 osób napisz na ten adres: adres@gmail.com
-    </ng-template>
-  </div>
--->
   <div class="container-next">
     <button class="conainer-next__btn" routerLink="/formularz">Dalej</button>
   </div>

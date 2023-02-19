@@ -3,6 +3,8 @@ import { CinemaHallService } from '../services/cinema-hall.service';
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
 import { TicketsService } from './services/tickets.service';
+import { isEmpty, tap } from 'rxjs';
+import { ExtraApiService } from '../services/extra-api.service';
 
 export interface Seat {
   seat: string;
@@ -31,7 +33,11 @@ export interface TicketType {
   styleUrls: ['./reservation.component.css'],
 })
 export class ReservationComponent {
+  private cinemaHall = inject(CinemaHallService);
+  private seatsService = inject(SeatsService);
+  private ticketApi = inject(TicketApiService);
   private ticketsService = inject(TicketsService);
+  private extraApiService = inject(ExtraApiService);
 
   ticketTypeArray: Array<TicketType> = [];
 
@@ -77,12 +83,6 @@ export class ReservationComponent {
     }
   }
 
-  constructor(
-    private cinemaHall: CinemaHallService,
-    private seatsService: SeatsService,
-    private ticketApi: TicketApiService
-  ) {}
-
   getTickets() {
     this.ticketApi
       .getTickets()
@@ -92,6 +92,17 @@ export class ReservationComponent {
   }
 
   ngOnInit() {
+    this.reservation$
+      .pipe(
+        tap((data) => {
+          if (data.day === '' || data.hour === '' || data.hour === '') {
+            this.extraApiService.getFilm();
+          }
+        })
+      )
+      .subscribe()
+      .unsubscribe();
+
     this.seatsService.createSeats();
     this.getTickets();
   }

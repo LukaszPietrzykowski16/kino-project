@@ -21,8 +21,6 @@ export class CinemaHallService {
     return this.reservation$$.asObservable();
   }
 
-  constructor() {}
-
   setStrings(title: string, hour: string, day: string) {
     this.reservation$$.next({ title: title, day: day, hour: hour });
   }
