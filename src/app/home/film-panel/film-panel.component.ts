@@ -42,7 +42,7 @@ export interface Repertoire {
   styleUrls: ['./film-panel.component.css'],
 })
 export class FilmPanelComponent {
-  apiService = inject(ApiServiceService);
+  private apiService = inject(ApiServiceService);
   isLogin = false;
 
   userId: number = NaN;

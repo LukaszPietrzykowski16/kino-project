@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Film } from '../../../home/film-panel/film-panel.component';
 import { HttpClient } from '@angular/common/http';
+import { ApiServiceService } from 'src/app/home/services/api-service.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ExtraApiService {
-  private hour: string = '';
-  private title: string = '';
-  private date: string = '';
   private newUrl = '';
+  private apiService = inject(ApiServiceService);
 
   displayInfoFromUrl() {
     this.newUrl = this.router.url;
@@ -19,10 +18,7 @@ export class ExtraApiService {
       .replace(/\//g, ' ')
       .replace('%2F', '-');
     const data = replacing.split(' ');
-    this.date = data[0];
-    this.hour = data[1];
-    this.title = decodeURI(data[2]);
-    console.log(this.date, this.hour, this.title);
+    this.apiService.getExactShow(data[0], data[1], decodeURI(data[2]));
     // console.log(this.date, this.hour, this.title);
     // this.secondUrl = `http://localhost:3000/screening?date=${this.date}&?hours=${this.hour}`;
     // return this.getScreening();
