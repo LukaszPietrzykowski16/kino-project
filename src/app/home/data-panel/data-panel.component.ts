@@ -9,8 +9,8 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./data-panel.component.css'],
 })
 export class DataPanelComponent {
-  changeDayService = inject(ChangeDayService);
-  apiService = inject(ApiServiceService);
+  private changeDayService = inject(ChangeDayService);
+  private apiService = inject(ApiServiceService);
 
   id: string | undefined;
 
@@ -24,17 +24,15 @@ export class DataPanelComponent {
 
   changeDay(day: string) {
     this.today = day;
-    console.log(this.today);
     this.apiService.updateDate(this.today);
-    this.buttonClicked.emit(this.today);
   }
 
   ngOnInit(): void {
+    console.log(this.today);
     this.activatedRoute.params.subscribe((params) => {
       if (typeof params['date'] !== 'undefined') {
         this.today = params['date'];
-      } else {
-        this.id = '';
+        this.apiService.updateDate(this.today);
       }
     });
 

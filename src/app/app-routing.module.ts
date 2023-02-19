@@ -15,7 +15,7 @@ import { MainDateComponent } from './home/main/main-date/main-date.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'date/:date', component: MainDateComponent },
+  { path: 'date/:date', component: MainComponent },
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },
