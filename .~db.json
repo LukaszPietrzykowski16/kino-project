@@ -758,7 +758,7 @@
     },
     {
       "seat": "H1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 78,
       "isChoosen": false,
       "reservation": false

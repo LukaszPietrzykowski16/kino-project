@@ -96,7 +96,7 @@ export class FormsPanelComponent {
         this.profileForm.controls.email.value,
         this.profileForm.controls.phoneNumber.value
       );
-      this.seatPostService.sendSeats(this.formService.displaySeats());
+      this.seatPostService.sendSeats();
       this.router.navigate(['/podsumowanie']);
     }
   }

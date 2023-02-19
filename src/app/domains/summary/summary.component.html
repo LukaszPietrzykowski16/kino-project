@@ -5,14 +5,12 @@
     {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
   </div>
 </div>
-<div class="container-form">
-  <div *ngFor="let information of title">{{ information }}</div>
-  <div *ngFor="let exactSeat of seats">
-    <div>Rząd {{ exactSeat.seat[0] }} siedzenie {{ exactSeat.seat[1] }}</div>
+<div *ngIf="tickets$ | async as tickets">
+  <div *ngFor="let ticket of tickets">
     <div>
-      {{ exactSeat.type }}
+      Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+      {{ ticket.type }}
     </div>
-    <div></div>
   </div>
 </div>
 <img src="{{ url }}" alt="kod qr" class="qr-code" />
