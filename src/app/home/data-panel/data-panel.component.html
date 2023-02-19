@@ -8,7 +8,9 @@
       {{ exactDay }}
     </div>
     <ng-template #elseBlock>
-      <div (click)="changeDay(exactDay)">{{ exactDay }}</div></ng-template
+      <div (click)="changeDay(exactDay)" [routerLink]="['/date', exactDay]">
+        {{ exactDay }}
+      </div></ng-template
     >
   </div>
 </div>

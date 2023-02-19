@@ -11,9 +11,11 @@ import { SummaryComponent } from './domains/summary/summary.component';
 import { LoginComponent } from './auth/login.component/login-form.component';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { CartComponent } from './domains/cart/cart.component';
+import { MainDateComponent } from './home/main/main-date/main-date.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
+  { path: 'date/:date', component: MainDateComponent },
   { path: 'rezerwacja', component: ReservationComponent },
   { path: 'formularz', component: FormsMainComponent },
   { path: 'podsumowanie', component: SummaryComponent },

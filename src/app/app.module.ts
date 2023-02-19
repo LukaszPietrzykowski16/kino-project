@@ -28,6 +28,8 @@ import { HighlightDirective } from './highlight.directive';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
+import { MainDateComponent } from './home/main/main-date/main-date.component';
+
 export interface AppState {
   User: UserState;
 }
@@ -50,6 +52,7 @@ export interface AppState {
     WantWatchComponent,
     HighlightDirective,
     FilmComponent,
+    MainDateComponent,
   ],
   imports: [
     BrowserModule,
