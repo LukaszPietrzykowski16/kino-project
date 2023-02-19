@@ -21,6 +21,10 @@ export class ApiServiceService {
     return this.date$$.asObservable();
   }
 
+  get dateValue() {
+    return this.date$$.value;
+  }
+
   get screenings$() {
     return this.screenings$$.asObservable();
   }

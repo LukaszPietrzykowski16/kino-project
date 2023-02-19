@@ -3,9 +3,9 @@
     <p *ngIf="screen.premiere">Premiera</p>
     <app-film [film]="screen.film"></app-film>
     <div *ngFor="let hour of screen.hours">
-      <a [routerLink]="['/rezerwacja', item, hour, screen.film.title]">
+      <a [routerLink]="['/rezerwacja', selectedDay, hour, screen.film.title]">
         <button
-          (click)="moreDetails(screen.film.title, hour, '17-02')"
+          (click)="moreDetails(screen.film.title, hour)"
           *ngIf="changeToString(hour) > now"
         >
           {{ hour }}

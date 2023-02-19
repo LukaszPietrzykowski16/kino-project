@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Seat } from '../reservation.component';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -14,6 +14,7 @@ export class SeatsService {
   }
 
   createSeats() {
+    // this.getSeats().pipe(map(value) => {})
     this.getSeats().subscribe((value) => {
       this.seats$$.next(value);
     });

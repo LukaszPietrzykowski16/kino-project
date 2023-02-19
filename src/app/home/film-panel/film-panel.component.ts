@@ -1,6 +1,6 @@
 import { Component, inject, Input } from '@angular/core';
 import { ApiServiceService } from '../services/api-service.service';
-import { map } from 'rxjs';
+import { map, take } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
@@ -44,12 +44,13 @@ export interface Repertoire {
 export class FilmPanelComponent {
   apiService = inject(ApiServiceService);
   isLogin = false;
-  @Input() item: string = '';
+
   userId: number = NaN;
   moviesArray: Array<Number> = [];
-  hoursArr: Array<string> | undefined;
-  d = new Date();
-  now = this.d.getHours();
+
+  private date = new Date();
+  now = this.date.getHours();
+  selectedDay: string = '';
 
   constructor(
     private cinemaService: CinemaHallService,
@@ -61,6 +62,7 @@ export class FilmPanelComponent {
 
   screenings$ = this.apiService.screenings$;
   date$ = this.apiService.date$;
+  // dateValue = this.apiService.dateValue;
 
   sendMovie(filmId: number) {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
@@ -76,8 +78,13 @@ export class FilmPanelComponent {
     return Number(test[0] + test[1]);
   }
 
-  moreDetails(title: string, hour: string, dateString: string) {
-    this.cinemaService.setStrings(title, hour, dateString);
+  moreDetails(title: string, hour: string) {
+    this.date$
+      .pipe(take(1))
+      .subscribe((value) => (this.selectedDay = value.dateString))
+      .unsubscribe();
+
+    this.cinemaService.setStrings(title, hour, this.selectedDay);
   }
 
   ngOnInit() {
