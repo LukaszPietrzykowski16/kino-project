@@ -987,6 +987,7 @@
       ],
       "tickets": [
         {
+          "id": 0,
           "title": "Avatar: Istota wody",
           "date": "20-02",
           "hour": "23:00",

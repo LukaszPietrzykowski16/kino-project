@@ -1,1 +1,3 @@
-<p>user-tickets works!</p>
+<ng-container *ngIf="tickets$ | async as tickets">
+  <div *ngFor="let ticket of tickets"></div>
+</ng-container>

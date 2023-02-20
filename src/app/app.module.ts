@@ -32,6 +32,7 @@ import { MainDateComponent } from './home/main/main-date/main-date.component';
 import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/want-watch-film.component';
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketsModule } from './domains/user-tickets/user-tickets.module';
+import { UserTicketComponent } from './user-ticket/user-ticket.component';
 
 export interface AppState {
   User: UserState;
@@ -57,6 +58,7 @@ export interface AppState {
     FilmComponent,
     MainDateComponent,
     WantWatchFilmComponent,
+    UserTicketComponent,
   ],
   imports: [
     BrowserModule,
