@@ -23,7 +23,7 @@ export class ApiServiceService {
     return this.date$$.asObservable();
   }
 
-  get dateValue() {
+  get dateValue$() {
     return this.date$$.value;
   }
 

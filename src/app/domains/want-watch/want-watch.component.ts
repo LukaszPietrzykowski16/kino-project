@@ -4,6 +4,7 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
 import { UserService } from 'src/app/home/film-panel/services/user.service';
 import { ApiServiceService } from 'src/app/home/services/api-service.service';
+import { FilmService } from './film/film.service';
 
 @Component({
   selector: 'app-want-watch',
@@ -15,8 +16,11 @@ export class WantWatchComponent {
   constructor(
     private authService: AuthService,
     private userService: UserService,
-    private apiService: ApiServiceService
+    private apiService: ApiServiceService,
+    private filmService: FilmService
   ) {}
+
+  filmService$ = this.filmService.getFilms;
 
   moviesArray: Array<Number> = [];
   fullMoviesArray: Array<string[]> = [];
@@ -30,7 +34,7 @@ export class WantWatchComponent {
     this.userService.getUser(this.userId).subscribe((movie) => {
       this.moviesArray = [...this.moviesArray, ...movie.movies];
       for (let i = 0; i < this.moviesArray.length; i++) {
-        // this.apiService.getFilms(i).subscribe((test) => this.arr.push(test));
+        this.filmService.getFilm(i);
       }
     });
   }

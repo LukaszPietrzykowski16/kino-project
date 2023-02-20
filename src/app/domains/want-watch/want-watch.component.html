@@ -1,6 +1,8 @@
 <h1>Chcę obejrzeć:</h1>
-<div *ngFor="let movie of arr" class="want-watch">
-  <img src="{{ movie.image }}" alt="{{ movie.title }}" />
-  <p>{{ movie.title }}</p>
-  <i-feather name="trash-2"></i-feather>
+<div *ngIf="filmService$ | async as films">
+  <div *ngFor="let film of films">
+    <img src="{{ film.image }}" alt="{{ film.title }}" />
+    <p>{{ film.title }}</p>
+    <i-feather name="trash-2"></i-feather>
+  </div>
 </div>
