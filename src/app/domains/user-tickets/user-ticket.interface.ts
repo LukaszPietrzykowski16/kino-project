@@ -24,12 +24,10 @@ export interface UserTicket {
 }
 
 export interface SingleTicket {
-  tickets: {
-    type: string;
-    id: number;
-    email: string;
-    firstName: string;
-    lastName: string;
-    phoneNumber: number;
-  };
+  type: string;
+  id: number;
+  email: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber: number;
 }

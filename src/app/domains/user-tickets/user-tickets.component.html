@@ -1,3 +1,6 @@
 <ng-container *ngIf="tickets$ | async as tickets">
-  <div *ngFor="let ticket of tickets"></div>
+  hello
+  <div *ngFor="let ticket of tickets">
+    {{ ticket }}
+  </div>
 </ng-container>

@@ -20,7 +20,7 @@ export class UserTicketService {
     this.getUserTickets()
       .pipe(
         map((ticketsData) => {
-          this.tickets$$.next([ticketsData]);
+          this.tickets$$.next([ticketsData.tickets]);
         })
       )
       .subscribe();

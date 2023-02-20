@@ -25,14 +25,14 @@ import AuthModule from './auth/auth.module';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { LoginGuard } from './auth/guards/login.guard';
 import { HighlightDirective } from './highlight.directive';
-
 import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
 import { MainDateComponent } from './home/main/main-date/main-date.component';
 import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/want-watch-film.component';
+
+import { CommonModule } from '@angular/common';
+
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
-import { UserTicketsModule } from './domains/user-tickets/user-tickets.module';
-import { UserTicketComponent } from './user-ticket/user-ticket.component';
 
 export interface AppState {
   User: UserState;
@@ -58,10 +58,10 @@ export interface AppState {
     FilmComponent,
     MainDateComponent,
     WantWatchFilmComponent,
-    UserTicketComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     IconsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -69,7 +69,6 @@ export interface AppState {
     FormsModule,
     AuthModule,
     MatDialogModule,
-    UserTicketsModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([
@@ -85,20 +84,20 @@ export interface AppState {
             path: 'cart',
             loadChildren: () => import('./domains/cart/cart.module'),
           },
-          {
-            path: 'tickets',
-            loadChildren: () =>
-              import('./domains/user-tickets/user-tickets.module').then(
-                ({ UserTicketsModule }) => UserTicketsModule
-              ),
-            canActivate: [LoginGuard],
-          },
+          // {
+          //   path: 'tickets',
+          //   loadChildren: () =>
+          //     import('./domains/user-tickets/user-tickets.module').then(
+          //       ({ UserTicketsModule }) => UserTicketsModule
+          //     ),
+          //   canActivate: [LoginGuard],
+          // },
         ],
       },
     ]),
   ],
 
-  providers: [],
+  providers: [UserTicketsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
