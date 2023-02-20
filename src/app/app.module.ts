@@ -30,6 +30,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
 import { MainDateComponent } from './home/main/main-date/main-date.component';
 import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/want-watch-film.component';
+import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
+import { UserTicketsModule } from './domains/user-tickets/user-tickets.module';
 
 export interface AppState {
   User: UserState;
@@ -63,9 +65,9 @@ export interface AppState {
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-
     AuthModule,
     MatDialogModule,
+    UserTicketsModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([
@@ -73,13 +75,21 @@ export interface AppState {
         path: '',
         children: [
           {
-            path: 'logowanie',
+            path: 'login',
             loadChildren: () => import('./auth/auth.module'),
             canActivate: [LoginGuard],
           },
           {
-            path: 'koszyk',
+            path: 'cart',
             loadChildren: () => import('./domains/cart/cart.module'),
+          },
+          {
+            path: 'tickets',
+            loadChildren: () =>
+              import('./domains/user-tickets/user-tickets.module').then(
+                ({ UserTicketsModule }) => UserTicketsModule
+              ),
+            canActivate: [LoginGuard],
           },
         ],
       },

@@ -8,6 +8,8 @@ import { FormService } from '../services/form.service';
 import { SeatPostService } from '../services/seat-post.service';
 import { validatorCompareEmail } from './email-chech.service';
 import { PromotionService } from '../promotion.service';
+import { AuthService } from 'src/app/auth/authentication/auth.service';
+import { map } from 'rxjs';
 
 export interface BlikCode {
   code: number;
@@ -26,10 +28,11 @@ export class FormsPanelComponent {
   private router = inject(Router);
   private formInfo = inject(FormInfoService);
   private seatPostService = inject(SeatPostService);
-  private formService = inject(FormService);
   private promotionService = inject(PromotionService);
+  private authService = inject(AuthService);
 
   isBonus = false;
+  login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
 
   profileForm = new FormGroup(
     {
@@ -87,7 +90,7 @@ export class FormsPanelComponent {
       this.checkout = false;
     }
   }
-
+  // .pipe(map)
   pay() {
     if (this.blikCode === Number(this.blikForm.value.blikCodeInput)) {
       this.formInfo.setInformation(
