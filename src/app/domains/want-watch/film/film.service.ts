@@ -22,4 +22,12 @@ export class FilmService {
         this.films$$.next([...this.films$$.getValue(), film]);
       });
   }
+
+  removeFilm(filmId: Array<Number>) {
+    return this.http
+      .patch<Array<Number>>(`http://localhost:3000/users/11`, {
+        movies: filmId,
+      })
+      .subscribe();
+  }
 }

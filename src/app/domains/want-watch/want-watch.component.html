@@ -1,8 +1,8 @@
 <h1>Chcę obejrzeć:</h1>
 <div *ngIf="filmService$ | async as films">
-  <div *ngFor="let film of films">
+  <div *ngFor="let film of films" class="want-watch">
     <img src="{{ film.image }}" alt="{{ film.title }}" />
     <p>{{ film.title }}</p>
-    <i-feather name="trash-2"></i-feather>
+    <i-feather name="trash-2" (click)="removeFilm(film.id)"></i-feather>
   </div>
 </div>

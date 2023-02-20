@@ -16,15 +16,12 @@ export class WantWatchComponent {
   constructor(
     private authService: AuthService,
     private userService: UserService,
-    private apiService: ApiServiceService,
     private filmService: FilmService
   ) {}
 
   filmService$ = this.filmService.getFilms;
 
   moviesArray: Array<Number> = [];
-  fullMoviesArray: Array<string[]> = [];
-  arr: Array<any> = [];
 
   ngOnInit() {
     this.authService.user$.subscribe((user) => {
@@ -37,5 +34,10 @@ export class WantWatchComponent {
         this.filmService.getFilm(i);
       }
     });
+  }
+
+  removeFilm(filmId: number) {
+    this.moviesArray = this.moviesArray.filter((ele) => ele != filmId);
+    this.filmService.removeFilm(this.moviesArray);
   }
 }
