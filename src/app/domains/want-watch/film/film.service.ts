@@ -14,11 +14,10 @@ export class FilmService {
     return this.films$$.asObservable();
   }
 
-  getFilm(filmId: number) {
+  getFilm(filmId: Number) {
     return this.http
       .get<Film>(`http://localhost:3000/films/${filmId}`)
       .subscribe((film) => {
-        console.log(film);
         this.films$$.next([...this.films$$.getValue(), film]);
       });
   }

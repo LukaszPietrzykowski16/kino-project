@@ -1,0 +1,9 @@
+<div [hidden]="isShow">
+  <div class="want-watch">
+    <img src="{{ film.image }}" alt="{{ film.title }}" />
+    <p>{{ film.title }}</p>
+    <i-feather name="trash-2" (click)="toggleDisplay()"></i-feather>
+  </div>
+</div>
+<!-- (click)="removeFilm(film.id)"
+    (click)="toggleDisplay()" -->
