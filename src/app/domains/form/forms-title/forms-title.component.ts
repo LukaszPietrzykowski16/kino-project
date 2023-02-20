@@ -1,4 +1,6 @@
 import { Component, inject } from '@angular/core';
+import { tick } from '@angular/core/testing';
+import { tap } from 'rxjs';
 
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
@@ -20,23 +22,26 @@ export class FormsTitleComponent {
   tickets$ = this.ticketService.tickets$;
 
   ticketPrice: number = 0;
-  title: Array<String | undefined> = [];
-  seats: Array<Ticket> = [];
   promotion: any = false;
 
   price() {
-    this.seats.forEach((elem) => {
-      this.ticketPrice += Number(elem.type.match(/\d+/g));
-    });
+    this.tickets$
+      .pipe(
+        tap((ticket) => {
+          ticket.map((elem) => {
+            this.ticketPrice += Number(elem.type.match(/\d+/g));
+          });
+        })
+      )
+      .subscribe()
+      .unsubscribe();
   }
-
-  constructor(private formService: FormService) {}
 
   ngOnInit() {
     this.promotionService.getPromotion().subscribe((test) => {
       this.promotion = test;
     });
-    this.seats = this.formService.displaySeats();
+
     this.price();
   }
 }
