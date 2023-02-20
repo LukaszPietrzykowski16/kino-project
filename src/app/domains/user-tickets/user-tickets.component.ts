@@ -6,10 +6,8 @@ import { UserTicketComponent } from './user-ticket/user-ticket.component';
 
 @Component({
   selector: 'app-user-tickets',
-  standalone: true,
   templateUrl: './user-tickets.component.html',
   styleUrls: ['./user-tickets.component.css'],
-  imports: [CommonModule],
 })
 export class UserTicketsComponent {
   private userTicketService = inject(UserTicketService);
@@ -17,6 +15,9 @@ export class UserTicketsComponent {
   tickets$ = this.userTicketService.tickets$;
 
   ngOnInit() {
+    this.tickets$.subscribe((rest) => {
+      console.log(rest[0]);
+    });
     this.userTicketService.displayTickets();
   }
 }

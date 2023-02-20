@@ -995,6 +995,16 @@
             "seat": "C8",
             "type": "bilet normalny 25zł"
           }
+        },
+        {
+          "id": 1,
+          "title": "Avatar: Istota wody",
+          "date": "21-02",
+          "hour": "22:00",
+          "places": {
+            "seat": "C8",
+            "type": "bilet normalny 25zł"
+          }
         }
       ]
     },

@@ -33,6 +33,7 @@ import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/wan
 import { CommonModule } from '@angular/common';
 
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
+import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
 
 export interface AppState {
   User: UserState;
@@ -58,7 +59,11 @@ export interface AppState {
     FilmComponent,
     MainDateComponent,
     WantWatchFilmComponent,
+    UserTicketsComponent,
+    UserTicketComponent,
   ],
+  providers: [UserTicketsComponent],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     CommonModule,
@@ -96,8 +101,5 @@ export interface AppState {
       },
     ]),
   ],
-
-  providers: [UserTicketsComponent],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}

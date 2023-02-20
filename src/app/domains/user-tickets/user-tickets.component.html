@@ -1,6 +1,5 @@
-<ng-container *ngIf="tickets$ | async as tickets">
-  hello
+<div *ngIf="tickets$ | async as tickets">
   <div *ngFor="let ticket of tickets">
-    {{ ticket }}
+    <app-user-ticket [ticket]="ticket"></app-user-ticket>
   </div>
-</ng-container>
+</div>
