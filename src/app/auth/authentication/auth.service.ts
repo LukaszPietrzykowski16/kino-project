@@ -18,7 +18,7 @@ export class AuthService {
   private url = 'http://localhost:3000/login';
 
   private auth$$ = new BehaviorSubject<{ hasAuth: boolean }>({
-    hasAuth: true,
+    hasAuth: false,
   });
 
   get isAuth$() {

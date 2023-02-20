@@ -36,6 +36,7 @@ export class FilmService {
         .pipe(
           tap((movie) => {
             movie.map((movieId) => {
+              this.films$$.next([]);
               this.getFilm(movieId);
             });
           })
@@ -54,7 +55,6 @@ export class FilmService {
     return this.http
       .get<Film>(`http://localhost:3000/films/${filmId}`)
       .subscribe((film) => {
-        this.films$$.next([]);
         this.films$$.next([...this.films$$.getValue(), film]);
       });
   }

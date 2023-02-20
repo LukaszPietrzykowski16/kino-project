@@ -2,7 +2,7 @@ import { UserState } from './user.interface';
 
 export const initialUserState: UserState = {
   type: 'visitor',
-  id: 11,
+  id: NaN,
   email: '',
   firstName: '',
   lastName: '',
