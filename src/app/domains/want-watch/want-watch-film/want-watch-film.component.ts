@@ -14,12 +14,6 @@ export class WantWatchFilmComponent {
   isShow = false;
   removeFilm(filmId: Number) {
     this.filmService.removeFilmId(filmId);
-
-    console.log(filmId);
     this.isShow = !this.isShow;
   }
-
-  // removeFilm(filmId: number) {
-  //
-  // }
 }

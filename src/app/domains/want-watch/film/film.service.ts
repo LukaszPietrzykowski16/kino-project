@@ -30,7 +30,6 @@ export class FilmService {
       this.userId = user.id;
     });
     this.userService.getUser(this.userId).subscribe((movie) => {
-      this.moviesArray$$.next([]);
       this.moviesArray$$.next([...this.moviesArray$$.value, ...movie.movies]);
 
       this.moviesArray$$
@@ -55,6 +54,7 @@ export class FilmService {
     return this.http
       .get<Film>(`http://localhost:3000/films/${filmId}`)
       .subscribe((film) => {
+        this.films$$.next([]);
         this.films$$.next([...this.films$$.getValue(), film]);
       });
   }
