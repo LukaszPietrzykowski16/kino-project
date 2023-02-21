@@ -1,18 +1,19 @@
 <div class="container">
   <h1>Dodaj film</h1>
-  <form [formGroup]="filmForm" novalidate>
+  <form [formGroup]="screeningForm" novalidate>
     <div class="form-group">
       <label>Tytuł:</label>
       <input class="form-control" formControlName="title" type="text" />
     </div>
     <div
       *ngIf="
-        filmForm.controls['title'].invalid &&
-        (filmForm.controls['title'].dirty || filmForm.controls['title'].touched)
+        screeningForm.controls['title'].invalid &&
+        (screeningForm.controls['title'].dirty ||
+          screeningForm.controls['title'].touched)
       "
       class="alert alert-danger"
     >
-      <div *ngIf="filmForm.controls['title'].errors?.required">
+      <div *ngIf="screeningForm.controls['title'].errors?.required">
         Pole tytuł wymagane
       </div>
     </div>
@@ -22,12 +23,15 @@
     </div>
     <div
       *ngIf="
-        filmForm.controls['types'].invalid &&
-        (filmForm.controls['types'].dirty || filmForm.controls['types'].touched)
+        screeningForm.controls['types'].invalid &&
+        (screeningForm.controls['types'].dirty ||
+          screeningForm.controls['types'].touched)
       "
       class="alert alert-danger"
     >
-      <div *ngIf="filmForm.controls['types'].errors?.required">Pole typy</div>
+      <div *ngIf="screeningForm.controls['types'].errors?.required">
+        Pole typy
+      </div>
     </div>
     <div class="form-group">
       <label>Image link:</label>
@@ -35,12 +39,13 @@
     </div>
     <div
       *ngIf="
-        filmForm.controls['image'].invalid &&
-        (filmForm.controls['image'].dirty || filmForm.controls['image'].touched)
+        screeningForm.controls['image'].invalid &&
+        (screeningForm.controls['image'].dirty ||
+          screeningForm.controls['image'].touched)
       "
       class="alert alert-danger"
     >
-      <div *ngIf="filmForm.controls['image'].errors?.required">
+      <div *ngIf="screeningForm.controls['image'].errors?.required">
         Pole zdjęcie wymagane
       </div>
     </div>
@@ -50,13 +55,13 @@
     </div>
     <div
       *ngIf="
-        filmForm.controls['description'].invalid &&
-        (filmForm.controls['description'].dirty ||
-          filmForm.controls['description'].touched)
+        screeningForm.controls['description'].invalid &&
+        (screeningForm.controls['description'].dirty ||
+          screeningForm.controls['description'].touched)
       "
       class="alert alert-danger"
     >
-      <div *ngIf="filmForm.controls['description'].errors?.required">
+      <div *ngIf="screeningForm.controls['description'].errors?.required">
         Pole opis wymagane
       </div>
     </div>
@@ -66,19 +71,19 @@
     </div>
     <div
       *ngIf="
-        filmForm.controls['rating'].invalid &&
-        (filmForm.controls['rating'].dirty ||
-          filmForm.controls['rating'].touched)
+        screeningForm.controls['rating'].invalid &&
+        (screeningForm.controls['rating'].dirty ||
+          screeningForm.controls['rating'].touched)
       "
       class="alert alert-danger"
     >
-      <div *ngIf="filmForm.controls['rating'].errors?.required">
+      <div *ngIf="screeningForm.controls['rating'].errors?.required">
         Pole rating wymagane
       </div>
     </div>
     <button
       type="submit"
-      [disabled]="filmForm.pristine || filmForm.invalid"
+      [disabled]="screeningForm.pristine || screeningForm.invalid"
       class="btn btn-success"
       (click)="addFilm()"
     >
@@ -87,4 +92,3 @@
   </form>
   <br />
 </div>
-<app-admin-screenings></app-admin-screenings>

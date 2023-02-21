@@ -33,10 +33,7 @@ import { CommonModule } from '@angular/common';
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
 import { AdminComponent } from './admin/admin.component';
-import {
-  AdminScreeningsComponent,
-  AdminModule,
-} from './admin-screenings/admin-screenings.component';
+import { AdminScreeningsComponent } from './admin/admin-screenings/admin-screenings.component';
 
 export interface AppState {
   User: UserState;
@@ -65,6 +62,7 @@ export interface AppState {
     UserTicketsComponent,
     UserTicketComponent,
     AdminComponent,
+    AdminScreeningsComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],
@@ -111,7 +109,6 @@ export interface AppState {
         ],
       },
     ]),
-    AdminModule,
   ],
 })
 export class AppModule {}

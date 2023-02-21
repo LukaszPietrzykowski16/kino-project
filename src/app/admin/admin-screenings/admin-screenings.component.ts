@@ -1,25 +1,25 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AdminState } from './admin.module';
-import { adminFilmActions } from './store/admin.action';
-import { AdminFilmState } from './store/admin.interface';
+import { AdminState } from '../admin.module';
+import { adminFilmActions } from '../store/admin.action';
+import { AdminFilmState } from '../store/admin.interface';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css'],
+  selector: 'app-admin-screenings',
+  templateUrl: './admin-screenings.component.html',
+  styleUrls: ['./admin-screenings.component.css'],
 })
-export class AdminComponent {
+export class AdminScreeningsComponent {
   private fb = inject(FormBuilder);
   private store = inject<Store<AdminState>>(Store);
 
   admin$ = this.store.select('AdminFilm');
 
-  filmForm!: FormGroup;
+  screeningForm!: FormGroup;
   constructor() {}
   createForm() {
-    this.filmForm = this.fb.group({
+    this.screeningForm = this.fb.group({
       title: ['', Validators.required],
       types: ['', Validators.required],
       image: ['', Validators.required],
@@ -29,23 +29,23 @@ export class AdminComponent {
   }
 
   get titleCtrl() {
-    return this.filmForm.controls.title;
+    return this.screeningForm.controls.title;
   }
 
   get typesCtrl() {
-    return this.filmForm.controls.types;
+    return this.screeningForm.controls.types;
   }
 
   get imageCtrl() {
-    return this.filmForm.controls.image;
+    return this.screeningForm.controls.image;
   }
 
   get descriptionCtrl() {
-    return this.filmForm.controls.description;
+    return this.screeningForm.controls.description;
   }
 
   get ratingCtrl() {
-    return this.filmForm.controls.rating;
+    return this.screeningForm.controls.rating;
   }
 
   addFilm() {

@@ -7,14 +7,13 @@ import { StoreModule } from '@ngrx/store';
 import { adminFilmReducer } from './store/admin.reducer';
 import { AdminFilmState } from './store/admin.interface';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { AdminScreeningsComponent } from '../admin-screenings/admin-screenings.component';
 
 export interface AdminState {
   AdminFilm: AdminFilmState;
 }
 
 @NgModule({
-  declarations: [AdminScreeningsComponent],
+  declarations: [],
   imports: [
     CommonModule,
     ReactiveFormsModule,
