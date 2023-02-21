@@ -6,17 +6,20 @@ import { AdminComponent } from './admin.component';
 import { StoreModule } from '@ngrx/store';
 import { adminFilmReducer } from './store/admin.reducer';
 import { AdminFilmState } from './store/admin.interface';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { AdminScreeningsComponent } from '../admin-screenings/admin-screenings.component';
 
 export interface AdminState {
   AdminFilm: AdminFilmState;
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [AdminScreeningsComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     CommonModule,
+    MatFormFieldModule,
     RouterModule.forChild([
       {
         path: '',
