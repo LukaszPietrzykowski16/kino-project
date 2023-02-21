@@ -15,6 +15,10 @@ export class TicketsService {
     return this.tickets$$.asObservable();
   }
 
+  get getTicketsValue() {
+    return this.tickets$$.getValue();
+  }
+
   removeTicket(position: number) {
     let filtrated = this.tickets$$.value.filter(
       (elem) => elem.position !== position

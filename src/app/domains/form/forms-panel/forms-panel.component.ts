@@ -10,6 +10,8 @@ import { validatorCompareEmail } from './email-chech.service';
 import { PromotionService } from '../promotion.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { map } from 'rxjs';
+import { isPlatformWorkerApp } from '@angular/common';
+import { SendTicketsService } from '../../user-tickets/services/send-tickets.service';
 
 export interface BlikCode {
   code: number;
@@ -23,6 +25,7 @@ export interface BlikCode {
 export class FormsPanelComponent {
   blik: boolean = false;
   blikCode: number = NaN;
+  isLogged = false;
 
   private blikServiceCode = inject(BlikService);
   private router = inject(Router);
@@ -30,6 +33,7 @@ export class FormsPanelComponent {
   private seatPostService = inject(SeatPostService);
   private promotionService = inject(PromotionService);
   private authService = inject(AuthService);
+  private sendTickets = inject(SendTicketsService);
 
   isBonus = false;
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
@@ -99,6 +103,9 @@ export class FormsPanelComponent {
         this.profileForm.controls.email.value,
         this.profileForm.controls.phoneNumber.value
       );
+      if (this.isLogged !== true) {
+        this.sendTickets.sendTickets();
+      }
       this.seatPostService.sendSeats();
       this.router.navigate(['/podsumowanie']);
     }
@@ -111,6 +118,10 @@ export class FormsPanelComponent {
   }
 
   ngOnInit() {
+    // how can i get value from this without subscribing to it?
+    this.login$.subscribe((login) => {
+      this.isLogged = login;
+    });
     this.blikServiceCode.getBlik().subscribe((num) => {
       this.blikCode = num.code;
     });

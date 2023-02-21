@@ -15,6 +15,14 @@ export class UserTicketService {
     return this.tickets$$.asObservable();
   }
 
+  updateTickets(data: any) {
+    this.getUserTickets().subscribe((test) => {
+      console.log(test.tickets);
+    });
+
+    console.log(data);
+  }
+
   displayTickets() {
     this.getUserTickets().subscribe((ticketsData) =>
       this.tickets$$.next(ticketsData.tickets)

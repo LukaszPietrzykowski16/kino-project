@@ -17,6 +17,10 @@ export class CinemaHallService {
     hour: '',
   });
 
+  get getReservationDetails() {
+    return this.reservation$$.getValue();
+  }
+
   get reservation$() {
     return this.reservation$$.asObservable();
   }
