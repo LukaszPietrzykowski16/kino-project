@@ -67,7 +67,12 @@ export class SendTicketsService {
   }
 
   postTickets(ticketData: SingleTicket) {
-    console.log(ticketData);
-    this.userTickets.updateTickets(ticketData);
+    this.userTickets.getUserTickets().subscribe((test) => {
+      this.anotherFunction([...test.tickets, ...[ticketData]]);
+    });
+  }
+
+  anotherFunction(arr: any) {
+    console.log(arr);
   }
 }
