@@ -1,5 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Store } from '@ngrx/store';
+import { AdminFilmState } from './store/admin.interface';
 
 @Component({
   selector: 'app-admin',
@@ -8,6 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AdminComponent {
   private fb = inject(FormBuilder);
+  private store = inject<Store<AdminFilmState>>(Store);
 
   filmForm!: FormGroup;
   constructor() {}
@@ -20,6 +23,8 @@ export class AdminComponent {
       rating: ['', Validators.required],
     });
   }
+
+  admin$ = this.store.select('AdminFilm');
 
   ngOnInit() {
     this.createForm();

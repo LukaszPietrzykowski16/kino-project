@@ -3,7 +3,7 @@
   <form [formGroup]="filmForm" novalidate>
     <div class="form-group">
       <label>Tytuł:</label>
-      <input class="form-control" formControlName="name" type="text" />
+      <input class="form-control" formControlName="title" type="text" />
     </div>
     <div
       *ngIf="
@@ -13,7 +13,7 @@
       class="alert alert-danger"
     >
       <div *ngIf="filmForm.controls['title'].errors?.required">
-        Pole imię wymagane
+        Pole tytuł wymagane
       </div>
     </div>
     <div class="form-group">
@@ -41,7 +41,7 @@
       class="alert alert-danger"
     >
       <div *ngIf="filmForm.controls['image'].errors?.required">
-        Pole image wymagane
+        Pole zdjęcie wymagane
       </div>
     </div>
     <div class="form-group">
@@ -57,7 +57,7 @@
       class="alert alert-danger"
     >
       <div *ngIf="filmForm.controls['description'].errors?.required">
-        Pole imię wymagane
+        Pole opis wymagane
       </div>
     </div>
     <div class="form-group">
@@ -73,7 +73,7 @@
       class="alert alert-danger"
     >
       <div *ngIf="filmForm.controls['rating'].errors?.required">
-        Pole imię wymagane
+        Pole rating wymagane
       </div>
     </div>
     <button
