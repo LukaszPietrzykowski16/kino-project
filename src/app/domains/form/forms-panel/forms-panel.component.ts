@@ -103,7 +103,7 @@ export class FormsPanelComponent {
         this.profileForm.controls.email.value,
         this.profileForm.controls.phoneNumber.value
       );
-      if (this.isLogged !== true) {
+      if (this.isLogged === true) {
         this.sendTickets.sendTickets();
       }
       this.seatPostService.sendSeats();

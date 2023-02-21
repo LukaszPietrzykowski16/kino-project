@@ -226,7 +226,7 @@
     },
     {
       "seat": "A2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 2,
       "isChoosen": false,
       "reservation": false
@@ -681,7 +681,7 @@
     },
     {
       "seat": "G1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 67,
       "isChoosen": false,
       "reservation": false
@@ -758,7 +758,7 @@
     },
     {
       "seat": "H1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 78,
       "isChoosen": false,
       "reservation": false
@@ -835,7 +835,7 @@
     },
     {
       "seat": "I1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 89,
       "isChoosen": false,
       "reservation": false
@@ -1090,6 +1090,26 @@
           "hour": "21:00",
           "places": {
             "seat": "F1",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Kot w butach 2",
+          "date": "24-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "I1",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Kot w butach 2",
+          "date": "24-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "A2",
             "type": "bilet normalny 25zł"
           }
         }
