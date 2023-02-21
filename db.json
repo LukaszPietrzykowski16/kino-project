@@ -226,63 +226,63 @@
     },
     {
       "seat": "A2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 2,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 3,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 4,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 5,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 6,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 7,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 8,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 9,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 10,
       "isChoosen": false,
       "reservation": false
@@ -303,63 +303,63 @@
     },
     {
       "seat": "B2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 13,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 14,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 15,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 16,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 17,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 18,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 19,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 20,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 21,
       "isChoosen": false,
       "reservation": false
@@ -380,42 +380,42 @@
     },
     {
       "seat": "C2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 24,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 25,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 26,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 27,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 28,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 29,
       "isChoosen": false,
       "reservation": false
@@ -436,7 +436,7 @@
     },
     {
       "seat": "C10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 32,
       "isChoosen": false,
       "reservation": false
@@ -457,63 +457,63 @@
     },
     {
       "seat": "D2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 35,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 36,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 37,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 38,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 39,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 40,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 41,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 42,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 43,
       "isChoosen": false,
       "reservation": false
@@ -534,63 +534,63 @@
     },
     {
       "seat": "E2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 46,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 47,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 48,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 49,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 50,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 51,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 52,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 53,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 54,
       "isChoosen": false,
       "reservation": false
@@ -604,14 +604,14 @@
     },
     {
       "seat": "F1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 56,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 57,
       "isChoosen": false,
       "reservation": false
@@ -625,49 +625,49 @@
     },
     {
       "seat": "F4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 59,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 60,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 61,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 62,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 63,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 64,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 65,
       "isChoosen": false,
       "reservation": false
@@ -681,70 +681,70 @@
     },
     {
       "seat": "G1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 67,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 68,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 69,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 70,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 71,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 72,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 73,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 74,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 75,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 76,
       "isChoosen": false,
       "reservation": false
@@ -758,7 +758,7 @@
     },
     {
       "seat": "H1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 78,
       "isChoosen": false,
       "reservation": false
@@ -779,7 +779,7 @@
     },
     {
       "seat": "H4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 81,
       "isChoosen": false,
       "reservation": false
@@ -793,35 +793,35 @@
     },
     {
       "seat": "H6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 83,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 84,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 85,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 86,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 87,
       "isChoosen": false,
       "reservation": false
@@ -835,49 +835,49 @@
     },
     {
       "seat": "I1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 89,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 90,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 91,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 92,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 93,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 94,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 95,
       "isChoosen": false,
       "reservation": false
@@ -891,14 +891,14 @@
     },
     {
       "seat": "I9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 97,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 98,
       "isChoosen": false,
       "reservation": false
@@ -1041,6 +1041,56 @@
           "places": {
             "seat": "G10",
             "type": "bilet ulgowy 18zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Avatar: Istota wody",
+          "date": "22-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "I0",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Avatar: Istota wody",
+          "date": "22-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "C1",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Avatar: Istota wody",
+          "date": "22-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "D1",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Avatar: Istota wody",
+          "date": "22-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "E1",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Avatar: Istota wody",
+          "date": "22-02",
+          "hour": "21:00",
+          "places": {
+            "seat": "F1",
+            "type": "bilet normalny 25zł"
           }
         }
       ]

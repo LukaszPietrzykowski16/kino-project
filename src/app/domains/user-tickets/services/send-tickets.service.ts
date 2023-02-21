@@ -15,16 +15,7 @@ export class SendTicketsService {
   private cinemaHall = inject(CinemaHallService);
   private userTickets = inject(UserTicketService);
 
-  private ticketInfo$$ = new BehaviorSubject<SingleTicket>({
-    id: NaN,
-    title: '',
-    date: '',
-    hour: '',
-    places: {
-      seat: '',
-      type: '',
-    },
-  });
+  private ticketInfo$$ = new BehaviorSubject<SingleTicket[]>([]);
 
   get getTicketInfo$() {
     return this.ticketInfo$$.asObservable();
@@ -42,16 +33,19 @@ export class SendTicketsService {
   sendTickets2() {
     this.tickets$.subscribe((filmData) => {
       filmData.map((test) => {
-        this.ticketInfo$$.next({
-          id: NaN,
-          title: this.title,
-          date: this.date,
-          hour: this.hour,
-          places: {
-            seat: test.seat,
-            type: test.type,
+        this.ticketInfo$$.next([
+          ...this.ticketInfo$$.getValue(),
+          {
+            id: NaN,
+            title: this.title,
+            date: this.date,
+            hour: this.hour,
+            places: {
+              seat: test.seat,
+              type: test.type,
+            },
           },
-        });
+        ]);
       });
     });
   }
@@ -68,9 +62,10 @@ export class SendTicketsService {
     });
   }
 
-  postTickets(ticketData: SingleTicket) {
+  postTickets(ticketData: Array<SingleTicket>) {
+    console.log(ticketData);
     this.userTickets.getUserTickets().subscribe((test) => {
-      this.anotherFunction([...test.tickets, ...[ticketData]]);
+      this.anotherFunction([...test.tickets, ...ticketData]);
     });
   }
 
