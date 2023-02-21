@@ -12,6 +12,12 @@ import { adminFilmReducer } from './store/admin.reducer';
     CommonModule,
     ReactiveFormsModule,
     CommonModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: AdminComponent,
+      },
+    ]),
     StoreModule.forFeature('AdminFilm', adminFilmReducer),
   ],
 })

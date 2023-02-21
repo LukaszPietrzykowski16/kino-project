@@ -35,9 +35,14 @@ import { CommonModule } from '@angular/common';
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
 import { AdminComponent } from './admin/admin.component';
+import { AdminFilmState } from './admin/store/admin.interface';
 
 export interface AppState {
   User: UserState;
+}
+
+export interface AdminState {
+  AdminFilm: AdminFilmState;
 }
 
 @NgModule({
@@ -90,6 +95,13 @@ export interface AppState {
           {
             path: 'cart',
             loadChildren: () => import('./domains/cart/cart.module'),
+          },
+          {
+            path: 'admin',
+            loadChildren: () =>
+              import('./admin/admin.module').then(
+                ({ AdminModule }) => AdminModule
+              ),
           },
           // {
           //   path: 'tickets',
