@@ -29,20 +29,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
 import { MainDateComponent } from './home/main/main-date/main-date.component';
 import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/want-watch-film.component';
-
 import { CommonModule } from '@angular/common';
-
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
 import { AdminComponent } from './admin/admin.component';
-import { AdminFilmState } from './admin/store/admin.interface';
 
 export interface AppState {
   User: UserState;
-}
-
-export interface AdminState {
-  AdminFilm: AdminFilmState;
 }
 
 @NgModule({

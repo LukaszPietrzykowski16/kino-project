@@ -5,6 +5,11 @@ import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { StoreModule } from '@ngrx/store';
 import { adminFilmReducer } from './store/admin.reducer';
+import { AdminFilmState } from './store/admin.interface';
+
+export interface AdminState {
+  AdminFilm: AdminFilmState;
+}
 
 @NgModule({
   declarations: [],

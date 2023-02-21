@@ -80,6 +80,7 @@
       type="submit"
       [disabled]="filmForm.pristine || filmForm.invalid"
       class="btn btn-success"
+      (click)="addFilm()"
     >
       Save
     </button>
