@@ -16,7 +16,7 @@ export class UserTicketsComponent {
 
   ngOnInit() {
     this.tickets$.subscribe((rest) => {
-      console.log(rest[0]);
+      console.log(rest);
     });
     this.userTicketService.displayTickets();
   }

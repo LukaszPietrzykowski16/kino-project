@@ -1,2 +1,16 @@
-{{ ticket.id }}
-{{ ticket.type }}
+<div>
+  <div>
+    <h1>{{ ticket.title }}</h1>
+    <p>
+      {{ ticket.date }}
+      {{ ticket.hour }}
+    </p>
+    {{ ticket.places.seat }}
+    {{ ticket.places.type }}
+  </div>
+  <div class="ticket-qr">
+    <img
+      src="https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png"
+    />
+  </div>
+</div>

@@ -13,21 +13,16 @@ export interface UserTicket {
       rating: 7;
     }
   ];
-  tickets: {
-    type: string;
-    id: number;
-    email: string;
-    firstName: string;
-    lastName: string;
-    phoneNumber: number;
-  };
+  tickets: SingleTicket[];
 }
 
 export interface SingleTicket {
-  type: string;
   id: number;
-  email: string;
-  firstName: string;
-  lastName: string;
-  phoneNumber: number;
+  title: string;
+  date: string;
+  hour: string;
+  places: {
+    seat: string;
+    type: string;
+  };
 }

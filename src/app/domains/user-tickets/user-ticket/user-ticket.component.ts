@@ -10,6 +10,6 @@ export class UserTicketComponent {
   @Input() ticket!: SingleTicket;
 
   ngOnInit() {
-    console.log(this.ticket.id);
+    console.log(this.ticket);
   }
 }
