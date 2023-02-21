@@ -34,6 +34,7 @@ import { CommonModule } from '@angular/common';
 
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
+import { AdminComponent } from './admin/admin.component';
 
 export interface AppState {
   User: UserState;
@@ -61,6 +62,7 @@ export interface AppState {
     WantWatchFilmComponent,
     UserTicketsComponent,
     UserTicketComponent,
+    AdminComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],

@@ -1,0 +1,90 @@
+<div class="container">
+  <h1>Siema admin</h1>
+  <form [formGroup]="filmForm" novalidate>
+    <div class="form-group">
+      <label>Tytuł:</label>
+      <input class="form-control" formControlName="name" type="text" />
+    </div>
+    <div
+      *ngIf="
+        filmForm.controls['title'].invalid &&
+        (filmForm.controls['title'].dirty || filmForm.controls['title'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="filmForm.controls['title'].errors?.required">
+        Pole imię wymagane
+      </div>
+    </div>
+    <div class="form-group">
+      <label> Gatunki filmów </label>
+      <input class="form-control" formControlName="types" type="text" />
+    </div>
+    <div
+      *ngIf="
+        filmForm.controls['types'].invalid &&
+        (filmForm.controls['types'].dirty || filmForm.controls['types'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="filmForm.controls['types'].errors?.required">Pole typy</div>
+    </div>
+    <div class="form-group">
+      <label>Image link:</label>
+      <input class="form-control" formControlName="image" type="text" />
+    </div>
+    <div
+      *ngIf="
+        filmForm.controls['image'].invalid &&
+        (filmForm.controls['image'].dirty || filmForm.controls['image'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="filmForm.controls['image'].errors?.required">
+        Pole image wymagane
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Opis:</label>
+      <input class="form-control" formControlName="description" type="text" />
+    </div>
+    <div
+      *ngIf="
+        filmForm.controls['description'].invalid &&
+        (filmForm.controls['description'].dirty ||
+          filmForm.controls['description'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="filmForm.controls['description'].errors?.required">
+        Pole imię wymagane
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Name:</label>
+      <input class="form-control" formControlName="rating" type="text" />
+    </div>
+    <div
+      *ngIf="
+        filmForm.controls['rating'].invalid &&
+        (filmForm.controls['rating'].dirty ||
+          filmForm.controls['rating'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="filmForm.controls['rating'].errors?.required">
+        Pole imię wymagane
+      </div>
+    </div>
+    <button
+      type="submit"
+      [disabled]="filmForm.pristine || filmForm.invalid"
+      class="btn btn-success"
+    >
+      Save
+    </button>
+  </form>
+  <br />
+  <p>Form value: {{ filmForm.value | json }}</p>
+  <p>Form status: {{ filmForm.status | json }}</p>
+</div>

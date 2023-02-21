@@ -2,7 +2,7 @@
   <a routerLink="/"> <div class="navbar__logo" appHighlight>AleKino</div> </a>
   <div *ngIf="login$ | async; else elseBlock">
     <div class="navbar__settings">
-      <i-feather name="shopping-cart"></i-feather>
+      <i-feather name="shopping-cart" routerLink="/tickets"></i-feather>
       <select name="user" id="user" (change)="navigateTo($event.target)">
         <option value="/">Cześć {{ userName }}</option>
         <option value="chce-obejrzec">Chcę obejrzeć</option>

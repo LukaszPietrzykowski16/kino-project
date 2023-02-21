@@ -6,7 +6,7 @@
     <h1>
       {{ film.title }}
     </h1>
-    <div class="film-container__about_types">Horror | Pg13 | Comedy</div>
+    <div class="film-container__about_types">{{ film.types }}</div>
     <div class="film-container__about_paragraph">
       <div *ngIf="flag; else elseBlock">
         {{ film.description.substring(0, 240) }}
