@@ -268,7 +268,7 @@
     },
     {
       "seat": "A8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 8,
       "isChoosen": false,
       "reservation": false
@@ -737,14 +737,14 @@
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 76,
       "isChoosen": false,
       "reservation": false
@@ -821,7 +821,7 @@
     },
     {
       "seat": "H10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 87,
       "isChoosen": false,
       "reservation": false
@@ -1011,6 +1011,36 @@
           "places": {
             "seat": "C8",
             "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Kot w butach 2",
+          "date": "24-02",
+          "hour": "23:00",
+          "places": {
+            "seat": "A8",
+            "type": "bilet rodzinny 20zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Kot w butach 2",
+          "date": "24-02",
+          "hour": "23:00",
+          "places": {
+            "seat": "G9",
+            "type": "bilet normalny 25zł"
+          }
+        },
+        {
+          "id": null,
+          "title": "Kot w butach 2",
+          "date": "24-02",
+          "hour": "23:00",
+          "places": {
+            "seat": "G10",
+            "type": "bilet ulgowy 18zł"
           }
         }
       ]

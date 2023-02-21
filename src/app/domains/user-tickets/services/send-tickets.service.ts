@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
@@ -9,6 +10,7 @@ import { UserTicketService } from './user-ticket.service';
   providedIn: 'root',
 })
 export class SendTicketsService {
+  private http = inject(HttpClient);
   private ticketService = inject(TicketsService);
   private cinemaHall = inject(CinemaHallService);
   private userTickets = inject(UserTicketService);
@@ -73,6 +75,10 @@ export class SendTicketsService {
   }
 
   anotherFunction(arr: any) {
-    console.log(arr);
+    return this.http
+      .patch<Array<Number>>(`http://localhost:3000/users/11`, {
+        tickets: arr,
+      })
+      .subscribe();
   }
 }
