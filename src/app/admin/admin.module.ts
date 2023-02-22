@@ -4,11 +4,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { StoreModule } from '@ngrx/store';
-import { adminFilmReducer } from './store/admin.reducer';
+
 import { AdminFilmState } from './store/admin.interface';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EffectsModule } from '@ngrx/effects';
 import { AdminEffects } from './store/admin.effects';
+import { addFilmReducer } from './store/admin.reducer';
 
 export interface AdminState {
   AdminFilm: AdminFilmState[];
@@ -28,7 +29,7 @@ export interface AdminState {
         component: AdminComponent,
       },
     ]),
-    StoreModule.forFeature('AdminFilm', adminFilmReducer),
+    StoreModule.forFeature('AdminFilm', addFilmReducer),
   ],
 })
 export class AdminModule {}

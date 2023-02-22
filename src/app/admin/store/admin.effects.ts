@@ -2,20 +2,26 @@ import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { EMPTY, of } from 'rxjs';
-import { map, mergeMap, tap } from 'rxjs/operators';
-import { adminFilmActions } from './admin.action';
+import { map, mergeMap, switchMap, tap } from 'rxjs/operators';
+import { FilmService } from 'src/app/domains/want-watch/film/film.service';
+import { FilmServiceService } from '../services/film-service.service';
+import { addFilmsFromApiActions, adminFilmActions } from './admin.action';
 
 @Injectable()
 export class AdminEffects {
+  private filmService = inject(FilmServiceService);
   private actions$ = inject(Actions);
   private router = inject(Router);
 
   film$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(adminFilmActions.addFilm), // akcaj getfilms
-      tap(() => {
-        console.log('hello'); // wywoła metodę z serwisu pobierjaca
-        return of(0); // map result => retun akcja dodania do stnau(result)
+      ofType(addFilmsFromApiActions.getFilms),
+      switchMap(() => {
+        return this.filmService.getFilms().pipe(
+          map((result) => {
+            return addFilmsFromApiActions.addFilm({ films: result });
+          })
+        );
       })
     )
   );

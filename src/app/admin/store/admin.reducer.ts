@@ -1,13 +1,25 @@
 import { createReducer, on } from '@ngrx/store';
-import { adminFilmActions } from './admin.action';
 import { initialAdminFilmState } from './admin.state';
+import { AdminState } from '../admin.module';
+import { addFilmsFromApiActions } from './admin.action';
+import { state } from '@angular/animations';
 
-export const adminFilmReducer = createReducer(
+// export const adminFilmReducer = createReducer(
+//   initialAdminFilmState,
+//   on(addFilmsFromApiActions.addFilm, (state, { films }) => {
+//     return {
+//       ...state,
+//       ...[films],
+//     };
+//   })
+// );
+
+export const addFilmReducer = createReducer(
   initialAdminFilmState,
-  on(adminFilmActions.addFilm, (state, { films }) => {
+  on(addFilmsFromApiActions.addFilm, (state, action) => {
     return {
       ...state,
-      ...[films],
+      ...action.films,
     };
   })
 );

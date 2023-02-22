@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { AdminState } from './admin.module';
-import { adminFilmActions } from './store/admin.action';
+import { addFilmsFromApiActions, adminFilmActions } from './store/admin.action';
 import { AdminFilmState } from './store/admin.interface';
 
 @Component({
@@ -49,21 +49,21 @@ export class AdminComponent {
   }
 
   addFilm() {
-    const films = {
-      title: this.titleCtrl.value,
-      types: this.typesCtrl.value,
-      image: this.imageCtrl.value,
-      description: this.descriptionCtrl.value,
-      rating: this.ratingCtrl.value,
-    };
-    this.store.dispatch(adminFilmActions.addFilm({ films }));
-
-    this.admin$.subscribe((test) => {
-      console.log(test);
-    });
+    // const films = {
+    //   title: this.titleCtrl.value,
+    //   types: this.typesCtrl.value,
+    //   image: this.imageCtrl.value,
+    //   description: this.descriptionCtrl.value,
+    //   rating: this.ratingCtrl.value,
+    // };
+    // this.store.dispatch(adminFilmActions.addFilm({ films }));
+    // this.admin$.subscribe((test) => {
+    //   console.log(test);
+    // });
   }
 
   ngOnInit() {
+    this.store.dispatch(addFilmsFromApiActions.getFilms());
     this.createForm();
   }
 }
