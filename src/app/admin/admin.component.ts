@@ -51,7 +51,7 @@ export class AdminComponent {
 
   addFilm() {
     const filmsNew: Film = {
-      id: 5,
+      id: 124,
       title: this.titleCtrl.value,
       types: this.typesCtrl.value,
       image: this.imageCtrl.value,
@@ -70,8 +70,5 @@ export class AdminComponent {
   ngOnInit() {
     this.store.dispatch(addFilmsFromApiActions.getFilms());
     this.createForm();
-    this.admin$.subscribe((test) => {
-      console.log(test);
-    });
   }
 }

@@ -19,8 +19,21 @@ export class AdminEffects {
       switchMap(() => {
         return this.filmService.getFilms().pipe(
           map((result) => {
-            console.log(result);
             return addFilmsFromApiActions.addFilm({ films: result });
+          })
+        );
+      })
+    )
+  );
+
+  sendFilms$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(addFilmsFromApiActions.addSingleFilm),
+      switchMap((result) => {
+        tap(console.log);
+        return this.filmService.postFilms(result.films).pipe(
+          map((result) => {
+            return addFilmsFromApiActions.addFilm({ films: [] });
           })
         );
       })

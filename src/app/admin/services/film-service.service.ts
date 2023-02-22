@@ -11,6 +11,18 @@ export class FilmServiceService {
 
   constructor() {}
 
+  postFilms(data: Film) {
+    console.log(data);
+    return this.http.post(`http://localhost:3000/films`, {
+      id: data.id,
+      description: data.description,
+      image: data.image,
+      rating: data.rating,
+      title: data.title,
+      types: data.types,
+    });
+  }
+
   getFilms() {
     return this.http.get<Film[]>(`http://localhost:3000/films`);
   }

@@ -40,11 +40,289 @@
     },
     {
       "id": 3,
-      "title": "Avatar 2: Istota wody",
+      "title": "Avatar: Istota wody",
       "types": "Animowany Przygodowy",
       "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "fdwqn",
+        "types": "fjw",
+        "image": "wfqj",
+        "description": "fwqn",
+        "rating": "wjfq"
+      },
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "kfe",
+        "types": "qkewkfk",
+        "image": "kfwqkqw",
+        "description": "kfkqk",
+        "rating": "q"
+      },
+      "id": 7
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "jdq",
+        "types": "qjfek",
+        "image": "qfjeqw",
+        "description": "qefjlw",
+        "rating": "ejwq"
+      },
+      "id": 8
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "jdqwj",
+        "types": "jqwj",
+        "image": "jjwqdj",
+        "description": "dasj",
+        "rating": "qjdj"
+      },
+      "id": 9
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "dj",
+        "types": "jefwj",
+        "image": "jfwqjwq",
+        "description": "wfjq",
+        "rating": "wjq"
+      },
+      "id": 10
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "fj",
+        "types": "fej",
+        "image": "fejw",
+        "description": "fejw",
+        "rating": "fwqj"
+      },
+      "id": 11
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "fj",
+        "types": "fej",
+        "image": "fejw",
+        "description": "fejw",
+        "rating": "fwqj"
+      },
+      "id": 12
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "dj",
+        "types": "wejf",
+        "image": "qjwef",
+        "description": "fewk",
+        "rating": "wfk"
+      },
+      "id": 13
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "fdk",
+        "types": "kfwq",
+        "image": "kqdk",
+        "description": "k",
+        "rating": "dkk"
+      },
+      "id": 14
+    },
+    {
+      "films": {
+        "id": 5,
+        "title": "kdw",
+        "types": "fkw",
+        "image": "qkd",
+        "description": "dwk",
+        "rating": "qk"
+      },
+      "id": 15
+    },
+    {
+      "films": {
+        "id": 15,
+        "title": "dk",
+        "types": "fkwe",
+        "image": "fwdkq",
+        "description": "dwk",
+        "rating": "wc"
+      },
+      "id": 16
+    },
+    {
+      "films": {
+        "id": 17,
+        "title": "fk",
+        "types": "fk",
+        "image": "fk",
+        "description": "fk",
+        "rating": "fk"
+      },
+      "id": 17
+    },
+    {
+      "films": {
+        "id": 17,
+        "title": "fj",
+        "types": "kfwqkk",
+        "image": "kqk",
+        "description": "qkewk",
+        "rating": "qke"
+      },
+      "id": 18
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 19
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 20
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 21
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 22
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 23
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 24
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "jf",
+        "types": "fj",
+        "image": "fj",
+        "description": "fj",
+        "rating": "fj"
+      },
+      "id": 25
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "dj",
+        "types": "FJ",
+        "image": "FJ",
+        "description": "FJ",
+        "rating": "FJ"
+      },
+      "id": 26
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "ssss",
+        "types": "mm",
+        "image": "m",
+        "description": "m",
+        "rating": "m"
+      },
+      "id": 27
+    },
+    {
+      "test": {
+        "id": 17,
+        "title": "d",
+        "types": "f",
+        "image": "f",
+        "description": "f",
+        "rating": "f"
+      },
+      "id": 28
+    },
+    {
+      "data": {
+        "id": 17,
+        "title": "fj",
+        "types": "fj",
+        "image": "fj",
+        "description": "f",
+        "rating": "f"
+      },
+      "id": 29
+    },
+    {
+      "id": 124,
+      "description": "KFK",
+      "image": "KFK",
+      "rating": "K",
+      "title": "FK",
+      "types": "KF"
     }
   ],
   "screening": [
@@ -962,7 +1240,12 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [2, 1, 3, 7]
+      "movies": [
+        2,
+        1,
+        3,
+        7
+      ]
     },
     {
       "email": "admin@gmail.com",
@@ -978,7 +1261,9 @@
       "lastName": "Kowalski",
       "phoneNumber": 489394930,
       "id": 11,
-      "movies": [0],
+      "movies": [
+        0
+      ],
       "ratings": [
         {
           "filmId": 1,
@@ -1112,7 +1397,9 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [0]
+      "movies": [
+        0
+      ]
     }
   ]
 }
