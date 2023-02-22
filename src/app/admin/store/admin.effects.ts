@@ -5,7 +5,7 @@ import { EMPTY, of } from 'rxjs';
 import { map, mergeMap, switchMap, tap } from 'rxjs/operators';
 import { FilmService } from 'src/app/domains/want-watch/film/film.service';
 import { FilmServiceService } from '../services/film-service.service';
-import { addFilmsFromApiActions, adminFilmActions } from './admin.action';
+import { addFilmsFromApiActions } from './admin.action';
 
 @Injectable()
 export class AdminEffects {
@@ -19,6 +19,7 @@ export class AdminEffects {
       switchMap(() => {
         return this.filmService.getFilms().pipe(
           map((result) => {
+            console.log(result);
             return addFilmsFromApiActions.addFilm({ films: result });
           })
         );

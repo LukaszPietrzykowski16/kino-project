@@ -6,20 +6,22 @@ import { state } from '@angular/animations';
 
 // export const adminFilmReducer = createReducer(
 //   initialAdminFilmState,
-//   on(addFilmsFromApiActions.addFilm, (state, { films }) => {
+//   on(adminFilmActions.addFilm, (state, action) => {
 //     return {
 //       ...state,
-//       ...[films],
+//       ...{ action },
 //     };
 //   })
 // );
 
 export const addFilmReducer = createReducer(
   initialAdminFilmState,
-  on(addFilmsFromApiActions.addFilm, (state, action) => {
-    return {
-      ...state,
-      ...action.films,
-    };
-  })
+  on(addFilmsFromApiActions.addFilm, (state, action) => ({
+    ...state,
+    films: action.films,
+  })),
+  on(addFilmsFromApiActions.addSingleFilm, (state, action) => ({
+    ...state,
+    films: [...state.films, action.films],
+  }))
 );

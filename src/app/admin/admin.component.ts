@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
+import { map, pipe } from 'rxjs';
 import { AdminState } from './admin.module';
-import { addFilmsFromApiActions, adminFilmActions } from './store/admin.action';
-import { AdminFilmState } from './store/admin.interface';
+import { addFilmsFromApiActions } from './store/admin.action';
+import { Film } from 'src/app/home/film-panel/film-panel.component';
 
 @Component({
   selector: 'app-admin',
@@ -49,14 +50,18 @@ export class AdminComponent {
   }
 
   addFilm() {
-    // const films = {
-    //   title: this.titleCtrl.value,
-    //   types: this.typesCtrl.value,
-    //   image: this.imageCtrl.value,
-    //   description: this.descriptionCtrl.value,
-    //   rating: this.ratingCtrl.value,
-    // };
-    // this.store.dispatch(adminFilmActions.addFilm({ films }));
+    const filmsNew: Film = {
+      id: 5,
+      title: this.titleCtrl.value,
+      types: this.typesCtrl.value,
+      image: this.imageCtrl.value,
+      description: this.descriptionCtrl.value,
+      rating: this.ratingCtrl.value,
+    };
+
+    this.store.dispatch(
+      addFilmsFromApiActions.addSingleFilm({ films: filmsNew })
+    );
     // this.admin$.subscribe((test) => {
     //   console.log(test);
     // });
@@ -65,5 +70,8 @@ export class AdminComponent {
   ngOnInit() {
     this.store.dispatch(addFilmsFromApiActions.getFilms());
     this.createForm();
+    this.admin$.subscribe((test) => {
+      console.log(test);
+    });
   }
 }

@@ -1,14 +1,16 @@
+import { Film } from 'src/app/home/film-panel/film-panel.component';
+
 export interface AdminFilmState {
   films: Film[];
 }
 
-export interface Film {
-  title: string;
-  types: string;
-  image: string;
-  description: string;
-  rating: string;
-}
+// export interface Film {
+//   title: string;
+//   types: string;
+//   image: string;
+//   description: string;
+//   rating: string;
+// }
 
 export interface AdminScreeningState {
   filmId: string;
