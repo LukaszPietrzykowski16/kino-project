@@ -28,21 +28,10 @@ export class TicketsService {
   }
 
   changeTicketType(position: number, ticketType: string) {
-    let updatedTicket = {};
-    updatedTicket = this.tickets$$.value.map((val) => {
+    this.tickets$$.value.map((val) => {
       if (val.position === position) {
-        // this logic could be better optymaized
-        this.addTicket({
-          position: val.position,
-          type: ticketType,
-          seat: val.seat,
-        });
-        this.removeTicket(val.position);
-        this.addTicket({
-          position: val.position,
-          type: ticketType,
-          seat: val.seat,
-        });
+        val.position = position;
+        val.type = ticketType;
       }
     });
   }
