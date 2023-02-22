@@ -30,7 +30,6 @@ export class AdminEffects {
     this.actions$.pipe(
       ofType(addFilmsFromApiActions.addSingleFilm),
       switchMap((result) => {
-        tap(console.log);
         return this.filmService.postFilms(result.films).pipe(
           map((result) => {
             return addFilmsFromApiActions.addFilm({ films: [] });
