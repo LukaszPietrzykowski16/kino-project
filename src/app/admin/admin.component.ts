@@ -49,15 +49,15 @@ export class AdminComponent {
   }
 
   addFilm() {
-    this.store.dispatch(
-      adminFilmActions.addFilm({
-        title: this.titleCtrl.value,
-        types: this.typesCtrl.value,
-        image: this.imageCtrl.value,
-        description: this.descriptionCtrl.value,
-        rating: this.ratingCtrl.value,
-      })
-    );
+    const films = {
+      title: this.titleCtrl.value,
+      types: this.typesCtrl.value,
+      image: this.imageCtrl.value,
+      description: this.descriptionCtrl.value,
+      rating: this.ratingCtrl.value,
+    };
+    this.store.dispatch(adminFilmActions.addFilm({ films }));
+
     this.admin$.subscribe((test) => {
       console.log(test);
     });

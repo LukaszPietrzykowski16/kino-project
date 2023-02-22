@@ -5,3 +5,10 @@ export interface AdminFilmState {
   description: string;
   rating: string;
 }
+
+export interface AdminScreeningState {
+  filmId: string;
+  premiere: boolean;
+  date: string;
+  hours: Array<string>;
+}

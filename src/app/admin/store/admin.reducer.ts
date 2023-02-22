@@ -4,15 +4,10 @@ import { initialAdminFilmState } from './admin.state';
 
 export const adminFilmReducer = createReducer(
   initialAdminFilmState,
-  on(
-    adminFilmActions.addFilm,
-    (state, { title, types, image, description, rating }) => ({
+  on(adminFilmActions.addFilm, (state, { films }) => {
+    return {
       ...state,
-      title: title,
-      types: types,
-      image: image,
-      description: description,
-      rating: rating,
-    })
-  )
+      ...[films],
+    };
+  })
 );

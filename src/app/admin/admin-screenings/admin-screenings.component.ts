@@ -49,18 +49,19 @@ export class AdminScreeningsComponent {
   }
 
   addFilm() {
-    this.store.dispatch(
-      adminFilmActions.addFilm({
-        title: this.titleCtrl.value,
-        types: this.typesCtrl.value,
-        image: this.imageCtrl.value,
-        description: this.descriptionCtrl.value,
-        rating: this.ratingCtrl.value,
-      })
-    );
-    this.admin$.subscribe((test) => {
-      console.log(test);
-    });
+    //   console.log('hello');
+    //   this.store.dispatch(
+    //     adminFilmActions.addFilm({
+    //       title: this.titleCtrl.value,
+    //       types: this.typesCtrl.value,
+    //       image: this.imageCtrl.value,
+    //       description: this.descriptionCtrl.value,
+    //       rating: this.ratingCtrl.value,
+    //     })
+    //   );
+    //   this.admin$.subscribe((test) => {
+    //     console.log(test);
+    //   });
   }
 
   ngOnInit() {
