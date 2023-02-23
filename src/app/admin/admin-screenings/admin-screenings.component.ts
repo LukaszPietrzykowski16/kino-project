@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
+import { Screening } from 'src/app/home/film-panel/film-panel.component';
 import { ScreeningAdminState } from '../admin.module';
 
 import { screeningActions } from '../store/admin.action';
@@ -39,6 +40,23 @@ export class AdminScreeningsComponent {
   }
 
   addScreening() {
-    console.log(this.filmCtrl.value, this.dateCtrl.value);
+    const screeningNew: Screening = {
+      filmId: NaN,
+      premiere: false,
+      date: this.dateCtrl.value,
+      hours: [
+        '09:00',
+        '10:30',
+        '13:30',
+        '15:30',
+        '17:00',
+        '21:00',
+        '22:00',
+        '23:00',
+      ],
+    };
+    this.store.dispatch(
+      screeningActions.addSingleScreening({ screenings: screeningNew })
+    );
   }
 }

@@ -12,7 +12,6 @@ import { starsModal } from './stars-modal.component';
 export interface Screening {
   filmId: number;
   premiere: boolean;
-  rating: number;
   date: string;
   hours: Array<string>;
 }

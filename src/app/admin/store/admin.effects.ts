@@ -52,4 +52,17 @@ export class AdminEffects {
       })
     )
   );
+
+  sendScreenings$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(screeningActions.addSingleScreening),
+      switchMap((result) => {
+        return this.screeningService.postScreening(result.screenings).pipe(
+          map((result) => {
+            return screeningActions.addScreenings({ screenings: [] });
+          })
+        );
+      })
+    )
+  );
 }

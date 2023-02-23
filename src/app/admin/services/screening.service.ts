@@ -11,5 +11,25 @@ export class ScreeningService {
   getScreening() {
     return this.http.get<Screening[]>(`http://localhost:3000/screening`);
   }
+
+  postScreening(data: Screening) {
+    console.log(data);
+    return this.http.post(`http://localhost:3000/screening`, {
+      id: NaN,
+      filmId: NaN,
+      premiere: false,
+      date: data.date,
+      hours: [
+        '09:00',
+        '10:30',
+        '13:30',
+        '15:30',
+        '17:00',
+        '21:00',
+        '22:00',
+        '23:00',
+      ],
+    });
+  }
   constructor() {}
 }

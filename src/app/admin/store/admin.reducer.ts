@@ -26,5 +26,9 @@ export const addScreeningReducer = createReducer(
   on(screeningActions.addScreenings, (state, action) => ({
     ...state,
     screenings: action.screenings,
+  })),
+  on(screeningActions.addSingleScreening, (state, action) => ({
+    ...state,
+    screenings: [...state.screenings, action.screenings],
   }))
 );

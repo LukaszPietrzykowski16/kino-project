@@ -51,7 +51,7 @@ export class AdminComponent {
 
   addFilm() {
     const filmsNew: Film = {
-      id: 124,
+      id: NaN,
       title: this.titleCtrl.value,
       types: this.typesCtrl.value,
       image: this.imageCtrl.value,

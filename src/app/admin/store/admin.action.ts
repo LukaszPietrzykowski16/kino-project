@@ -21,5 +21,8 @@ export const screeningActions = createActionGroup({
     'Add Screenings': props<{
       screenings: Screening[];
     }>(),
+    'add Single Screening': props<{
+      screenings: Screening;
+    }>(),
   },
 });
