@@ -93,6 +93,38 @@
       "rating": "j",
       "title": "jsj",
       "types": "fj"
+    },
+    {
+      "id": 10,
+      "description": "film",
+      "image": "film",
+      "rating": "film",
+      "title": "film",
+      "types": "film"
+    },
+    {
+      "id": 11,
+      "description": "film",
+      "image": "film",
+      "rating": "film",
+      "title": "film",
+      "types": "film"
+    },
+    {
+      "id": 12,
+      "description": "film",
+      "image": "film",
+      "rating": "film",
+      "title": "film",
+      "types": "film"
+    },
+    {
+      "id": 13,
+      "description": "film",
+      "image": "film",
+      "rating": "film",
+      "title": "film",
+      "types": "film"
     }
   ],
   "screening": [
@@ -273,6 +305,22 @@
         "22:00",
         "23:00"
       ]
+    },
+    {
+      "id": 4,
+      "filmId": null,
+      "premiere": false,
+      "date": "fwenjnwef",
+      "hours": [
+        "09:00",
+        "10:30",
+        "13:30",
+        "15:30",
+        "17:00",
+        "21:00",
+        "22:00",
+        "23:00"
+      ]
     }
   ],
   "reservation": [
@@ -341,14 +389,14 @@
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 10,
       "isChoosen": false,
       "reservation": false
@@ -369,7 +417,7 @@
     },
     {
       "seat": "B2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 13,
       "isChoosen": false,
       "reservation": false
@@ -446,7 +494,7 @@
     },
     {
       "seat": "C2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 24,
       "isChoosen": false,
       "reservation": false
@@ -523,7 +571,7 @@
     },
     {
       "seat": "D2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 35,
       "isChoosen": false,
       "reservation": false
@@ -600,7 +648,7 @@
     },
     {
       "seat": "E2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 46,
       "isChoosen": false,
       "reservation": false
@@ -677,7 +725,7 @@
     },
     {
       "seat": "F2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 57,
       "isChoosen": false,
       "reservation": false
@@ -712,14 +760,14 @@
     },
     {
       "seat": "F7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 62,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 63,
       "isChoosen": false,
       "reservation": false
@@ -936,14 +984,14 @@
     },
     {
       "seat": "I6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 94,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 95,
       "isChoosen": false,
       "reservation": false
@@ -1050,7 +1098,8 @@
       "phoneNumber": 489394930,
       "id": 11,
       "movies": [
-        0
+        0,
+        1
       ],
       "ratings": [
         {

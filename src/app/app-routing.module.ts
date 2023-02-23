@@ -7,7 +7,6 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { ReservationComponent } from './domains/cinema-hall/reservation/reservation.component';
 import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.component';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
-import { SummaryComponent } from './domains/summary/summary.component';
 import { LoginComponent } from './auth/login.component/login-form.component';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { CartComponent } from './domains/cart/cart.component';
@@ -18,11 +17,6 @@ import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'date/:date', component: MainComponent },
-  { path: 'tickets', component: UserTicketsComponent },
-  { path: 'rezerwacja', component: ReservationComponent },
-  { path: 'formularz', component: FormsMainComponent },
-  { path: 'podsumowanie', component: SummaryComponent },
-  { path: 'chce-obejrzec', component: WantWatchComponent },
   { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 ];
 

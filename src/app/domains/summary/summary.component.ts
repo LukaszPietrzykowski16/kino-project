@@ -5,6 +5,7 @@ import { FormInfoService } from '../form/services/form-info.service';
 import { QrService } from './services/qr.service';
 import { CinemaHallService } from '../cinema-hall/services/cinema-hall.service';
 import { TicketsService } from '../cinema-hall/reservation/services/tickets.service';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 
 export interface qrCode {
   url: string;
@@ -12,10 +13,12 @@ export interface qrCode {
 
 @Component({
   selector: 'app-summary',
+  standalone: true,
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.css'],
+  imports: [NgIf, AsyncPipe, NgFor],
 })
-export class SummaryComponent {
+export default class SummaryComponent {
   private cinemaHall = inject(CinemaHallService);
   private ticketService = inject(TicketsService);
 

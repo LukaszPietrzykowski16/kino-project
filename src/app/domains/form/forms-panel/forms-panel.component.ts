@@ -107,7 +107,7 @@ export class FormsPanelComponent {
         this.sendTickets.sendTickets();
       }
       this.seatPostService.sendSeats();
-      this.router.navigate(['/podsumowanie']);
+      this.router.navigate(['/summary']);
     }
   }
 
@@ -118,7 +118,6 @@ export class FormsPanelComponent {
   }
 
   ngOnInit() {
-    // how can i get value from this without subscribing to it?
     this.login$.subscribe((login) => {
       this.isLogged = login;
     });

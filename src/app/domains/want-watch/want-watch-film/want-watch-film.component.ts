@@ -1,11 +1,14 @@
 import { Component, inject, Input } from '@angular/core';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
+import { IconsModule } from 'src/app/icons/icons.module';
 import { FilmService } from '../film/film.service';
 
 @Component({
   selector: 'app-want-watch-film',
   templateUrl: './want-watch-film.component.html',
   styleUrls: ['./want-watch-film.component.css'],
+  standalone: true,
+  imports: [IconsModule],
 })
 export class WantWatchFilmComponent {
   filmService = inject(FilmService);

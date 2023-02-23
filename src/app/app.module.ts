@@ -14,7 +14,6 @@ import { FormsPanelComponent } from './domains/form/forms-panel/forms-panel.comp
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
-import { SummaryComponent } from './domains/summary/summary.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
 import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
 import { StoreModule } from '@ngrx/store';
@@ -22,7 +21,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { RouterModule } from '@angular/router';
 import { UserState } from './auth/store/user.interface';
 import AuthModule from './auth/auth.module';
-import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { LoginGuard } from './auth/guards/login.guard';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
@@ -64,11 +62,8 @@ export interface AppState {
     FormsTitleComponent,
     FormsMainComponent,
     TicketsPriceComponent,
-    SummaryComponent,
-    WantWatchComponent,
     FilmComponent,
     MainDateComponent,
-    WantWatchFilmComponent,
     UserTicketsComponent,
     UserTicketComponent,
     AdminComponent,
@@ -120,10 +115,37 @@ export interface AppState {
                 ({ AdminModule }) => AdminModule
               ),
           },
+          {
+            path: 'date/:date',
+            loadChildren: () =>
+              import('./home/main/main.module').then(
+                ({ MainModule }) => MainModule
+              ),
+          },
+          {
+            path: 'tickets',
+            loadChildren: () =>
+              import('./domains/user-tickets/user-tickets.module').then(
+                ({ UserTicketsModule }) => UserTicketsModule
+              ),
+          },
+          {
+            path: 'form',
+            loadChildren: () =>
+              import('./domains/form/form.module').then(
+                ({ FormModule }) => FormModule
+              ),
+          },
+          {
+            path: 'summary',
+            loadComponent: () => import('./domains/summary/summary.component'),
+          },
         ],
       },
     ]),
     BrowserAnimationsModule,
   ],
+  // { path: 'chce-obejrzec', component: WantWatchComponent },
+  // { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 })
 export class AppModule {}
