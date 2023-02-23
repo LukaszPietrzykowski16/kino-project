@@ -120,14 +120,6 @@ export interface AppState {
                 ({ AdminModule }) => AdminModule
               ),
           },
-          // {
-          //   path: 'tickets',
-          //   loadChildren: () =>
-          //     import('./domains/user-tickets/user-tickets.module').then(
-          //       ({ UserTicketsModule }) => UserTicketsModule
-          //     ),
-          //   canActivate: [LoginGuard],
-          // },
         ],
       },
     ]),
