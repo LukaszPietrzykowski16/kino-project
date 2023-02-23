@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { map, pipe } from 'rxjs';
-import { AdminState } from './admin.module';
+import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
 
@@ -13,7 +13,7 @@ import { Film } from 'src/app/home/film-panel/film-panel.component';
 })
 export class AdminComponent {
   private fb = inject(FormBuilder);
-  private store = inject<Store<AdminState>>(Store);
+  private store = inject<Store<FilmAdminState>>(Store);
 
   admin$ = this.store.select('AdminFilm');
 
@@ -62,9 +62,6 @@ export class AdminComponent {
     this.store.dispatch(
       addFilmsFromApiActions.addSingleFilm({ films: filmsNew })
     );
-    this.admin$.subscribe((test) => {
-      console.log(test);
-    });
   }
 
   ngOnInit() {

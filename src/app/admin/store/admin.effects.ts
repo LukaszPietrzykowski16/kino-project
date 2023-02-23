@@ -46,7 +46,6 @@ export class AdminEffects {
       switchMap(() => {
         return this.screeningService.getScreening().pipe(
           map((result) => {
-            console.log(result);
             return screeningActions.addScreenings({ screenings: result });
           })
         );

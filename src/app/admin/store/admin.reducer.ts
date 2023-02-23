@@ -1,5 +1,8 @@
 import { createReducer, on } from '@ngrx/store';
-import { initialAdminFilmState } from './admin.state';
+import {
+  initialAdminFilmState,
+  initialAdminScreeningState,
+} from './admin.state';
 import { addFilmsFromApiActions, screeningActions } from './admin.action';
 
 export const addFilmReducer = createReducer(
@@ -15,13 +18,13 @@ export const addFilmReducer = createReducer(
 );
 
 export const addScreeningReducer = createReducer(
-  initialAdminFilmState,
+  initialAdminScreeningState,
   on(screeningActions.getScreenings, (state, action) => ({
     ...state,
     action,
   })),
   on(screeningActions.addScreenings, (state, action) => ({
     ...state,
-    action: [...state.screenings, action.screenings],
+    screenings: action.screenings,
   }))
 );

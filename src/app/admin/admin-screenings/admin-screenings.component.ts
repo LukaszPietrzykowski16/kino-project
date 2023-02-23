@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AdminState } from '../admin.module';
+import { ScreeningAdminState } from '../admin.module';
+
 import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
 
@@ -11,7 +12,7 @@ import { AdminFilmState } from '../store/admin.interface';
   styleUrls: ['./admin-screenings.component.css'],
 })
 export class AdminScreeningsComponent {
-  private store = inject<Store<AdminState>>(Store);
+  private store = inject<Store<ScreeningAdminState>>(Store);
   checked = false;
   screeningForm: FormGroup = new FormGroup({});
 
@@ -24,7 +25,9 @@ export class AdminScreeningsComponent {
       date: [null, [Validators.required]],
       // premier: [false, [Validators.required]],
     });
-    this.store.select('AdminFilm');
+    this.store.select('AdminScreening').subscribe((test) => {
+      console.log(test);
+    });
   }
 
   get filmCtrl() {

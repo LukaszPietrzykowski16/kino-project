@@ -15,7 +15,7 @@ export const addFilmsFromApiActions = createActionGroup({
 });
 
 export const screeningActions = createActionGroup({
-  source: 'AdminFilm',
+  source: 'AdminScreening',
   events: {
     'get Screenings': emptyProps(),
     'Add Screenings': props<{

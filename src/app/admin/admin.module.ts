@@ -5,15 +5,19 @@ import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { StoreModule } from '@ngrx/store';
 
-import { AdminFilmState } from './store/admin.interface';
+import { AdminFilmState, AdminScreeningState } from './store/admin.interface';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EffectsModule } from '@ngrx/effects';
 
 import { addFilmReducer, addScreeningReducer } from './store/admin.reducer';
 import { AdminEffects } from './store/admin.effects';
 
-export interface AdminState {
+export interface FilmAdminState {
   AdminFilm: AdminFilmState[];
+}
+
+export interface ScreeningAdminState {
+  AdminScreening: AdminScreeningState[];
 }
 
 @NgModule({
@@ -30,7 +34,8 @@ export interface AdminState {
         component: AdminComponent,
       },
     ]),
-    StoreModule.forFeature('AdminFilm', [addFilmReducer, addScreeningReducer]),
+    StoreModule.forFeature('AdminFilm', [addFilmReducer]),
+    StoreModule.forFeature('AdminScreening', [addScreeningReducer]),
   ],
 })
 export class AdminModule {}
