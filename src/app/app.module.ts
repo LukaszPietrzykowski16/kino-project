@@ -24,7 +24,6 @@ import { UserState } from './auth/store/user.interface';
 import AuthModule from './auth/auth.module';
 import { WantWatchComponent } from './domains/want-watch/want-watch.component';
 import { LoginGuard } from './auth/guards/login.guard';
-import { HighlightDirective } from './highlight.directive';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
 import { MainDateComponent } from './home/main/main-date/main-date.component';
@@ -66,7 +65,6 @@ export interface AppState {
     TicketsPriceComponent,
     SummaryComponent,
     WantWatchComponent,
-    HighlightDirective,
     FilmComponent,
     MainDateComponent,
     WantWatchFilmComponent,
