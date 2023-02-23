@@ -15,7 +15,6 @@ export interface Screening {
   rating: number;
   date: string;
   hours: Array<string>;
-  film: Film;
 }
 
 export interface Film {

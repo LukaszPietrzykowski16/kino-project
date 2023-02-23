@@ -53,6 +53,46 @@
       "rating": "dw",
       "title": "fm",
       "types": "vk"
+    },
+    {
+      "id": 5,
+      "description": "FMW",
+      "image": "QMFW",
+      "rating": "FWMQ",
+      "title": "sdam",
+      "types": "MDVS"
+    },
+    {
+      "id": 6,
+      "description": "mf",
+      "image": "mf",
+      "rating": "fm",
+      "title": "fkKF",
+      "types": "fm"
+    },
+    {
+      "id": 7,
+      "description": "fm",
+      "image": "fmq",
+      "rating": "fm",
+      "title": "mds",
+      "types": "fm"
+    },
+    {
+      "id": 8,
+      "description": "test",
+      "image": "test",
+      "rating": "tes",
+      "title": "test",
+      "types": "test"
+    },
+    {
+      "id": 9,
+      "description": "fj",
+      "image": "jfj",
+      "rating": "j",
+      "title": "jsj",
+      "types": "fj"
     }
   ],
   "screening": [
@@ -970,7 +1010,12 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [2, 1, 3, 7]
+      "movies": [
+        2,
+        1,
+        3,
+        7
+      ]
     },
     {
       "email": "admin@gmail.com",
@@ -986,7 +1031,9 @@
       "lastName": "Kowalski",
       "phoneNumber": 489394930,
       "id": 11,
-      "movies": [0],
+      "movies": [
+        0
+      ],
       "ratings": [
         {
           "filmId": 1,
@@ -1120,7 +1167,9 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [0]
+      "movies": [
+        0
+      ]
     }
   ]
 }

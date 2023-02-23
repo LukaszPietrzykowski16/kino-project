@@ -1,15 +1,5 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
-import { AdminFilmState } from './admin.interface';
-import { Film } from 'src/app/home/film-panel/film-panel.component';
-
-// export const adminFilmActions = createActionGroup({
-//   source: 'AdminFilm',
-//   events: {
-//     'Add film': props<{
-//       films: Film;
-//     }>(),
-//   },
-// });
+import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
 
 export const addFilmsFromApiActions = createActionGroup({
   source: 'AdminFilm',
@@ -20,6 +10,16 @@ export const addFilmsFromApiActions = createActionGroup({
     }>(),
     'Add single film': props<{
       films: Film;
+    }>(),
+  },
+});
+
+export const screeningActions = createActionGroup({
+  source: 'AdminFilm',
+  events: {
+    'get Screenings': emptyProps(),
+    'Add Screenings': props<{
+      screenings: Screening[];
     }>(),
   },
 });

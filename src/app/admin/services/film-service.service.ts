@@ -12,7 +12,6 @@ export class FilmServiceService {
   constructor() {}
 
   postFilms(data: Film) {
-    console.log(data);
     return this.http.post(`http://localhost:3000/films`, {
       id: NaN,
       description: data.description,

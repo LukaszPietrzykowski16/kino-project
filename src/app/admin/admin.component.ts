@@ -62,9 +62,9 @@ export class AdminComponent {
     this.store.dispatch(
       addFilmsFromApiActions.addSingleFilm({ films: filmsNew })
     );
-    // this.admin$.subscribe((test) => {
-    //   console.log(test);
-    // });
+    this.admin$.subscribe((test) => {
+      console.log(test);
+    });
   }
 
   ngOnInit() {

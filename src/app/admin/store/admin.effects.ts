@@ -5,13 +5,14 @@ import { EMPTY, of } from 'rxjs';
 import { map, mergeMap, switchMap, tap } from 'rxjs/operators';
 import { FilmService } from 'src/app/domains/want-watch/film/film.service';
 import { FilmServiceService } from '../services/film-service.service';
-import { addFilmsFromApiActions } from './admin.action';
+import { ScreeningService } from '../services/screening.service';
+import { addFilmsFromApiActions, screeningActions } from './admin.action';
 
 @Injectable()
 export class AdminEffects {
   private filmService = inject(FilmServiceService);
+  private screeningService = inject(ScreeningService);
   private actions$ = inject(Actions);
-  private router = inject(Router);
 
   film$ = createEffect(() =>
     this.actions$.pipe(
@@ -33,6 +34,20 @@ export class AdminEffects {
         return this.filmService.postFilms(result.films).pipe(
           map((result) => {
             return addFilmsFromApiActions.addFilm({ films: [] });
+          })
+        );
+      })
+    )
+  );
+
+  screening$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(screeningActions.getScreenings),
+      switchMap(() => {
+        return this.screeningService.getScreening().pipe(
+          map((result) => {
+            console.log(result);
+            return screeningActions.addScreenings({ screenings: result });
           })
         );
       })
