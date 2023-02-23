@@ -34,6 +34,16 @@ import { UserTicketsComponent } from './domains/user-tickets/user-tickets.compon
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminScreeningsComponent } from './admin/admin-screenings/admin-screenings.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatButtonModule } from '@angular/material/button';
 
 export interface AppState {
   User: UserState;
@@ -76,6 +86,17 @@ export interface AppState {
     FormsModule,
     AuthModule,
     MatDialogModule,
+    CommonModule,
+    MatTableModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatButtonModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([

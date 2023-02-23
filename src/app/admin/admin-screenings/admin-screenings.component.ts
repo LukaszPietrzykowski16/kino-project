@@ -10,60 +10,20 @@ import { AdminFilmState } from '../store/admin.interface';
   styleUrls: ['./admin-screenings.component.css'],
 })
 export class AdminScreeningsComponent {
-  private fb = inject(FormBuilder);
-  private store = inject<Store<AdminState>>(Store);
+  checked = false;
+  screeningForm: FormGroup = new FormGroup({});
 
-  admin$ = this.store.select('AdminFilm');
+  constructor(private fb: FormBuilder) {}
 
-  screeningForm!: FormGroup;
-  constructor() {}
-  createForm() {
+  ngOnInit(): void {
     this.screeningForm = this.fb.group({
-      title: ['', Validators.required],
-      types: ['', Validators.required],
-      image: ['', Validators.required],
-      description: ['', Validators.required],
-      rating: ['', Validators.required],
+      film: [null, [Validators.required, Validators.minLength(4)]],
+      date: [null, [Validators.required]],
+      // premier: [false, [Validators.required]],
     });
   }
 
-  get titleCtrl() {
-    return this.screeningForm.controls.title;
-  }
-
-  get typesCtrl() {
-    return this.screeningForm.controls.types;
-  }
-
-  get imageCtrl() {
-    return this.screeningForm.controls.image;
-  }
-
-  get descriptionCtrl() {
-    return this.screeningForm.controls.description;
-  }
-
-  get ratingCtrl() {
-    return this.screeningForm.controls.rating;
-  }
-
-  addFilm() {
-    //   console.log('hello');
-    //   this.store.dispatch(
-    //     adminFilmActions.addFilm({
-    //       title: this.titleCtrl.value,
-    //       types: this.typesCtrl.value,
-    //       image: this.imageCtrl.value,
-    //       description: this.descriptionCtrl.value,
-    //       rating: this.ratingCtrl.value,
-    //     })
-    //   );
-    //   this.admin$.subscribe((test) => {
-    //     console.log(test);
-    //   });
-  }
-
-  ngOnInit() {
-    this.createForm();
+  saveDetails(form: any) {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(form.value, null, 4));
   }
 }

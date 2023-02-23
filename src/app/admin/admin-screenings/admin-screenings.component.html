@@ -1,94 +1,43 @@
 <div class="container">
-  <h1>Dodaj film</h1>
-  <form [formGroup]="screeningForm" novalidate>
-    <div class="form-group">
-      <label>Tytuł:</label>
-      <input class="form-control" formControlName="title" type="text" />
-    </div>
-    <div
-      *ngIf="
-        screeningForm.controls['title'].invalid &&
-        (screeningForm.controls['title'].dirty ||
-          screeningForm.controls['title'].touched)
-      "
-      class="alert alert-danger"
+  <form [formGroup]="screeningForm">
+    <mat-form-field>
+      <mat-label>Film id (później dropdown)</mat-label>
+      <input
+        matInput
+        maxlength="15"
+        inputmode="tel"
+        placeholder="Type name"
+        formControlName="film"
+        #nameInput
+      />
+      <mat-hint>Mini character 10: {{ nameInput.value.length }}/10</mat-hint>
+      <mat-error>Name is required</mat-error>
+      <mat-error *ngIf="screeningForm.controls['film'].errors?.['minlength']">
+        Please enter more than 10 character
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email Address:</mat-label>
+      <input
+        matInput
+        type="email"
+        formControlName="date"
+        placeholder="Your email"
+      />
+      <mat-icon matSuffix>mail_outline</mat-icon>
+      <mat-hint>Input the fully qualified email address</mat-hint>
+      <mat-error *ngIf="screeningForm.controls['date'].errors?.['required']"
+        >Email is required</mat-error
+      >
+      <mat-error *ngIf="screeningForm.controls['date'].errors?.['pattern']"
+        >Please enter valid email</mat-error
+      >
+    </mat-form-field>
+
+    <mat-checkbox class="example-margin" [(ngModel)]="checked"
+      >Checked</mat-checkbox
     >
-      <div *ngIf="screeningForm.controls['title'].errors?.required">
-        Pole tytuł wymagane
-      </div>
-    </div>
-    <div class="form-group">
-      <label> Gatunki filmów </label>
-      <input class="form-control" formControlName="types" type="text" />
-    </div>
-    <div
-      *ngIf="
-        screeningForm.controls['types'].invalid &&
-        (screeningForm.controls['types'].dirty ||
-          screeningForm.controls['types'].touched)
-      "
-      class="alert alert-danger"
-    >
-      <div *ngIf="screeningForm.controls['types'].errors?.required">
-        Pole typy
-      </div>
-    </div>
-    <div class="form-group">
-      <label>Image link:</label>
-      <input class="form-control" formControlName="image" type="text" />
-    </div>
-    <div
-      *ngIf="
-        screeningForm.controls['image'].invalid &&
-        (screeningForm.controls['image'].dirty ||
-          screeningForm.controls['image'].touched)
-      "
-      class="alert alert-danger"
-    >
-      <div *ngIf="screeningForm.controls['image'].errors?.required">
-        Pole zdjęcie wymagane
-      </div>
-    </div>
-    <div class="form-group">
-      <label>Opis:</label>
-      <input class="form-control" formControlName="description" type="text" />
-    </div>
-    <div
-      *ngIf="
-        screeningForm.controls['description'].invalid &&
-        (screeningForm.controls['description'].dirty ||
-          screeningForm.controls['description'].touched)
-      "
-      class="alert alert-danger"
-    >
-      <div *ngIf="screeningForm.controls['description'].errors?.required">
-        Pole opis wymagane
-      </div>
-    </div>
-    <div class="form-group">
-      <label>Name:</label>
-      <input class="form-control" formControlName="rating" type="text" />
-    </div>
-    <div
-      *ngIf="
-        screeningForm.controls['rating'].invalid &&
-        (screeningForm.controls['rating'].dirty ||
-          screeningForm.controls['rating'].touched)
-      "
-      class="alert alert-danger"
-    >
-      <div *ngIf="screeningForm.controls['rating'].errors?.required">
-        Pole rating wymagane
-      </div>
-    </div>
-    <button
-      type="submit"
-      [disabled]="screeningForm.pristine || screeningForm.invalid"
-      class="btn btn-success"
-      (click)="addFilm()"
-    >
-      Save
-    </button>
   </form>
-  <br />
+  <div>{{ screeningForm.value | json }}</div>
 </div>
