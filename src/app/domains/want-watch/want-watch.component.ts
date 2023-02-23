@@ -10,7 +10,7 @@ import { WantWatchFilmComponent } from './want-watch-film/want-watch-film.compon
   standalone: true,
   imports: [NgIf, AsyncPipe, NgFor, WantWatchFilmComponent],
 })
-export class WantWatchComponent {
+export default class WantWatchComponent {
   constructor(private filmService: FilmService) {}
 
   filmService$ = this.filmService.getFilms$;

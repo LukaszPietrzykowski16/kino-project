@@ -25,7 +25,6 @@ import { LoginGuard } from './auth/guards/login.guard';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FilmComponent } from './home/film-panel/film/film.component';
 import { MainDateComponent } from './home/main/main-date/main-date.component';
-import { WantWatchFilmComponent } from './domains/want-watch/want-watch-film/want-watch-film.component';
 import { CommonModule } from '@angular/common';
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
@@ -140,12 +139,16 @@ export interface AppState {
             path: 'summary',
             loadComponent: () => import('./domains/summary/summary.component'),
           },
+          {
+            path: 'want-watch',
+            loadComponent: () =>
+              import('./domains/want-watch/want-watch.component'),
+          },
         ],
       },
     ]),
     BrowserAnimationsModule,
   ],
   // { path: 'chce-obejrzec', component: WantWatchComponent },
-  // { path: 'rezerwacja/:item/:hour/:title', component: ReservationComponent },
 })
 export class AppModule {}

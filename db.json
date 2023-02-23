@@ -816,7 +816,7 @@
     },
     {
       "seat": "G4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 70,
       "isChoosen": false,
       "reservation": false
@@ -893,7 +893,7 @@
     },
     {
       "seat": "H4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 81,
       "isChoosen": false,
       "reservation": false
