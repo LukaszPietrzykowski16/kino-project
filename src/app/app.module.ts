@@ -44,6 +44,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
 
 export interface AppState {
   User: UserState;
@@ -96,6 +97,7 @@ export interface AppState {
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
+    NumbersOnlyDirective,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([
