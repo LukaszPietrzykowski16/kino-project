@@ -1,10 +1,12 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import jwtDecode, { JwtPayload } from 'jwt-decode';
+import { CheckUserService } from './check-user.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TokenService {
+  private checkUser = inject(CheckUserService);
   private _token: string | null = localStorage.getItem('token');
   private _decodedToken: JwtPayload | null;
 
@@ -17,7 +19,14 @@ export class TokenService {
   }
 
   constructor() {
+    this.getUser();
     this._decodedToken = this.decodeToken();
+  }
+
+  private getUser() {
+    if (this.token) {
+      this.checkUser.checkUser(jwtDecode<JwtPayload>(this.token).sub);
+    }
   }
 
   private decodeToken() {

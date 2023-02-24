@@ -6,7 +6,7 @@ import { Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
 import { LoginData } from './auth.interface';
 import { AppState } from 'src/app/app.module';
-import { TokenService } from 'src/app/token.service';
+import { TokenService } from './token.service';
 
 @Injectable({
   providedIn: 'root',
