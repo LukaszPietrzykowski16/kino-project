@@ -7,6 +7,10 @@ import { CinemaHallService } from '../../cinema-hall/services/cinema-hall.servic
 import { SingleTicket } from '../user-ticket.interface';
 import { UserTicketService } from './user-ticket.service';
 
+interface UrlId {
+  urlId: number;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -18,10 +22,14 @@ export class SendTicketsService {
   private userTickets = inject(UserTicketService);
 
   private ticketInfo$$ = new BehaviorSubject<SingleTicket[]>([]);
-  private urlInfo$$ = new BehaviorSubject<Object[]>([]);
+  private urlInfo$$ = new BehaviorSubject<number[]>([]);
 
   get getTicketInfo$() {
     return this.ticketInfo$$.asObservable();
+  }
+
+  get getUrlInfo$() {
+    return this.urlInfo$$.asObservable();
   }
 
   title = '';
@@ -96,7 +104,7 @@ export class SendTicketsService {
 
   postTicket(arr: SingleTicket) {
     return this.http
-      .post(`http://localhost:3000/tickets`, {
+      .post<SingleTicket>(`http://localhost:3000/tickets`, {
         id: arr.id,
         title: arr.title,
         date: arr.date,
@@ -104,7 +112,7 @@ export class SendTicketsService {
         place: arr.places,
       })
       .subscribe((result) => {
-        this.urlInfo$$.next([...this.urlInfo$$.getValue(), result]);
+        this.urlInfo$$.next([...this.urlInfo$$.getValue(), ...[result.id]]);
       });
   }
 }

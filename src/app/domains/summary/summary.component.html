@@ -6,11 +6,16 @@
   </div>
 </div>
 <div *ngIf="tickets$ | async as tickets">
-  <div *ngFor="let ticket of tickets">
-    <div>
-      Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
-      {{ ticket.type }}
+  <div *ngIf="urlValue$ | async as url">
+    <div *ngFor="let exactUrl of url">
+      <p routerLink="/ticket/{{ exactUrl }}">Link do biletu</p>
+    </div>
+    <div *ngFor="let ticket of tickets">
+      <div>
+        Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+        {{ ticket.type }}
+      </div>
     </div>
   </div>
+  <img src="{{ url }}" alt="kod qr" class="qr-code" />
 </div>
-<img src="{{ url }}" alt="kod qr" class="qr-code" />
