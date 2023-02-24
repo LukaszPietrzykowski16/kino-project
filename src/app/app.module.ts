@@ -40,6 +40,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
+import { AdminGuard } from './admin.guard';
 
 export interface AppState {
   User: UserState;
@@ -109,6 +110,8 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
+            canActivate: [LoginGuard],
+            // canMatch: [AdminGuard],
           },
           {
             path: 'date/:date',
@@ -123,6 +126,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
+            canActivate: [LoginGuard],
           },
           {
             path: 'form',
@@ -139,6 +143,7 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
+            canActivate: [LoginGuard],
           },
           {
             path: 'ticket/:id',

@@ -2,11 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, tap } from 'rxjs';
-import { Store } from '@ngrx/store';
+import { createSelector, Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
 import { LoginData } from './auth.interface';
 import { AppState } from 'src/app/app.module';
 import { TokenService } from './token.service';
+
+export const selectAuth = (state: AppState) => state.User;
+
+export const selectAccountType = createSelector(
+  selectAuth,
+  (state) => state.type
+);
 
 @Injectable({
   providedIn: 'root',
