@@ -16,8 +16,12 @@ export default class TicketsComponent {
 
   ticket$ = this.userTickets.ticket$;
 
+  orderId: string | null = '';
+
+  barcodeApiUrl = 'https://barcodeapi.org/api/127/';
+
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.userTickets.displayTicket(id);
+    this.orderId = this.route.snapshot.paramMap.get('id');
+    this.userTickets.displayTicket(this.orderId);
   }
 }

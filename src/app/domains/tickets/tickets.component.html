@@ -4,4 +4,5 @@
   {{ ticket.hour }}
   {{ ticket.place.seat }}
   {{ ticket.place.type }}
+  <img [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId" />
 </div>

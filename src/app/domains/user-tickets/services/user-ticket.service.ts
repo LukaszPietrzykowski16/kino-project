@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { tick } from '@angular/core/testing';
 import { BehaviorSubject, map, tap } from 'rxjs';
 import { SingleTicket, UserTicket } from '../user-ticket.interface';
 
