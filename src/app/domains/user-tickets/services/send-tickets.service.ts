@@ -18,6 +18,7 @@ export class SendTicketsService {
   private userTickets = inject(UserTicketService);
 
   private ticketInfo$$ = new BehaviorSubject<SingleTicket[]>([]);
+  private urlInfo$$ = new BehaviorSubject<Object[]>([]);
 
   get getTicketInfo$() {
     return this.ticketInfo$$.asObservable();
@@ -94,7 +95,6 @@ export class SendTicketsService {
   }
 
   postTicket(arr: SingleTicket) {
-    console.log(arr);
     return this.http
       .post(`http://localhost:3000/tickets`, {
         id: arr.id,
@@ -103,6 +103,8 @@ export class SendTicketsService {
         hour: arr.hour,
         place: arr.places,
       })
-      .subscribe();
+      .subscribe((result) => {
+        this.urlInfo$$.next([...this.urlInfo$$.getValue(), result]);
+      });
   }
 }
