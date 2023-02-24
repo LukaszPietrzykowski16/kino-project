@@ -141,7 +141,7 @@ export interface AppState {
               import('./domains/want-watch/want-watch.component'),
           },
           {
-            path: 'ticket',
+            path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
           },
         ],

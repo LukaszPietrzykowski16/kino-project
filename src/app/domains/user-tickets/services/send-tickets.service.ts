@@ -51,7 +51,7 @@ export class SendTicketsService {
             title: this.title,
             date: this.date,
             hour: this.hour,
-            places: {
+            place: {
               seat: test.seat,
               type: test.type,
             },
@@ -109,7 +109,7 @@ export class SendTicketsService {
         title: arr.title,
         date: arr.date,
         hour: arr.hour,
-        place: arr.places,
+        place: arr.place,
       })
       .subscribe((result) => {
         this.urlInfo$$.next([...this.urlInfo$$.getValue(), ...[result.id]]);

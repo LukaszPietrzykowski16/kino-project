@@ -1545,6 +1545,16 @@
         "seat": "H8",
         "type": "bilet normalny 25zł"
       }
+    },
+    {
+      "id": 30,
+      "title": "Kot w butach 2",
+      "date": "24-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "H7",
+        "type": "bilet normalny 25zł"
+      }
     }
   ]
 }

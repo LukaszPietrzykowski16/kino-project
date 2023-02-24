@@ -21,7 +21,7 @@ export interface SingleTicket {
   title: string;
   date: string;
   hour: string;
-  places: {
+  place: {
     seat: string;
     type: string;
   };
