@@ -28,8 +28,6 @@ import { MainDateComponent } from './home/main/main-date/main-date.component';
 import { CommonModule } from '@angular/common';
 import { UserTicketsComponent } from './domains/user-tickets/user-tickets.component';
 import { UserTicketComponent } from './domains/user-tickets/user-ticket/user-ticket.component';
-import { AdminComponent } from './admin/admin.component';
-import { AdminScreeningsComponent } from './admin/admin-screenings/admin-screenings.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -65,8 +63,6 @@ export interface AppState {
     MainDateComponent,
     UserTicketsComponent,
     UserTicketComponent,
-    AdminComponent,
-    AdminScreeningsComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],
@@ -143,6 +139,10 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
+          },
+          {
+            path: 'ticket',
+            loadComponent: () => import('./domains/tickets/tickets.component'),
           },
         ],
       },

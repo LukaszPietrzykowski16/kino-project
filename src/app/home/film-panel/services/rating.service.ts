@@ -10,7 +10,7 @@ export class RatingService {
 
   sendRating(userId: number, ratingNumber: number, filmId: number) {
     return this.http
-      .patch<any>(`http://localhost:3000/users/${userId}`, {
+      .patch(`http://localhost:3000/users/${userId}`, {
         ratings: [
           {
             filmId: filmId,

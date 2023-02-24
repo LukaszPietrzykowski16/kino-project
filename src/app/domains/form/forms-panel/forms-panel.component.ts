@@ -75,15 +75,6 @@ export class FormsPanelComponent {
     blikCodeInput: new FormControl(''),
   });
 
-  keyPress(event: any) {
-    // Event
-    const pattern = /[0-9\+\-\ ]/;
-    let inputChar = String.fromCharCode(event.charCode);
-    if (event.keyCode != 8 && !pattern.test(inputChar)) {
-      event.preventDefault();
-    }
-  }
-
   checkout = true;
 
   showBlik() {
@@ -103,9 +94,9 @@ export class FormsPanelComponent {
         this.profileForm.controls.email.value,
         this.profileForm.controls.phoneNumber.value
       );
-      if (this.isLogged === true) {
-        this.sendTickets.sendTickets();
-      }
+
+      this.sendTickets.sendTickets();
+
       this.seatPostService.sendSeats();
       this.router.navigate(['/summary']);
     }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, map } from 'rxjs';
+import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
 import { CinemaHallService } from '../../cinema-hall/services/cinema-hall.service';
 import { SingleTicket } from '../user-ticket.interface';
@@ -13,6 +14,7 @@ export class SendTicketsService {
   private http = inject(HttpClient);
   private ticketService = inject(TicketsService);
   private cinemaHall = inject(CinemaHallService);
+  private authService = inject(AuthService);
   private userTickets = inject(UserTicketService);
 
   private ticketInfo$$ = new BehaviorSubject<SingleTicket[]>([]);
@@ -30,7 +32,7 @@ export class SendTicketsService {
 
   constructor() {}
 
-  sendTickets2() {
+  recunstructTicket() {
     this.tickets$.subscribe((filmData) => {
       filmData.map((test) => {
         this.ticketInfo$$.next([
@@ -50,29 +52,56 @@ export class SendTicketsService {
     });
   }
 
+  isLogged = false;
+  login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
+
+  ngOnInit() {
+    this.login$.subscribe((login) => {
+      this.isLogged = login;
+    });
+  }
+
   sendTickets() {
     this.reservation$.subscribe((filmData) => {
       (this.title = filmData.title),
         (this.date = filmData.day),
         (this.hour = filmData.hour);
     });
-    this.sendTickets2();
+    this.recunstructTicket();
     this.getTicketInfo$.subscribe((ticketData) => {
       this.postTickets(ticketData);
     });
   }
 
   postTickets(ticketData: Array<SingleTicket>) {
-    console.log(ticketData);
     this.userTickets.getUserTickets().subscribe((test) => {
-      this.anotherFunction([...test.tickets, ...ticketData]);
+      if (this.isLogged === true) {
+        this.anotherFunction([...test.tickets, ...ticketData]);
+      } else {
+        ticketData.map((exactTicketData) => {
+          this.postTicket(exactTicketData);
+        });
+      }
     });
   }
 
-  anotherFunction(arr: any) {
+  anotherFunction(arr: Array<SingleTicket>) {
     return this.http
-      .patch<Array<Number>>(`http://localhost:3000/users/11`, {
+      .patch(`http://localhost:3000/users/11`, {
         tickets: arr,
+      })
+      .subscribe();
+  }
+
+  postTicket(arr: SingleTicket) {
+    console.log(arr);
+    return this.http
+      .post(`http://localhost:3000/tickets`, {
+        id: arr.id,
+        title: arr.title,
+        date: arr.date,
+        hour: arr.hour,
+        place: arr.places,
       })
       .subscribe();
   }

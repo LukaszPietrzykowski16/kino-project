@@ -347,7 +347,7 @@
     },
     {
       "seat": "A3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 3,
       "isChoosen": false,
       "reservation": false
@@ -424,14 +424,14 @@
     },
     {
       "seat": "B3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 14,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 15,
       "isChoosen": false,
       "reservation": false
@@ -459,7 +459,7 @@
     },
     {
       "seat": "B8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 19,
       "isChoosen": false,
       "reservation": false
@@ -501,21 +501,21 @@
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 26,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 27,
       "isChoosen": false,
       "reservation": false
@@ -536,7 +536,7 @@
     },
     {
       "seat": "C8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 30,
       "isChoosen": false,
       "reservation": false
@@ -585,7 +585,7 @@
     },
     {
       "seat": "D4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 37,
       "isChoosen": false,
       "reservation": false
@@ -606,7 +606,7 @@
     },
     {
       "seat": "D7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 40,
       "isChoosen": false,
       "reservation": false
@@ -669,7 +669,7 @@
     },
     {
       "seat": "E5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 49,
       "isChoosen": false,
       "reservation": false
@@ -704,7 +704,7 @@
     },
     {
       "seat": "E10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 54,
       "isChoosen": false,
       "reservation": false
@@ -732,7 +732,7 @@
     },
     {
       "seat": "F3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 58,
       "isChoosen": false,
       "reservation": false
@@ -781,7 +781,7 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65,
       "isChoosen": false,
       "reservation": false
@@ -809,7 +809,7 @@
     },
     {
       "seat": "G3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 69,
       "isChoosen": false,
       "reservation": false
@@ -1237,6 +1237,64 @@
       "movies": [
         0
       ]
+    }
+  ],
+  "tickets": [
+    {
+      "id": 0,
+      "title": "Avatar: Istota wody",
+      "date": "20-02",
+      "hour": "23:00",
+      "places": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "arr": {
+        "id": null,
+        "title": "Kot w butach 2",
+        "date": "24-02",
+        "hour": "17:00",
+        "places": {
+          "seat": "F3",
+          "type": "bilet normalny 25zł"
+        }
+      },
+      "id": 1
+    },
+    {
+      "arr": {
+        "id": null,
+        "title": "Kot w butach 2",
+        "date": "24-02",
+        "hour": "17:00",
+        "places": {
+          "seat": "G3",
+          "type": "bilet normalny 25zł"
+        }
+      },
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Kot w butach 2",
+      "date": "24-02",
+      "hour": "17:00",
+      "place": {
+        "seat": "B8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Kot w butach 2",
+      "date": "24-02",
+      "hour": "17:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
     }
   ]
 }

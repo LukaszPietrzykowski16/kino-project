@@ -24,4 +24,8 @@ export class UserTicketService {
   getUserTickets() {
     return this.http.get<UserTicket>(`http://localhost:3000/users/11`);
   }
+
+  // getVisitorTickets(id) {
+  //   return this.http.get<UserTicket>(`http://localhost:3000/tickets/${id}`);
+  // }
 }
