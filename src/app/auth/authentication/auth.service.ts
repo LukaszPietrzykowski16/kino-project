@@ -6,6 +6,7 @@ import { Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
 import { LoginData } from './auth.interface';
 import { AppState } from 'src/app/app.module';
+import { TokenService } from 'src/app/token.service';
 
 @Injectable({
   providedIn: 'root',
@@ -14,6 +15,7 @@ export class AuthService {
   private http = inject(HttpClient);
   private store = inject<Store<AppState>>(Store);
   private router = inject(Router);
+  private tokenService = inject(TokenService);
 
   private url = 'http://localhost:3000/login';
 
@@ -25,6 +27,19 @@ export class AuthService {
     return this.auth$$.asObservable();
   }
 
+  constructor() {
+    this.initAuth();
+  }
+
+  get auth$() {
+    return this.auth$$.asObservable();
+  }
+
+  private initAuth() {
+    if (this.tokenService.token && !this.tokenService.isTokenExpired()) {
+      this.auth$$.next({ hasAuth: true });
+    }
+  }
   user$ = this.store.select('User');
 
   logIn(email: string, password: string) {
