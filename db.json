@@ -1076,17 +1076,14 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
       "password": "$2a$10$7ZM9.8iMGRSUnIUmguB7s.tC75NP51Mob2khxdnvagWJddbHXnE26",
       "type": "admin",
+      "firstName": "Admin",
+      "lastName": "Adminowski",
       "id": 10
     },
     {
@@ -1097,10 +1094,7 @@
       "lastName": "Kowalski",
       "phoneNumber": 489394930,
       "id": 11,
-      "movies": [
-        0,
-        1
-      ],
+      "movies": [0, 1],
       "ratings": [
         {
           "filmId": 1,
@@ -1234,9 +1228,7 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [
-        0
-      ]
+      "movies": [0]
     }
   ],
   "tickets": [
@@ -1543,6 +1535,16 @@
       "hour": "21:00",
       "place": {
         "seat": "H8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 30,
+      "title": "Kot w butach 2",
+      "date": "24-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "H7",
         "type": "bilet normalny 25zł"
       }
     }

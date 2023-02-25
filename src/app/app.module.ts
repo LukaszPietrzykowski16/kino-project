@@ -41,6 +41,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
 import { AdminGuard } from './admin.guard';
+import { NotAdminGuard } from './no-admin.guard';
 
 export interface AppState {
   User: UserState;
@@ -103,6 +104,7 @@ export interface AppState {
           {
             path: 'cart',
             loadChildren: () => import('./domains/cart/cart.module'),
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'admin',
@@ -119,6 +121,7 @@ export interface AppState {
               import('./home/main/main.module').then(
                 ({ MainModule }) => MainModule
               ),
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'tickets',
@@ -126,7 +129,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            canActivate: [LoginGuard],
+            canActivate: [LoginGuard, NotAdminGuard],
           },
           {
             path: 'form',
@@ -134,20 +137,23 @@ export interface AppState {
               import('./domains/form/form.module').then(
                 ({ FormModule }) => FormModule
               ),
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'summary',
             loadComponent: () => import('./domains/summary/summary.component'),
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [LoginGuard],
+            canActivate: [LoginGuard, NotAdminGuard],
           },
           {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
+            canActivate: [NotAdminGuard],
           },
         ],
       },
