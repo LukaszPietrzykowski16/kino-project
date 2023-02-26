@@ -5,6 +5,7 @@ import TicketApiService from '../services/ticket-api.service';
 import { TicketsService } from './services/tickets.service';
 import { isEmpty, tap } from 'rxjs';
 import { ExtraApiService } from '../services/extra-api.service';
+import { SeatPostService } from '../../form/services/seat-post.service';
 
 export interface Seat {
   seat: string;
@@ -18,6 +19,7 @@ export interface Ticket {
   seat: string;
   type: string;
   position: number;
+  color: boolean;
 }
 
 export interface TicketType {
@@ -38,6 +40,7 @@ export class ReservationComponent {
   private ticketApi = inject(TicketApiService);
   private ticketsService = inject(TicketsService);
   private extraApiService = inject(ExtraApiService);
+  private seatPostService = inject(SeatPostService);
 
   ticketTypeArray: Array<TicketType> = [];
 
@@ -57,14 +60,12 @@ export class ReservationComponent {
     return this.ticketsService.getSeat(number);
   }
 
-  changeColor(
-    position: number,
-    seatIndex: string
-    //avaliable: boolean,
+  reserveSeat(position: number, seatIndex: string) {
+    this.seatPostService.reserveSeat(position, seatIndex);
+  }
 
-    //isChoosen: boolean,
-    //reservation: boolean
-  ) {
+  changeColor(position: number, seatIndex: string) {
+    this.reserveSeat(position, seatIndex);
     if (this.getPosition(position) === true) {
       this.removeTicket(position);
     } else {
@@ -72,14 +73,8 @@ export class ReservationComponent {
         seat: seatIndex,
         position: position,
         type: 'bilet normalny 25zł',
+        color: true,
       });
-      // this.seatsService.addSeat({
-      //   seat: seatIndex,
-      //   avaliable: avaliable,
-      //   id: position,
-      //   isChoosen: true,
-      //   reservation: reservation,
-      // });
     }
   }
 

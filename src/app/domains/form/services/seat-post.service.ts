@@ -34,4 +34,13 @@ export class SeatPostService {
       })
       .subscribe();
   }
+
+  reserveSeat(position: number, exactSeat: string) {
+    return this.http
+      .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
+        seat: exactSeat,
+        isChoosen: true,
+      })
+      .subscribe();
+  }
 }

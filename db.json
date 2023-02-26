@@ -326,58 +326,58 @@
   "reservation": [
     {
       "seat": "A0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 0,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 1,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 2,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 3,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A4",
       "avaliable": true,
       "id": 4,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A5",
       "avaliable": true,
       "id": 5,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A6",
       "avaliable": true,
       "id": 6,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A7",
       "avaliable": true,
       "id": 7,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -389,49 +389,49 @@
     },
     {
       "seat": "A9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 9,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 10,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 11,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 12,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 13,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 14,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 15,
       "isChoosen": false,
       "reservation": false
@@ -445,21 +445,21 @@
     },
     {
       "seat": "B6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 17,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 18,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 19,
       "isChoosen": false,
       "reservation": false
@@ -480,184 +480,184 @@
     },
     {
       "seat": "C0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 22,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 23,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 24,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 25,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 26,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 27,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 28,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 29,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C8",
       "avaliable": false,
       "id": 30,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 31,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 32,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 33,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 34,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 35,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 36,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 37,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 38,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 39,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 40,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 41,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 42,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 43,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 44,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 45,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 46,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 47,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -671,28 +671,28 @@
       "seat": "E5",
       "avaliable": false,
       "id": 49,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E6",
       "avaliable": false,
       "id": 50,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 51,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 52,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -704,35 +704,35 @@
     },
     {
       "seat": "E10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 54,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 55,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 56,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 57,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 58,
       "isChoosen": false,
       "reservation": false
@@ -746,30 +746,30 @@
     },
     {
       "seat": "F5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 60,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 61,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 62,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 63,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -781,72 +781,72 @@
     },
     {
       "seat": "F10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 65,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 66,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 67,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 68,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 69,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 70,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 71,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 72,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G7",
       "avaliable": true,
       "id": 73,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G8",
       "avaliable": true,
       "id": 74,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -865,23 +865,23 @@
     },
     {
       "seat": "H0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 77,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 78,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 79,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -893,7 +893,7 @@
     },
     {
       "seat": "H4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 81,
       "isChoosen": false,
       "reservation": false
@@ -902,28 +902,28 @@
       "seat": "H5",
       "avaliable": true,
       "id": 82,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H6",
       "avaliable": true,
       "id": 83,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 84,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 85,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -942,14 +942,14 @@
     },
     {
       "seat": "I0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 88,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 89,
       "isChoosen": false,
       "reservation": false
@@ -958,21 +958,21 @@
       "seat": "I2",
       "avaliable": true,
       "id": 90,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I3",
       "avaliable": true,
       "id": 91,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I4",
       "avaliable": true,
       "id": 92,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -984,14 +984,14 @@
     },
     {
       "seat": "I6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 94,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 95,
       "isChoosen": false,
       "reservation": false
@@ -1005,14 +1005,14 @@
     },
     {
       "seat": "I9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 97,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 98,
       "isChoosen": false,
       "reservation": false
@@ -1554,6 +1554,1686 @@
       "hour": "21:00",
       "place": {
         "seat": "H7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 31,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 33,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 34,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 35,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 36,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 37,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 38,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 39,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 40,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 41,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 42,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 43,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 44,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 45,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 46,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 47,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 48,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 49,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 50,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 51,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 52,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 53,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 54,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 55,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 56,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 57,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 58,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 59,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 60,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 61,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 62,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 63,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 64,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 65,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 66,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 67,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 68,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 69,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 70,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 71,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 72,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 73,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 74,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 75,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 76,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 77,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 78,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 79,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 80,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 81,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 82,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 83,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 84,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 85,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 86,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 87,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 88,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 89,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 90,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 91,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 92,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 93,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 94,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 95,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 96,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 97,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 98,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 99,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 100,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 101,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 102,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 103,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 104,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 105,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 106,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 107,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 108,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 109,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 110,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 111,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 112,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 113,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 114,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 115,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 116,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 117,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 118,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 119,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 120,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 121,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 122,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 123,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 124,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 125,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 126,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 127,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 128,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 129,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 130,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 131,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 132,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 133,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 134,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 135,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 136,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 137,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 138,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 139,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 140,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 141,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 142,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 143,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 144,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 145,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 146,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 147,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 148,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 149,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 150,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 151,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 152,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 153,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 154,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 155,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 156,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 157,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 158,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 159,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 160,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 161,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 162,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 163,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 164,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 165,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 166,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 167,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 168,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 169,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 170,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 171,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 172,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 173,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 174,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 175,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 176,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 177,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 178,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 179,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 180,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 181,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 182,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 183,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 184,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 185,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 186,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 187,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 188,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 189,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 190,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 191,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 192,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 193,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E5",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 194,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E6",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 195,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 196,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 197,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 198,
+      "title": "Szczęki 2",
+      "date": "27-02",
+      "hour": "21:00",
+      "place": {
+        "seat": "E8",
         "type": "bilet normalny 25zł"
       }
     }
