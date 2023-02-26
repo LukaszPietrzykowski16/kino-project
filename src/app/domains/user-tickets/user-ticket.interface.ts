@@ -9,8 +9,8 @@ export interface UserTicket {
   movies: Array<Number>;
   ratings: [
     {
-      filmId: 1;
-      rating: 7;
+      filmId: number;
+      rating: number;
     }
   ];
   tickets: SingleTicket[];

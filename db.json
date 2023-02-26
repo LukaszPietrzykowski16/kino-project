@@ -1100,12 +1100,13 @@
       "phoneNumber": 489394930,
       "id": 11,
       "movies": [
-        0
+        0,
+        2
       ],
       "ratings": [
         {
-          "filmId": 1,
-          "rating": 10
+          "filmId": 0,
+          "rating": 6
         }
       ],
       "tickets": [

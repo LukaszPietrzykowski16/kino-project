@@ -8,6 +8,10 @@ import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
 import { MatDialog } from '@angular/material/dialog';
 import { starsModalComponent } from './stars-modal.component';
+import { Store } from '@ngrx/store';
+import { AppState } from 'src/app/app.module';
+import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
+import { RatingService } from './services/rating.service';
 
 export interface Screening {
   filmId: number;
@@ -41,8 +45,11 @@ export interface Repertoire {
 })
 export class FilmPanelComponent {
   private apiService = inject(ApiServiceService);
-  isLogin = false;
+  private store = inject<Store<AppState>>(Store);
+  private userData = inject(UserTicketService);
+  private ratingService = inject(RatingService);
 
+  isLogin = false;
   userId: number = NaN;
   moviesArray: Array<Number> = [];
 
@@ -60,7 +67,7 @@ export class FilmPanelComponent {
 
   screenings$ = this.apiService.screenings$;
   date$ = this.apiService.date$;
-  // dateValue = this.apiService.dateValue;
+  ratings$ = this.userData.ratings$;
 
   sendMovie(filmId: number) {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
@@ -68,9 +75,12 @@ export class FilmPanelComponent {
     this.movieService.postMovie(this.userId, Array.from(set));
   }
 
-  showModal() {
+  showModal(filmId: number) {
+    this.ratingService.setFilmId(filmId);
     const dialogRef = this.dialog.open(starsModalComponent);
   }
+
+  user$ = this.store.select('User');
 
   changeToString(test: string) {
     return Number(test[0] + test[1]);
@@ -95,6 +105,7 @@ export class FilmPanelComponent {
     if (this.isLogin === true) {
       this.authService.user$.subscribe((user) => {
         this.userId = user.id;
+        this.userData.mainPageInfo();
       });
 
       this.userService.getUser(this.userId).subscribe((movie) => {

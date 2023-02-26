@@ -3,6 +3,11 @@ import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, map, tap } from 'rxjs';
 import { SingleTicket, UserTicket } from '../user-ticket.interface';
 
+interface Rating {
+  filmId: number;
+  rating: number;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -20,6 +25,7 @@ export class UserTicketService {
     },
     title: '',
   });
+  private ratings$$ = new BehaviorSubject<Rating[]>([]);
 
   get tickets$() {
     return this.tickets$$.asObservable();
@@ -27,6 +33,10 @@ export class UserTicketService {
 
   get ticket$() {
     return this.ticket$$.asObservable();
+  }
+
+  get ratings$() {
+    return this.ratings$$.asObservable();
   }
 
   displayTicket(id: string | null) {
@@ -39,6 +49,12 @@ export class UserTicketService {
   displayTickets() {
     this.getUserTickets().subscribe((ticketsData) =>
       this.tickets$$.next(ticketsData.tickets)
+    );
+  }
+
+  mainPageInfo() {
+    this.getUserTickets().subscribe((ticketsData) =>
+      this.ratings$$.next(ticketsData.ratings)
     );
   }
 

@@ -36,7 +36,7 @@ export class starsModalComponent {
       return;
     }
     // mocking 11 for testing porpuse
-    this.ratingService.sendRating(11, this.starValue, 1);
+    this.ratingService.sendRating(11, this.starValue);
   }
 
   ngOnInit() {

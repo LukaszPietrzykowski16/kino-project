@@ -17,7 +17,7 @@
           </a>
         </div>
         <div *ngIf="isLogin">
-          <button (click)="showModal()">Oceń ten film</button>
+          <button (click)="showModal(screen.film.id)">Oceń ten film</button>
           <button (click)="sendMovie(screen.film.id)">Chcę obejrzeć!</button>
         </div>
       </div>

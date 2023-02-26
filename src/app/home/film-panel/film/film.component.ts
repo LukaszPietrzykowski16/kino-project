@@ -1,5 +1,6 @@
 import { Component, inject, Input } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
 import { ApiServiceService } from '../../services/api-service.service';
 import { Film, Repertoire, Screening } from '../film-panel.component';
 
@@ -9,9 +10,10 @@ import { Film, Repertoire, Screening } from '../film-panel.component';
   styleUrls: ['./film.component.css'],
 })
 export class FilmComponent {
+  private userData = inject(UserTicketService);
   @Input() film!: Film;
   flag: boolean = true;
-
+  ratings$ = this.userData.ratings$;
   more() {
     if (this.flag) {
       this.flag = false;

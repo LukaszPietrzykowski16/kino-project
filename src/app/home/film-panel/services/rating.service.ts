@@ -7,13 +7,18 @@ import { User } from 'angular-feather/icons';
 })
 export class RatingService {
   private http = inject(HttpClient);
+  filmId: number = NaN;
+  setFilmId(filmId: number) {
+    this.filmId = filmId;
+  }
 
-  sendRating(userId: number, ratingNumber: number, filmId: number) {
+  sendRating(userId: number, ratingNumber: number) {
+    // here i need to mock for db.json
     return this.http
       .patch(`http://localhost:3000/users/${userId}`, {
         ratings: [
           {
-            filmId: filmId,
+            filmId: this.filmId,
             rating: ratingNumber,
           },
         ],
