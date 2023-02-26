@@ -15,6 +15,7 @@ export class UserTicketsComponent {
   tickets$ = this.userTicketService.tickets$;
 
   ngOnInit() {
+    console.log('hello');
     this.userTicketService.displayTickets();
   }
 }
