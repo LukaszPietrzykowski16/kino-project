@@ -38,10 +38,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
 import { AdminGuard } from './admin.guard';
 import { NotAdminGuard } from './no-admin.guard';
+import { NotificationComponent } from './home/film-panel/notification/notification.component';
 
 export interface AppState {
   User: UserState;
@@ -65,6 +67,7 @@ export interface AppState {
     MainDateComponent,
     UserTicketsComponent,
     UserTicketComponent,
+    NotificationComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],
@@ -89,6 +92,7 @@ export interface AppState {
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
+    MatSnackBarModule,
     NumbersOnlyDirective,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),

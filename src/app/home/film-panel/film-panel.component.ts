@@ -12,6 +12,8 @@ import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.module';
 import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
 import { RatingService } from './services/rating.service';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { NotificationComponent } from './notification/notification.component';
 
 export interface Screening {
   filmId: number;
@@ -52,6 +54,7 @@ export class FilmPanelComponent {
   isLogin = false;
   userId: number = NaN;
   moviesArray: Array<Number> = [];
+  durationInSeconds = 3;
 
   private date = new Date();
   now = this.date.getHours();
@@ -62,7 +65,8 @@ export class FilmPanelComponent {
     private authService: AuthService,
     private movieService: SendMovieService,
     private userService: UserService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar
   ) {}
 
   screenings$ = this.apiService.screenings$;
@@ -70,9 +74,17 @@ export class FilmPanelComponent {
   ratings$ = this.userData.ratings$;
 
   sendMovie(filmId: number) {
+    this.openSnackBar();
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
+    console.log(this.moviesArray);
+  }
+
+  openSnackBar() {
+    this.snackBar.openFromComponent(NotificationComponent, {
+      duration: this.durationInSeconds * 1000,
+    });
   }
 
   showModal(filmId: number) {
