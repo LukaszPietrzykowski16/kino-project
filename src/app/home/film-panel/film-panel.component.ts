@@ -14,6 +14,8 @@ import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ti
 import { RatingService } from './services/rating.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { NotificationComponent } from './notification/notification.component';
+import TicketApiService from 'src/app/domains/cinema-hall/services/ticket-api.service';
+import { TicketsService } from 'src/app/domains/cinema-hall/reservation/services/tickets.service';
 
 export interface Screening {
   filmId: number;
@@ -50,6 +52,7 @@ export class FilmPanelComponent {
   private store = inject<Store<AppState>>(Store);
   private userData = inject(UserTicketService);
   private ratingService = inject(RatingService);
+  private ticketService = inject(TicketsService);
 
   isLogin = false;
   userId: number = NaN;
@@ -78,7 +81,6 @@ export class FilmPanelComponent {
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
-    console.log(this.moviesArray);
   }
 
   openSnackBar() {
@@ -108,6 +110,7 @@ export class FilmPanelComponent {
   }
 
   ngOnInit() {
+    this.ticketService.cleanState();
     this.apiService.getShowing();
 
     this.authService.isAuth$.subscribe((login) => {

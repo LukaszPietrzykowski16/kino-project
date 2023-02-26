@@ -19,6 +19,10 @@ export class TicketsService {
     return this.tickets$$.getValue();
   }
 
+  cleanState() {
+    this.tickets$$.next([]);
+  }
+
   removeTicket(position: number) {
     let filtrated = this.tickets$$.value.filter(
       (elem) => elem.position !== position
