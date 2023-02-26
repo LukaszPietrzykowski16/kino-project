@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainComponent } from './home/main/main.component';
 import { ReservationComponent } from './domains/cinema-hall/reservation/reservation.component';
-import { NotAdminGuard } from './no-admin.guard';
+import { NotAdminGuard } from './shared/guards/no-admin.guard';
 
 const routes: Routes = [
   { path: '', component: MainComponent },

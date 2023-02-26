@@ -41,9 +41,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
-import { AdminGuard } from './admin.guard';
-import { NotAdminGuard } from './no-admin.guard';
+
+import { NotAdminGuard } from './shared/guards/no-admin.guard';
 import { NotificationComponent } from './home/film-panel/notification/notification.component';
+import { SelectedSeatGuard } from './shared/guards/selected-seat.guard';
 
 export interface AppState {
   User: UserState;
@@ -141,12 +142,12 @@ export interface AppState {
               import('./domains/form/form.module').then(
                 ({ FormModule }) => FormModule
               ),
-            canActivate: [NotAdminGuard],
+            canActivate: [NotAdminGuard, SelectedSeatGuard],
           },
           {
             path: 'summary',
             loadComponent: () => import('./domains/summary/summary.component'),
-            canActivate: [NotAdminGuard],
+            canActivate: [NotAdminGuard, SelectedSeatGuard],
           },
           {
             path: 'want-watch',
