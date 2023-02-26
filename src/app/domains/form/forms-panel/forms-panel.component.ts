@@ -12,6 +12,7 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { map } from 'rxjs';
 import { isPlatformWorkerApp } from '@angular/common';
 import { SendTicketsService } from '../../user-tickets/services/send-tickets.service';
+import { trimValidator } from '../input-vaidator.validator';
 
 export interface BlikCode {
   code: number;
@@ -41,10 +42,22 @@ export class FormsPanelComponent {
   profileForm = new FormGroup(
     {
       lastName: new FormControl('', {
-        validators: [Validators.required, Validators.minLength(3)],
+        validators: [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(50),
+          trimValidator,
+        ],
       }),
       firstName: new FormControl('', {
-        validators: [Validators.required, Validators.minLength(3)],
+        validators: [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(50),
+          trimValidator,
+        ],
       }),
       phoneNumber: new FormControl('', {
         validators: [Validators.minLength(9)],
@@ -53,12 +66,14 @@ export class FormsPanelComponent {
         validators: [
           Validators.required,
           Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+          trimValidator,
         ],
       }),
       emailAgain: new FormControl('', {
         validators: [
           Validators.required,
           Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+          trimValidator,
         ],
       }),
       checkbox: new FormControl(''),
@@ -76,6 +91,7 @@ export class FormsPanelComponent {
   });
 
   checkout = true;
+  errors: any;
 
   showBlik() {
     if (this.profileForm.valid) {
@@ -129,11 +145,11 @@ export class FormsPanelComponent {
     return this.profileForm.controls.firstName;
   }
 
-  get emailAgain() {
+  get emailAgainCtrl() {
     return this.profileForm.controls.emailAgain;
   }
 
-  get email() {
+  get emailCtrl() {
     return this.profileForm.controls.email;
   }
 }
