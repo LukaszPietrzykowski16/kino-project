@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { RatingService } from './services/rating.service';
 
 @Component({
@@ -8,10 +9,15 @@ import { RatingService } from './services/rating.service';
   templateUrl: 'stars-modal.component.html',
   imports: [CommonModule],
 })
-export class starsModal {
+export class starsModalComponent {
   numberOfStars: Array<number> = [];
   starValue = 0;
   status: boolean = false;
+
+  constructor(
+    public dialog: MatDialog,
+    private dialogRef: MatDialogRef<starsModalComponent>
+  ) {}
 
   private ratingService = inject(RatingService);
 
@@ -20,7 +26,12 @@ export class starsModal {
     this.starValue = numberOfStar;
   }
 
+  closeDialog() {
+    this.dialogRef.close();
+  }
+
   sendRating() {
+    this.closeDialog();
     if (this.starValue === 0) {
       return;
     }

@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
 import { MatDialog } from '@angular/material/dialog';
-import { starsModal } from './stars-modal.component';
+import { starsModalComponent } from './stars-modal.component';
 
 export interface Screening {
   filmId: number;
@@ -69,7 +69,7 @@ export class FilmPanelComponent {
   }
 
   showModal() {
-    const dialogRef = this.dialog.open(starsModal);
+    const dialogRef = this.dialog.open(starsModalComponent);
   }
 
   changeToString(test: string) {

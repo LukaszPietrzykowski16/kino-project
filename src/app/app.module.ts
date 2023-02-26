@@ -129,7 +129,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            canActivate: [LoginGuard, NotAdminGuard],
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'form',
@@ -148,7 +148,7 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [LoginGuard, NotAdminGuard],
+            canActivate: [],
           },
           {
             path: 'ticket/:id',
@@ -160,6 +160,5 @@ export interface AppState {
     ]),
     BrowserAnimationsModule,
   ],
-  // { path: 'chce-obejrzec', component: WantWatchComponent },
 })
 export class AppModule {}
