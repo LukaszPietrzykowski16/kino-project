@@ -552,7 +552,7 @@
       "seat": "C10",
       "avaliable": true,
       "id": 32,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -629,7 +629,7 @@
       "seat": "D10",
       "avaliable": true,
       "id": 43,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -706,7 +706,7 @@
       "seat": "E10",
       "avaliable": true,
       "id": 54,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -734,14 +734,14 @@
       "seat": "F3",
       "avaliable": true,
       "id": 58,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F4",
       "avaliable": true,
       "id": 59,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -783,7 +783,7 @@
       "seat": "F10",
       "avaliable": true,
       "id": 65,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -811,14 +811,14 @@
       "seat": "G3",
       "avaliable": true,
       "id": 69,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G4",
       "avaliable": true,
       "id": 70,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -853,14 +853,14 @@
       "seat": "G9",
       "avaliable": true,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G10",
       "avaliable": true,
       "id": 76,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -888,14 +888,14 @@
       "seat": "H3",
       "avaliable": true,
       "id": 80,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H4",
       "avaliable": true,
       "id": 81,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
