@@ -10,7 +10,7 @@
       *ngFor="let seat of seats; let i = index"
     >
       <div
-        [style.backgroundColor]="seat.isChoosen ? '#170940' : 'grey'"
+        [style.backgroundColor]="seat.isChoosen ? '#5800ff' : 'grey'"
         *ngIf="seat.avaliable === true; else elseBlock"
         (click)="changeColor(seat.id, seat.seat)"
         class="container-places__seat--active"
@@ -43,7 +43,17 @@
       </div>
     </div>
   </div>
-  <div class="container-next">
-    <button class="conainer-next__btn" routerLink="/form">Dalej</button>
+  <div class="container-next" *ngIf="tickets$ | async as tickets">
+    <div *ngIf="tickets.length <= 10; else moreThanTen">
+      <div *ngIf="tickets.length === 0; else elseBlock">
+        Kup bilety aby przejść dalej
+      </div>
+      <ng-template #elseBlock>
+        <button class="conainer-next__btn" routerLink="/form">Dalej</button>
+      </ng-template>
+    </div>
   </div>
+  <ng-template #moreThanTen>
+    Aby kupić więcej niż 10 skontaktuj się z obsługą
+  </ng-template>
 </main>

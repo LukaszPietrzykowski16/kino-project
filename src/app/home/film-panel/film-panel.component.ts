@@ -110,7 +110,7 @@ export class FilmPanelComponent {
   }
 
   ngOnInit() {
-    this.ticketService.cleanState();
+    // this.ticketService.cleanState();
     this.apiService.getShowing();
 
     this.authService.isAuth$.subscribe((login) => {
