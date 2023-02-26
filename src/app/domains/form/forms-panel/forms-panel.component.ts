@@ -145,11 +145,11 @@ export class FormsPanelComponent {
     return this.profileForm.controls.firstName;
   }
 
-  get emailAgainCtrl() {
+  get emailAgain() {
     return this.profileForm.controls.emailAgain;
   }
 
-  get emailCtrl() {
+  get email() {
     return this.profileForm.controls.email;
   }
 }

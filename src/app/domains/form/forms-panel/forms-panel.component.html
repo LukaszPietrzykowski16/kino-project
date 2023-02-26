@@ -54,19 +54,18 @@
       placeholder="adres email"
       formControlName="email"
     />
-    <ng-component *ngIf="emailCtrl.errors as error">
-      <div *ngIf="(emailCtrl.invalid && emailCtrl.touched) || emailCtrl.dirty">
-        <small *ngIf="emailCtrl.errors?.required" class="text-danger">
-          To pole jest wymagane
-        </small>
-        <small *ngIf="emailCtrl.errors?.pattern" class="text-danger">
-          Proszę podać maila
-        </small>
+    <div *ngIf="(email.invalid && email.touched) || email.dirty">
+      <small *ngIf="email.errors?.required" class="text-danger">
+        To pole jest wymagane
+      </small>
+      <small *ngIf="email.errors?.pattern" class="text-danger">
+        Proszę podać maila
+      </small>
+      <small *ngIf="email.errors as errors" class="text-danger">
         <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-        <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
-      </div>
-    </ng-component>
-
+        <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p></small
+      >
+    </div>
     <input
       type="email"
       id="emailAgain"
@@ -74,23 +73,22 @@
       placeholder="powotrz adres email"
       formControlName="emailAgain"
     />
-    <div
-      *ngIf="
-        (emailAgainCtrl.invalid && emailAgainCtrl.touched) ||
-        emailAgainCtrl.dirty
-      "
-    >
-      <small *ngIf="emailAgainCtrl.errors?.required" class="text-danger">
+    <div *ngIf="(emailAgain.invalid && emailAgain.touched) || emailAgain.dirty">
+      <small *ngIf="emailAgain.errors?.required" class="text-danger">
         Wymagane potwierdzenie emailu</small
       >
-      <small *ngIf="emailAgainCtrl.errors?.pattern" class="text-danger">
+      <small *ngIf="emailAgain.errors?.pattern" class="text-danger">
         Podaj właściwy adres email</small
       >
+
       <small *ngIf="profileForm.errors as error" class="text-danger">
         Podaj właściwy drugi email</small
       >
-      <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-      <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
+
+      <small *ngIf="emailAgain.errors as errors" class="text-danger">
+        <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
+        <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p></small
+      >
     </div>
     <div>
       chce otrzymywac informacje o znizkach itp
