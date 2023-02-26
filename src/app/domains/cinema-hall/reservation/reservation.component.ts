@@ -60,15 +60,16 @@ export class ReservationComponent {
     return this.ticketsService.getSeat(number);
   }
 
-  reserveSeat(position: number, seatIndex: string) {
-    this.seatPostService.reserveSeat(position, seatIndex);
+  reserveSeat(position: number, seatIndex: string, isChoosen: boolean) {
+    this.seatPostService.reserveSeat(position, seatIndex, isChoosen);
   }
 
   changeColor(position: number, seatIndex: string) {
-    this.reserveSeat(position, seatIndex);
     if (this.getPosition(position) === true) {
+      this.reserveSeat(position, seatIndex, false);
       this.removeTicket(position);
     } else {
+      this.reserveSeat(position, seatIndex, true);
       this.ticketsService.addTicket({
         seat: seatIndex,
         position: position,

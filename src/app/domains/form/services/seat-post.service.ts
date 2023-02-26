@@ -1,11 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
-import { map } from 'rxjs';
-import {
-  Seat,
-  Ticket,
-} from '../../cinema-hall/reservation/reservation.component';
+import { Seat } from '../../cinema-hall/reservation/reservation.component';
+import { SeatsService } from '../../cinema-hall/reservation/services/seats.service';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
 
 @Injectable({
@@ -14,11 +10,11 @@ import { TicketsService } from '../../cinema-hall/reservation/services/tickets.s
 export class SeatPostService {
   private http = inject(HttpClient);
   private ticketService = inject(TicketsService);
+  private seatsService = inject(SeatsService);
 
   tickets$ = this.ticketService.tickets$;
 
   sendSeats() {
-    // fix
     this.tickets$.subscribe((ticket) => {
       ticket.map((exactTicket) => {
         this.postSeat(exactTicket.seat, exactTicket.position);
@@ -35,12 +31,15 @@ export class SeatPostService {
       .subscribe();
   }
 
-  reserveSeat(position: number, exactSeat: string) {
+  reserveSeat(position: number, exactSeat: string, isChoosen: boolean) {
     return this.http
       .patch<Seat>(`http://localhost:3000/reservation/${position}`, {
         seat: exactSeat,
-        isChoosen: true,
+        avaliable: false,
+        isChoosen: isChoosen,
       })
-      .subscribe();
+      .subscribe((test) => {
+        this.seatsService.updateColor(test);
+      });
   }
 }

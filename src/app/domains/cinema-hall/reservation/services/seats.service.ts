@@ -20,6 +20,14 @@ export class SeatsService {
     });
   }
 
+  updateColor(seat: Seat) {
+    this.seats$$.value.map((val) => {
+      if (val.seat === seat.seat) {
+        val.isChoosen = seat.isChoosen;
+      }
+    });
+  }
+
   addSeat(seatInfo: Seat) {
     this.seats$$.next([...this.seats$$.getValue(), ...[seatInfo]]);
   }
