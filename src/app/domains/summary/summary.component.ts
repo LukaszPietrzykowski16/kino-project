@@ -8,6 +8,7 @@ import { TicketsService } from '../cinema-hall/reservation/services/tickets.serv
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { SendTicketsService } from '../user-tickets/services/send-tickets.service';
 import { RouterModule } from '@angular/router';
+import { FilmService } from '../want-watch/film/film.service';
 
 export interface qrCode {
   url: string;
@@ -23,6 +24,7 @@ export interface qrCode {
 export default class SummaryComponent {
   private cinemaHall = inject(CinemaHallService);
   private ticketService = inject(TicketsService);
+  private filmService = inject(FilmService);
   private sendTicketService = inject(SendTicketsService);
 
   reservation$ = this.cinemaHall.reservation$;
@@ -35,11 +37,9 @@ export default class SummaryComponent {
   urlValue$ = this.sendTicketService.getUrlInfo$;
 
   ngOnInit() {
+    this.filmService.resetArray();
     this.qrService.getQr().subscribe((qrCode) => {
       this.url = qrCode.url;
-    });
-    this.urlValue$.subscribe((test) => {
-      console.log(test);
     });
   }
 }

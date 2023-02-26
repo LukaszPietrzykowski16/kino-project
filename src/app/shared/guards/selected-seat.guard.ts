@@ -20,7 +20,6 @@ export class SelectedSeatGuard implements CanActivate {
     return this.ticektStateService.tickets$.pipe(
       map((r) => {
         if (r.length === 0) {
-          console.log('failure');
           this.router.navigateByUrl('');
           return false;
         } else {
