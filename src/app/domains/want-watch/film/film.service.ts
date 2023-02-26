@@ -25,6 +25,10 @@ export class FilmService {
     return this.moviesArray$$.asObservable();
   }
 
+  resetArray() {
+    this.moviesArray$$.next([]);
+  }
+
   getArrayOfFilmId() {
     this.authService.user$.subscribe((user) => {
       this.userId = user.id;

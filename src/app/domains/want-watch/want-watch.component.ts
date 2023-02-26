@@ -18,4 +18,8 @@ export default class WantWatchComponent {
   ngOnInit() {
     this.filmService.getArrayOfFilmId();
   }
+
+  ngOnDestroy() {
+    this.filmService.resetArray();
+  }
 }
