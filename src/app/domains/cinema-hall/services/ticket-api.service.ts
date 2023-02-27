@@ -6,7 +6,7 @@ import { TicketType } from '../reservation/reservation.component';
   providedIn: 'root',
 })
 export default class TicketApiService {
-  url: string = `http://localhost:3000/ticket-types`;
+  private url: string = `http://localhost:3000/ticket-types`;
 
   constructor(private http: HttpClient) {}
 
