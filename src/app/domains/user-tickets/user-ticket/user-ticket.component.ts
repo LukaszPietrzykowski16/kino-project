@@ -8,8 +8,4 @@ import { SingleTicket } from '../user-ticket.interface';
 })
 export class UserTicketComponent {
   @Input() ticket!: SingleTicket;
-
-  ngOnInit() {
-    console.log(this.ticket);
-  }
 }

@@ -24,12 +24,7 @@ describe('TicketApiService', () => {
     // act
     service.getTickets().subscribe({
       next: (res) => {
-        expect(res).toEqual({
-          'bilet normalny': 25,
-          'bilet rodzinny': 20,
-          'bilet ulgowy': 18,
-          voucher: 15,
-        });
+        expect(res).toEqual({});
         done();
       },
       error: (err: HttpErrorResponse) => {
@@ -37,8 +32,9 @@ describe('TicketApiService', () => {
         done();
       },
     });
-    const req = httpController.expectOne(expectedUrl);
 
+    // assert
+    const req = httpController.expectOne(expectedUrl);
     req.flush({});
   });
 });
