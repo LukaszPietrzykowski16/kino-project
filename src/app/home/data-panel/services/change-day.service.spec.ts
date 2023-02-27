@@ -21,7 +21,7 @@ describe('ChangeDayService', () => {
     const result = service.formatDate(testData);
 
     // assert
+    // what about this case is it good aproach?
     expect(result).toEqual('27-02');
-    // expect(result).toEqual('28-02');
   });
 });
