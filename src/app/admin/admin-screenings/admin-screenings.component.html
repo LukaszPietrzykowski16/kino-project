@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<div class="container">
   <form [formGroup]="screeningForm">
     <mat-form-field>
       <mat-label>Film id (później dropdown)</mat-label>
@@ -16,12 +16,10 @@
         Please enter more than 10 character
       </mat-error>
     </mat-form-field>
-
+    <br />
     <mat-form-field>
       <mat-label>Data:</mat-label>
       <input matInput type="email" formControlName="date" placeholder="data" />
-      <mat-icon matSuffix>mail_outline</mat-icon>
-      <mat-hint>Input the fully qualified email address</mat-hint>
       <mat-error *ngIf="screeningForm.controls['date'].errors?.['required']"
         >Email is required</mat-error
       >
@@ -29,18 +27,14 @@
         >Please enter valid email</mat-error
       >
     </mat-form-field>
-
+    <br />
     <mat-checkbox class="example-margin" [(ngModel)]="checked"
       >Checked</mat-checkbox
     >
+    <br />
     <button type="submit" class="btn btn-success" (click)="addScreening()">
       Save
     </button>
-    <mat-form-field appearance="fill">
-      <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="pat@example.com" required />
-      <mat-error></mat-error>
-    </mat-form-field>
   </form>
   <div>{{ screeningForm.value | json }}</div>
-</div> -->
+</div>

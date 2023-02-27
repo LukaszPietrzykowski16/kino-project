@@ -41,10 +41,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NumbersOnlyDirective } from 'src/app/shared/directives/numbers-only.directive';
-
 import { NotAdminGuard } from './shared/guards/no-admin.guard';
 import { NotificationComponent } from './home/film-panel/notification/notification.component';
 import { SelectedSeatGuard } from './shared/guards/selected-seat.guard';
+import { AdminModule } from './admin';
 
 export interface AppState {
   User: UserState;
@@ -95,6 +95,7 @@ export interface AppState {
     MatButtonModule,
     MatSnackBarModule,
     NumbersOnlyDirective,
+    AdminModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),
     RouterModule.forRoot([

@@ -10,7 +10,7 @@ import { AdminFilmState } from '../store/admin.interface';
 @Component({
   selector: 'app-admin-screenings',
   templateUrl: './admin-screenings.component.html',
-  styleUrls: ['./admin-screenings.component.css'],
+  styleUrls: ['./admin-screenings.component.scss'],
 })
 export class AdminScreeningsComponent {
   private store = inject<Store<ScreeningAdminState>>(Store);

@@ -1,7 +1,6 @@
 <div class="container">
   <h1>Dodaj film</h1>
-  <form novalidate>
-    <!-- [formGroup]="filmForm"  -->
+  <form [formGroup]="filmForm" novalidate>
     <div class="form-group">
       <label>Tytuł:</label>
       <input class="form-control" formControlName="title" type="text" />
@@ -88,4 +87,4 @@
   </form>
   <br />
 </div>
-<!-- <app-admin-screenings></app-admin-screenings> -->
+<app-admin-screenings></app-admin-screenings>

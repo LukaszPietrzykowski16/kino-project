@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { StoreModule } from '@ngrx/store';
@@ -11,6 +11,10 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { addFilmReducer, addScreeningReducer } from './store/admin.reducer';
 import { AdminEffects } from './store/admin.effects';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminScreeningsComponent } from './admin-screenings/admin-screenings.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 export interface FilmAdminState {
   AdminFilm: AdminFilmState[];
@@ -21,11 +25,13 @@ export interface ScreeningAdminState {
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [AdminComponent, AdminScreeningsComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    MatInputModule,
+    MatCheckboxModule,
     ReactiveFormsModule,
-    CommonModule,
     MatFormFieldModule,
     EffectsModule.forFeature([AdminEffects]),
     RouterModule.forChild([

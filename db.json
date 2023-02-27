@@ -45,86 +45,6 @@
       "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbziOzbDmW3nOyfvjUscRiaqSqEWA8GivtmG783Rkk9K8r-k34",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quisquam, atque molestias distinctio ab numquam hic ipsa a dolores rerum aliquam nisi autem voluptate minima eaque veritatis ratione voluptatem!",
       "rating": 7
-    },
-    {
-      "id": 4,
-      "description": "dw",
-      "image": "vdvd",
-      "rating": "dw",
-      "title": "fm",
-      "types": "vk"
-    },
-    {
-      "id": 5,
-      "description": "FMW",
-      "image": "QMFW",
-      "rating": "FWMQ",
-      "title": "sdam",
-      "types": "MDVS"
-    },
-    {
-      "id": 6,
-      "description": "mf",
-      "image": "mf",
-      "rating": "fm",
-      "title": "fkKF",
-      "types": "fm"
-    },
-    {
-      "id": 7,
-      "description": "fm",
-      "image": "fmq",
-      "rating": "fm",
-      "title": "mds",
-      "types": "fm"
-    },
-    {
-      "id": 8,
-      "description": "test",
-      "image": "test",
-      "rating": "tes",
-      "title": "test",
-      "types": "test"
-    },
-    {
-      "id": 9,
-      "description": "fj",
-      "image": "jfj",
-      "rating": "j",
-      "title": "jsj",
-      "types": "fj"
-    },
-    {
-      "id": 10,
-      "description": "film",
-      "image": "film",
-      "rating": "film",
-      "title": "film",
-      "types": "film"
-    },
-    {
-      "id": 11,
-      "description": "film",
-      "image": "film",
-      "rating": "film",
-      "title": "film",
-      "types": "film"
-    },
-    {
-      "id": 12,
-      "description": "film",
-      "image": "film",
-      "rating": "film",
-      "title": "film",
-      "types": "film"
-    },
-    {
-      "id": 13,
-      "description": "film",
-      "image": "film",
-      "rating": "film",
-      "title": "film",
-      "types": "film"
     }
   ],
   "screening": [
@@ -1076,12 +996,7 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
@@ -1099,9 +1014,7 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [
-        2
-      ],
+      "movies": [2],
       "ratings": [
         {
           "filmId": 0,
@@ -1235,9 +1148,7 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [
-        0
-      ]
+      "movies": [0]
     }
   ],
   "tickets": [
