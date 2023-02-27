@@ -39,6 +39,30 @@
     <button type="submit" class="btn btn-success" (click)="addScreening()">
       Save
     </button>
+    <form [formGroup]="skillsForm" (ngSubmit)="onSubmit()">
+      Skills:
+      <div formArrayName="skills">
+        <div *ngFor="let skill of skills.controls; let i = index">
+          <div [formGroupName]="i">
+            {{ i }}
+            exp:
+            <input type="text" formControlName="exp" />
+
+            <button (click)="removeSkill(i)">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+
+    <p>
+      <button type="button" (click)="addSkills()">Add</button>
+    </p>
+
+    {{ this.skillsForm.value | json }}
   </form>
   <div>{{ screeningForm.value | json }}</div>
 </div>

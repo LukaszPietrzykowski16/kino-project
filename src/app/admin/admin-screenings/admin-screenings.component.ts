@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import {
+  FormArray,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -26,6 +27,8 @@ export class AdminScreeningsComponent {
   checked = false;
   screeningForm: FormGroup = new FormGroup({});
 
+  skillsForm!: FormGroup;
+
   private allFilms$$ = new BehaviorSubject<Film[]>([]);
 
   get allFilms$() {
@@ -34,7 +37,18 @@ export class AdminScreeningsComponent {
 
   constructor(private fb: FormBuilder) {}
 
+  newSkill(): FormGroup {
+    return this.fb.group({
+      exp: '',
+    });
+  }
+
   ngOnInit(): void {
+    this.skillsForm = this.fb.group({
+      name: '',
+      skills: this.fb.array([]),
+    });
+
     this.store.dispatch(screeningActions.getScreenings());
     this.screeningForm = this.fb.group({
       film: [null, [Validators.required, Validators.minLength(4)]],
@@ -42,6 +56,10 @@ export class AdminScreeningsComponent {
       premier: [false, [Validators.required]],
     });
     this.fetchFilms();
+  }
+
+  get skills(): FormArray {
+    return this.skillsForm.get('skills') as FormArray;
   }
 
   get filmCtrl() {
@@ -79,6 +97,18 @@ export class AdminScreeningsComponent {
     this.store.dispatch(
       screeningActions.addSingleScreening({ screenings: screeningNew })
     );
+  }
+
+  addSkills() {
+    this.skills.push(this.newSkill());
+  }
+
+  removeSkill(i: number) {
+    this.skills.removeAt(i);
+  }
+
+  onSubmit() {
+    console.log(this.skillsForm.value);
   }
 
   fetchFilms() {
