@@ -31,11 +31,16 @@ export class AdminComponent {
       image: ['', Validators.required],
       description: ['', Validators.required],
       rating: ['', Validators.required],
+      length: ['', Validators.required],
     });
   }
 
   get titleCtrl() {
     return this.filmForm.controls.title;
+  }
+
+  get lengthCtrl() {
+    return this.filmForm.controls.length;
   }
 
   get typesCtrl() {
@@ -62,6 +67,7 @@ export class AdminComponent {
       image: this.imageCtrl.value,
       description: this.descriptionCtrl.value,
       rating: this.ratingCtrl.value,
+      length: this.lengthCtrl.value,
     };
 
     this.store.dispatch(

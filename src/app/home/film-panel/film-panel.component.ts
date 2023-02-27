@@ -31,6 +31,7 @@ export interface Film {
   image: string;
   description: string;
   rating: number;
+  length: number;
 }
 
 export interface Repertoire {
