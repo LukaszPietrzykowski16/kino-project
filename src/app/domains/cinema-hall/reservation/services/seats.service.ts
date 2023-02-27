@@ -14,7 +14,6 @@ export class SeatsService {
   }
 
   createSeats() {
-    // this.getSeats().pipe(map(value) => {})
     this.getSeats().subscribe((value) => {
       this.seats$$.next(value);
     });
@@ -28,12 +27,7 @@ export class SeatsService {
     });
   }
 
-  addSeat(seatInfo: Seat) {
-    this.seats$$.next([...this.seats$$.getValue(), ...[seatInfo]]);
-  }
-
-  removeSeat() {}
-  // it should be in seperatre file?
+  // it should be in seperatre file
   private url: string = `http://localhost:3000/reservation`;
 
   constructor(private http: HttpClient) {}
