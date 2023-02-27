@@ -41,9 +41,6 @@ export class AdminScreeningsComponent {
       date: [null, [Validators.required]],
       premier: [false, [Validators.required]],
     });
-    this.store.select('AdminScreening').subscribe((test) => {
-      console.log(test);
-    });
     this.fetchFilms();
   }
 
@@ -55,14 +52,18 @@ export class AdminScreeningsComponent {
     return this.screeningForm.controls.date;
   }
 
+  get premierCtrl() {
+    return this.screeningForm.controls.premier;
+  }
+
   setValue(index: number) {
     this.screeningForm.controls.film.setValue(index);
   }
 
   addScreening() {
     const screeningNew: Screening = {
-      filmId: NaN,
-      premiere: false,
+      filmId: this.filmCtrl.value,
+      premiere: this.premierCtrl.value,
       date: this.dateCtrl.value,
       hours: [
         '09:00',

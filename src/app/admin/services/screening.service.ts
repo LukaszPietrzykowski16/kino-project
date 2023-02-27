@@ -16,8 +16,8 @@ export class ScreeningService {
     console.log(data);
     return this.http.post(`http://localhost:3000/screening`, {
       id: NaN,
-      filmId: NaN,
-      premiere: false,
+      filmId: data.filmId,
+      premiere: data.premiere,
       date: data.date,
       hours: [
         '09:00',
