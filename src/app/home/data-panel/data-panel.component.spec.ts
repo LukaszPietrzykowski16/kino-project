@@ -8,16 +8,17 @@ describe('DataPanelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataPanelComponent ]
-    })
-    .compileComponents();
+      declarations: [DataPanelComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DataPanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should convert date', () => {
     expect(component).toBeTruthy();
+    // arrange
+    const testData = new Date();
   });
 });

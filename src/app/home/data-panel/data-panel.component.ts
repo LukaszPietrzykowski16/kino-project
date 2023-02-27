@@ -26,6 +26,8 @@ export class DataPanelComponent {
   }
 
   ngOnInit(): void {
+    console.log(new Date());
+    console.log(this.changeDayService.formatDate(new Date()));
     this.activatedRoute.params.subscribe((params) => {
       if (typeof params['date'] !== 'undefined') {
         this.today = params['date'];
