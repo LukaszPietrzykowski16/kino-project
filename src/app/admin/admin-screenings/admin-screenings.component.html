@@ -44,8 +44,9 @@
         <div *ngFor="let skill of skills.controls; let i = index">
           <div [formGroupName]="i">
             Godzina seansu:
-            <input type="text" formControlName="exp" />
-
+            <mat-form-field>
+              <input type="text" formControlName="exp" matInput />
+            </mat-form-field>
             <button (click)="removeSkill(i)">Usuń</button>
           </div>
         </div>
