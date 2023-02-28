@@ -1,5 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
-import { ChangeDayService } from '../data-panel/services/change-day.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-main',

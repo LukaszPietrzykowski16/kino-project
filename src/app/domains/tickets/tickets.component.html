@@ -2,7 +2,7 @@
   {{ ticket.title }}
   {{ ticket.date }}
   {{ ticket.hour }}
-  {{ ticket.place.seat }}
-  {{ ticket.place.type }}
+  {{ ticket.places.seat }}
+  {{ ticket.places.type }}
   <img [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId" />
 </div>

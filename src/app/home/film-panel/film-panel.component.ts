@@ -102,6 +102,7 @@ export class FilmPanelComponent {
   }
 
   moreDetails(title: string, hour: string) {
+    this.ticketService.cleanState();
     this.date$
       .pipe(take(1))
       .subscribe((value) => (this.selectedDay = value.dateString))

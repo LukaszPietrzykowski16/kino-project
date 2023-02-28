@@ -45,6 +45,8 @@ import { NotAdminGuard } from './shared/guards/no-admin.guard';
 import { NotificationComponent } from './home/film-panel/notification/notification.component';
 import { SelectedSeatGuard } from './shared/guards/selected-seat.guard';
 import { AdminModule } from './admin';
+import { AdminGuard } from './shared/guards/admin.guard';
+import { AuthGuard } from './auth.guard';
 
 export interface AppState {
   User: UserState;
@@ -105,7 +107,7 @@ export interface AppState {
           {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
-            canActivate: [LoginGuard],
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'cart',
@@ -118,8 +120,7 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
-            canActivate: [LoginGuard],
-            // canMatch: [AdminGuard],
+            canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
@@ -135,7 +136,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            canActivate: [NotAdminGuard],
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'form',
@@ -154,7 +155,7 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [],
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'ticket/:id',

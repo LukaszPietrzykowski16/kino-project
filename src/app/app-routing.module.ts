@@ -7,7 +7,7 @@ import { ReservationComponent } from './domains/cinema-hall/reservation/reservat
 import { NotAdminGuard } from './shared/guards/no-admin.guard';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', component: MainComponent, canActivate: [NotAdminGuard] },
   {
     path: 'date/:date',
     component: MainComponent,
