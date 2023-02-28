@@ -83,6 +83,7 @@ export class AdminScreeningsComponent {
   }
 
   addScreening() {
+    this.onSubmit();
     const screeningNew: Screening = {
       filmId: this.filmCtrl.value,
       premiere: this.premierCtrl.value,
