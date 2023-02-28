@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Screening } from 'src/app/home/film-panel/film-panel.component';
+import { FilmLimiterService } from './film-limiter.service';
 
 @Injectable({
   providedIn: 'root',

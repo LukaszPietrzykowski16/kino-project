@@ -267,90 +267,6 @@
       ]
     },
     {
-      "id": 6,
-      "filmId": 4,
-      "premiere": true,
-      "date": "01-03",
-      "hours": [
-        "14:00",
-        "17:00",
-        "19:00",
-        "23:00"
-      ]
-    },
-    {
-      "id": 7,
-      "filmId": 3,
-      "premiere": false,
-      "date": "02-03",
-      "hours": []
-    },
-    {
-      "id": 8,
-      "filmId": 3,
-      "premiere": false,
-      "date": "02-03",
-      "hours": []
-    },
-    {
-      "id": 9,
-      "filmId": 3,
-      "premiere": false,
-      "date": "02-03",
-      "hours": []
-    },
-    {
-      "id": 10,
-      "filmId": 3,
-      "premiere": false,
-      "date": "02-03",
-      "hours": []
-    },
-    {
-      "id": 11,
-      "filmId": 3,
-      "premiere": false,
-      "date": "03-03",
-      "hours": []
-    },
-    {
-      "id": 12,
-      "filmId": 3,
-      "premiere": false,
-      "date": "04-03",
-      "hours": []
-    },
-    {
-      "id": 13,
-      "filmId": 1,
-      "premiere": false,
-      "date": "06-03",
-      "hours": []
-    },
-    {
-      "id": 14,
-      "filmId": 1,
-      "premiere": false,
-      "date": "06-03",
-      "hours": []
-    },
-    {
-      "id": 15,
-      "filmId": 1,
-      "premiere": false,
-      "date": "06-03",
-      "hours": []
-    },
-    {
-      "id": 16,
-      "filmId": 1,
-      "premiere": true,
-      "date": "06-03",
-      "hours": [
-        "12:00"
-      ]
-    },
-    {
       "id": 17,
       "filmId": 1,
       "premiere": true,
@@ -401,17 +317,6 @@
       ]
     },
     {
-      "id": 22,
-      "filmId": 4,
-      "premiere": true,
-      "date": "03-03",
-      "hours": [
-        "13:00",
-        "16:00",
-        "19:00"
-      ]
-    },
-    {
       "id": 23,
       "filmId": 4,
       "premiere": true,
@@ -420,20 +325,6 @@
         "12:00",
         "16:00"
       ]
-    },
-    {
-      "id": 24,
-      "filmId": null,
-      "premiere": false,
-      "date": null,
-      "hours": []
-    },
-    {
-      "id": 25,
-      "filmId": null,
-      "premiere": false,
-      "date": null,
-      "hours": []
     },
     {
       "id": 26,
@@ -1225,19 +1116,11 @@
       "phoneNumber": "489394930",
       "id": 11,
       "movies": [
-        3
+        4
       ],
       "ratings": [
         {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 5
-        },
-        {
-          "filmId": 3,
+          "filmId": 4,
           "rating": 8
         }
       ],

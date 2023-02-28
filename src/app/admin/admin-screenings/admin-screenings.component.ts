@@ -17,6 +17,7 @@ import { FilmServiceService } from '../services/film-service.service';
 import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
 import { ExactScreeningService } from './services/exact-screening.service';
+import { FilmLimiterService } from './services/film-limiter.service';
 
 export interface ExpInterface {
   exp: string;
@@ -31,6 +32,15 @@ export class AdminScreeningsComponent {
   private router = inject(Router);
   private route = inject(ActivatedRoute);
   private exactScreening = inject(ExactScreeningService);
+  private filmLimiter = inject(FilmLimiterService);
+
+  array$ = this.filmLimiter.newArr$;
+
+  showArr() {
+    this.array$.subscribe((test) => {
+      console.log(test);
+    });
+  }
 
   questions = [
     'Podaj date w formacie: Dzień-miesiąc np. 03-03',
@@ -43,6 +53,7 @@ export class AdminScreeningsComponent {
   nextPage() {
     if (this.page === 0) {
       this.exactScreening.getScreening(this.dateCtrl.value);
+      this.filmLimiter.limitFilms();
     }
     if (this.page === 3) {
       this.addScreening();

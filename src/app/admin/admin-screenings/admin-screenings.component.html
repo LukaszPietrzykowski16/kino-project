@@ -77,13 +77,17 @@
           <mat-label>Wybierz film</mat-label>
           <mat-select>
             <ng-container *ngIf="allFilms$ | async as films">
-              <ng-container *ngFor="let film of films">
-                <mat-option
-                  value="{{ film.title }}"
-                  (click)="setValue(film.id)"
-                >
-                  {{ film.title }}</mat-option
-                >
+              <ng-container *ngIf="array$ | async as arr">
+                <ng-container *ngFor="let film of films; let i = index">
+                  <ng-container *ngIf="arr[i] !== film.id">
+                    <mat-option
+                      value="{{ film.title }}"
+                      (click)="setValue(film.id)"
+                    >
+                      <p (click)="showArr()">{{ film.title }}</p>
+                    </mat-option>
+                  </ng-container>
+                </ng-container>
               </ng-container>
             </ng-container>
           </mat-select>
