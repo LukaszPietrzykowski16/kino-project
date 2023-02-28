@@ -107,7 +107,8 @@ export interface AppState {
           {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
-            // canActivate: [NotAdminGuard, LoginGuard],
+            // guard
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'cart',
@@ -120,7 +121,8 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
-            // canActivate: [AuthGuard],
+            // guard
+            canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
@@ -136,7 +138,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            canActivate: [NotAdminGuard, LoginGuard],
+            // canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'form',
