@@ -6,6 +6,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { BehaviorSubject } from 'rxjs';
 import { FilmService } from 'src/app/domains/want-watch/film/film.service';
@@ -26,6 +27,37 @@ export interface ExpInterface {
   styleUrls: ['./admin-screenings.component.scss'],
 })
 export class AdminScreeningsComponent {
+  private router = inject(Router);
+  private route = inject(ActivatedRoute);
+
+  questions = [
+    'Podaj date w formacie: Dzień-miesiąc np. 03-03',
+    'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
+    'Podaj godzinę',
+  ];
+
+  page = 0;
+
+  nextPage() {
+    console.log(this.page);
+    if (this.page === 3) {
+      this.addScreening();
+    }
+    if (this.page >= 3) {
+      this.page = 3;
+    } else {
+      this.page++;
+    }
+  }
+
+  previousPage() {
+    if (this.page === 0) {
+      return;
+    } else {
+      this.page--;
+    }
+  }
+
   private filmService = inject(FilmServiceService);
   private store = inject<Store<ScreeningAdminState>>(Store);
   checked = false;

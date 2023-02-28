@@ -420,6 +420,32 @@
         "12:00",
         "16:00"
       ]
+    },
+    {
+      "id": 24,
+      "filmId": null,
+      "premiere": false,
+      "date": null,
+      "hours": []
+    },
+    {
+      "id": 25,
+      "filmId": null,
+      "premiere": false,
+      "date": null,
+      "hours": []
+    },
+    {
+      "id": 26,
+      "filmId": 3,
+      "premiere": false,
+      "date": "03-03",
+      "hours": [
+        "09:00",
+        "12:00",
+        "17:00",
+        "21:00"
+      ]
     }
   ],
   "reservation": [
