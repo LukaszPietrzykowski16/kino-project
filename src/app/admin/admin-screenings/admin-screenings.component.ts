@@ -16,6 +16,10 @@ import { FilmServiceService } from '../services/film-service.service';
 import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
 
+export interface ExpInterface {
+  exp: string;
+}
+
 @Component({
   selector: 'app-admin-screenings',
   templateUrl: './admin-screenings.component.html',
@@ -105,7 +109,7 @@ export class AdminScreeningsComponent {
 
   onSubmit() {
     const test = this.skills.value;
-    this.helpMe(test);
+    this.convertNumbers(test);
     this.checkIfValueIsGreater();
   }
 
@@ -136,11 +140,11 @@ export class AdminScreeningsComponent {
 
   minutesArray: Array<number> = [];
 
-  helpMe(test: Array<string>) {
+  convertNumbers(test: Array<ExpInterface>) {
     this.finalArr = [];
     this.minutesArray = [];
     // 480 and 1380
-    test.map((bruh: any) => {
+    test.map((bruh: ExpInterface) => {
       const timeParts = bruh.exp.split(':');
       this.minutesArray.push(Number(timeParts[0]) * 60 + Number(timeParts[1]));
     });

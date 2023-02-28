@@ -120,7 +120,7 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
-            canActivate: [AuthGuard],
+            // canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
