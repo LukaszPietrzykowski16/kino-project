@@ -4,7 +4,13 @@
 }
 
 .container {
-  width: 50vw;
+  margin: 32px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
   background-color: white;
   color: rgb(0, 0, 0);
 }

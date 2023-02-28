@@ -1,7 +1,8 @@
 <div class="container">
+  <h1>Dodaj seans</h1>
   <form [formGroup]="screeningForm">
     <mat-form-field appearance="fill">
-      <mat-label>Choose an option</mat-label>
+      <mat-label>Wybierz film</mat-label>
       <mat-select>
         <ng-container *ngIf="allFilms$ | async as films">
           <ng-container *ngFor="let film of films">
