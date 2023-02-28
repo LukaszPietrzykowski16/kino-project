@@ -1150,6 +1150,14 @@
         {
           "filmId": 0,
           "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 5
+        },
+        {
+          "filmId": 3,
+          "rating": 8
         }
       ],
       "tickets": [
@@ -1272,21 +1280,6 @@
             "seat": "A2",
             "type": "bilet normalny 25zł"
           }
-        }
-      ],
-      "rating": [],
-      "arr": [
-        {
-          "filmId": 3,
-          "rating": 7
-        },
-        {
-          "filmId": 3,
-          "rating": 4
-        },
-        {
-          "filmId": 1,
-          "rating": 6
         }
       ]
     },

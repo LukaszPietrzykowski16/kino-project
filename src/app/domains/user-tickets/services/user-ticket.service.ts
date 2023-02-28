@@ -19,7 +19,7 @@ export class UserTicketService {
     date: '',
     hour: '',
     id: NaN,
-    place: {
+    places: {
       seat: '',
       type: '',
     },
