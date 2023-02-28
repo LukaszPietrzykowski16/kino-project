@@ -62,6 +62,10 @@ export class AdminScreeningsComponent {
     return this.skillsForm.get('skills') as FormArray;
   }
 
+  get exp(): FormArray {
+    return this.skillsForm.get('exp') as FormArray;
+  }
+
   get filmCtrl() {
     return this.screeningForm.controls.film;
   }
@@ -108,7 +112,32 @@ export class AdminScreeningsComponent {
   }
 
   onSubmit() {
-    console.log(this.skillsForm.value);
+    const test = this.skills.value;
+    this.helpMe(test);
+    this.checkIfValueIsGreater();
+  }
+
+  checkIfValueIsGreater() {
+    this.minutesArray.sort(function (a, b) {
+      return a - b;
+    });
+    for (let i = 0; i < this.minutesArray.length; i++) {
+      console.log(this.minutesArray[i]);
+      if (this.minutesArray[i] - this.minutesArray[i - 1] < 120) {
+        console.log('HEY');
+      }
+    }
+  }
+
+  minutesArray: Array<number> = [];
+
+  helpMe(test: Array<string>) {
+    this.minutesArray = [];
+    // 480 and 1380
+    test.map((bruh: any) => {
+      const timeParts = bruh.exp.split(':');
+      this.minutesArray.push(Number(timeParts[0]) * 60 + Number(timeParts[1]));
+    });
   }
 
   fetchFilms() {
