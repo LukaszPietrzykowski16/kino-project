@@ -87,16 +87,7 @@ export class AdminScreeningsComponent {
       filmId: this.filmCtrl.value,
       premiere: this.premierCtrl.value,
       date: this.dateCtrl.value,
-      hours: [
-        '09:00',
-        '10:30',
-        '13:30',
-        '15:30',
-        '17:00',
-        '21:00',
-        '22:00',
-        '23:00',
-      ],
+      hours: this.finalArr,
     };
     this.store.dispatch(
       screeningActions.addSingleScreening({ screenings: screeningNew })
@@ -117,21 +108,35 @@ export class AdminScreeningsComponent {
     this.checkIfValueIsGreater();
   }
 
+  finalArr: Array<string> = [];
+  toHoursAndMinutes(totalMinutes: number) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+
+    this.finalArr.push(
+      `${this.padToTwoDigits(hours)}:${this.padToTwoDigits(minutes)}`
+    );
+  }
+  padToTwoDigits(num: number) {
+    return num.toString().padStart(2, '0');
+  }
+
   checkIfValueIsGreater() {
     this.minutesArray.sort(function (a, b) {
       return a - b;
     });
     for (let i = 0; i < this.minutesArray.length; i++) {
-      console.log(this.minutesArray[i]);
       if (this.minutesArray[i] - this.minutesArray[i - 1] < 120) {
-        console.log('HEY');
+        return;
       }
+      this.toHoursAndMinutes(this.minutesArray[i]);
     }
   }
 
   minutesArray: Array<number> = [];
 
   helpMe(test: Array<string>) {
+    this.finalArr = [];
     this.minutesArray = [];
     // 480 and 1380
     test.map((bruh: any) => {
