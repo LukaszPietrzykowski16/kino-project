@@ -16,6 +16,7 @@ import { FilmServiceService } from '../services/film-service.service';
 
 import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
+import { ExactScreeningService } from './services/exact-screening.service';
 
 export interface ExpInterface {
   exp: string;
@@ -29,6 +30,7 @@ export interface ExpInterface {
 export class AdminScreeningsComponent {
   private router = inject(Router);
   private route = inject(ActivatedRoute);
+  private exactScreening = inject(ExactScreeningService);
 
   questions = [
     'Podaj date w formacie: Dzień-miesiąc np. 03-03',
@@ -39,7 +41,9 @@ export class AdminScreeningsComponent {
   page = 0;
 
   nextPage() {
-    console.log(this.page);
+    if (this.page === 0) {
+      this.exactScreening.getScreening(this.dateCtrl.value);
+    }
     if (this.page === 3) {
       this.addScreening();
     }

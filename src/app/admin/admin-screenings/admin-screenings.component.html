@@ -57,24 +57,22 @@
       <h3 class="event-type-form__question font-heading-3">
         {{ questions[page] }}
       </h3>
-      <mat-slide-toggle *ngIf="page === 0" formControlName="isPrivate">
-        <mat-form-field>
-          <mat-label>Data:</mat-label>
-          <input
-            matInput
-            type="email"
-            formControlName="date"
-            placeholder="data"
-          />
-          <mat-error *ngIf="screeningForm.controls['date'].errors?.['required']"
-            >Email is required</mat-error
-          >
-          <mat-error *ngIf="screeningForm.controls['date'].errors?.['pattern']"
-            >Please enter valid email</mat-error
-          >
-        </mat-form-field>
-      </mat-slide-toggle>
-      <mat-slide-toggle *ngIf="page === 1" formControlName="isGroup">
+      <mat-form-field *ngIf="page === 0">
+        <mat-label>Data:</mat-label>
+        <input
+          matInput
+          type="email"
+          formControlName="date"
+          placeholder="data"
+        />
+        <mat-error *ngIf="screeningForm.controls['date'].errors?.['required']"
+          >Email is required</mat-error
+        >
+        <mat-error *ngIf="screeningForm.controls['date'].errors?.['pattern']"
+          >Please enter valid email</mat-error
+        >
+      </mat-form-field>
+      <div *ngIf="page === 1">
         <mat-form-field appearance="fill">
           <mat-label>Wybierz film</mat-label>
           <mat-select>
@@ -83,7 +81,6 @@
                 <mat-option
                   value="{{ film.title }}"
                   (click)="setValue(film.id)"
-                  formControlName="film"
                 >
                   {{ film.title }}</mat-option
                 >
@@ -98,27 +95,22 @@
         >
           premiera
         </mat-checkbox>
-      </mat-slide-toggle>
-      <mat-slide-toggle
-        *ngIf="page === 2"
-        color="primary"
-        formControlName="isInternal"
-      >
+      </div>
+
+      <form [formGroup]="skillsForm" *ngIf="page === 2">
         <button type="button" (click)="addSkills()">Dodaj godzinę</button>
-        <form [formGroup]="skillsForm">
-          <div formArrayName="skills">
-            <div *ngFor="let skill of skills.controls; let i = index">
-              <div [formGroupName]="i">
-                Godzina seansu:
-                <mat-form-field>
-                  <input type="text" formControlName="exp" matInput />
-                </mat-form-field>
-                <button (click)="removeSkill(i)">Usuń</button>
-              </div>
+        <div formArrayName="skills">
+          <div *ngFor="let skill of skills.controls; let i = index">
+            <div [formGroupName]="i">
+              Godzina seansu:
+              <mat-form-field>
+                <input type="text" formControlName="exp" matInput />
+              </mat-form-field>
+              <button (click)="removeSkill(i)">Usuń</button>
             </div>
           </div>
-        </form>
-      </mat-slide-toggle>
+        </div>
+      </form>
     </div>
     <div class="event-type-form__button-container">
       <button

@@ -6,7 +6,7 @@ import { Screening } from 'src/app/home/film-panel/film-panel.component';
   providedIn: 'root',
 })
 export class ScreeningService {
-  http = inject(HttpClient);
+  private http = inject(HttpClient);
 
   getScreening() {
     return this.http.get<Screening[]>(`http://localhost:3000/screening`);
