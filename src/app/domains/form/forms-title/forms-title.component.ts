@@ -22,7 +22,7 @@ export class FormsTitleComponent {
   tickets$ = this.ticketService.tickets$;
 
   ticketPrice: number = 0;
-  promotion: any = false;
+  promotion: unknown = false;
 
   price() {
     this.tickets$

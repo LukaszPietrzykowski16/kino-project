@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { map, take } from 'rxjs/operators';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
+type event = keyof GlobalEventHandlersEventMap;
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +17,7 @@ export class NavbarComponent {
   constructor(private router: Router) {}
 
   navigateTo(value: any) {
+    console.log(value);
     if (value) {
       this.router.navigate([value.value]);
     }

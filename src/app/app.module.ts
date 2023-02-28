@@ -120,7 +120,7 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
-            // canActivate: [AuthGuard],
+            canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
@@ -155,7 +155,6 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'ticket/:id',

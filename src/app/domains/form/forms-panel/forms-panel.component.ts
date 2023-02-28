@@ -94,7 +94,6 @@ export class FormsPanelComponent {
   });
 
   checkout = true;
-  errors: any;
 
   showBlik() {
     if (this.profileForm.valid) {
