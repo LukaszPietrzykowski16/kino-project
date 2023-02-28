@@ -3,10 +3,7 @@ import { CanMatch, UrlTree } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { filter, Observable, of, switchMap } from 'rxjs';
 import { AppState } from 'src/app/app.module';
-import {
-  AuthService,
-  selectAccountType,
-} from './auth/authentication/auth.service';
+import { selectAccountType } from 'src/app/auth/authentication/auth.service';
 
 @Injectable({
   providedIn: 'root',
