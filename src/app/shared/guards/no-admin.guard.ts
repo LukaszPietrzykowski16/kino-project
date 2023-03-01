@@ -7,7 +7,7 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { filter, Observable, of, switchMap, tap } from 'rxjs';
+import { filter, map, Observable, of, switchMap, tap } from 'rxjs';
 import { AppState } from 'src/app/app.module';
 
 @Injectable({
@@ -28,11 +28,12 @@ export class NotAdminGuard implements CanActivate {
     return this.store
       .select((state) => state.User)
       .pipe(
-        switchMap((result) => {
+        map((result) => {
           if (result.type === 'admin') {
             this.router.navigate(['/admin']);
+            return false;
           }
-          return of(result.type);
+          return true;
         }),
         tap(console.log)
       );

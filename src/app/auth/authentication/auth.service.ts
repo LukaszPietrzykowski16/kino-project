@@ -80,6 +80,7 @@ export class AuthService {
   }
 
   logOut() {
+    this.tokenService.removeToken();
     this.auth$$.next({ hasAuth: false });
     this.store.dispatch(
       userActions.changeRole({
