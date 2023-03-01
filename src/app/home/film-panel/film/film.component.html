@@ -1,6 +1,9 @@
 <div class="film">
   <div class="film-container__image">
-    <img src="{{ film.image }}" />
+    <div class="film-container__paragraph">
+      <p *ngIf="premiere">Premiera</p>
+    </div>
+    <img src="{{ film.image }}" alt="{{ film.title }}" />
   </div>
   <div class="film-container__description">
     <h1>
@@ -8,12 +11,13 @@
     </h1>
     <div class="film-container__about_types">{{ film.types }}</div>
     <div class="film-container__about_paragraph">
-      <div *ngIf="flag; else elseBlock">
+      <div *ngIf="longDescription; else elseBlock">
         {{ film.description.substring(0, 240) }}
-        <button (click)="more()">more</button>
+        <button (click)="showMoreDescription()">more</button>
       </div>
       <ng-template #elseBlock>
-        {{ film.description }} <button (click)="more()">less</button>
+        {{ film.description }}
+        <button (click)="showMoreDescription()">less</button>
       </ng-template>
     </div>
 

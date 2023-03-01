@@ -13,17 +13,12 @@ export class FilmComponent {
   private userData = inject(UserTicketService);
 
   @Input() film!: Film;
+  @Input() premiere!: boolean;
 
-  flag = true;
+  longDescription = true;
   ratings$ = this.userData.ratings$;
 
-  more() {
-    // this.flag = !this.flag;
-
-    if (this.flag) {
-      this.flag = false;
-    } else {
-      this.flag = true;
-    }
+  showMoreDescription() {
+    this.longDescription = !this.longDescription;
   }
 }
