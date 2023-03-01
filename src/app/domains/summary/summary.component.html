@@ -1,20 +1,25 @@
-<h1>Zakupiono bilet na film</h1>
-<div>
-  <h2>Na dane:</h2>
-  <div *ngIf="reservation$ | async as reservation">
-    {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
-  </div>
-</div>
-<div *ngIf="tickets$ | async as tickets">
-  <div *ngIf="urlValue$ | async as url">
-    <div *ngFor="let exactUrl of url">
-      <p routerLink="/ticket/{{ exactUrl }}">Link do biletu</p>
+<main>
+  <div class="main-container">
+    <h1>Dziękujemy za zakup!</h1>
+
+    <h2>Bilet zakupiono na dane:</h2>
+    <div *ngIf="reservation$ | async as reservation">
+      {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
     </div>
-    <div *ngFor="let ticket of tickets">
-      <div>
-        Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
-        {{ ticket.type }}
+    <div *ngIf="tickets$ | async as tickets">
+      <div *ngIf="urlValue$ | async as url">
+        <div class="ticket-info">
+          <div *ngFor="let ticket of tickets" class="ticket-info__ticket">
+            <div>
+              Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+              {{ ticket.type }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngFor="let exactUrl of url" class="ticket-info__info">
+        <button routerLink="/ticket/{{ exactUrl }}">Link do biletu</button>
       </div>
     </div>
   </div>
-</div>
+</main>

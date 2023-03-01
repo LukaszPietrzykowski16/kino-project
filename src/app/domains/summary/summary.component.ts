@@ -26,13 +26,11 @@ export default class SummaryComponent {
   private ticketService = inject(TicketsService);
   private filmService = inject(FilmService);
   private sendTicketService = inject(SendTicketsService);
+  private qrService = inject(QrService);
 
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketService.tickets$;
-
   url: string | undefined;
-
-  constructor(private qrService: QrService) {}
 
   urlValue$ = this.sendTicketService.getUrlInfo$;
 

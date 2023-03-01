@@ -359,72 +359,72 @@
   "reservation": [
     {
       "seat": "A0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 0,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 1,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 2,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 3,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 4,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 5,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 6,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 7,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 8,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -443,9 +443,9 @@
     },
     {
       "seat": "B1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 12,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -485,30 +485,30 @@
     },
     {
       "seat": "B7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 18,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 19,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 20,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 21,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -520,9 +520,9 @@
     },
     {
       "seat": "C1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 23,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -534,9 +534,9 @@
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -548,9 +548,9 @@
     },
     {
       "seat": "C5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 27,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -590,16 +590,16 @@
     },
     {
       "seat": "D0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 33,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 34,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -632,9 +632,9 @@
     },
     {
       "seat": "D6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 39,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -660,16 +660,16 @@
     },
     {
       "seat": "D10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 43,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 44,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -681,7 +681,7 @@
     },
     {
       "seat": "E2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 46,
       "isChoosen": false,
       "reservation": false
@@ -695,7 +695,7 @@
     },
     {
       "seat": "E4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 48,
       "isChoosen": false,
       "reservation": false
@@ -744,23 +744,23 @@
     },
     {
       "seat": "F0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 55,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 56,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 57,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -772,9 +772,9 @@
     },
     {
       "seat": "F4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 59,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -814,9 +814,9 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -842,16 +842,16 @@
     },
     {
       "seat": "G3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 69,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 70,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -863,9 +863,9 @@
     },
     {
       "seat": "G6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 72,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -877,16 +877,16 @@
     },
     {
       "seat": "G8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 74,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -926,9 +926,9 @@
     },
     {
       "seat": "H4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 81,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -940,9 +940,9 @@
     },
     {
       "seat": "H6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 83,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -975,16 +975,16 @@
     },
     {
       "seat": "I0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 88,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 89,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1010,23 +1010,23 @@
     },
     {
       "seat": "I5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 93,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 94,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 95,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1038,16 +1038,16 @@
     },
     {
       "seat": "I9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 97,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 98,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     }
   ],
@@ -1462,6 +1462,6336 @@
       "hour": "16:00",
       "places": {
         "seat": "B5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 17,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "A2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 18,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "B7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 19,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "A7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 20,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "F4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 21,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 22,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D0",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 23,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "F0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 24,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "B8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 25,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "G6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 26,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 27,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 28,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 29,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A3",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 30,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 31,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "C5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 32,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "C3",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 33,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "B1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 34,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "C1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 35,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 36,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 37,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 38,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 39,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 40,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 41,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 42,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 43,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 44,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 45,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 46,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 47,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 48,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 49,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 50,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 51,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 52,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 53,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 54,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 55,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 56,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 57,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 58,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 59,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 60,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 61,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 62,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 63,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 64,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 65,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 66,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 67,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 68,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 69,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 70,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 71,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 72,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 73,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 74,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 75,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 76,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 77,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 78,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 79,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "F1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 80,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "D10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 81,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 82,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 83,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 84,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 85,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 86,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 87,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 88,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 89,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 90,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 91,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 92,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 93,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 94,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 95,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 96,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 97,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 98,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 99,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 100,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 101,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 102,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 103,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 104,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 105,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 106,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 107,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 108,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 109,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 110,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 111,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 112,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 113,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 114,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 115,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 116,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 117,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 118,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 119,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 120,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 121,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 122,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 123,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 124,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 125,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 126,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 127,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 128,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 129,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 130,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 131,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 132,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 133,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 134,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 135,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 136,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 137,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A8",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 138,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 139,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 140,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 141,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 142,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 143,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 144,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 145,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 146,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 147,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 148,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 149,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 150,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 151,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 152,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 153,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 154,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 155,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 156,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 157,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 158,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 159,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 160,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 161,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 162,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 163,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 164,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 165,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 166,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 167,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 168,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 169,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 170,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 171,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 172,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 173,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 174,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 175,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 176,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 177,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 178,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 179,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 180,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 181,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 182,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 183,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 184,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 185,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 186,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 187,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 188,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 189,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 190,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 191,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 192,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 193,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 194,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 195,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 196,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 197,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 198,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 199,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 200,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 201,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 202,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 203,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 204,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 205,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 206,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 207,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 208,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 209,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 210,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 211,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 212,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 213,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 214,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 215,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 216,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 217,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 218,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 219,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 220,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 221,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 222,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 223,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 224,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 225,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 226,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 227,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 228,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 229,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 230,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 231,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 232,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 233,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 234,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 235,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 236,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 237,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 238,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 239,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 240,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 241,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 242,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 243,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 244,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 245,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 246,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 247,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 248,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 249,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 250,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 251,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 252,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 253,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 254,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 255,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 256,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 257,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 258,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 259,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 260,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 261,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 262,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 263,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 264,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 265,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 266,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 267,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 268,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 269,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 270,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 271,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 272,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 273,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 274,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 275,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 276,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 277,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 278,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 279,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 280,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 281,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 282,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 283,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 284,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 285,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 286,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 287,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 288,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 289,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 290,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 291,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 292,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 293,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 294,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 295,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 296,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 297,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 298,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 299,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 300,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 301,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 302,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 303,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 304,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 305,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 306,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 307,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 308,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 309,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 310,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 311,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 312,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 313,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 314,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 315,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 316,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 317,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 318,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 319,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 320,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 321,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 322,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 323,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 324,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 325,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 326,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 327,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 328,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 329,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 330,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 331,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 332,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 333,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 334,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 335,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 336,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 337,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 338,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 339,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 340,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 341,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 342,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 343,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 344,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 345,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 346,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 347,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 348,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 349,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 350,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 351,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 352,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 353,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 354,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 355,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 356,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 357,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 358,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 359,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 360,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 361,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 362,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 363,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 364,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 365,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 366,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 367,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 368,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 369,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 370,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 371,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 372,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 373,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 374,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 375,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 376,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 377,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 378,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 379,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 380,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 381,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 382,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 383,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 384,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 385,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 386,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 387,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 388,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 389,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 390,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 391,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 392,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 393,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 394,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 395,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 396,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 397,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 398,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 399,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 400,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 401,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 402,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 403,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 404,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 405,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 406,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 407,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 408,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 409,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 410,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 411,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 412,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 413,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 414,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 415,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 416,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 417,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 418,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 419,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 420,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 421,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 422,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 423,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 424,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 425,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 426,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 427,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 428,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 429,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 430,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 431,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 432,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 433,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 434,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 435,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 436,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 437,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 438,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 439,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 440,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 441,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 442,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 443,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 444,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 445,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 446,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 447,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 448,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 449,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 450,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 451,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 452,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 453,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 454,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 455,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 456,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 457,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 458,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 459,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 460,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 461,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 462,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 463,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 464,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 465,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 466,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 467,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 468,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 469,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 470,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 471,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 472,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 473,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 474,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 475,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 476,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 477,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 478,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 479,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 480,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 481,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 482,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 483,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 484,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 485,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 486,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 487,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 488,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 489,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 490,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 491,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 492,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 493,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 494,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 495,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 496,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 497,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 498,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 499,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 500,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 501,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 502,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 503,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 504,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 505,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 506,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 507,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 508,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 509,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 510,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 511,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 512,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 513,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 514,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 515,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 516,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 517,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 518,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 519,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 520,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 521,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 522,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 523,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 524,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 525,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 526,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 527,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 528,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 529,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 530,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 531,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 532,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 533,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 534,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 535,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 536,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 537,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 538,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 539,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 540,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 541,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 542,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 543,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 544,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 545,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 546,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 547,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 548,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 549,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 550,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 551,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 552,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 553,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 554,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 555,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 556,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 557,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 558,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 559,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 560,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 561,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 562,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 563,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 564,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 565,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 566,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 567,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 568,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 569,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 570,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 571,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 572,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 573,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 574,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 575,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 576,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 577,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 578,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 579,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 580,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 581,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 582,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 583,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 584,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 585,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 586,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 587,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 588,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 589,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 590,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 591,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 592,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 593,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 594,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 595,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 596,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 597,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 598,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 599,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 600,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 601,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 602,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 603,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 604,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 605,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 606,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 607,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 608,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 609,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 610,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E4",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 611,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 612,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "E2",
+        "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 613,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 614,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 615,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 616,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 617,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 618,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 619,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 620,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 621,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 622,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 623,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 624,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 625,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 626,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 627,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 628,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 629,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 630,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 631,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 632,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 633,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 634,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 635,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 636,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 637,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 638,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 639,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "18:30",
+      "places": {
+        "seat": "H6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 640,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "G9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 641,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "G8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 642,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "F10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 643,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "G4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 644,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 645,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "02-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "E0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 646,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "02-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "D1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 647,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "02-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 648,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "02-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 649,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "02-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "A0",
         "type": "bilet normalny 25zł"
       }
     }

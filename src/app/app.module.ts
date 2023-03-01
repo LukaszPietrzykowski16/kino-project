@@ -153,7 +153,7 @@ export interface AppState {
           {
             path: 'summary',
             loadComponent: () => import('./domains/summary/summary.component'),
-            canActivate: [NotAdminGuard, SelectedSeatGuard],
+            // canActivate: [NotAdminGuard, SelectedSeatGuard],
           },
           {
             path: 'want-watch',
