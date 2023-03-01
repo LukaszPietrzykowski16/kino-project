@@ -129,9 +129,10 @@
       </form>
     </div>
     <ng-template #elseBlock2> Wprowadź prawidłowe dane </ng-template>
+    <a (click)="goBack()"> Wróć do wyboru miejsc </a>
   </form>
 
   <ng-template #elseBlock></ng-template>
 </div>
-<a href="/rezerwacja"> Wróć do wyboru miejsc </a>
+
 <router-outlet></router-outlet>

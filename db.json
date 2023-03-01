@@ -471,9 +471,9 @@
     },
     {
       "seat": "B5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 16,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -527,9 +527,9 @@
     },
     {
       "seat": "C2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 24,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -569,9 +569,9 @@
     },
     {
       "seat": "C8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 30,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -646,9 +646,9 @@
     },
     {
       "seat": "D8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 41,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -688,9 +688,9 @@
     },
     {
       "seat": "E3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 47,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -765,9 +765,9 @@
     },
     {
       "seat": "F3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 58,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -800,9 +800,9 @@
     },
     {
       "seat": "F8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 63,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -870,9 +870,9 @@
     },
     {
       "seat": "G7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 73,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1453,6 +1453,16 @@
       "places": {
         "seat": "H10",
         "type": "bilet rodzinny 20zł"
+      }
+    },
+    {
+      "id": 16,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B5",
+        "type": "bilet normalny 25zł"
       }
     }
   ]

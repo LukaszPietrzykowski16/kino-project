@@ -10,7 +10,7 @@ import { validatorCompareEmail } from './email-chech.service';
 import { PromotionService } from '../promotion.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { map, take } from 'rxjs';
-import { isPlatformWorkerApp } from '@angular/common';
+import { isPlatformWorkerApp, Location } from '@angular/common';
 import { SendTicketsService } from '../../user-tickets/services/send-tickets.service';
 import { trimValidator } from '../input-vaidator.validator';
 import { AppState } from 'src/app/app.module';
@@ -38,6 +38,7 @@ export class FormsPanelComponent {
   private authService = inject(AuthService);
   private sendTickets = inject(SendTicketsService);
   private store = inject<Store<AppState>>(Store);
+  private location = inject(Location);
 
   isBonus = false;
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
@@ -164,5 +165,9 @@ export class FormsPanelComponent {
 
   get email() {
     return this.profileForm.controls.email;
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

@@ -9,6 +9,7 @@
   top: 40px;
   width: 100%;
   display: flex;
+  opacity: 0.9;
   justify-content: right;
 }
 
