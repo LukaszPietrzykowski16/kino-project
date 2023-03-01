@@ -2,13 +2,45 @@
   <a routerLink="/"> <div class="navbar__logo" appHighlight>AleKino</div> </a>
   <div *ngIf="login$ | async; else elseBlock">
     <div class="navbar__settings">
-      <i-feather name="shopping-cart" routerLink="/tickets"></i-feather>
+      <!-- <i-feather name="shopping-cart" routerLink="/tickets"></i-feather>
+
       <select name="user" id="user" (change)="navigateTo($event)">
         <option value="/">Cześć {{ userName }}</option>
         <option value="/want-watch">Chcę obejrzeć</option>
         <option value="ustawienia">Ustawienia</option>
         <option value="wyloguj">Wyloguj</option>
-      </select>
+      </select> -->
+
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="home"
+          >
+          </mat-icon>
+          <span> Cześć {{ userName }}</span>
+        </button>
+        <button mat-menu-item routerLink="/want-watch">
+          <mat-icon fontIcon="remove_red_eye">voicemail</mat-icon>
+          <span>Chcę obejrzeć</span>
+        </button>
+        <button mat-menu-item routerLink="/tickets">
+          <mat-icon fontIcon="bookmark"></mat-icon>
+          <span>Moje zamówienia</span>
+        </button>
+        <button mat-menu-item (click)="logOut()">
+          <mat-icon fontIcon="exit_to_app">notifications_off</mat-icon>
+          <span>Wyloguj</span>
+        </button>
+      </mat-menu>
     </div>
   </div>
   <ng-template #elseBlock>

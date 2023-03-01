@@ -20,12 +20,15 @@ export class ExactScreeningService {
   getScreening(date: string) {
     this.date = date;
     this.fetchScreening().subscribe((screening) => {
-      screening.map((screen) => {
-        this.screeningInDay$$.next([
-          ...this.screeningInDay$$.getValue(),
-          ...[screen.filmId],
-        ]);
-      });
+      const ids = screening.map(({ filmId }) => filmId);
+
+      const uniques = Array.from(
+        new Set([...this.screeningInDay$$.getValue(), ...ids])
+      );
+
+      // screening.map((screen) => {
+      this.screeningInDay$$.next(uniques);
+      // });
     });
   }
 
@@ -35,5 +38,5 @@ export class ExactScreeningService {
     );
   }
 
-  constructor() {}
+  // constructor() {}
 }

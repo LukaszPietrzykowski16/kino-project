@@ -47,6 +47,7 @@ import { SelectedSeatGuard } from './shared/guards/selected-seat.guard';
 import { AdminModule } from './admin';
 import { AdminGuard } from './shared/guards/admin.guard';
 import { AuthGuard } from './auth.guard';
+import { MatMenuModule } from '@angular/material/menu';
 
 export interface AppState {
   User: UserState;
@@ -91,6 +92,7 @@ export interface AppState {
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatMenuModule,
     MatIconModule,
     MatSelectModule,
     MatRadioModule,

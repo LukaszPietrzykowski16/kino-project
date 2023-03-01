@@ -57,6 +57,14 @@
       "rating": "7",
       "title": "NMF: MINIMARATON KRZYK",
       "types": "Horror"
+    },
+    {
+      "id": 5,
+      "description": "fjwkqjkqwf",
+      "image": "dajsk",
+      "rating": "fjwkqk",
+      "title": "uriewiu",
+      "types": "fjjidsife"
     }
   ],
   "screening": [
@@ -617,9 +625,9 @@
     },
     {
       "seat": "D5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 38,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -708,16 +716,16 @@
     },
     {
       "seat": "E7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 51,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 52,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -771,23 +779,23 @@
     },
     {
       "seat": "F5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 60,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 61,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 62,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -848,9 +856,9 @@
     },
     {
       "seat": "G5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 71,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -939,30 +947,30 @@
     },
     {
       "seat": "H7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 84,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 85,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 86,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 87,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1125,12 +1133,12 @@
       "phoneNumber": "489394930",
       "id": 11,
       "movies": [
-        0
+        4
       ],
       "ratings": [
         {
-          "filmId": 0,
-          "rating": 5
+          "filmId": 4,
+          "rating": 7
         }
       ],
       "tickets": [
@@ -1425,6 +1433,26 @@
       "places": {
         "seat": "E2",
         "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 14,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "H9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 15,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "01-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet rodzinny 20zł"
       }
     }
   ]

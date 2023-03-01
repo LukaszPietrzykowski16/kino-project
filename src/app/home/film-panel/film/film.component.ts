@@ -11,10 +11,15 @@ import { Film, Repertoire, Screening } from '../film-panel.component';
 })
 export class FilmComponent {
   private userData = inject(UserTicketService);
+
   @Input() film!: Film;
-  flag: boolean = true;
+
+  flag = true;
   ratings$ = this.userData.ratings$;
+
   more() {
+    // this.flag = !this.flag;
+
     if (this.flag) {
       this.flag = false;
     } else {

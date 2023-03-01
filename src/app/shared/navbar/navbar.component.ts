@@ -15,15 +15,8 @@ export class NavbarComponent {
 
   constructor(private router: Router) {}
 
-  navigateTo(event: Event) {
-    const { value } = event.target as HTMLSelectElement;
-    if (value) {
-      this.router.navigate([value]);
-    }
-    if (value === 'wyloguj') {
-      this.authService.logOut();
-    }
-    return false;
+  logOut() {
+    this.authService.logOut();
   }
 
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
