@@ -1,5 +1,6 @@
 import { Component, inject, Input } from '@angular/core';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
+import { WantWatchService } from 'src/app/home/film-panel/services/want-watch.service';
 import { IconsModule } from 'src/app/icons/icons.module';
 import { FilmService } from '../film/film.service';
 
@@ -11,12 +12,13 @@ import { FilmService } from '../film/film.service';
   imports: [IconsModule],
 })
 export class WantWatchFilmComponent {
-  filmService = inject(FilmService);
+  private wantWatch = inject(WantWatchService);
+
   @Input() film!: Film;
 
   isShow = false;
-  removeFilm(filmId: Number) {
-    this.filmService.removeFilmId(filmId);
+  removeFilm(filmId: number) {
+    this.wantWatch.removeFilm(filmId);
     this.isShow = !this.isShow;
   }
 }
