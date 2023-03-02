@@ -1,7 +1,9 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, inject, Input, Output } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { map } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
+import { NotificationComponent } from '../notification/notification.component';
 import { SendMovieService } from '../services/send-movie.service';
 import { UserService } from '../services/user.service';
 import { WantWatchService } from '../services/want-watch.service';
@@ -18,31 +20,34 @@ export class WantToWatchComponent {
   private userService = inject(UserService);
   private authService = inject(AuthService);
   private wantWatchService = inject(WantWatchService);
+  private snackBar = inject(MatSnackBar);
 
   @Input() filmId!: number;
   wantWatch = true;
   isLogin = false;
   userId: number = NaN;
+  durationInSeconds = 3;
 
   getRatingArray$ = this.wantWatchService.getRatingArray$;
 
   sendAddMovie(filmId: number) {
     this.wantWatch = !this.wantWatch;
     this.wantWatchService.addFilm(filmId);
-    this.openSnackBar();
+    this.openSnackBar('Dodano film do obejrzenia!');
   }
 
-  openSnackBar() {
-    // this.snackBar.openFromComponent(NotificationComponent, {
-    //   duration: this.durationInSeconds * 1000,
-    // });
+  openSnackBar(titleValue: string) {
+    this.snackBar.openFromComponent(NotificationComponent, {
+      data: titleValue,
+      duration: this.durationInSeconds * 1000,
+    });
   }
 
   sendRemoveMovie(filmId: number) {
     this.wantWatch = !this.wantWatch;
     this.wantWatchService.removeFilm(filmId);
 
-    this.openSnackBar();
+    this.openSnackBar('Usunięto film do obejrzenia!');
   }
 
   ngOnInit() {
