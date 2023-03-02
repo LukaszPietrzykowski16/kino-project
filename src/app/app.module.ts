@@ -48,6 +48,7 @@ import { AdminModule } from './admin';
 import { AdminGuard } from './shared/guards/admin.guard';
 import { AuthGuard } from './auth.guard';
 import { MatMenuModule } from '@angular/material/menu';
+import { WantToWatchComponent } from './want-to-watch/want-to-watch.component';
 
 export interface AppState {
   User: UserState;
@@ -72,6 +73,7 @@ export interface AppState {
     UserTicketsComponent,
     UserTicketComponent,
     NotificationComponent,
+    WantToWatchComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],

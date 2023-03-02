@@ -59,6 +59,7 @@ export class FilmPanelComponent {
   userId: number = NaN;
   moviesArray: Array<Number> = [];
   durationInSeconds = 3;
+  wantWatch = true;
 
   private date = new Date();
   now = this.date.getHours();
@@ -77,11 +78,21 @@ export class FilmPanelComponent {
   date$ = this.apiService.date$;
   ratings$ = this.userData.ratings$;
 
-  sendMovie(filmId: number) {
+  sendAddMovie(filmId: number) {
+    this.wantWatch = !this.wantWatch;
     this.openSnackBar();
     this.moviesArray = [...this.moviesArray, ...[filmId]];
     const set = new Set(this.moviesArray);
     this.movieService.postMovie(this.userId, Array.from(set));
+  }
+
+  sendRemoveMovie(filmId: number) {
+    this.wantWatch = !this.wantWatch;
+    this.openSnackBar();
+    this.moviesArray = this.moviesArray.filter((item) => {
+      return item !== filmId;
+    });
+    this.movieService.postMovie(this.userId, this.moviesArray);
   }
 
   openSnackBar() {
