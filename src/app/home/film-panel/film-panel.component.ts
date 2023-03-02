@@ -135,9 +135,9 @@ export class FilmPanelComponent {
         this.userData.mainPageInfo();
       });
 
-      this.userService.getUser(this.userId).subscribe((movie) => {
-        this.moviesArray = [...this.moviesArray, ...movie.movies];
-      });
+      // this.userService.getUser(this.userId).subscribe((movie) => {
+      //   this.moviesArray = [...this.moviesArray, ...movie.movies];
+      // });
     }
   }
 }
