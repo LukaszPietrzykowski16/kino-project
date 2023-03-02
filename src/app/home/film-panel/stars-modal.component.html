@@ -1,24 +1,32 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
 <div
   style="
     color: black;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   "
 >
-  <div
-    *ngFor="let star of numberOfStars"
-    style="padding: 8px"
-    (click)="setStar(star)"
-  >
-    {{ star }}
+  <div style="display: flex">
+    <div
+      *ngFor="let star of numberOfStars"
+      style="padding: 8px"
+      (click)="setStar(star)"
+    >
+      {{ star }}
+    </div>
   </div>
-  <p *ngIf="starValue !== 0">Twoja ocena: {{ starValue }}</p>
+
+  <div>
+    <p *ngIf="starValue !== 0">Twoja ocena: {{ starValue }}</p>
+  </div>
 </div>
 
-<div mat-dialog-actions>
+<div mat-dialog-actions style="padding: 8px">
   <button mat-button mat-dialog-close (click)="closeDialog()">Zamknij</button>
   <button mat-button (click)="sendRating()">Wyślij ocenę</button>
 </div>

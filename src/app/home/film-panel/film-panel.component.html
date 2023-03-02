@@ -16,7 +16,7 @@
           </a>
         </div>
         <div *ngIf="isLogin">
-          <button (click)="showModal(screen.film.id)">Oceń ten film</button>
+          <app-rating [filmId]="screen.film.id"></app-rating>
           <app-want-to-watch [filmId]="screen.film.id"></app-want-to-watch>
         </div>
       </div>

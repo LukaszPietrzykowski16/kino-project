@@ -1132,11 +1132,13 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [],
+      "movies": [
+        4
+      ],
       "ratings": [
         {
           "filmId": 4,
-          "rating": 10
+          "rating": 6
         }
       ],
       "tickets": [

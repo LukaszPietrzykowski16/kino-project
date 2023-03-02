@@ -49,6 +49,7 @@ import { AdminGuard } from './shared/guards/admin.guard';
 import { AuthGuard } from './auth.guard';
 import { MatMenuModule } from '@angular/material/menu';
 import { WantToWatchComponent } from './home/film-panel/want-to-watch/want-to-watch.component';
+import { RatingComponent } from './home/film-panel/rating/rating.component';
 
 export interface AppState {
   User: UserState;
@@ -171,6 +172,7 @@ export interface AppState {
     ]),
     BrowserAnimationsModule,
     WantToWatchComponent,
+    RatingComponent,
   ],
 })
 export class AppModule {}

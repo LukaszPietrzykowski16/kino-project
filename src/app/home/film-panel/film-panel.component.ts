@@ -6,7 +6,6 @@ import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hal
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from './services/send-movie.service';
 import { UserService } from './services/user.service';
-import { MatDialog } from '@angular/material/dialog';
 import { starsModalComponent } from './stars-modal.component';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.module';
@@ -52,7 +51,6 @@ export class FilmPanelComponent {
   private apiService = inject(ApiServiceService);
   private store = inject<Store<AppState>>(Store);
   private userData = inject(UserTicketService);
-  private ratingService = inject(RatingService);
   private ticketService = inject(TicketsService);
 
   isLogin = false;
@@ -67,18 +65,12 @@ export class FilmPanelComponent {
 
   constructor(
     private cinemaService: CinemaHallService,
-    private authService: AuthService,
-    public dialog: MatDialog
+    private authService: AuthService
   ) {}
 
   screenings$ = this.apiService.screenings$;
   date$ = this.apiService.date$;
   ratings$ = this.userData.ratings$;
-
-  showModal(filmId: number) {
-    this.ratingService.setFilmId(filmId);
-    const dialogRef = this.dialog.open(starsModalComponent);
-  }
 
   user$ = this.store.select('User');
 
