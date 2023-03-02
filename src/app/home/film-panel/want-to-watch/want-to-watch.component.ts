@@ -3,6 +3,7 @@ import { Component, inject, Input, Output } from '@angular/core';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from '../services/send-movie.service';
 import { UserService } from '../services/user.service';
+import { WantWatchService } from '../services/want-watch.service';
 
 @Component({
   selector: 'app-want-to-watch',
@@ -15,6 +16,7 @@ export class WantToWatchComponent {
   private movieService = inject(SendMovieService);
   private userService = inject(UserService);
   private authService = inject(AuthService);
+  private wantWatchService = inject(WantWatchService);
 
   @Input() filmId!: number;
   wantWatch = true;
@@ -22,7 +24,10 @@ export class WantToWatchComponent {
   isLogin = false;
   userId: number = NaN;
 
+  getRatingArray$ = this.wantWatchService.getRatingArray$;
+
   sendAddMovie(filmId: number) {
+    this.wantWatchService.addFilm(filmId);
     this.wantWatch = !this.wantWatch;
     this.openSnackBar();
     this.moviesArray = [...this.moviesArray, ...[filmId]];
@@ -31,12 +36,18 @@ export class WantToWatchComponent {
   }
 
   openSnackBar() {
+    this.getRatingArray$
+      .subscribe((test) => {
+        console.log(test);
+      })
+      .unsubscribe();
     // this.snackBar.openFromComponent(NotificationComponent, {
     //   duration: this.durationInSeconds * 1000,
     // });
   }
 
   sendRemoveMovie(filmId: number) {
+    this.wantWatchService.removeFilm(filmId);
     this.wantWatch = !this.wantWatch;
     this.openSnackBar();
     this.moviesArray = this.moviesArray.filter((item) => {
@@ -51,7 +62,7 @@ export class WantToWatchComponent {
     });
 
     this.userService.getUser(this.userId).subscribe((movie) => {
-      this.moviesArray = [...this.moviesArray, ...movie.movies];
+      this.wantWatchService.addFilmsArray(movie.movies);
     });
     if (this.isLogin === true) {
       this.authService.user$.subscribe((user) => {
