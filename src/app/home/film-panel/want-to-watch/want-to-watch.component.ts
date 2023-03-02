@@ -20,7 +20,7 @@ export class WantToWatchComponent {
 
   @Input() filmId!: number;
   wantWatch = true;
-  moviesArray: Array<Number> = [];
+  // moviesArray: Array<Number> = [];
   isLogin = false;
   userId: number = NaN;
 
@@ -30,17 +30,12 @@ export class WantToWatchComponent {
     this.wantWatchService.addFilm(filmId);
     this.wantWatch = !this.wantWatch;
     this.openSnackBar();
-    this.moviesArray = [...this.moviesArray, ...[filmId]];
-    const set = new Set(this.moviesArray);
-    this.movieService.postMovie(this.userId, Array.from(set));
+    // this.moviesArray = [...this.moviesArray, ...[filmId]];
+    // const set = new Set(this.moviesArray);
+    // this.movieService.postMovie(this.userId, Array.from(set));
   }
 
   openSnackBar() {
-    this.getRatingArray$
-      .subscribe((test) => {
-        console.log(test);
-      })
-      .unsubscribe();
     // this.snackBar.openFromComponent(NotificationComponent, {
     //   duration: this.durationInSeconds * 1000,
     // });
@@ -50,10 +45,10 @@ export class WantToWatchComponent {
     this.wantWatchService.removeFilm(filmId);
     this.wantWatch = !this.wantWatch;
     this.openSnackBar();
-    this.moviesArray = this.moviesArray.filter((item) => {
-      return item !== filmId;
-    });
-    this.movieService.postMovie(this.userId, this.moviesArray);
+    // this.moviesArray = this.moviesArray.filter((item) => {
+    //   return item !== filmId;
+    // });
+    // this.movieService.postMovie(this.userId, this.moviesArray);
   }
 
   ngOnInit() {
