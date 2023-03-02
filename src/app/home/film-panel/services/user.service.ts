@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { Ratings } from './rating.service';
 
-interface UserMovies {
+export interface UserMovies {
   movies: Array<Number>;
+  ratings: Array<Ratings>;
 }
 
 @Injectable({

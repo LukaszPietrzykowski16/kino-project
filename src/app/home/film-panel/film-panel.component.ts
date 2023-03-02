@@ -4,16 +4,10 @@ import { map, take } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
-import { SendMovieService } from './services/send-movie.service';
-import { UserService } from './services/user.service';
-import { starsModalComponent } from './stars-modal.component';
+
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.module';
 import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
-import { RatingService } from './services/rating.service';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { NotificationComponent } from './notification/notification.component';
-import TicketApiService from 'src/app/domains/cinema-hall/services/ticket-api.service';
 import { TicketsService } from 'src/app/domains/cinema-hall/reservation/services/tickets.service';
 
 export interface Screening {

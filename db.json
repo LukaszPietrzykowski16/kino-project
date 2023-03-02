@@ -1138,7 +1138,15 @@
       "ratings": [
         {
           "filmId": 4,
-          "rating": 6
+          "rating": 8
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 4,
+          "rating": 8
         }
       ],
       "tickets": [

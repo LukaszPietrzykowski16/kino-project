@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { map } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { NotificationComponent } from '../notification/notification.component';
+import { RatingService } from '../services/rating.service';
 import { SendMovieService } from '../services/send-movie.service';
 import { UserService } from '../services/user.service';
 import { WantWatchService } from '../services/want-watch.service';
@@ -20,6 +21,7 @@ export class WantToWatchComponent {
   private userService = inject(UserService);
   private authService = inject(AuthService);
   private wantWatchService = inject(WantWatchService);
+  private ratingService = inject(RatingService);
   private snackBar = inject(MatSnackBar);
 
   @Input() filmId!: number;
@@ -62,6 +64,7 @@ export class WantToWatchComponent {
 
     this.userService.getUser(this.userId).subscribe((movie) => {
       this.wantWatchService.addFilmsArray(movie.movies);
+      this.ratingService.addRatingsArray(movie.ratings);
     });
 
     this.getRatingArray$

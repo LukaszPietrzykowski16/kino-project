@@ -4,7 +4,7 @@ import { User } from 'angular-feather/icons';
 import { BehaviorSubject } from 'rxjs';
 import { CheckUserService } from 'src/app/auth/authentication/check-user.service';
 
-interface Ratings {
+export interface Ratings {
   filmId: number;
   rating: number;
 }
@@ -57,5 +57,14 @@ export class RatingService {
         ratings: arr,
       })
       .subscribe();
+  }
+
+  addRatingsArray(test: Array<Ratings>) {
+    test.map((test) => {
+      this.arrayOfRatings$$.next([
+        ...this.arrayOfRatings$$.getValue(),
+        ...[test],
+      ]);
+    });
   }
 }
