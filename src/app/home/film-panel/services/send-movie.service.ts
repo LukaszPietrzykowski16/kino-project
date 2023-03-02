@@ -16,7 +16,6 @@ export class SendMovieService {
   private http = inject(HttpClient);
 
   postMovie(userId: number, moviesArray: Array<Number>) {
-    console.log(moviesArray);
     return this.http
       .patch<User>(`http://localhost:3000/users/${userId}`, {
         id: userId,

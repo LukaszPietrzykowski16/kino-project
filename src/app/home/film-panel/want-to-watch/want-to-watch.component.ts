@@ -1,5 +1,6 @@
-import { NgIf } from '@angular/common';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, inject, Input, Output } from '@angular/core';
+import { map } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { SendMovieService } from '../services/send-movie.service';
 import { UserService } from '../services/user.service';
@@ -10,7 +11,7 @@ import { WantWatchService } from '../services/want-watch.service';
   standalone: true,
   templateUrl: './want-to-watch.component.html',
   styleUrls: ['./want-to-watch.component.css'],
-  imports: [NgIf],
+  imports: [NgIf, AsyncPipe, NgFor],
 })
 export class WantToWatchComponent {
   private movieService = inject(SendMovieService);
@@ -20,19 +21,15 @@ export class WantToWatchComponent {
 
   @Input() filmId!: number;
   wantWatch = true;
-  // moviesArray: Array<Number> = [];
   isLogin = false;
   userId: number = NaN;
 
   getRatingArray$ = this.wantWatchService.getRatingArray$;
 
   sendAddMovie(filmId: number) {
-    this.wantWatchService.addFilm(filmId);
     this.wantWatch = !this.wantWatch;
+    this.wantWatchService.addFilm(filmId);
     this.openSnackBar();
-    // this.moviesArray = [...this.moviesArray, ...[filmId]];
-    // const set = new Set(this.moviesArray);
-    // this.movieService.postMovie(this.userId, Array.from(set));
   }
 
   openSnackBar() {
@@ -42,27 +39,36 @@ export class WantToWatchComponent {
   }
 
   sendRemoveMovie(filmId: number) {
-    this.wantWatchService.removeFilm(filmId);
     this.wantWatch = !this.wantWatch;
+    this.wantWatchService.removeFilm(filmId);
+
     this.openSnackBar();
-    // this.moviesArray = this.moviesArray.filter((item) => {
-    //   return item !== filmId;
-    // });
-    // this.movieService.postMovie(this.userId, this.moviesArray);
   }
 
   ngOnInit() {
     this.authService.isAuth$.subscribe((login) => {
       this.isLogin = login.hasAuth;
     });
-
-    this.userService.getUser(this.userId).subscribe((movie) => {
-      this.wantWatchService.addFilmsArray(movie.movies);
-    });
     if (this.isLogin === true) {
       this.authService.user$.subscribe((user) => {
         this.userId = user.id;
       });
     }
+
+    this.userService.getUser(this.userId).subscribe((movie) => {
+      this.wantWatchService.addFilmsArray(movie.movies);
+    });
+
+    this.getRatingArray$
+      .pipe(
+        map((rating) =>
+          rating.map((ratingValue) => {
+            if (ratingValue === this.filmId) {
+              this.wantWatch = false;
+            }
+          })
+        )
+      )
+      .subscribe();
   }
 }

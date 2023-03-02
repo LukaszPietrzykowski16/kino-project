@@ -17,17 +17,6 @@
         </div>
         <div *ngIf="isLogin">
           <button (click)="showModal(screen.film.id)">Oceń ten film</button>
-          <!-- <div *ngIf="wantWatch === true; else elseBlock">
-            <button (click)="sendAddMovie(screen.film.id)">
-              Chcę obejrzeć!
-            </button>
-          </div>
-          <ng-template #elseBlock>
-            <button button (click)="sendRemoveMovie(screen.film.id)">
-              Nie Chcę obejrzeć!
-            </button>
-          </ng-template>
-        </div> -->
           <app-want-to-watch [filmId]="screen.film.id"></app-want-to-watch>
         </div>
       </div>
