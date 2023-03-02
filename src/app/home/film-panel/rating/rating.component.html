@@ -1,1 +1,5 @@
-<button (click)="showModal(filmId)">Oceń ten film</button>
+<div *ngIf="rating; else elseBlock">
+  <button (click)="showModal(filmId)">Oceń ten film</button>
+</div>
+
+<ng-template #elseBlock> Twoja ocena: {{ ratingValue }} </ng-template>

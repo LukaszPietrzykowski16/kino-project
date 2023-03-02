@@ -22,12 +22,5 @@
     </div>
 
     <h2>{{ film.rating }} / 10</h2>
-    <div *ngIf="ratings$ | async as ratings">
-      <div *ngFor="let rating of ratings">
-        <div *ngIf="rating.filmId === film.id">
-          Twoja ocena: {{ rating.rating }}
-        </div>
-      </div>
-    </div>
   </div>
 </div>

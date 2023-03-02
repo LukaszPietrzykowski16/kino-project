@@ -1132,21 +1132,251 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [
-        4
-      ],
+      "movies": [],
       "ratings": [
         {
-          "filmId": 4,
-          "rating": 8
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
         },
         {
           "filmId": 4,
           "rating": 8
         },
         {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
           "filmId": 4,
           "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 4,
+          "rating": 8
+        },
+        {
+          "filmId": 0,
+          "rating": 6
+        },
+        {
+          "filmId": 1,
+          "rating": 10
+        },
+        {
+          "filmId": 3,
+          "rating": 6
         }
       ],
       "tickets": [
