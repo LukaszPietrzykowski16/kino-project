@@ -1,0 +1,19 @@
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-ticket {
+  min-width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(16, 16, 16);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 16px;
+  img {
+    width: 30%;
+  }
+}

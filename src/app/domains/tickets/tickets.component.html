@@ -1,8 +1,12 @@
-<div *ngIf="ticket$ | async as ticket">
-  {{ ticket.title }}
-  {{ ticket.date }}
-  {{ ticket.hour }}
-  {{ ticket.places.seat }}
-  {{ ticket.places.type }}
-  <img [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId" />
+<div *ngIf="ticket$ | async as ticket" class="ticket">
+  <div class="single-ticket">
+    <img [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId" />
+    <div>
+      <h1>{{ ticket.title }}</h1>
+      {{ ticket.date }}
+      {{ ticket.hour }}
+      {{ ticket.places.seat }}
+      {{ ticket.places.type }}
+    </div>
+  </div>
 </div>

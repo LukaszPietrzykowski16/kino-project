@@ -688,16 +688,16 @@
     },
     {
       "seat": "E3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 47,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 48,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1136,246 +1136,6 @@
       "ratings": [
         {
           "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 4,
-          "rating": 8
-        },
-        {
-          "filmId": 0,
-          "rating": 6
-        },
-        {
-          "filmId": 1,
-          "rating": 10
-        },
-        {
-          "filmId": 3,
           "rating": 6
         }
       ],
@@ -8050,6 +7810,26 @@
       "hour": "19:00",
       "places": {
         "seat": "F5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 652,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "12:00",
+      "places": {
+        "seat": "E4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 653,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "12:00",
+      "places": {
+        "seat": "E3",
         "type": "bilet normalny 25zł"
       }
     }

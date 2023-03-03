@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-tickets',
   standalone: true,
   templateUrl: './tickets.component.html',
-  styleUrls: ['./tickets.component.css'],
+  styleUrls: ['./tickets.component.scss'],
   imports: [NgIf, AsyncPipe, NgFor],
 })
 export default class TicketsComponent {
