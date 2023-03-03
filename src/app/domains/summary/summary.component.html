@@ -15,10 +15,10 @@
               {{ ticket.type }}
             </div>
           </div>
+          <div *ngFor="let exactUrl of url" class="ticket-info__info">
+            <button routerLink="/ticket/{{ exactUrl }}">Link do biletu</button>
+          </div>
         </div>
-      </div>
-      <div *ngFor="let exactUrl of url" class="ticket-info__info">
-        <button routerLink="/ticket/{{ exactUrl }}">Link do biletu</button>
       </div>
     </div>
   </div>

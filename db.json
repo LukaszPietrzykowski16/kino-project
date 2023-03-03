@@ -73,6 +73,24 @@
       "userId": 11,
       "filmId": 0,
       "rating": 7
+    },
+    {
+      "id": 2,
+      "userId": 11,
+      "filmId": 3,
+      "rating": 6
+    },
+    {
+      "id": 3,
+      "userId": 11,
+      "filmId": 3,
+      "rating": 7
+    },
+    {
+      "id": 4,
+      "userId": 11,
+      "filmId": 4,
+      "rating": 3
     }
   ],
   "screening": [
@@ -439,16 +457,16 @@
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 10,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -537,16 +555,16 @@
     },
     {
       "seat": "C1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 23,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 24,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -565,30 +583,30 @@
     },
     {
       "seat": "C5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 27,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 28,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 29,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 30,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -614,9 +632,9 @@
     },
     {
       "seat": "D1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 34,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -642,37 +660,37 @@
     },
     {
       "seat": "D5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 38,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 39,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 40,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 41,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 42,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -747,9 +765,9 @@
     },
     {
       "seat": "E9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 53,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -901,16 +919,16 @@
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 76,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1150,7 +1168,8 @@
       "phoneNumber": "489394930",
       "id": 11,
       "movies": [
-        0
+        0,
+        3
       ],
       "tickets": [
         {
@@ -7863,6 +7882,176 @@
       "hour": "16:00",
       "places": {
         "seat": "B0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 656,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "C6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 657,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "C7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 658,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 659,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D6",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 660,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 661,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "C8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 662,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "C2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 663,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "C1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 664,
+      "title": "Avatar: Istota wody",
+      "date": "03-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "D1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 665,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "C5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 666,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "D5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 667,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 668,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 669,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "G10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 670,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "G9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 671,
+      "title": "Kot w butach 2",
+      "date": "06-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "D9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 672,
+      "title": "Kot w butach 2",
+      "date": "06-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "E9",
         "type": "bilet normalny 25zł"
       }
     }
