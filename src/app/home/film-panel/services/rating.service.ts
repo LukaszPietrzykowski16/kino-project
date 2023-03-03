@@ -15,18 +15,25 @@ export interface Ratings {
   providedIn: 'root',
 })
 export class RatingService {
-  private rating$$ = new BehaviorSubject<Ratings>({} as Ratings);
+  private rating$$ = new BehaviorSubject<Ratings>({
+    id: 0,
+    userId: 11,
+    filmId: 0,
+    rating: 0,
+  });
 
   get ratings$() {
     return this.rating$$.asObservable();
   }
 
   private http = inject(HttpClient);
-  private fetchUser = inject(CheckUserService);
 
-  getRatings() {
-    return this.http.get<Ratings>(`http://localhost:3000/ratings?userId=11`);
+  getRatings(obj: Ratings) {
+    console.log(obj);
+    this.rating$$.next(obj);
   }
+
+  //http://localhost:3000/ratings?userId=11&filmId=1
 
   patchRatings(filmId: number, rating: number) {
     const info = {
@@ -40,5 +47,11 @@ export class RatingService {
       .subscribe((data) => {
         this.rating$$.next(data);
       });
+  }
+
+  checkRating(filmId: number) {
+    return this.http.get<Ratings[]>(
+      `http://localhost:3000/ratings?userId=11&filmId=${filmId}`
+    );
   }
 }

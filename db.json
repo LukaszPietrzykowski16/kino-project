@@ -69,40 +69,10 @@
   ],
   "ratings": [
     {
-      "id": 0,
-      "userId": 11,
-      "filmId": 0,
-      "rating": 8
-    },
-    {
       "id": 1,
       "userId": 11,
-      "filmId": 1,
-      "rating": 5
-    },
-    {
-      "id": 2,
-      "userId": 12,
-      "filmId": 3,
-      "rating": 9
-    },
-    {
-      "id": 3,
-      "userId": 11,
       "filmId": 0,
-      "rating": 8
-    },
-    {
-      "userId": 11,
-      "filmId": 3,
-      "rating": 8,
-      "id": 4
-    },
-    {
-      "id": 5,
-      "userId": 11,
-      "filmId": 3,
-      "rating": 6
+      "rating": 7
     }
   ],
   "screening": [
