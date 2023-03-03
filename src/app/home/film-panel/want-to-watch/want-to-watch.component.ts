@@ -64,7 +64,6 @@ export class WantToWatchComponent {
 
     this.userService.getUser(this.userId).subscribe((movie) => {
       this.wantWatchService.addFilmsArray(movie.movies);
-      this.ratingService.addRatingsArray(movie.ratings);
     });
 
     this.getRatingArray$

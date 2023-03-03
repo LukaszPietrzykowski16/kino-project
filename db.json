@@ -67,6 +67,38 @@
       "types": "fjjidsife"
     }
   ],
+  "ratings": [
+    {
+      "id": 0,
+      "userId": 11,
+      "filmId": 0,
+      "rating": 8
+    },
+    {
+      "id": 1,
+      "userId": 11,
+      "filmId": 1,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "userId": 12,
+      "filmId": 3,
+      "rating": 9
+    },
+    {
+      "id": 3,
+      "userId": 11,
+      "filmId": 0,
+      "rating": 8
+    },
+    {
+      "userId": 11,
+      "filmId": 3,
+      "rating": 8,
+      "id": 4
+    }
+  ],
   "screening": [
     {
       "id": 1,
@@ -354,14 +386,23 @@
       "hours": [
         "13:00"
       ]
+    },
+    {
+      "id": 28,
+      "filmId": 4,
+      "premiere": true,
+      "date": "03-03",
+      "hours": [
+        "13:00"
+      ]
     }
   ],
   "reservation": [
     {
       "seat": "A0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 0,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -436,9 +477,9 @@
     },
     {
       "seat": "B0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 11,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1132,12 +1173,8 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [],
-      "ratings": [
-        {
-          "filmId": 0,
-          "rating": 6
-        }
+      "movies": [
+        0
       ],
       "tickets": [
         {
@@ -7830,6 +7867,26 @@
       "hour": "12:00",
       "places": {
         "seat": "E3",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 654,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "A0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 655,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "03-03",
+      "hour": "16:00",
+      "places": {
+        "seat": "B0",
         "type": "bilet normalny 25zł"
       }
     }

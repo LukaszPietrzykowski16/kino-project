@@ -5,6 +5,8 @@ import { BehaviorSubject } from 'rxjs';
 import { CheckUserService } from 'src/app/auth/authentication/check-user.service';
 
 export interface Ratings {
+  id: number;
+  userId: number;
   filmId: number;
   rating: number;
 }
@@ -13,58 +15,30 @@ export interface Ratings {
   providedIn: 'root',
 })
 export class RatingService {
+  private rating$$ = new BehaviorSubject<Ratings>({} as Ratings);
+
+  get ratings$() {
+    return this.rating$$.asObservable();
+  }
+
   private http = inject(HttpClient);
   private fetchUser = inject(CheckUserService);
-  private arrayOfRatings$$ = new BehaviorSubject<Ratings[]>([]);
 
-  get arrayOfRatiings$() {
-    return this.arrayOfRatings$$.asObservable();
-  }
-  filmId: number = NaN;
-  setFilmId(filmId: number) {
-    this.filmId = filmId;
+  getRatings() {
+    return this.http.get<Ratings>(`http://localhost:3000/ratings?userId=11`);
   }
 
-  sendRating(userId: number, ratingNumber: number) {
-    this.fetchUser.fetchUser(String(userId)).subscribe((test) => {
-      this.arrayOfRatings$$.next([
-        ...this.arrayOfRatings$$.getValue(),
-        ...test.ratings,
-      ]);
-    });
-
-    this.arrayOfRatings$$.value.map((val) => {
-      if (val.filmId === this.filmId) {
-        val.filmId = this.filmId;
-        val.rating = ratingNumber;
-      }
-    });
-    this.arrayOfRatings$$.next([
-      ...this.arrayOfRatings$$.getValue(),
-      ...[{ filmId: this.filmId, rating: ratingNumber }],
-    ]);
-    this.sendRatingToDb(userId);
-  }
-
-  sendRatingToDb(userId: number) {
-    let arr: Array<Ratings> = [];
-    this.arrayOfRatiings$.subscribe((test) => {
-      arr = [...arr, ...test];
-    });
-
+  patchRatings(filmId: number, rating: number) {
+    const info = {
+      id: NaN,
+      userId: 11,
+      filmId: filmId,
+      rating: rating,
+    };
     return this.http
-      .patch(`http://localhost:3000/users/${userId}`, {
-        ratings: arr,
-      })
-      .subscribe();
-  }
-
-  addRatingsArray(test: Array<Ratings>) {
-    test.map((test) => {
-      this.arrayOfRatings$$.next([
-        ...this.arrayOfRatings$$.getValue(),
-        ...[test],
-      ]);
-    });
+      .post<Ratings>(`http://localhost:3000/ratings`, info)
+      .subscribe((data) => {
+        this.rating$$.next(data);
+      });
   }
 }
