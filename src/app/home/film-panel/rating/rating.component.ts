@@ -16,16 +16,24 @@ import { starsModalComponent } from '../stars-modal.component';
 export class RatingComponent {
   private ratingService = inject(RatingService);
   public dialog = inject(MatDialog);
-  private userData = inject(UserTicketService);
-  private ratingValueService = inject(RatingValueService);
 
   rating = true;
+  userRate = 0;
+
+  ratings$ = this.ratingService.ratings$;
 
   @Input() filmId!: number;
 
   showModal(filmId: number) {
     // this.ratingService.setFilmId(filmId);
     const dialogRef = this.dialog.open(starsModalComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (!result) return;
+      console.log(result);
+      this.userRate = result;
+      this.ratingService.patchRatings(filmId, this.userRate);
+    });
   }
 
   ngOnInit() {}

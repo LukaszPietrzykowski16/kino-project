@@ -97,6 +97,12 @@
       "filmId": 3,
       "rating": 8,
       "id": 4
+    },
+    {
+      "id": 5,
+      "userId": 11,
+      "filmId": 3,
+      "rating": 6
     }
   ],
   "screening": [

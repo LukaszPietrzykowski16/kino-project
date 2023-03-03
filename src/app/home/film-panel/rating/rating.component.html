@@ -1,1 +1,6 @@
-<button (click)="showModal(filmId)">Oceń ten film</button>
+<div *ngIf="ratings$ | async as rating">
+  Twoja Ocena {{ userRate }}
+  <ng-container *ngIf="userRate === 0">
+    <button (click)="showModal(filmId)">Oceń ten film</button>
+  </ng-container>
+</div>
