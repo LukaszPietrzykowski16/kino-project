@@ -50,6 +50,7 @@ import { AuthGuard } from './auth.guard';
 import { MatMenuModule } from '@angular/material/menu';
 import { WantToWatchComponent } from './home/film-panel/want-to-watch/want-to-watch.component';
 import { RatingComponent } from './home/film-panel/rating/rating.component';
+import { UserTicketReservationComponent } from './domains/user-tickets/user-ticket-reservation/user-ticket-reservation.component';
 
 export interface AppState {
   User: UserState;
@@ -173,6 +174,7 @@ export interface AppState {
     BrowserAnimationsModule,
     WantToWatchComponent,
     RatingComponent,
+    UserTicketReservationComponent,
   ],
 })
 export class AppModule {}

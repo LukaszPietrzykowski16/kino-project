@@ -3,12 +3,12 @@ import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, map, tap } from 'rxjs';
 import { SingleTicket, UserTicket } from '../user-ticket.interface';
 
-interface Rating {
+export interface Rating {
   filmId: number;
   rating: number;
 }
 
-interface TicketReservation {
+export interface TicketReservation {
   id: number;
   userId: number;
   ticketIdsArray: Array<number>;

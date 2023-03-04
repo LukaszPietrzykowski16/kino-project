@@ -1,0 +1,6 @@
+<h1>Numer zamówienia: #{{ ticket.id }}</h1>
+{{ ticket.date }}
+<div *ngFor="let id of ticket.ticketIdsArray">
+  {{ id }}
+  <button><a routerLink="/ticket/{{ id }}">Link do biletu </a></button>
+</div>
