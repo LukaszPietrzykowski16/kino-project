@@ -13,9 +13,11 @@ export class UserTicketsComponent {
   private userTicketService = inject(UserTicketService);
 
   tickets$ = this.userTicketService.tickets$;
+  ticketReservation$ = this.userTicketService.ticketsReservation$;
 
   ngOnInit() {
     console.log('hello');
-    this.userTicketService.displayTickets();
+    this.userTicketService.fetchReservationTickets();
+    // this.userTicketService.displayTickets();
   }
 }

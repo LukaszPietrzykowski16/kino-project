@@ -8,12 +8,20 @@ interface Rating {
   rating: number;
 }
 
+interface TicketReservation {
+  id: number;
+  userId: number;
+  ticketIdsArray: Array<number>;
+  date: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class UserTicketService {
   private http = inject(HttpClient);
 
+  private ticketsReservation$$ = new BehaviorSubject<TicketReservation[]>([]);
   private tickets$$ = new BehaviorSubject<SingleTicket[]>([]);
   private ticket$$ = new BehaviorSubject<SingleTicket>({
     date: '',
@@ -26,6 +34,10 @@ export class UserTicketService {
     title: '',
   });
   private ratings$$ = new BehaviorSubject<Rating[]>([]);
+
+  get ticketsReservation$() {
+    return this.ticketsReservation$$.asObservable();
+  }
 
   get tickets$() {
     return this.tickets$$.asObservable();
@@ -58,11 +70,23 @@ export class UserTicketService {
     );
   }
 
+  fetchReservationTickets() {
+    this.getReservationTickets().subscribe((tickets) => {
+      this.ticketsReservation$$.next(tickets);
+    });
+  }
+
   getUserTickets() {
     return this.http.get<UserTicket>(`http://localhost:3000/users/11`);
   }
 
   getVisitorTickets(id: string | null) {
     return this.http.get<SingleTicket>(`http://localhost:3000/tickets/${id}`);
+  }
+
+  getReservationTickets() {
+    return this.http.get<TicketReservation[]>(
+      `http://localhost:3000/tickets-reservation?userId=11`
+    );
   }
 }

@@ -1,5 +1,9 @@
-<div *ngIf="tickets$ | async as tickets">
+<div *ngIf="ticketReservation$ | async as tickets">
   <div *ngFor="let ticket of tickets">
-    <app-user-ticket [ticket]="ticket"></app-user-ticket>
+    {{ ticket.id }}
+    {{ ticket.userId }}
+    {{ ticket.ticketIdsArray }}
+    {{ ticket.date }}
+    <!-- <app-user-ticket [ticket]="ticket"></app-user-ticket> -->
   </div>
 </div>
