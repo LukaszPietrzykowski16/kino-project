@@ -21,9 +21,16 @@ main {
   width: 10%;
 }
 
+.ticket-info-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ticket-info {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -32,9 +39,10 @@ main {
   background-color: rgb(16, 16, 16);
   margin: 10px;
   border-radius: 16px;
-  width: 40%;
+  width: 100%;
 }
 
 .ticket-info__info {
-  width: 40%;
+  padding: 8px;
+  width: 100%;
 }

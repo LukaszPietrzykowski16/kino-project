@@ -7,7 +7,7 @@
       {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
     </div>
     <div *ngIf="tickets$ | async as tickets">
-      <div *ngIf="urlValue$ | async as url">
+      <div *ngIf="urlValue$ | async as url" class="ticket-info-flex">
         <div class="ticket-info">
           <div *ngFor="let ticket of tickets" class="ticket-info__ticket">
             <div>
@@ -15,6 +15,8 @@
               {{ ticket.type }}
             </div>
           </div>
+        </div>
+        <div class="ticket-info">
           <div *ngFor="let exactUrl of url" class="ticket-info__info">
             <button routerLink="/ticket/{{ exactUrl }}">Link do biletu</button>
           </div>
