@@ -73,49 +73,15 @@
       "userId": 11,
       "filmId": 0,
       "rating": 7
-    },
-    {
-      "id": 2,
-      "userId": 11,
-      "filmId": 3,
-      "rating": 6
-    },
-    {
-      "id": 3,
-      "userId": 11,
-      "filmId": 3,
-      "rating": 7
-    },
-    {
-      "id": 4,
-      "userId": 11,
-      "filmId": 4,
-      "rating": 3
-    },
-    {
-      "id": 5,
-      "userId": 11,
-      "filmId": 2,
-      "rating": 7
-    },
-    {
-      "id": 6,
-      "userId": 11,
-      "filmId": 1,
-      "rating": 10
     }
   ],
   "tickets-reservation": [
     {
       "id": 0,
       "userId": 11,
-      "ticketIdsArray": [
-        0,
-        3,
-        2,
-        5
-      ],
-      "date": "04.03.2023"
+      "ticketIdsArray": [0, 3, 2, 5],
+      "date": "04.03.2023",
+      "title": "Kot w butach 2"
     }
   ],
   "screening": [
@@ -318,102 +284,70 @@
       "filmId": 4,
       "premiere": true,
       "date": "02-03",
-      "hours": [
-        "14:00",
-        "17:00",
-        "19:00",
-        "23:00"
-      ]
+      "hours": ["14:00", "17:00", "19:00", "23:00"]
     },
     {
       "id": 17,
       "filmId": 1,
       "premiere": true,
       "date": "06-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 18,
       "filmId": 1,
       "premiere": true,
       "date": "06-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 19,
       "filmId": 0,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "10:00"
-      ]
+      "hours": ["10:00"]
     },
     {
       "id": 20,
       "filmId": 1,
       "premiere": true,
       "date": "02-03",
-      "hours": [
-        "10:00",
-        "15:00",
-        "22:00"
-      ]
+      "hours": ["10:00", "15:00", "22:00"]
     },
     {
       "id": 21,
       "filmId": 4,
       "premiere": true,
       "date": "01-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:30"
-      ]
+      "hours": ["12:00", "15:00", "18:30"]
     },
     {
       "id": 23,
       "filmId": 4,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "12:00",
-        "16:00"
-      ]
+      "hours": ["12:00", "16:00"]
     },
     {
       "id": 26,
       "filmId": 3,
       "premiere": false,
       "date": "03-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "17:00",
-        "21:00"
-      ]
+      "hours": ["09:00", "12:00", "17:00", "21:00"]
     },
     {
       "id": 27,
       "filmId": 3,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     },
     {
       "id": 28,
       "filmId": 4,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     }
   ],
   "reservation": [
@@ -503,16 +437,16 @@
     },
     {
       "seat": "B1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 12,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 13,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -573,7 +507,7 @@
     },
     {
       "seat": "C0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 22,
       "isChoosen": false,
       "reservation": false
@@ -594,9 +528,9 @@
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -650,7 +584,7 @@
     },
     {
       "seat": "D0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 33,
       "isChoosen": false,
       "reservation": false
@@ -860,9 +794,9 @@
     },
     {
       "seat": "F8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 63,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -937,9 +871,9 @@
     },
     {
       "seat": "G8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 74,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1028,9 +962,9 @@
     },
     {
       "seat": "H10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 87,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1105,9 +1039,9 @@
     },
     {
       "seat": "I10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 98,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     }
   ],
@@ -1169,12 +1103,7 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
@@ -1192,9 +1121,7 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [
-        2
-      ],
+      "movies": [],
       "tickets": [
         {
           "id": 0,
@@ -1337,9 +1264,7 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [
-        0
-      ]
+      "movies": [0]
     }
   ],
   "tickets": [
@@ -8276,6 +8201,76 @@
       "hour": "17:00",
       "places": {
         "seat": "B6",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 693,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "17:00",
+      "places": {
+        "seat": "F8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 694,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "17:00",
+      "places": {
+        "seat": "G8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 695,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 696,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 697,
+      "title": "Kot w butach 2",
+      "date": "06-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "B2",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 698,
+      "title": "Kot w butach 2",
+      "date": "06-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "B1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 699,
+      "title": "Kot w butach 2",
+      "date": "06-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "C3",
         "type": "voucher 15zł"
       }
     }

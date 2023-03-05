@@ -112,6 +112,7 @@ export class SendTicketsService {
         places: arr.places,
       })
       .subscribe((result) => {
+        console.log(result);
         this.urlInfo$$.next([...this.urlInfo$$.getValue(), ...[result.id]]);
       });
   }
