@@ -1,0 +1,32 @@
+.user-reservation-container {
+  display: flex;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.user-reservation {
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 16, 16);
+  width: 60vw;
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  h1 {
+    font-size: 28px;
+    padding-bottom: 16px;
+  }
+}

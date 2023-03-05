@@ -7,7 +7,7 @@ import { TicketReservation } from '../services/user-ticket.service';
   selector: 'app-user-ticket-reservation',
   templateUrl: './user-ticket-reservation.component.html',
   standalone: true,
-  styleUrls: ['./user-ticket-reservation.component.css'],
+  styleUrls: ['./user-ticket-reservation.component.scss'],
   imports: [NgFor, RouterLink],
 })
 export class UserTicketReservationComponent {

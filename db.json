@@ -671,16 +671,16 @@
     },
     {
       "seat": "D3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 36,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 37,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
