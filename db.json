@@ -77,83 +77,35 @@
   ],
   "tickets-reservation": [
     {
-      "id": 0,
-      "userId": 11,
-      "ticketIdsArray": [
-        0,
-        3,
-        2,
-        5
-      ],
-      "date": "04.03.2023"
-    },
-    {
       "id": 1,
       "userId": 11,
-      "ticketIdsArray": []
+      "date": "06-03",
+      "title": "Szczęki 2",
+      "ticketIdsArray": [
+        240,
+        241,
+        242,
+        243
+      ]
     },
     {
       "id": 2,
       "userId": 11,
-      "ticketIdsArray": [
-        216,
-        217,
-        218
-      ],
       "date": "05-03",
-      "title": "05-03"
+      "title": "Avatar 1",
+      "ticketIdsArray": [
+        248,
+        249
+      ]
     },
     {
       "id": 3,
       "userId": 11,
-      "ticketIdsArray": []
-    },
-    {
-      "id": 4,
-      "userId": 11,
-      "ticketIdsArray": [
-        219,
-        220,
-        221,
-        222,
-        223
-      ],
       "date": "06-03",
-      "title": "06-03"
-    },
-    {
-      "id": 5,
-      "userId": 11,
-      "ticketIdsArray": []
-    },
-    {
-      "id": 6,
-      "userId": 11,
-      "date": "05-03",
-      "title": "Avatar 1",
+      "title": "Szczęki 2",
       "ticketIdsArray": [
-        227,
-        228
-      ]
-    },
-    {
-      "id": 7,
-      "userId": 11,
-      "date": "05-03",
-      "title": "Avatar 1",
-      "ticketIdsArray": [
-        227,
-        228
-      ]
-    },
-    {
-      "id": 8,
-      "userId": 11,
-      "date": "05-03",
-      "title": "Avatar 1",
-      "ticketIdsArray": [
-        227,
-        228
+        282,
+        283
       ]
     }
   ],
@@ -458,9 +410,9 @@
   "reservation": [
     {
       "seat": "A0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 0,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -514,30 +466,30 @@
     },
     {
       "seat": "A8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 8,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 9,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 10,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 11,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -563,58 +515,58 @@
     },
     {
       "seat": "B4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 15,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 16,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 17,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 18,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 19,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 20,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "B10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 21,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 22,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -626,9 +578,9 @@
     },
     {
       "seat": "C2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 24,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -640,72 +592,72 @@
     },
     {
       "seat": "C4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 26,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 27,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 28,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 29,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 30,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 31,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "C10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 32,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 33,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 34,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 35,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -717,205 +669,205 @@
     },
     {
       "seat": "D4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 37,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 38,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 39,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 40,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 41,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 42,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 43,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 44,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 45,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 46,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 47,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 48,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 49,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 50,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 51,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 52,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 53,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "E10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 54,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F0",
-      "avaliable": false,
+      "avaliable": true,
       "id": 55,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F1",
-      "avaliable": false,
+      "avaliable": true,
       "id": 56,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 57,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 58,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 59,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 60,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 61,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 62,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 63,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 64,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "F10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 65,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -934,65 +886,65 @@
     },
     {
       "seat": "G2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 68,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G3",
-      "avaliable": false,
+      "avaliable": true,
       "id": 69,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 70,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G5",
-      "avaliable": false,
+      "avaliable": true,
       "id": 71,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 72,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 73,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 74,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 75,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "G10",
-      "avaliable": false,
+      "avaliable": true,
       "id": 76,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -1011,7 +963,7 @@
     },
     {
       "seat": "H2",
-      "avaliable": false,
+      "avaliable": true,
       "id": 79,
       "isChoosen": false,
       "reservation": false
@@ -1025,9 +977,9 @@
     },
     {
       "seat": "H4",
-      "avaliable": false,
+      "avaliable": true,
       "id": 81,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -1039,30 +991,30 @@
     },
     {
       "seat": "H6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 83,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 84,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 85,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "H9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 86,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -1116,30 +1068,30 @@
     },
     {
       "seat": "I6",
-      "avaliable": false,
+      "avaliable": true,
       "id": 94,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I7",
-      "avaliable": false,
+      "avaliable": true,
       "id": 95,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I8",
-      "avaliable": false,
+      "avaliable": true,
       "id": 96,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "I9",
-      "avaliable": false,
+      "avaliable": true,
       "id": 97,
-      "isChoosen": true,
+      "isChoosen": false,
       "reservation": false
     },
     {
@@ -3674,6 +3626,556 @@
       "places": {
         "seat": "F1",
         "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 229,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "A7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 230,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "A5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 231,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "A6",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 232,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "A4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 233,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "A2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 234,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "B2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 235,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "B1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 236,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "C1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 237,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "H5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 238,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "I4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 239,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "I5",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 240,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "A1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 241,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "G0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 242,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "G1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 243,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "21:00",
+      "places": {
+        "seat": "H1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 244,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H3",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 245,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I3",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 246,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I2",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 247,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 248,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 249,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 250,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 251,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 252,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 253,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 254,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 255,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 256,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 257,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 258,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 259,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 260,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 261,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 262,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 263,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 264,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 265,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 266,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 267,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 268,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 269,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 270,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 271,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 272,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 273,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 274,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 275,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "H0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 276,
+      "title": "Avatar 1",
+      "date": "05-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 277,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 278,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 279,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 280,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "H10",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 281,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "I10",
+        "type": "voucher 15zł"
+      }
+    },
+    {
+      "id": 282,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "C3",
+        "type": "bilet ulgowy 18zł"
+      }
+    },
+    {
+      "id": 283,
+      "title": "Szczęki 2",
+      "date": "06-03",
+      "hour": "23:00",
+      "places": {
+        "seat": "D3",
+        "type": "voucher 15zł"
       }
     }
   ]

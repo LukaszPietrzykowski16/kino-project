@@ -13,6 +13,7 @@ export interface TicketReservation {
   userId: number;
   ticketIdsArray: Array<number>;
   date: string;
+  title: string;
 }
 
 @Injectable({

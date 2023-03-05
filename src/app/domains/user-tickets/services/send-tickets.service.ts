@@ -78,6 +78,7 @@ export class SendTicketsService {
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
 
   ngOnInit() {
+    this.resetState();
     this.login$.subscribe((login) => {
       this.isLogged = login;
     });
@@ -143,7 +144,13 @@ export class SendTicketsService {
       });
   }
 
+  resetState() {
+    this.urlInfo$$.next([]);
+    this.reservationInfo$$.next({} as SingleReservation);
+  }
+
   sendReservationData() {
+    // this.resetState();
     this.reservationInfo$$
       .subscribe((info) => {
         this.urlInfo$$
@@ -153,6 +160,15 @@ export class SendTicketsService {
           .unsubscribe();
       })
       .unsubscribe();
+    // this.reservationInfo$.pipe(
+    //   map((info) => {
+    //     this.urlInfo$$
+    //       .subscribe((arrayId) => {
+    //         this.sendReservation.postReservation(info, arrayId);
+    //       })
+    //       .unsubscribe();
+    //   })
+    // );
     // this.reservationInfo$$.pipe(
     //   map((info) => {
     //     this.urlInfo$$.pipe(
