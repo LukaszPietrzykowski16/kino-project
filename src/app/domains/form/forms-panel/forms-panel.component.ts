@@ -26,10 +26,6 @@ export interface BlikCode {
   styleUrls: ['./forms-panel.component.css'],
 })
 export class FormsPanelComponent {
-  blik: boolean = false;
-  blikCode: number = NaN;
-  isLogged = false;
-
   private blikServiceCode = inject(BlikService);
   private router = inject(Router);
   private formInfo = inject(FormInfoService);
@@ -39,6 +35,10 @@ export class FormsPanelComponent {
   private sendTickets = inject(SendTicketsService);
   private store = inject<Store<AppState>>(Store);
   private location = inject(Location);
+
+  blik: boolean = false;
+  blikCode: number = NaN;
+  isLogged = false;
 
   isBonus = false;
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));

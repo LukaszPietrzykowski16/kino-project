@@ -1,10 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { getRandomValues } from 'crypto';
 import { BehaviorSubject, map } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
 import { CinemaHallService } from '../../cinema-hall/services/cinema-hall.service';
 import { SingleTicket } from '../user-ticket.interface';
+import {
+  SendReservationService,
+  SingleReservation,
+} from './send-reservation.service';
 import { UserTicketService } from './user-ticket.service';
 
 interface UrlId {
@@ -20,9 +25,17 @@ export class SendTicketsService {
   private cinemaHall = inject(CinemaHallService);
   private authService = inject(AuthService);
   private userTickets = inject(UserTicketService);
+  private sendReservation = inject(SendReservationService);
 
   private ticketInfo$$ = new BehaviorSubject<SingleTicket[]>([]);
   private urlInfo$$ = new BehaviorSubject<number[]>([]);
+  private reservationInfo$$ = new BehaviorSubject<SingleReservation>(
+    {} as SingleReservation
+  );
+
+  get reservationInfo$() {
+    return this.reservationInfo$$.asObservable();
+  }
 
   get getTicketInfo$() {
     return this.ticketInfo$$.asObservable();
@@ -102,6 +115,17 @@ export class SendTicketsService {
       .subscribe();
   }
 
+  sendToTheDbReservationData(result: SingleTicket) {
+    this.reservationInfo$$.next({
+      ...this.reservationInfo$$.getValue(),
+      id: NaN,
+      userId: 11,
+      ticketIdsArray: [result.id],
+      date: result.date,
+      title: result.title,
+    });
+  }
+
   postTicket(arr: SingleTicket) {
     return this.http
       .post<SingleTicket>(`http://localhost:3000/tickets`, {
@@ -112,8 +136,31 @@ export class SendTicketsService {
         places: arr.places,
       })
       .subscribe((result) => {
-        console.log(result);
+        this.sendToTheDbReservationData(result);
+
+        // this.sendReservation.postReservation(result);
         this.urlInfo$$.next([...this.urlInfo$$.getValue(), ...[result.id]]);
       });
+  }
+
+  sendReservationData() {
+    this.reservationInfo$$
+      .subscribe((info) => {
+        this.urlInfo$$
+          .subscribe((arrayId) => {
+            this.sendReservation.postReservation(info, arrayId);
+          })
+          .unsubscribe();
+      })
+      .unsubscribe();
+    // this.reservationInfo$$.pipe(
+    //   map((info) => {
+    //     this.urlInfo$$.pipe(
+    //       map((arrayId) => {
+    //         this.sendReservation.postReservation(info, arrayId);
+    //       })
+    //     );
+    //   })
+    // );
   }
 }

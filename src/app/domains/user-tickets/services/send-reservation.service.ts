@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { SingleTicket } from '../user-ticket.interface';
 
 export interface SingleReservation {
   id: number;
@@ -15,16 +16,16 @@ export interface SingleReservation {
 export class SendReservationService {
   private http = inject(HttpClient);
 
-  postReservation(reservationInfo: SingleReservation) {
-    return this.http.post<SingleReservation>(
-      `http://localhost:3000/tickets-reservation`,
-      {
+  postReservation(reservationInfo: SingleReservation, arrayId: number[]) {
+    console.log(reservationInfo, arrayId);
+    return this.http
+      .post<SingleReservation>(`http://localhost:3000/tickets-reservation`, {
         id: NaN,
         userId: 11,
-        ticketIdsArray: reservationInfo.ticketIdsArray,
         date: reservationInfo.date,
-        title: reservationInfo.date,
-      }
-    );
+        title: reservationInfo.title,
+        ticketIdsArray: arrayId,
+      })
+      .subscribe();
   }
 }

@@ -29,6 +29,7 @@ export default class SummaryComponent {
   private qrService = inject(QrService);
 
   reservation$ = this.cinemaHall.reservation$;
+  reservationInfo$ = this.sendTicketService.reservationInfo$;
   tickets$ = this.ticketService.tickets$;
   url: string | undefined;
 
@@ -39,5 +40,14 @@ export default class SummaryComponent {
     this.qrService.getQr().subscribe((qrCode) => {
       this.url = qrCode.url;
     });
+  }
+
+  sendArray() {
+    console.log('hello');
+    this.sendTicketService.sendReservationData();
+  }
+
+  ngOnDestroy() {
+    this.sendTicketService.sendReservationData();
   }
 }
