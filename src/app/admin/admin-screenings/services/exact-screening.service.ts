@@ -18,6 +18,7 @@ export class ExactScreeningService {
   date = '';
 
   getScreening(date: string) {
+    console.log(date);
     this.date = date;
     this.fetchScreening().subscribe((screening) => {
       const ids = screening.map(({ filmId }) => filmId);

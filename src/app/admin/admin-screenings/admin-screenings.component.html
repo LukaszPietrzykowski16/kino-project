@@ -5,9 +5,17 @@
       <h3 class="event-type-form__question font-heading-3">
         {{ questions[page] }}
       </h3>
-      <mat-form-field *ngIf="page === 0">
-        <mat-label>Data:</mat-label>
-        <input
+      <mat-form-field *ngIf="page === 0" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+
+        <!-- <input
           matInput
           type="email"
           formControlName="date"
@@ -18,7 +26,7 @@
         >
         <mat-error *ngIf="screeningForm.controls['date'].errors?.['pattern']"
           >Please enter valid email</mat-error
-        >
+        > -->
       </mat-form-field>
       <div *ngIf="page === 1">
         <mat-form-field appearance="fill">

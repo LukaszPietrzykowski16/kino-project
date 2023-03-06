@@ -13,7 +13,7 @@ import { FilmService } from 'src/app/domains/want-watch/film/film.service';
 import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
 import { ScreeningAdminState } from '../admin.module';
 import { FilmServiceService } from '../services/film-service.service';
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
 import { ExactScreeningService } from './services/exact-screening.service';
@@ -43,7 +43,7 @@ export class AdminScreeningsComponent {
   }
 
   questions = [
-    'Podaj date w formacie: Dzień-miesiąc np. 03-03',
+    'Podaj datę seansu',
     'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
     'Podaj godzinę',
   ];

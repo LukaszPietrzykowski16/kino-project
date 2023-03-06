@@ -12,6 +12,8 @@ import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
 import { trimValidator } from '../domains/form/input-vaidator.validator';
+import { NotificationComponent } from '../home/film-panel/notification/notification.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-admin',
@@ -21,11 +23,13 @@ import { trimValidator } from '../domains/form/input-vaidator.validator';
 export class AdminComponent {
   private fb = inject(FormBuilder);
   private store = inject<Store<FilmAdminState>>(Store);
+  private snackBar = inject(MatSnackBar);
 
   admin$ = this.store.select('AdminFilm');
 
   filmForm!: FormGroup;
-  constructor() {}
+  durationInSeconds = 3;
+
   createForm() {
     this.filmForm = this.fb.group({
       title: [
@@ -68,8 +72,8 @@ export class AdminComponent {
           trimValidator,
         ],
       ],
-      rating: ['', Validators.required, Validators.maxLength(2)],
-      length: ['', Validators.required],
+      rating: ['', [Validators.required, Validators.maxLength(2)]],
+      length: ['', [Validators.required]],
     });
   }
 
@@ -97,7 +101,15 @@ export class AdminComponent {
     return this.filmForm.controls.rating;
   }
 
+  openSnackBar(titleValue: string) {
+    this.snackBar.openFromComponent(NotificationComponent, {
+      data: titleValue,
+      duration: this.durationInSeconds * 1000,
+    });
+  }
+
   addFilm() {
+    this.openSnackBar('Dodano film do bazy danych!');
     const filmsNew: Film = {
       id: NaN,
       title: this.titleCtrl.value,
