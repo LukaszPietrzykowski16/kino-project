@@ -9,9 +9,13 @@
         {{ ticket.type }}
       </div>
     </div>
-    <div *ngIf="promotion; else elseBlock">
-      Razem: {{ ticketPrice / 1.2 }} zł
+    <div class="container-promotion">
+      <div [ngClass]="promotion ? 'strikethrough' : 'strike'">
+        Razem: {{ ticketPrice }} zł
+      </div>
+      <div *ngIf="promotion" class="strike">
+        Nowa cena: {{ ticketPrice / 1.2 }} zł
+      </div>
     </div>
-    <ng-template #elseBlock> Razem: {{ ticketPrice }} zł </ng-template>
   </div>
 </div>
