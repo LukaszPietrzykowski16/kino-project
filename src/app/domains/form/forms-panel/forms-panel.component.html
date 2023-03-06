@@ -7,6 +7,7 @@
       placeholder="nazwisko"
       formControlName="lastName"
       [class.error]="lastCtrl.touched && lastCtrl.errors"
+      appNoSpaces
     />
     <ng-container *ngIf="lastCtrl.errors as errors">
       <ng-container *ngIf="lastCtrl.touched">
@@ -26,6 +27,7 @@
       placeholder="imie"
       formControlName="firstName"
       [class.error]="firstCtrl.touched && firstCtrl.errors"
+      appNoSpaces
     />
     <ng-container *ngIf="firstCtrl.errors as errors">
       <ng-container *ngIf="firstCtrl.touched">
@@ -53,6 +55,7 @@
       name="num"
       placeholder="adres email"
       formControlName="email"
+      appNoSpaces
     />
     <div *ngIf="(email.invalid && email.touched) || email.dirty">
       <small *ngIf="email.errors?.required" class="text-danger">
@@ -72,6 +75,7 @@
       name="num"
       placeholder="powotrz adres email"
       formControlName="emailAgain"
+      appNoSpaces
     />
     <div *ngIf="(emailAgain.invalid && emailAgain.touched) || emailAgain.dirty">
       <small *ngIf="emailAgain.errors?.required" class="text-danger">
