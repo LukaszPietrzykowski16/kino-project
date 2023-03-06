@@ -38,6 +38,14 @@ export interface ScreeningAdminState {
         path: '',
         component: AdminComponent,
       },
+      {
+        path: 'add-film',
+        component: AdminComponent,
+      },
+      {
+        path: 'add-screening',
+        component: AdminScreeningsComponent,
+      },
     ]),
     StoreModule.forFeature('AdminFilm', [addFilmReducer]),
     StoreModule.forFeature('AdminScreening', [addScreeningReducer]),

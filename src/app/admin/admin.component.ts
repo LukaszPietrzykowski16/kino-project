@@ -11,6 +11,7 @@ import { map, pipe } from 'rxjs';
 import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
+import { trimValidator } from '../domains/form/input-vaidator.validator';
 
 @Component({
   selector: 'app-admin',
@@ -27,11 +28,47 @@ export class AdminComponent {
   constructor() {}
   createForm() {
     this.filmForm = this.fb.group({
-      title: ['', Validators.required],
-      types: ['', Validators.required],
-      image: ['', Validators.required],
-      description: ['', Validators.required],
-      rating: ['', Validators.required],
+      title: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(50),
+          trimValidator,
+        ],
+      ],
+      types: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(20),
+          trimValidator,
+        ],
+      ],
+      image: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(200),
+          trimValidator,
+        ],
+      ],
+      description: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('[a-zA-Z ]*'),
+          Validators.maxLength(200),
+          trimValidator,
+        ],
+      ],
+      rating: ['', Validators.required, Validators.maxLength(2)],
       length: ['', Validators.required],
     });
   }

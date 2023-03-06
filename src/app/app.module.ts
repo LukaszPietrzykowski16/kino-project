@@ -127,8 +127,26 @@ export interface AppState {
                 ({ AdminModule }) => AdminModule
               ),
             // guard
-            canActivate: [AuthGuard],
+            // canActivate: [AuthGuard],
           },
+          // {
+          //   path: 'admin/add-film',
+          //   loadChildren: () =>
+          //     import('./admin/admin.module').then(
+          //       ({ AdminModule }) => AdminModule
+          //     ),
+          //   // guard
+          //   // canActivate: [AuthGuard],
+          // },
+          // {
+          //   path: 'admin/add-screening',
+          //   loadChildren: () =>
+          //     import('./admin/admin.module').then(
+          //       ({ AdminModule }) => AdminModule
+          //     ),
+          //   // guard
+          //   // canActivate: [AuthGuard],
+          // },
           {
             path: 'date/:date',
             loadChildren: () =>

@@ -767,9 +767,9 @@
     },
     {
       "seat": "E7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 51,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -844,9 +844,9 @@
     },
     {
       "seat": "F7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 62,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
