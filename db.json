@@ -418,6 +418,107 @@
         "19:00",
         "22:00"
       ]
+    },
+    {
+      "id": 31,
+      "filmId": 1,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "13:00"
+      ]
+    },
+    {
+      "id": 32,
+      "filmId": 1,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00"
+      ]
+    },
+    {
+      "id": 33,
+      "filmId": 2,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00"
+      ]
+    },
+    {
+      "id": 34,
+      "filmId": 2,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00"
+      ]
+    },
+    {
+      "id": 35,
+      "filmId": 2,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00"
+      ]
+    },
+    {
+      "id": 36,
+      "filmId": 1,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00",
+        "12:00",
+        "17:00",
+        "22:00"
+      ]
+    },
+    {
+      "id": 37,
+      "filmId": 1,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00",
+        "12:00",
+        "17:00",
+        "22:00"
+      ]
+    },
+    {
+      "id": 38,
+      "filmId": 1,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "09:00",
+        "12:00",
+        "17:00",
+        "22:00"
+      ]
+    },
+    {
+      "id": 39,
+      "filmId": 1,
+      "premiere": false,
+      "date": "07-03",
+      "hours": [
+        "13:00",
+        "16:00"
+      ]
+    },
+    {
+      "id": 40,
+      "filmId": 1,
+      "premiere": false,
+      "date": "07-03",
+      "hours": [
+        "13:00",
+        "16:00"
+      ]
     }
   ],
   "reservation": [

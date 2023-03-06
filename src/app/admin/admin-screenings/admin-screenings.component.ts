@@ -47,15 +47,16 @@ export class AdminScreeningsComponent {
   page = 0;
 
   nextPage() {
+    console.log(this.page);
     if (this.page === 0) {
       this.exactScreening.getScreening(this.dateCtrl.value);
       this.filmLimiter.limitFilms();
     }
-    if (this.page === 3) {
+    if (this.page === 2) {
       this.addScreening();
     }
-    if (this.page >= 3) {
-      this.page = 3;
+    if (this.page >= 4) {
+      this.page = 4;
     } else {
       this.page++;
     }
@@ -98,7 +99,7 @@ export class AdminScreeningsComponent {
 
     this.store.dispatch(screeningActions.getScreenings());
     this.screeningForm = this.fb.group({
-      film: [null, [Validators.required, Validators.minLength(4)]],
+      film: [null, [Validators.required]],
       date: [null, [Validators.required]],
       premier: [false, [Validators.required]],
     });
@@ -131,6 +132,9 @@ export class AdminScreeningsComponent {
 
   addScreening() {
     this.onSubmit();
+  }
+
+  sendScreening() {
     const screeningNew: Screening = {
       filmId: this.filmCtrl.value,
       premiere: this.premierCtrl.value,

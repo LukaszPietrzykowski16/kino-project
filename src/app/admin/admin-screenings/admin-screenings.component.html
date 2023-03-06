@@ -6,9 +6,9 @@
         {{ questions[page] }}
       </h3>
       <mat-form-field *ngIf="page === 0" appearance="fill">
-        <mat-label>Choose a date</mat-label>
+        <mat-label>Wybierz datę</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date" />
-        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-hint>Miesiąc/Dzień/Rok</mat-hint>
         <mat-datepicker-toggle
           matIconSuffix
           [for]="picker"
@@ -58,6 +58,19 @@
           </div>
         </div>
       </form>
+
+      <div *ngIf="page === 3">
+        <h2>Podsumowanie:</h2>
+        <p>Nazwa filmu: {{ filmCtrl.value }}</p>
+        <p>Data: {{ dateCtrl.value }}</p>
+        <p>Premiera: {{ premierCtrl.value }}</p>
+        Godziny:
+
+        {{ finalArr }}
+        <div *ngFor="let hour of finalArr">
+          {{ hour }}
+        </div>
+      </div>
     </div>
     <div class="event-type-form__button-container">
       <button
