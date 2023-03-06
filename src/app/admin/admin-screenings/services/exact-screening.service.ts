@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { ChangeDayService } from 'src/app/home/data-panel/services/change-day.service';
 import { Screening } from 'src/app/home/film-panel/film-panel.component';
 import { FilmLimiterService } from './film-limiter.service';
 
@@ -10,6 +11,7 @@ import { FilmLimiterService } from './film-limiter.service';
 export class ExactScreeningService {
   private http = inject(HttpClient);
   private screeningInDay$$ = new BehaviorSubject<Number[]>([]);
+  private changeDayService = inject(ChangeDayService);
 
   get getScreeningInDay$() {
     return this.screeningInDay$$.asObservable();
@@ -17,9 +19,8 @@ export class ExactScreeningService {
 
   date = '';
 
-  getScreening(date: string) {
-    console.log(date);
-    this.date = date;
+  getScreening(date: Date) {
+    this.date = this.changeDayService.formatDate(date);
     this.fetchScreening().subscribe((screening) => {
       const ids = screening.map(({ filmId }) => filmId);
 

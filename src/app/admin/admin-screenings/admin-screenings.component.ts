@@ -18,6 +18,7 @@ import { screeningActions } from '../store/admin.action';
 import { AdminFilmState } from '../store/admin.interface';
 import { ExactScreeningService } from './services/exact-screening.service';
 import { FilmLimiterService } from './services/film-limiter.service';
+import { ChangeDayService } from 'src/app/home/data-panel/services/change-day.service';
 
 export interface ExpInterface {
   exp: string;
@@ -33,14 +34,9 @@ export class AdminScreeningsComponent {
   private route = inject(ActivatedRoute);
   private exactScreening = inject(ExactScreeningService);
   private filmLimiter = inject(FilmLimiterService);
+  private changeDayService = inject(ChangeDayService);
 
   array$ = this.filmLimiter.newArr$;
-
-  showArr() {
-    this.array$.subscribe((test) => {
-      console.log(test);
-    });
-  }
 
   questions = [
     'Podaj datę seansu',
@@ -138,7 +134,7 @@ export class AdminScreeningsComponent {
     const screeningNew: Screening = {
       filmId: this.filmCtrl.value,
       premiere: this.premierCtrl.value,
-      date: this.dateCtrl.value,
+      date: this.changeDayService.formatDate(this.dateCtrl.value),
       hours: this.finalArr,
     };
     this.store.dispatch(

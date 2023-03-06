@@ -14,19 +14,6 @@
           [for]="picker"
         ></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-
-        <!-- <input
-          matInput
-          type="email"
-          formControlName="date"
-          placeholder="data"
-        />
-        <mat-error *ngIf="screeningForm.controls['date'].errors?.['required']"
-          >Email is required</mat-error
-        >
-        <mat-error *ngIf="screeningForm.controls['date'].errors?.['pattern']"
-          >Please enter valid email</mat-error
-        > -->
       </mat-form-field>
       <div *ngIf="page === 1">
         <mat-form-field appearance="fill">
@@ -40,7 +27,7 @@
                       value="{{ film.title }}"
                       (click)="setValue(film.id)"
                     >
-                      <p (click)="showArr()">{{ film.title }}</p>
+                      <p>{{ film.title }}</p>
                     </mat-option>
                   </ng-container>
                 </ng-container>
