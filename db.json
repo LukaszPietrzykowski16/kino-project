@@ -878,7 +878,7 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65,
       "isChoosen": false,
       "reservation": false

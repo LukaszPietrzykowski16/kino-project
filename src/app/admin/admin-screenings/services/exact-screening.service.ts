@@ -28,9 +28,7 @@ export class ExactScreeningService {
         new Set([...this.screeningInDay$$.getValue(), ...ids])
       );
 
-      // screening.map((screen) => {
       this.screeningInDay$$.next(uniques);
-      // });
     });
   }
 
@@ -39,6 +37,4 @@ export class ExactScreeningService {
       `http://localhost:3000/screening?date=${this.date}`
     );
   }
-
-  // constructor() {}
 }
