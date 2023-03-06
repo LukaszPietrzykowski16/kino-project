@@ -519,6 +519,36 @@
         "13:00",
         "16:00"
       ]
+    },
+    {
+      "id": 41,
+      "filmId": 0,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "12:00",
+        "15:00",
+        "20:00"
+      ]
+    },
+    {
+      "id": 42,
+      "filmId": 3,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "12:00"
+      ]
+    },
+    {
+      "id": 43,
+      "filmId": 4,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "12:00",
+        "15:00"
+      ]
     }
   ],
   "reservation": [

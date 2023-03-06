@@ -42,6 +42,7 @@ export class AdminScreeningsComponent {
     'Podaj datę seansu',
     'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
     'Podaj godzinę',
+    'Podsumowanie',
   ];
 
   page = 0;
@@ -54,6 +55,9 @@ export class AdminScreeningsComponent {
     }
     if (this.page === 2) {
       this.addScreening();
+    }
+    if (this.page === 3) {
+      this.sendScreening();
     }
     if (this.page >= 4) {
       this.page = 4;

@@ -8,7 +8,7 @@ import { NotAdminGuard } from './shared/guards/no-admin.guard';
 
 const routes: Routes = [
   // guard
-  { path: '', component: MainComponent, canActivate: [NotAdminGuard] },
+  { path: '', component: MainComponent }, // canActivate: [NotAdminGuard]
   {
     path: 'date/:date',
     component: MainComponent,

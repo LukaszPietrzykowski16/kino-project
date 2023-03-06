@@ -113,7 +113,7 @@ export interface AppState {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
             // guard
-            canActivate: [NotAdminGuard, LoginGuard],
+            // canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'cart',
