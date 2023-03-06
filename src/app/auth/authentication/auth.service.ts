@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject, tap } from 'rxjs';
+import { BehaviorSubject, catchError, tap } from 'rxjs';
 import { createSelector, Store } from '@ngrx/store';
 import { userActions } from '../store/user.action';
 import { LoginData } from './auth.interface';
@@ -15,6 +15,10 @@ export const selectAccountType = createSelector(
   (state) => state.type
 );
 
+export interface LoginInfo {
+  information: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -23,6 +27,11 @@ export class AuthService {
   private store = inject<Store<AppState>>(Store);
   private router = inject(Router);
   private tokenService = inject(TokenService);
+  private loginInfo$$ = new BehaviorSubject<LoginInfo>({} as LoginInfo);
+
+  get getInfo$() {
+    return this.loginInfo$$.asObservable();
+  }
 
   private url = 'http://localhost:3000/login';
 
@@ -34,8 +43,12 @@ export class AuthService {
     return this.auth$$.asObservable();
   }
 
-  constructor() {
+  ngOnInit() {
     this.initAuth();
+  }
+
+  cleanState() {
+    this.loginInfo$$.next({ information: '' });
   }
 
   get auth$() {
@@ -74,6 +87,12 @@ export class AuthService {
             );
             this.router.navigate(['/']);
           },
+        }),
+        catchError((error) => {
+          this.loginInfo$$.next({
+            information: 'Nie właściwy email lub hasło',
+          });
+          return error;
         })
       )
       .subscribe();

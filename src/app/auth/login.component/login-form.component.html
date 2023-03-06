@@ -27,5 +27,8 @@
     </p>
 
     <button (click)="checkValidationAndAuth()">Zaloguj</button>
+    <ng-container *ngIf="info$ | async as info">
+      {{ info.information }}
+    </ng-container>
   </form>
 </div>

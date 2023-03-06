@@ -15,6 +15,8 @@ export class LoginComponent {
 
   loginForm = this.createControlGroup();
 
+  info$ = this.authService.getInfo$;
+
   createControlGroup() {
     return this.fb.group({
       email: this.fb.control('', {
@@ -43,5 +45,9 @@ export class LoginComponent {
       return;
     }
     this.authService.logIn(this.emailCtrl.value, this.passwordCtrl.value);
+  }
+
+  ngOnDestroy() {
+    this.authService.cleanState();
   }
 }
