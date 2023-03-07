@@ -13,8 +13,6 @@ export class NavbarComponent {
   login = false;
   userName: string = '';
 
-  constructor(private router: Router) {}
-
   logOut() {
     this.authService.logOut();
   }

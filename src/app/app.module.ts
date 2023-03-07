@@ -46,7 +46,7 @@ import { NotificationComponent } from './home/film-panel/notification/notificati
 import { SelectedSeatGuard } from './shared/guards/selected-seat.guard';
 import { AdminModule } from './admin';
 import { AdminGuard } from './shared/guards/admin.guard';
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './shared/guards/auth.guard';
 import { MatMenuModule } from '@angular/material/menu';
 import { WantToWatchComponent } from './home/film-panel/want-to-watch/want-to-watch.component';
 import { RatingComponent } from './home/film-panel/rating/rating.component';
