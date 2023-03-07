@@ -57,6 +57,14 @@
       "rating": "7",
       "title": "NMF: MINIMARATON KRZYK",
       "types": "Horror"
+    },
+    {
+      "id": 5,
+      "description": "kjfkjfjkesf",
+      "image": "jkfqwkjjqk",
+      "rating": "4",
+      "title": "jefj",
+      "types": "jkfkjwqjk"
     }
   ],
   "ratings": [
@@ -743,6 +751,18 @@
       "hours": [
         "12:00"
       ]
+    },
+    {
+      "id": 58,
+      "filmId": 3,
+      "premiere": true,
+      "date": "08-03",
+      "hours": [
+        "12:00",
+        "15:00",
+        "17:30",
+        "21:00"
+      ]
     }
   ],
   "reservation": [
@@ -846,23 +866,23 @@
     },
     {
       "seat": "B3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 14,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 15,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 16,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1035,9 +1055,9 @@
     },
     {
       "seat": "D8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 41,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1091,9 +1111,9 @@
     },
     {
       "seat": "E5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 49,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1112,9 +1132,9 @@
     },
     {
       "seat": "E8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 52,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1168,9 +1188,9 @@
     },
     {
       "seat": "F5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 60,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
