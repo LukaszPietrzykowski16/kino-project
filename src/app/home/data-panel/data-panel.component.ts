@@ -26,8 +26,6 @@ export class DataPanelComponent {
   }
 
   ngOnInit(): void {
-    console.log(new Date());
-    console.log(this.changeDayService.formatDate(new Date()));
     this.activatedRoute.params.subscribe((params) => {
       if (typeof params['date'] !== 'undefined') {
         this.today = params['date'];
@@ -39,7 +37,6 @@ export class DataPanelComponent {
       let nextDay: Date = new Date(this.nextDays);
       nextDay.setDate(this.nextDays.getDate() + i);
       let exactDay = this.changeDayService.formatDate(nextDay);
-      // to change
       this.arr.push(exactDay);
     }
   }

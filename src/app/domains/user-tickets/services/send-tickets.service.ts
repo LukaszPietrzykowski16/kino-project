@@ -150,7 +150,6 @@ export class SendTicketsService {
   }
 
   sendReservationData() {
-    // this.resetState();
     this.reservationInfo$$
       .subscribe((info) => {
         this.urlInfo$$
@@ -160,23 +159,5 @@ export class SendTicketsService {
           .unsubscribe();
       })
       .unsubscribe();
-    // this.reservationInfo$.pipe(
-    //   map((info) => {
-    //     this.urlInfo$$
-    //       .subscribe((arrayId) => {
-    //         this.sendReservation.postReservation(info, arrayId);
-    //       })
-    //       .unsubscribe();
-    //   })
-    // );
-    // this.reservationInfo$$.pipe(
-    //   map((info) => {
-    //     this.urlInfo$$.pipe(
-    //       map((arrayId) => {
-    //         this.sendReservation.postReservation(info, arrayId);
-    //       })
-    //     );
-    //   })
-    // );
   }
 }

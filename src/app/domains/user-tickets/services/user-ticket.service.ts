@@ -54,7 +54,6 @@ export class UserTicketService {
 
   displayTicket(id: string | null) {
     this.getVisitorTickets(id).subscribe((ticket) => {
-      console.log(ticket);
       this.ticket$$.next(ticket);
     });
   }

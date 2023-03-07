@@ -1,11 +1,7 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, inject, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CommonModule } from '@angular/common';
-import { BehaviorSubject } from 'rxjs';
-import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
-import { RatingValueService } from '../services/rating-value.service';
-import { Ratings, RatingService } from '../services/rating.service';
+import { RatingService } from '../services/rating.service';
 import { starsModalComponent } from '../stars-modal.component';
 
 @Component({
@@ -28,14 +24,11 @@ export class RatingComponent {
   @Input() filmId!: number;
 
   showModal(filmId: number) {
-    // this.ratingService.setFilmId(filmId);
     const dialogRef = this.dialog.open(starsModalComponent);
 
     dialogRef.afterClosed().subscribe((result) => {
       if (!result) return;
-      console.log(result);
       this.userRate = result;
-
       this.ratingService.patchRatings(filmId, this.userRate);
     });
   }
@@ -47,7 +40,6 @@ export class RatingComponent {
       });
     });
     this.ratings$.subscribe((test) => {
-      console.log(test.rating);
       this.userRate = test.rating;
     });
   }

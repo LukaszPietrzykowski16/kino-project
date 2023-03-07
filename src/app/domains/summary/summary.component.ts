@@ -43,7 +43,6 @@ export default class SummaryComponent {
   }
 
   sendArray() {
-    console.log('hello');
     this.sendTicketService.sendReservationData();
   }
 

@@ -30,6 +30,7 @@ export class FilmService {
   }
 
   getArrayOfFilmId() {
+    // here
     this.authService.user$.subscribe((user) => {
       this.userId = user.id;
     });
@@ -45,6 +46,7 @@ export class FilmService {
             });
           })
         )
+        // here
         .subscribe()
         .unsubscribe();
     });

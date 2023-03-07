@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { User } from 'angular-feather/icons';
 import { BehaviorSubject } from 'rxjs';
-import { CheckUserService } from 'src/app/auth/authentication/check-user.service';
 
 export interface Ratings {
   id: number;
@@ -15,6 +13,8 @@ export interface Ratings {
   providedIn: 'root',
 })
 export class RatingService {
+  private http = inject(HttpClient);
+
   private rating$$ = new BehaviorSubject<Ratings>({
     id: 0,
     userId: 11,
@@ -26,14 +26,9 @@ export class RatingService {
     return this.rating$$.asObservable();
   }
 
-  private http = inject(HttpClient);
-
   getRatings(obj: Ratings) {
-    console.log(obj);
     this.rating$$.next(obj);
   }
-
-  //http://localhost:3000/ratings?userId=11&filmId=1
 
   patchRatings(filmId: number, rating: number) {
     const info = {
