@@ -22,6 +22,7 @@ export class FormsTitleComponent {
   tickets$ = this.ticketService.tickets$;
 
   ticketPrice: number = 0;
+  newPrice: number = 0;
   promotion: unknown = false;
 
   price() {
@@ -40,6 +41,7 @@ export class FormsTitleComponent {
   ngOnInit() {
     this.promotionService.getPromotion().subscribe((test) => {
       this.promotion = test;
+      this.newPrice = Math.floor(this.ticketPrice / 1.2);
     });
 
     this.price();

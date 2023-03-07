@@ -1020,9 +1020,9 @@
     },
     {
       "seat": "D3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 36,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1097,9 +1097,9 @@
     },
     {
       "seat": "E3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 47,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1335,9 +1335,9 @@
     },
     {
       "seat": "H4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 81,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1363,9 +1363,9 @@
     },
     {
       "seat": "H8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 85,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {

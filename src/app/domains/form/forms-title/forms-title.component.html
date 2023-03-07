@@ -13,9 +13,7 @@
       <div [ngClass]="promotion ? 'strikethrough' : 'strike'">
         Razem: {{ ticketPrice }} zł
       </div>
-      <div *ngIf="promotion" class="strike">
-        Nowa cena: {{ ticketPrice / 1.2 }} zł
-      </div>
+      <div *ngIf="promotion" class="strike">Nowa cena: {{ newPrice }} zł</div>
     </div>
   </div>
 </div>
