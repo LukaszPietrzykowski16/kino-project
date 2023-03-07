@@ -9,7 +9,7 @@ import { AdminGuard } from './shared/guards/admin.guard';
 
 const routes: Routes = [
   // guard
-  { path: '', component: MainComponent, canActivate: [NotAdminGuard] }, // , canActivate: [NotAdminGuard]
+  { path: '', component: MainComponent }, // , canActivate: [NotAdminGuard]canActivate: [NotAdminGuard]
   {
     // canMatch: [AdminGuard]
     path: 'date/:date',

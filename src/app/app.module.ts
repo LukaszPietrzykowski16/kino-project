@@ -115,7 +115,7 @@ export interface AppState {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
             // guard
-            canActivate: [NotAdminGuard, LoginGuard],
+            // canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'admin',
@@ -125,7 +125,7 @@ export interface AppState {
               ),
 
             // guard
-            canActivate: [AuthGuard],
+            // canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
