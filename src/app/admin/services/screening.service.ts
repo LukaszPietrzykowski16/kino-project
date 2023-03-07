@@ -21,5 +21,4 @@ export class ScreeningService {
       hours: data.hours,
     });
   }
-  constructor() {}
 }

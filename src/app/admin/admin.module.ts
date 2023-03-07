@@ -13,10 +13,7 @@ import { AdminScreeningsComponent } from './admin-screenings/admin-screenings.co
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
-import {
-  MatDatepicker,
-  MatDatepickerModule,
-} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 export interface FilmAdminState {
   AdminFilm: AdminFilmState[];

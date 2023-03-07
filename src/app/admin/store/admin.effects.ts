@@ -1,9 +1,6 @@
 import { inject, Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { EMPTY, of } from 'rxjs';
-import { map, mergeMap, switchMap, tap } from 'rxjs/operators';
-import { FilmService } from 'src/app/domains/want-watch/film/film.service';
+import { map, switchMap } from 'rxjs/operators';
 import { FilmServiceService } from '../services/film-service.service';
 import { ScreeningService } from '../services/screening.service';
 import { addFilmsFromApiActions, screeningActions } from './admin.action';

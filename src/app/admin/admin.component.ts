@@ -1,13 +1,6 @@
 import { Component, inject } from '@angular/core';
-import {
-  FormArray,
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { map, pipe } from 'rxjs';
 import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
 import { Film } from 'src/app/home/film-panel/film-panel.component';
