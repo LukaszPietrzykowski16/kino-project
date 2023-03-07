@@ -1126,9 +1126,9 @@
     },
     {
       "seat": "F8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 63,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1210,9 +1210,9 @@
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {

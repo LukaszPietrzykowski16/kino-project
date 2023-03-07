@@ -1,17 +1,49 @@
 .container {
   background-color: white;
   display: flex;
+  text-align: left;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30vw;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 80vw;
   padding: 16px;
   margin: 32px;
+  border-bottom: 4px solid #5800ff;
   color: rgb(0, 0, 0);
+}
+
+.test {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+}
+
+h1 {
+  padding: 16px;
 }
 
 .forms-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-group {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,138 +2,146 @@
   <div class="container">
     <h1>Dodaj film</h1>
     <form [formGroup]="filmForm" novalidate>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="title"
-            type="text"
-            matInput
-            placeholder="Tytuł"
-        /></mat-form-field>
-      </div>
-      <ng-container *ngIf="titleCtrl.errors as errors">
-        <ng-container *ngIf="titleCtrl.touched">
-          <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
-          <p *ngIf="errors['minlength'] as milLength">
-            Podałeś {{ milLength.actualLength }} znaki, minimum to
-            {{ milLength.requiredLength }}
-          </p>
-          <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-          <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
-        </ng-container>
-      </ng-container>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="types"
-            type="text"
-            matInput
-            placeholder="Gatunki filmów"
-        /></mat-form-field>
-      </div>
-      <ng-container *ngIf="typesCtrl.errors as errors">
-        <ng-container *ngIf="typesCtrl.touched">
-          <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
-          <p *ngIf="errors['minlength'] as milLength">
-            Podałeś {{ milLength.actualLength }} znaki, minimum to
-            {{ milLength.requiredLength }}
-          </p>
-          <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-          <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
-        </ng-container>
-      </ng-container>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="image"
-            type="text"
-            matInput
-            placeholder="Link do plakatu"
-          />
-        </mat-form-field>
-      </div>
-      <ng-container *ngIf="imageCtrl.errors as errors">
-        <ng-container *ngIf="imageCtrl.touched">
-          <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
-          <p *ngIf="errors['minlength'] as milLength">
-            Podałeś {{ milLength.actualLength }} znaki, minimum to
-            {{ milLength.requiredLength }}
-          </p>
-          <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-          <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
-        </ng-container>
-      </ng-container>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="description"
-            type="text"
-            matInput
-            placeholder="Opis"
-          />
-        </mat-form-field>
-      </div>
-      <ng-container *ngIf="descriptionCtrl.errors as errors">
-        <ng-container *ngIf="descriptionCtrl.touched">
-          <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
-          <p *ngIf="errors['minlength'] as milLength">
-            Podałeś {{ milLength.actualLength }} znaki, minimum to
-            {{ milLength.requiredLength }}
-          </p>
-          <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
-          <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
-        </ng-container>
-      </ng-container>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="rating"
-            type="text"
-            matInput
-            placeholder="Ocena"
-            numbersOnly
-          />
-        </mat-form-field>
-      </div>
-      <div
-        *ngIf="
-          filmForm.controls['rating'].invalid &&
-          (filmForm.controls['rating'].dirty ||
-            filmForm.controls['rating'].touched)
-        "
-        class="alert alert-danger"
-      >
-        <div *ngIf="filmForm.controls['rating'].errors?.required">
-          Pole rating wymagane
+      <div class="test">
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="title"
+              type="text"
+              matInput
+              placeholder="Tytuł"
+          /></mat-form-field>
+          <ng-container *ngIf="titleCtrl.errors as errors">
+            <ng-container *ngIf="titleCtrl.touched">
+              <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+              <p *ngIf="errors['minlength'] as milLength">
+                Podałeś {{ milLength.actualLength }} znaki, minimum to
+                {{ milLength.requiredLength }}
+              </p>
+              <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
+              <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="types"
+              type="text"
+              matInput
+              placeholder="Gatunki filmów"
+          /></mat-form-field>
+          <ng-container *ngIf="typesCtrl.errors as errors">
+            <ng-container *ngIf="typesCtrl.touched">
+              <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+              <p *ngIf="errors['minlength'] as milLength">
+                Podałeś {{ milLength.actualLength }} znaki, minimum to
+                {{ milLength.requiredLength }}
+              </p>
+              <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
+              <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="image"
+              type="text"
+              matInput
+              placeholder="Link do plakatu"
+            />
+          </mat-form-field>
+          <ng-container *ngIf="imageCtrl.errors as errors">
+            <ng-container *ngIf="imageCtrl.touched">
+              <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+              <p *ngIf="errors['minlength'] as milLength">
+                Podałeś {{ milLength.actualLength }} znaki, minimum to
+                {{ milLength.requiredLength }}
+              </p>
+              <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
+              <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
+            </ng-container>
+          </ng-container>
         </div>
       </div>
-      <div class="form-group">
-        <mat-form-field>
-          <input
-            class="form-control"
-            formControlName="length"
-            type="text"
-            matInput
-            placeholder="Długość w minutach"
-            numbersOnly
-          />
-        </mat-form-field>
-      </div>
-      <div
-        *ngIf="
-          filmForm.controls['length'].invalid &&
-          (filmForm.controls['length'].dirty ||
-            filmForm.controls['length'].touched)
-        "
-        class="alert alert-danger"
-      >
-        <div *ngIf="filmForm.controls['length'].errors?.required">
-          Pole długość wymagane
+      <div class="test">
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="description"
+              type="text"
+              matInput
+              placeholder="Opis"
+            />
+          </mat-form-field>
+          <ng-container *ngIf="descriptionCtrl.errors as errors">
+            <ng-container *ngIf="descriptionCtrl.touched">
+              <p *ngIf="errors['required']">Te pole jest obowiązkowe</p>
+              <p *ngIf="errors['minlength'] as milLength">
+                Podałeś {{ milLength.actualLength }} znaki, minimum to
+                {{ milLength.requiredLength }}
+              </p>
+              <p *ngIf="errors['leadingOrTrailingSpace']">Nie tym razem 😎</p>
+              <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="rating"
+              type="text"
+              matInput
+              placeholder="Ocena"
+              numbersOnly
+            />
+          </mat-form-field>
+          <div
+            *ngIf="
+              filmForm.controls['rating'].invalid &&
+              (filmForm.controls['rating'].dirty ||
+                filmForm.controls['rating'].touched)
+            "
+            class="alert alert-danger"
+          >
+            <div *ngIf="filmForm.controls['rating'].errors?.required">
+              Pole rating wymagane
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field>
+            <input
+              class="form-control"
+              formControlName="length"
+              type="text"
+              matInput
+              placeholder="Długość w minutach"
+              numbersOnly
+            />
+          </mat-form-field>
+          <div
+            *ngIf="
+              filmForm.controls['length'].invalid &&
+              (filmForm.controls['length'].dirty ||
+                filmForm.controls['length'].touched)
+            "
+            class="alert alert-danger"
+          >
+            <div *ngIf="filmForm.controls['length'].errors?.required">
+              Pole długość wymagane
+            </div>
+          </div>
         </div>
       </div>
       <button

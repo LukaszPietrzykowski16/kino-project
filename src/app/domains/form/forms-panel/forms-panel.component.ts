@@ -1,16 +1,14 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BlikService } from '../services/blik.service';
 import { Router } from '@angular/router';
-
 import { FormInfoService } from '../services/form-info.service';
-import { FormService } from '../services/form.service';
 import { SeatPostService } from '../services/seat-post.service';
 import { validatorCompareEmail } from './email-chech.service';
 import { PromotionService } from '../promotion.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { map, take } from 'rxjs';
-import { isPlatformWorkerApp, Location } from '@angular/common';
+import { Location } from '@angular/common';
 import { SendTicketsService } from '../../user-tickets/services/send-tickets.service';
 import { trimValidator } from '../input-vaidator.validator';
 import { AppState } from 'src/app/app.module';

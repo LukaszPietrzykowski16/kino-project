@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NumbersOnlyDirective } from '../shared/directives/numbers-only.directive';
 
 export interface FilmAdminState {
   AdminFilm: AdminFilmState[];
@@ -33,6 +34,7 @@ export interface ScreeningAdminState {
     ReactiveFormsModule,
     MatFormFieldModule,
     MatSelectModule,
+    NumbersOnlyDirective,
     MatDatepickerModule,
     EffectsModule.forFeature([AdminEffects]),
     RouterModule.forChild([
