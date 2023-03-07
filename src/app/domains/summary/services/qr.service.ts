@@ -6,7 +6,7 @@ import { qrCode } from '../summary.component';
   providedIn: 'root',
 })
 export class QrService {
-  url: string = `http://localhost:3000/qr`;
+  private url: string = `http://localhost:3000/qr`;
 
   constructor(private http: HttpClient) {}
 

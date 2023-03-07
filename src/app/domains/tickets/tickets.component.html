@@ -1,6 +1,9 @@
 <div *ngIf="ticket$ | async as ticket" class="ticket">
   <div class="single-ticket">
-    <img [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId" />
+    <img
+      [src]="barcodeApiUrl + 'http://localhost:4200/ticket/' + orderId"
+      alt="link do blietu"
+    />
     <div>
       <h1>{{ ticket.title }}</h1>
       {{ ticket.date }}

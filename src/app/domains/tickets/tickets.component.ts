@@ -17,7 +17,6 @@ export default class TicketsComponent {
   ticket$ = this.userTickets.ticket$;
 
   orderId: string | null = '';
-
   barcodeApiUrl = 'https://barcodeapi.org/api/127/';
 
   ngOnInit() {

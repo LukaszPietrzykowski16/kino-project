@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { getRandomValues } from 'crypto';
 import { BehaviorSubject, map } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
@@ -33,6 +32,13 @@ export class SendTicketsService {
     {} as SingleReservation
   );
 
+  title = '';
+  date = '';
+  hour = '';
+
+  tickets$ = this.ticketService.tickets$;
+  reservation$ = this.cinemaHall.reservation$;
+
   get reservationInfo$() {
     return this.reservationInfo$$.asObservable();
   }
@@ -44,15 +50,6 @@ export class SendTicketsService {
   get getUrlInfo$() {
     return this.urlInfo$$.asObservable();
   }
-
-  title = '';
-  date = '';
-  hour = '';
-
-  tickets$ = this.ticketService.tickets$;
-  reservation$ = this.cinemaHall.reservation$;
-
-  constructor() {}
 
   recunstructTicket() {
     this.tickets$.subscribe((filmData) => {
@@ -138,8 +135,6 @@ export class SendTicketsService {
       })
       .subscribe((result) => {
         this.sendToTheDbReservationData(result);
-
-        // this.sendReservation.postReservation(result);
         this.urlInfo$$.next([...this.urlInfo$$.getValue(), ...[result.id]]);
       });
   }

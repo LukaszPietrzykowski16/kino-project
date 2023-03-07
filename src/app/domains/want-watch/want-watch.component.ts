@@ -11,7 +11,7 @@ import { WantWatchFilmComponent } from './want-watch-film/want-watch-film.compon
   imports: [NgIf, AsyncPipe, NgFor, WantWatchFilmComponent],
 })
 export default class WantWatchComponent {
-  constructor(private filmService: FilmService) {}
+  private filmService = inject(FilmService);
 
   filmService$ = this.filmService.getFilms$;
 
