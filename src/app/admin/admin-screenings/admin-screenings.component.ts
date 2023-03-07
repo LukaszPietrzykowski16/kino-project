@@ -29,7 +29,7 @@ export class AdminScreeningsComponent {
   page = 0;
   questions = [
     'Podaj datę seansu',
-    'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
+    'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim seans',
     'Podaj godzinę',
     'Podsumowanie',
     'Seans został dodany',

@@ -1,126 +1,130 @@
-<form [formGroup]="screeningForm">
-  <div class="container">
-    <h1>Dodaj seans</h1>
-    <div class="event-type-form__toggle-container">
-      <h3 class="event-type-form__question font-heading-3">
-        {{ questions[page] }}
-      </h3>
-      <mat-form-field *ngIf="page === 0" appearance="fill">
-        <mat-label>Wybierz datę</mat-label>
-        <input matInput [matDatepicker]="picker" formControlName="date" />
-        <mat-hint>Miesiąc/Dzień/Rok</mat-hint>
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker"
-        ></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
-      <div *ngIf="page === 1">
-        <mat-form-field appearance="fill">
-          <mat-label>Wybierz film</mat-label>
-          <mat-select>
-            <ng-container *ngIf="allFilms$ | async as films">
-              <ng-container *ngIf="array$ | async as arr">
-                <ng-container *ngFor="let film of films; let i = index">
-                  <ng-container *ngIf="arr[i] !== film.id">
-                    <mat-option
-                      value="{{ film.title }}"
-                      (click)="setValue(film.id)"
-                    >
-                      <p>{{ film.title }}</p>
-                    </mat-option>
+<div class="forms-container">
+  <form [formGroup]="screeningForm">
+    <div class="container">
+      <h1>Dodaj seans</h1>
+      <div class="event-type-form__toggle-container">
+        <h2 class="event-type-form__question font-heading-3">
+          {{ questions[page] }}
+        </h2>
+        <mat-form-field *ngIf="page === 0" appearance="fill">
+          <mat-label>Wybierz datę</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="date" />
+          <mat-hint>Miesiąc/Dzień/Rok</mat-hint>
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <div *ngIf="page === 1" class="films-container">
+          <mat-form-field appearance="fill">
+            <mat-label>Wybierz film</mat-label>
+            <mat-select>
+              <ng-container *ngIf="allFilms$ | async as films">
+                <ng-container *ngIf="array$ | async as arr">
+                  <ng-container *ngFor="let film of films; let i = index">
+                    <ng-container *ngIf="arr[i] !== film.id">
+                      <mat-option
+                        value="{{ film.title }}"
+                        (click)="setValue(film.id)"
+                      >
+                        <p>{{ film.title }}</p>
+                      </mat-option>
+                    </ng-container>
                   </ng-container>
                 </ng-container>
               </ng-container>
-            </ng-container>
-          </mat-select>
-        </mat-form-field>
-        <mat-checkbox
-          class="example-margin"
-          [(ngModel)]="checked"
-          formControlName="premier"
-        >
-          premiera
-        </mat-checkbox>
-      </div>
-
-      <form [formGroup]="skillsForm" *ngIf="page === 2">
-        <button type="button" (click)="addSkills()">Dodaj godzinę</button>
-        <div formArrayName="skills">
-          <div *ngFor="let skill of skills.controls; let i = index">
-            <div [formGroupName]="i">
-              Godzina seansu:
-              <mat-form-field class="add-movie-form__input">
-                <input
-                  type="time"
-                  formControlName="exp"
-                  matInput
-                  placeholder="start date"
-                />
-              </mat-form-field>
-              <button (click)="removeSkill(i)">Usuń</button>
-            </div>
+            </mat-select>
+          </mat-form-field>
+          <div class="premier-container">
+            <mat-checkbox
+              class="example-margin"
+              [(ngModel)]="checked"
+              formControlName="premier"
+            >
+              premiera
+            </mat-checkbox>
           </div>
         </div>
-      </form>
 
-      <div *ngIf="page === 3">
-        <p>Nazwa filmu: {{ filmCtrl.value }}</p>
-        <p>Data: {{ dateCtrl.value }}</p>
-        <p>Premiera: {{ premierCtrl.value }}</p>
-        Godziny:
+        <form [formGroup]="skillsForm" *ngIf="page === 2">
+          <button type="button" (click)="addSkills()">Dodaj godzinę</button>
+          <div formArrayName="skills">
+            <div *ngFor="let skill of skills.controls; let i = index">
+              <div [formGroupName]="i">
+                Godzina seansu:
+                <mat-form-field class="add-movie-form__input">
+                  <input
+                    type="time"
+                    formControlName="exp"
+                    matInput
+                    placeholder="start date"
+                  />
+                </mat-form-field>
+                <button (click)="removeSkill(i)">Usuń</button>
+              </div>
+            </div>
+          </div>
+        </form>
 
-        {{ finalArr }}
-        <div *ngFor="let hour of finalArr">
-          {{ hour }}
+        <div *ngIf="page === 3">
+          <p>Nazwa filmu: {{ filmCtrl.value }}</p>
+          <p>Data: {{ dateCtrl.value }}</p>
+          <p>Premiera: {{ premierCtrl.value }}</p>
+          Godziny:
+
+          {{ finalArr }}
+          <div *ngFor="let hour of finalArr">
+            {{ hour }}
+          </div>
         </div>
       </div>
-    </div>
-    <ng-container *ngIf="page === 4; else changeBlock">
-      <button
-        class="event-type-form__button"
-        [ngClass]="{ 'event-type-form__button--hidden': !page }"
-        mat-flat-button
-        color="primary"
-        (click)="resetPage()"
-      >
-        Jeszcze raz
-      </button>
-    </ng-container>
-    <ng-template #changeBlock>
-      <div class="event-type-form__button-container">
+      <ng-container *ngIf="page === 4; else changeBlock">
         <button
           class="event-type-form__button"
           [ngClass]="{ 'event-type-form__button--hidden': !page }"
           mat-flat-button
           color="primary"
-          (click)="previousPage()"
+          (click)="resetPage()"
         >
-          Wróć
+          Jeszcze raz
         </button>
-        <ng-container *ngIf="page === 3; else elseBlock">
+      </ng-container>
+      <ng-template #changeBlock>
+        <div class="event-type-form__button-container">
           <button
             class="event-type-form__button"
+            [ngClass]="{ 'event-type-form__button--hidden': !page }"
             mat-flat-button
             color="primary"
-            (click)="sendScreening()"
-            #elseBlock
+            (click)="previousPage()"
           >
-            Wyślij
+            Wróć
           </button>
-        </ng-container>
-        <ng-template #elseBlock>
-          <button
-            class="event-type-form__button"
-            mat-flat-button
-            color="primary"
-            (click)="nextPage()"
-            #elseBlock
-          >
-            Dalej
-          </button>
-        </ng-template>
-      </div>
-    </ng-template>
-  </div>
-</form>
+          <ng-container *ngIf="page === 3; else elseBlock">
+            <button
+              class="event-type-form__button"
+              mat-flat-button
+              color="primary"
+              (click)="sendScreening()"
+              #elseBlock
+            >
+              Wyślij
+            </button>
+          </ng-container>
+          <ng-template #elseBlock>
+            <button
+              class="event-type-form__button"
+              mat-flat-button
+              color="primary"
+              (click)="nextPage()"
+              #elseBlock
+            >
+              Dalej
+            </button>
+          </ng-template>
+        </div>
+      </ng-template>
+    </div>
+  </form>
+</div>
