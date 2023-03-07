@@ -12,12 +12,10 @@ const routes: Routes = [
   {
     path: 'date/:date',
     component: MainComponent,
-    canActivate: [NotAdminGuard],
   },
   {
     path: 'rezerwacja/:item/:hour/:title',
     component: ReservationComponent,
-    canActivate: [NotAdminGuard],
   },
 ];
 

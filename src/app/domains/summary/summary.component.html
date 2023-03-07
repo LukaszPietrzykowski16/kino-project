@@ -1,10 +1,10 @@
 <main>
   <div class="main-container">
     <h1>Dziękujemy za zakup!</h1>
-
-    <h2>Bilet zakupiono na dane:</h2>
     <div *ngIf="reservation$ | async as reservation">
-      {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
+      <h2>
+        {{ reservation.title }} {{ reservation.day }} {{ reservation.hour }}
+      </h2>
     </div>
     <div *ngIf="tickets$ | async as tickets">
       <div *ngIf="urlValue$ | async as url" class="ticket-info-flex">

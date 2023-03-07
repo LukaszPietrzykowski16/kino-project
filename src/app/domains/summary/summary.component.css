@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .main-container h1 {
@@ -12,6 +12,7 @@ main {
 
 .main-container h2 {
   padding-left: 16px;
+  padding-bottom: 8px;
 }
 
 .qr-code {
@@ -22,6 +23,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(16, 16, 16);
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .ticket-info {
@@ -33,13 +37,14 @@ main {
 }
 
 .ticket-info__ticket {
-  background-color: rgb(16, 16, 16);
-  margin: 10px;
-  border-radius: 16px;
   width: 100%;
+  padding: 8px;
 }
 
 .ticket-info__info {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
