@@ -53,7 +53,6 @@ export class ApiServiceService {
       )
       .pipe(
         tap((value) => {
-          // here should be validators if this film exist etc...
           this.cinemaHallService.setStrings(
             value[0].film.title,
             hour,

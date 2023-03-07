@@ -13,7 +13,7 @@ interface User {}
 export class CheckUserService {
   private http = inject(HttpClient);
   private store = inject<Store<AppState>>(Store);
-  constructor() {}
+
   checkUser(id: string | undefined) {
     this.fetchUser(id).subscribe((result) => {
       this.store.dispatch(
