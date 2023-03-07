@@ -1,21 +1,11 @@
 import { Component, inject } from '@angular/core';
-import {
-  FormArray,
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { BehaviorSubject } from 'rxjs';
-import { FilmService } from 'src/app/domains/want-watch/film/film.service';
 import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
 import { ScreeningAdminState } from '../admin.module';
 import { FilmServiceService } from '../services/film-service.service';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { screeningActions } from '../store/admin.action';
-import { AdminFilmState } from '../store/admin.interface';
 import { ExactScreeningService } from './services/exact-screening.service';
 import { FilmLimiterService } from './services/film-limiter.service';
 import { ChangeDayService } from 'src/app/home/data-panel/services/change-day.service';
@@ -30,14 +20,13 @@ export interface ExpInterface {
   styleUrls: ['./admin-screenings.component.scss'],
 })
 export class AdminScreeningsComponent {
-  private router = inject(Router);
-  private route = inject(ActivatedRoute);
   private exactScreening = inject(ExactScreeningService);
   private filmLimiter = inject(FilmLimiterService);
   private changeDayService = inject(ChangeDayService);
 
   array$ = this.filmLimiter.newArr$;
 
+  page = 0;
   questions = [
     'Podaj datę seansu',
     'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
@@ -46,10 +35,7 @@ export class AdminScreeningsComponent {
     'Seans został dodany',
   ];
 
-  page = 0;
-
   nextPage() {
-    // console.log(this.page);
     if (this.page === 0) {
       this.exactScreening.getScreening(this.dateCtrl.value);
       this.filmLimiter.limitFilms();
@@ -57,13 +43,11 @@ export class AdminScreeningsComponent {
     if (this.page === 1) {
       if (this.filmCtrl.value === null) {
         this.page = 0;
-        console.log('Dodaj film');
       }
     }
     if (this.page === 2) {
       this.addScreening();
       this.page++;
-      console.log(this.minutesArray.length);
     } else {
       this.page++;
     }
