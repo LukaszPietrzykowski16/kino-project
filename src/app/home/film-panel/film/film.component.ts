@@ -11,6 +11,7 @@ export class FilmComponent {
   private userData = inject(UserTicketService);
 
   @Input() film!: Film;
+  @Input() hours!: Array<string>;
   @Input() premiere!: boolean;
 
   ratings$ = this.userData.ratings$;

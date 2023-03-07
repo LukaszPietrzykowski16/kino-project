@@ -35,6 +35,10 @@
   height: 100%;
 }
 
+.hour-container {
+  display: flex;
+}
+
 .film {
   display: flex;
   justify-content: center;

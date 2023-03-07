@@ -22,5 +22,20 @@
     </div>
 
     <h2>{{ film.rating }} / 10</h2>
+    <!-- <div *ngFor="let hour of hours">
+      <a [routerLink]="['/rezerwacja', selectedDay, hour, film.title]">
+        <button
+          (click)="moreDetails(film.title, hour)"
+          *ngIf="changeToString(hour) > now"
+        >
+          {{ hour }}
+        </button>
+      </a>
+    </div> -->
+    <div class="hour-container">
+      <div *ngFor="let hour of hours">
+        <button>{{ hour }}</button>
+      </div>
+    </div>
   </div>
 </div>
