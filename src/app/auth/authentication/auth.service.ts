@@ -29,17 +29,22 @@ export class AuthService {
   private tokenService = inject(TokenService);
   private loginInfo$$ = new BehaviorSubject<LoginInfo>({} as LoginInfo);
 
-  get getInfo$() {
-    return this.loginInfo$$.asObservable();
-  }
-
+  user$ = this.store.select('User');
   private url = 'http://localhost:3000/login';
 
   private auth$$ = new BehaviorSubject<{ hasAuth: boolean }>({
     hasAuth: false,
   });
 
+  get getInfo$() {
+    return this.loginInfo$$.asObservable();
+  }
+
   get isAuth$() {
+    return this.auth$$.asObservable();
+  }
+
+  get auth$() {
     return this.auth$$.asObservable();
   }
 
@@ -51,16 +56,11 @@ export class AuthService {
     this.loginInfo$$.next({ information: '' });
   }
 
-  get auth$() {
-    return this.auth$$.asObservable();
-  }
-
   private initAuth() {
     if (this.tokenService.token && !this.tokenService.isTokenExpired()) {
       this.auth$$.next({ hasAuth: true });
     }
   }
-  user$ = this.store.select('User');
 
   logIn(email: string, password: string) {
     return this.http

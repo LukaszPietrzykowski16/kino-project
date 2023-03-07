@@ -5,8 +5,6 @@ import { AppState } from 'src/app/app.module';
 import { UserTicket } from 'src/app/domains/user-tickets/user-ticket.interface';
 import { userActions } from '../store/user.action';
 
-interface User {}
-
 @Injectable({
   providedIn: 'root',
 })

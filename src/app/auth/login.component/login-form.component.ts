@@ -17,6 +17,13 @@ export class LoginComponent {
 
   info$ = this.authService.getInfo$;
 
+  get passwordCtrl() {
+    return this.loginForm.controls.password;
+  }
+  get emailCtrl() {
+    return this.loginForm.controls.email;
+  }
+
   createControlGroup() {
     return this.fb.group({
       email: this.fb.control('', {
@@ -30,13 +37,6 @@ export class LoginComponent {
         validators: [Validators.required],
       }),
     });
-  }
-
-  get passwordCtrl() {
-    return this.loginForm.controls.password;
-  }
-  get emailCtrl() {
-    return this.loginForm.controls.email;
   }
 
   checkValidationAndAuth() {
