@@ -48,7 +48,8 @@ export class AuthService {
     return this.auth$$.asObservable();
   }
 
-  ngOnInit() {
+  // DON'T CHANGE THIS TO NGONINIT
+  constructor() {
     this.initAuth();
   }
 

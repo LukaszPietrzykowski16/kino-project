@@ -116,11 +116,6 @@ export interface AppState {
             // canActivate: [NotAdminGuard, LoginGuard],
           },
           {
-            path: 'cart',
-            loadChildren: () => import('./domains/cart/cart.module'),
-            canActivate: [NotAdminGuard],
-          },
-          {
             path: 'admin',
             loadChildren: () =>
               import('./admin/admin.module').then(
@@ -135,7 +130,7 @@ export interface AppState {
               import('./home/main/main.module').then(
                 ({ MainModule }) => MainModule
               ),
-            canActivate: [NotAdminGuard],
+            //canActivate: [NotAdminGuard],
           },
           {
             path: 'tickets',
@@ -151,7 +146,7 @@ export interface AppState {
               import('./domains/form/form.module').then(
                 ({ FormModule }) => FormModule
               ),
-            canActivate: [NotAdminGuard, SelectedSeatGuard],
+            //canActivate: [NotAdminGuard, SelectedSeatGuard],
           },
           {
             path: 'summary',
@@ -166,7 +161,7 @@ export interface AppState {
           {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
-            canActivate: [NotAdminGuard],
+            //canActivate: [NotAdminGuard],
           },
         ],
       },
