@@ -1,9 +1,16 @@
-.want-watch {
+section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
+.section-container {
+  width: 80vw;
+  border-radius: 16px;
+  background-color: rgb(16, 16, 16);
+}
 
-.want-watch img {
-  width: 200px;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }

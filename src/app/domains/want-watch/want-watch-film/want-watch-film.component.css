@@ -1,8 +1,9 @@
-.want-watch {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .want-watch img {
   width: 200px;
 }

@@ -1,7 +1,11 @@
-<div [hidden]="isShow">
-  <div class="want-watch">
-    <img src="{{ film.image }}" alt="{{ film.title }}" />
-    <p>{{ film.title }}</p>
-    <i-feather name="trash-2" (click)="removeFilm(film.id)"></i-feather>
+<div class="section-grid">
+  <div [hidden]="isShow">
+    <div class="want-watch">
+      <img src="{{ film.image }}" alt="{{ film.title }}" />
+      <div class="hover-div">
+        <p>{{ film.title }}</p>
+        <i-feather name="trash-2" (click)="removeFilm(film.id)"></i-feather>
+      </div>
+    </div>
   </div>
 </div>
