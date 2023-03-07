@@ -1,0 +1,37 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.section-container {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgb(16, 16, 16);
+}
+
+.action-container {
+  margin: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: 4px solid #5800ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  height: 80%;
+  width: 40%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-container:hover {
+  background-color: rgb(209, 209, 209);
+}

@@ -52,6 +52,7 @@ import { UserTicketReservationComponent } from './domains/user-tickets/user-tick
 import { NoSpacesDirective } from './shared/directives/no-space.directive';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { AdminGuard } from './shared/guards/admin.guard';
+import { AdminWelcomePanelComponent } from './admin/admin-welcome-panel/admin-welcome-panel.component';
 
 export interface AppState {
   User: UserState;
@@ -76,6 +77,7 @@ export interface AppState {
     UserTicketsComponent,
     UserTicketComponent,
     NotificationComponent,
+    AdminWelcomePanelComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],

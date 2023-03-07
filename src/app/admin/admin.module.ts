@@ -18,6 +18,7 @@ import { NumbersOnlyDirective } from '../shared/directives/numbers-only.directiv
 import { NoSpacesDirective } from '../shared/directives/no-space.directive';
 import { AdminGuard } from '../shared/guards/admin.guard';
 import { NotAdminGuard } from '../shared/guards/no-admin.guard';
+import { AdminWelcomePanelComponent } from './admin-welcome-panel/admin-welcome-panel.component';
 
 export interface FilmAdminState {
   AdminFilm: AdminFilmState[];
@@ -44,8 +45,7 @@ export interface ScreeningAdminState {
     RouterModule.forChild([
       {
         path: '',
-        component: AdminComponent,
-        // canMatch: [AdminGuard],
+        component: AdminWelcomePanelComponent,
       },
       {
         path: 'add-film',
