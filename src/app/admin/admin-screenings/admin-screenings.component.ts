@@ -43,24 +43,27 @@ export class AdminScreeningsComponent {
     'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim screening',
     'Podaj godzinę',
     'Podsumowanie',
+    'Seans został dodany',
   ];
 
   page = 0;
 
   nextPage() {
-    console.log(this.page);
+    // console.log(this.page);
     if (this.page === 0) {
       this.exactScreening.getScreening(this.dateCtrl.value);
       this.filmLimiter.limitFilms();
     }
+    if (this.page === 1) {
+      if (this.filmCtrl.value === null) {
+        this.page = 0;
+        console.log('Dodaj film');
+      }
+    }
     if (this.page === 2) {
       this.addScreening();
-    }
-    if (this.page === 3) {
-      this.sendScreening();
-    }
-    if (this.page >= 4) {
-      this.page = 4;
+      this.page++;
+      console.log(this.minutesArray.length);
     } else {
       this.page++;
     }
@@ -139,6 +142,7 @@ export class AdminScreeningsComponent {
   }
 
   sendScreening() {
+    this.page = 4;
     const screeningNew: Screening = {
       filmId: this.filmCtrl.value,
       premiere: this.premierCtrl.value,
@@ -156,6 +160,11 @@ export class AdminScreeningsComponent {
 
   removeSkill(i: number) {
     this.skills.removeAt(i);
+  }
+
+  resetPage() {
+    this.page = 0;
+    // here reset of the form
   }
 
   onSubmit() {

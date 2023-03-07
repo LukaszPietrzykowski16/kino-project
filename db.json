@@ -549,6 +549,60 @@
         "12:00",
         "15:00"
       ]
+    },
+    {
+      "id": 44,
+      "filmId": 2,
+      "premiere": false,
+      "date": "08-03",
+      "hours": []
+    },
+    {
+      "id": 45,
+      "filmId": 2,
+      "premiere": false,
+      "date": "08-03",
+      "hours": [
+        "NaN:NaN"
+      ]
+    },
+    {
+      "id": 46,
+      "filmId": 2,
+      "premiere": false,
+      "date": "08-03",
+      "hours": [
+        "NaN:NaN"
+      ]
+    },
+    {
+      "id": 47,
+      "filmId": 2,
+      "premiere": true,
+      "date": "08-03",
+      "hours": [
+        "12:00"
+      ]
+    },
+    {
+      "id": 48,
+      "filmId": 2,
+      "premiere": false,
+      "date": "08-03",
+      "hours": [
+        "12:00",
+        "15:00"
+      ]
+    },
+    {
+      "id": 49,
+      "filmId": 2,
+      "premiere": false,
+      "date": "08-03",
+      "hours": [
+        "12:00",
+        "15:00"
+      ]
     }
   ],
   "reservation": [
