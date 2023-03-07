@@ -82,7 +82,7 @@
         [ngClass]="{ 'event-type-form__button--hidden': !page }"
         mat-flat-button
         color="primary"
-        (click)="previousPage()"
+        (click)="resetPage()"
       >
         Jeszcze raz
       </button>
@@ -94,7 +94,7 @@
           [ngClass]="{ 'event-type-form__button--hidden': !page }"
           mat-flat-button
           color="primary"
-          (click)="resetPage()"
+          (click)="previousPage()"
         >
           Wróć
         </button>
