@@ -16,6 +16,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { NumbersOnlyDirective } from '../shared/directives/numbers-only.directive';
 import { NoSpacesDirective } from '../shared/directives/no-space.directive';
+import { AdminGuard } from '../shared/guards/admin.guard';
+import { NotAdminGuard } from '../shared/guards/no-admin.guard';
 
 export interface FilmAdminState {
   AdminFilm: AdminFilmState[];
@@ -43,6 +45,7 @@ export interface ScreeningAdminState {
       {
         path: '',
         component: AdminComponent,
+        // canMatch: [AdminGuard],
       },
       {
         path: 'add-film',

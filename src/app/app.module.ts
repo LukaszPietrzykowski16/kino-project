@@ -51,6 +51,7 @@ import { RatingComponent } from './home/film-panel/rating/rating.component';
 import { UserTicketReservationComponent } from './domains/user-tickets/user-ticket-reservation/user-ticket-reservation.component';
 import { NoSpacesDirective } from './shared/directives/no-space.directive';
 import { AuthGuard } from './shared/guards/auth.guard';
+import { AdminGuard } from './shared/guards/admin.guard';
 
 export interface AppState {
   User: UserState;
@@ -122,6 +123,7 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
+
             // guard
             canActivate: [AuthGuard],
           },

@@ -31,7 +31,6 @@ export class NotAdminGuard implements CanActivate {
         map((result) => {
           if (result.type === 'admin') {
             this.router.navigate(['/admin']);
-            return false;
           }
           return true;
         }),
