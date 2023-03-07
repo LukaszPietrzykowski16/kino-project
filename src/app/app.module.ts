@@ -140,7 +140,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            canActivate: [NotAdminGuard, AuthGuard],
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'form',
@@ -160,12 +160,11 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [AuthGuard, NotAdminGuard],
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
-            canActivate: [NotAdminGuard],
           },
         ],
       },

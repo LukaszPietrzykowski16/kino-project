@@ -161,6 +161,39 @@
         39,
         40
       ]
+    },
+    {
+      "id": 10,
+      "userId": 11,
+      "date": "07-03",
+      "title": "Kot w butach 2",
+      "ticketIdsArray": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": 11,
+      "userId": 11,
+      "date": "07-03",
+      "title": "Kot w butach 2",
+      "ticketIdsArray": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": 12,
+      "userId": 11,
+      "date": "07-03",
+      "title": "Kot w butach 2",
+      "ticketIdsArray": [
+        41,
+        42,
+        43
+      ]
     }
   ],
   "screening": [
@@ -1209,16 +1242,16 @@
     },
     {
       "seat": "F8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 63,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 64,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1293,9 +1326,9 @@
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -2103,6 +2136,36 @@
       "hour": "22:00",
       "places": {
         "seat": "E4",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 41,
+      "title": "Kot w butach 2",
+      "date": "07-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "F8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 42,
+      "title": "Kot w butach 2",
+      "date": "07-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "F9",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 43,
+      "title": "Kot w butach 2",
+      "date": "07-03",
+      "hour": "22:00",
+      "places": {
+        "seat": "G9",
         "type": "bilet normalny 25zł"
       }
     }
