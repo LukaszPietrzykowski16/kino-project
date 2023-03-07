@@ -114,8 +114,7 @@ export interface AppState {
           {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
-            // guard
-            // canActivate: [NotAdminGuard, LoginGuard],
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'admin',
@@ -123,9 +122,7 @@ export interface AppState {
               import('./admin/admin.module').then(
                 ({ AdminModule }) => AdminModule
               ),
-
-            // guard
-            // canActivate: [AuthGuard],
+            canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
@@ -161,11 +158,12 @@ export interface AppState {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
-            canActivate: [AuthGuard],
+            canActivate: [AuthGuard, NotAdminGuard],
           },
           {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
+            canActivate: [NotAdminGuard],
           },
         ],
       },
