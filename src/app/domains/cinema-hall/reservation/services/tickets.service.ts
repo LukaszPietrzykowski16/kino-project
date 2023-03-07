@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
-import { relativeTimeRounding } from 'moment';
 import { BehaviorSubject } from 'rxjs';
 import { Ticket } from '../reservation.component';
-
-// map type
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +24,7 @@ export class TicketsService {
     let filtrated = this.tickets$$.value.filter(
       (elem) => elem.position !== position
     );
-    this.tickets$$.next([]); // is it really good aproach?
+    this.tickets$$.next([]);
     this.tickets$$.next([...this.tickets$$.getValue(), ...filtrated]);
   }
 
@@ -47,6 +44,4 @@ export class TicketsService {
   addTicket(ticketInfo: Ticket) {
     this.tickets$$.next([...this.tickets$$.getValue(), ticketInfo]);
   }
-
-  constructor() {}
 }

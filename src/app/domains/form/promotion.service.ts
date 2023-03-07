@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { StateObservable } from '@ngrx/store';
-import { Observable, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

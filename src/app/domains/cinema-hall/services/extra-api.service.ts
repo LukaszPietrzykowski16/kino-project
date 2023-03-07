@@ -1,15 +1,15 @@
 import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Film } from '../../../home/film-panel/film-panel.component';
-import { HttpClient } from '@angular/common/http';
 import { ApiServiceService } from 'src/app/home/services/api-service.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ExtraApiService {
-  private newUrl = '';
   private apiService = inject(ApiServiceService);
+  private router = inject(Router);
+
+  private newUrl = '';
 
   displayInfoFromUrl() {
     this.newUrl = this.router.url;
@@ -24,5 +24,4 @@ export class ExtraApiService {
   getFilm() {
     this.displayInfoFromUrl();
   }
-  constructor(private router: Router, private http: HttpClient) {}
 }

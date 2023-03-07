@@ -39,8 +39,8 @@ export class FormsPanelComponent {
   blik: boolean = false;
   blikCode: number = NaN;
   isLogged = false;
-
   isBonus = false;
+
   login$ = this.authService.isAuth$.pipe(map((isAuth) => isAuth.hasAuth));
 
   profileForm = new FormGroup(

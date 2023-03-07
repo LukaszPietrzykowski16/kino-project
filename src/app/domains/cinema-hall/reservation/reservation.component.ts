@@ -3,7 +3,7 @@ import { CinemaHallService } from '../services/cinema-hall.service';
 import { SeatsService } from './services/seats.service';
 import TicketApiService from '../services/ticket-api.service';
 import { TicketsService } from './services/tickets.service';
-import { isEmpty, tap } from 'rxjs';
+import { tap } from 'rxjs';
 import { ExtraApiService } from '../services/extra-api.service';
 import { SeatPostService } from '../../form/services/seat-post.service';
 
