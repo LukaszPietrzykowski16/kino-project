@@ -34,7 +34,14 @@
     </div> -->
     <div class="hour-container">
       <div *ngFor="let hour of hours">
-        <button>{{ hour }}</button>
+        <a [routerLink]="['/rezerwacja', selectedDay, hour, film.title]">
+          <button
+            (click)="moreDetails(film.title, hour)"
+            *ngIf="changeToString(hour) > now"
+          >
+            {{ hour }}
+          </button>
+        </a>
       </div>
     </div>
   </div>
