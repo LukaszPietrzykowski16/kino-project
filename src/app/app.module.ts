@@ -49,6 +49,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { WantToWatchComponent } from './home/film-panel/want-to-watch/want-to-watch.component';
 import { RatingComponent } from './home/film-panel/rating/rating.component';
 import { UserTicketReservationComponent } from './domains/user-tickets/user-ticket-reservation/user-ticket-reservation.component';
+import { NoSpacesDirective } from './shared/directives/no-space.directive';
 
 export interface AppState {
   User: UserState;
@@ -100,6 +101,7 @@ export interface AppState {
     MatButtonModule,
     MatSnackBarModule,
     NumbersOnlyDirective,
+    NoSpacesDirective,
     AdminModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot([]),

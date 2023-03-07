@@ -23,7 +23,9 @@
 }
 
 h1 {
-  padding: 16px;
+  text-align: left;
+  padding: 8px;
+  width: 100%;
 }
 
 .forms-container {
@@ -46,4 +48,11 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.button-container {
+  width: 100%;
+  padding-left: 8px;
+  display: flex;
+  justify-content: left;
 }

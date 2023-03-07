@@ -741,16 +741,16 @@
     },
     {
       "seat": "A8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 8,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
