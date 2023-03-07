@@ -680,6 +680,15 @@
         "15:00",
         "18:00"
       ]
+    },
+    {
+      "id": 57,
+      "filmId": 2,
+      "premiere": true,
+      "date": "08-03",
+      "hours": [
+        "12:00"
+      ]
     }
   ],
   "reservation": [

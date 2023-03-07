@@ -48,8 +48,11 @@
         </div>
 
         <form [formGroup]="skillsForm" *ngIf="page === 2">
-          <button type="button" (click)="addSkills()">Dodaj godzinę</button>
           <div formArrayName="skills">
+            <div class="hours-container">
+              <button type="button" (click)="addSkills()">Dodaj godzinę</button>
+            </div>
+
             <div *ngFor="let skill of skills.controls; let i = index">
               <div [formGroupName]="i">
                 Godzina seansu:
@@ -72,8 +75,6 @@
           <p>Data: {{ dateCtrl.value }}</p>
           <p>Premiera: {{ premierCtrl.value }}</p>
           Godziny:
-
-          {{ finalArr }}
           <div *ngFor="let hour of finalArr">
             {{ hour }}
           </div>

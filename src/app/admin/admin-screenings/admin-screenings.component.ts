@@ -30,7 +30,7 @@ export class AdminScreeningsComponent {
   questions = [
     'Podaj datę seansu',
     'Wybierz film, jeżeli nie ma tutaj jakiegoś filmu, jest już z nim seans',
-    'Podaj godzinę',
+    '',
     'Podsumowanie',
     'Seans został dodany',
   ];
