@@ -50,6 +50,7 @@ import { WantToWatchComponent } from './home/film-panel/want-to-watch/want-to-wa
 import { RatingComponent } from './home/film-panel/rating/rating.component';
 import { UserTicketReservationComponent } from './domains/user-tickets/user-ticket-reservation/user-ticket-reservation.component';
 import { NoSpacesDirective } from './shared/directives/no-space.directive';
+import { AuthGuard } from './shared/guards/auth.guard';
 
 export interface AppState {
   User: UserState;
@@ -113,7 +114,7 @@ export interface AppState {
             path: 'login',
             loadChildren: () => import('./auth/auth.module'),
             // guard
-            // canActivate: [NotAdminGuard, LoginGuard],
+            canActivate: [NotAdminGuard, LoginGuard],
           },
           {
             path: 'admin',
@@ -122,7 +123,7 @@ export interface AppState {
                 ({ AdminModule }) => AdminModule
               ),
             // guard
-            // canActivate: [AuthGuard],
+            canActivate: [AuthGuard],
           },
           {
             path: 'date/:date',
@@ -130,7 +131,7 @@ export interface AppState {
               import('./home/main/main.module').then(
                 ({ MainModule }) => MainModule
               ),
-            //canActivate: [NotAdminGuard],
+            canActivate: [NotAdminGuard],
           },
           {
             path: 'tickets',
@@ -138,7 +139,7 @@ export interface AppState {
               import('./domains/user-tickets/user-tickets.module').then(
                 ({ UserTicketsModule }) => UserTicketsModule
               ),
-            // canActivate: [NotAdminGuard, LoginGuard],
+            canActivate: [NotAdminGuard, AuthGuard],
           },
           {
             path: 'form',
@@ -146,22 +147,23 @@ export interface AppState {
               import('./domains/form/form.module').then(
                 ({ FormModule }) => FormModule
               ),
-            //canActivate: [NotAdminGuard, SelectedSeatGuard],
+
+            canActivate: [SelectedSeatGuard],
           },
           {
             path: 'summary',
             loadComponent: () => import('./domains/summary/summary.component'),
-            // canActivate: [NotAdminGuard, SelectedSeatGuard],
+            canActivate: [SelectedSeatGuard],
           },
           {
             path: 'want-watch',
             loadComponent: () =>
               import('./domains/want-watch/want-watch.component'),
+            canActivate: [AuthGuard],
           },
           {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
-            //canActivate: [NotAdminGuard],
           },
         ],
       },
