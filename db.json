@@ -367,6 +367,16 @@
         49,
         50
       ]
+    },
+    {
+      "id": 17,
+      "userId": 11,
+      "date": "08-03",
+      "title": "Avatar 1",
+      "ticketIdsArray": [
+        51,
+        52
+      ]
     }
   ],
   "screening": [
@@ -1018,9 +1028,9 @@
   "reservation": [
     {
       "seat": "A0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 0,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1613,16 +1623,16 @@
     },
     {
       "seat": "H8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 85,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 86,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1690,23 +1700,23 @@
     },
     {
       "seat": "I8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 96,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 97,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 98,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     }
   ],
@@ -2458,6 +2468,26 @@
       "places": {
         "seat": "C2",
         "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 51,
+      "title": "Avatar 1",
+      "date": "08-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H9",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 52,
+      "title": "Avatar 1",
+      "date": "08-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I8",
+        "type": "voucher 15 zł"
       }
     }
   ]

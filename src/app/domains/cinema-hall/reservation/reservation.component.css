@@ -22,6 +22,7 @@ main {
 }
 
 .container-places__seat {
+  cursor: pointer;
   padding-top: 0.25em;
   border-radius: 4px;
 }
@@ -32,6 +33,7 @@ main {
 }
 
 .container-places__seat--unactive {
+  cursor: not-allowed;
   background-color: rgb(53, 53, 53);
   padding: 0.25em;
   border-radius: 0.25em;
@@ -44,6 +46,11 @@ main {
 }
 
 .gap {
+  padding: 8px;
+}
+
+.trash-gap {
+  cursor: pointer;
   padding: 8px;
 }
 
