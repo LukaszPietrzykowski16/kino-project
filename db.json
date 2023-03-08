@@ -57,134 +57,6 @@
       "rating": "7",
       "title": "NMF: MINIMARATON KRZYK",
       "types": "Horror"
-    },
-    {
-      "id": 5,
-      "description": "kjfkjfjkesf",
-      "image": "jkfqwkjjqk",
-      "rating": "4",
-      "title": "jefj",
-      "types": "jkfkjwqjk"
-    },
-    {
-      "id": 6,
-      "description": "wkqjfjkwqfjkjk",
-      "image": "kjwdjqkjkjk",
-      "rating": "4",
-      "title": "ekjfwkjfjwke",
-      "types": "jkfwkjwefjkjk"
-    },
-    {
-      "id": 7,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": "djqj",
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 8,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": null,
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 9,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": null,
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 10,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": null,
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 11,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": null,
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 12,
-      "description": "jkqkj",
-      "image": "jkjkwqjk",
-      "rating": "2",
-      "title": null,
-      "types": "jqkfjkwqjk"
-    },
-    {
-      "id": 13,
-      "description": "kkoacsklas",
-      "image": "jvdkjskj",
-      "rating": "2",
-      "title": "fiej",
-      "types": "kjkwdsjck"
-    },
-    {
-      "id": 14,
-      "description": "fqjkwjkfqw",
-      "image": "qkjfjqkwjk",
-      "rating": "3",
-      "title": "fjesjk",
-      "types": "jkfwejkjfk"
-    },
-    {
-      "id": 15,
-      "description": "fqjkwjkfqw",
-      "image": "qkjfjqkwjk",
-      "rating": "3",
-      "title": null,
-      "types": "jkfwejkjfk"
-    },
-    {
-      "id": 16,
-      "description": "fqjkwjkfqw",
-      "image": "qkjfjqkwjk",
-      "rating": "3",
-      "title": null,
-      "types": "jkfwejkjfk"
-    },
-    {
-      "id": 17,
-      "description": "fqjkwjkfqw",
-      "image": "qkjfjqkwjk",
-      "rating": "3",
-      "title": null,
-      "types": "jkfwejkjfk"
-    },
-    {
-      "id": 18,
-      "description": "wdqw",
-      "image": "wdqqw",
-      "rating": "1",
-      "title": "dwwq",
-      "types": "wqdq"
-    },
-    {
-      "id": 19,
-      "description": "hfekh",
-      "image": "qmfewwef",
-      "rating": "8",
-      "title": "fmfdsmfew",
-      "types": "qms"
-    },
-    {
-      "id": 20,
-      "description": "jkwdkjsjkd",
-      "image": "jkqekjfrjk",
-      "rating": 2,
-      "title": "rijjk",
-      "types": "jewfjkfew"
     }
   ],
   "ratings": [
@@ -1022,6 +894,16 @@
         "03:33",
         "11:11",
         "14:00"
+      ]
+    },
+    {
+      "id": 63,
+      "filmId": 1,
+      "premiere": false,
+      "date": "09-03",
+      "hours": [
+        "12:00",
+        "17:00"
       ]
     }
   ],

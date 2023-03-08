@@ -71,13 +71,22 @@
         </form>
 
         <div *ngIf="page === 3">
-          <p>Nazwa filmu: {{ filmCtrl.value }}</p>
-          <p>Data: {{ dateCtrl.value }}</p>
-          <p>Premiera: {{ premierCtrl.value }}</p>
-          Godziny:
-          <div *ngFor="let hour of finalArr">
-            {{ hour }}
-          </div>
+          <ng-container *ngIf="allFilms$ | async as films">
+            <div *ngFor="let film of films; let i = index">
+              <ng-container *ngIf="film.id === filmCtrl.value">
+                <p>Nazwa filmu: {{ film.title }}</p>
+              </ng-container>
+            </div>
+          </ng-container>
+
+          <p>Data: {{ modifiedDateCtrol }}</p>
+          <ng-container *ngIf="premierCtrl.value === true; else elseTemplate">
+            <p>Premiera: tak</p>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <p>Premiera: nie</p>
+          </ng-template>
+          <p>Godziny: {{ finalArr }}</p>
         </div>
       </div>
       <ng-container *ngIf="page === 4; else changeBlock">

@@ -113,6 +113,12 @@ export class AdminScreeningsComponent {
     return this.screeningForm.controls.date;
   }
 
+  get modifiedDateCtrol() {
+    return this.changeDayService.formatDate(
+      this.screeningForm.controls.date.value
+    );
+  }
+
   get premierCtrl() {
     return this.screeningForm.controls.premier;
   }
