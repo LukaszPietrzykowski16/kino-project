@@ -2,15 +2,32 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
+}
+
+h1 {
+  width: 100%;
+  padding: 16px;
 }
 .section-container {
-  width: 80vw;
+  min-height: 80vh;
   border-radius: 16px;
+  max-width: 80vw;
+  min-width: 80vw;
   background-color: rgb(16, 16, 16);
 }
 
+.child {
+  width: 30%;
+}
+
+.hide {
+  display: none;
+}
+
 .parent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }

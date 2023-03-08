@@ -2,9 +2,10 @@
   <div class="section-container">
     <h1>Chcę obejrzeć:</h1>
     <div *ngIf="filmService$ | async as films" class="parent">
-      <div *ngFor="let film of films">
-        <app-want-watch-film [film]="film"></app-want-watch-film>
-      </div>
+      <app-want-watch-film
+        *ngFor="let film of films"
+        [film]="film"
+      ></app-want-watch-film>
     </div>
   </div>
 </section>

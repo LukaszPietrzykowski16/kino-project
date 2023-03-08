@@ -199,6 +199,12 @@
       "userId": 11,
       "filmId": 2,
       "rating": 7
+    },
+    {
+      "id": 3,
+      "userId": 11,
+      "filmId": 1,
+      "rating": 9
     }
   ],
   "tickets-reservation": [
@@ -1765,8 +1771,7 @@
       "phoneNumber": "489394930",
       "id": 11,
       "movies": [
-        2,
-        0
+        2
       ],
       "tickets": [
         {

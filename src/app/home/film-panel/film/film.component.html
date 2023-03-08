@@ -13,11 +13,11 @@
     <div class="film-container__about_paragraph">
       <div *ngIf="longDescription; else elseBlock">
         {{ film.description.substring(0, 240) }}
-        <button (click)="showMoreDescription()">more</button>
+        <button (click)="showMoreDescription()">więcej</button>
       </div>
       <ng-template #elseBlock>
         {{ film.description }}
-        <button (click)="showMoreDescription()">less</button>
+        <button (click)="showMoreDescription()">mniej</button>
       </ng-template>
     </div>
 

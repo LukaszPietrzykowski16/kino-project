@@ -1,11 +1,10 @@
-<div class="section-grid">
+<div [ngClass]="isShow === true ? 'hide' : 'section-grid'">
   <div [hidden]="isShow">
-    <div class="want-watch">
-      <img src="{{ film.image }}" alt="{{ film.title }}" />
-      <div class="hover-div">
-        <p>{{ film.title }}</p>
-        <i-feather name="trash-2" (click)="removeFilm(film.id)"></i-feather>
-      </div>
+    <div class="hover-div">
+      <img src="{{ film.image }}" alt="{{ film.title }}" class="image" />
+    </div>
+    <div class="middle" (click)="removeFilm(film.id)">
+      <div class="text">Usuń: {{ film.title }}</div>
     </div>
   </div>
 </div>
