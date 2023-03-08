@@ -320,6 +320,26 @@
         42,
         43
       ]
+    },
+    {
+      "id": 13,
+      "userId": 11,
+      "date": "10-03",
+      "title": "NMF: MINIMARATON KRZYK",
+      "ticketIdsArray": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": 14,
+      "userId": 11,
+      "date": "10-03",
+      "title": "NMF: MINIMARATON KRZYK",
+      "ticketIdsArray": [
+        44,
+        45
+      ]
     }
   ],
   "screening": [
@@ -1020,30 +1040,30 @@
     },
     {
       "seat": "A7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 7,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 8,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "A10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 10,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1055,16 +1075,16 @@
     },
     {
       "seat": "B1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 12,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 13,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1090,37 +1110,37 @@
     },
     {
       "seat": "B6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 17,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 18,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 19,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 20,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "B10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 21,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1139,16 +1159,16 @@
     },
     {
       "seat": "C2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 24,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1181,30 +1201,30 @@
     },
     {
       "seat": "C8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 30,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 31,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 32,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 33,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1265,23 +1285,23 @@
     },
     {
       "seat": "D9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 42,
       "isChoosen": false,
       "reservation": false
     },
     {
       "seat": "D10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 43,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 44,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1342,16 +1362,16 @@
     },
     {
       "seat": "E9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 53,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 54,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1363,30 +1383,30 @@
     },
     {
       "seat": "F1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 56,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 57,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 58,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "F4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 59,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1426,51 +1446,51 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 66,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 67,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 68,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 69,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 70,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 71,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1503,9 +1523,9 @@
     },
     {
       "seat": "G10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 76,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1517,9 +1537,9 @@
     },
     {
       "seat": "H1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 78,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1531,9 +1551,9 @@
     },
     {
       "seat": "H3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 80,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1545,9 +1565,9 @@
     },
     {
       "seat": "H5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 82,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1573,16 +1593,16 @@
     },
     {
       "seat": "H9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 86,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 87,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -2340,6 +2360,26 @@
       "places": {
         "seat": "G9",
         "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 44,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "B7",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 45,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "A7",
+        "type": "bilet rodzinny 20 zł"
       }
     }
   ]

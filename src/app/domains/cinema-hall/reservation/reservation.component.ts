@@ -48,8 +48,11 @@ export class ReservationComponent {
   tickets$ = this.ticketsService.tickets$;
   seats$ = this.seatsService.seats$;
 
-  changeKey(position: number, keyValue: string) {
-    this.ticketsService.changeTicketType(position, keyValue);
+  changeKey(position: number, keyValue: string, keyNumber: number) {
+    this.ticketsService.changeTicketType(
+      position,
+      `${keyValue} ${keyNumber} zł`
+    );
   }
 
   removeTicket(position: number) {

@@ -27,14 +27,28 @@
   <div *ngIf="tickets$ | async as tickets">
     <div *ngFor="let ticket of tickets" class="container-tickets">
       Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
-      <select
+      <!-- <select
         #ticketType
         (change)="changeKey(ticket.position, ticketType.value)"
       >
         <option *ngFor="let ticketType of ticketTypeArray[0] | keyvalue">
           {{ ticketType.key }} {{ ticketType.value }}zł
         </option>
-      </select>
+      </select> -->
+      <mat-form-field appearance="fill">
+        <mat-label>Rodzaj biletu</mat-label>
+        <mat-select #ticketType>
+          <mat-option
+            *ngFor="let ticketType of ticketTypeArray[0] | keyvalue"
+            [value]="ticketType.value"
+            (click)="
+              changeKey(ticket.position, ticketType.key, ticketType.value)
+            "
+          >
+            {{ ticketType.key }} {{ ticketType.value }}zł
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
       <div>
         <i-feather
           name="trash-2"
