@@ -130,6 +130,7 @@ export class FormsPanelComponent {
       .select('User')
       .pipe(take(1))
       .subscribe((result) => {
+        this.isLogged = true;
         if (result) {
           this.profileForm.controls.lastName.setValue(result.lastName);
           this.profileForm.controls.firstName.setValue(result.firstName);
@@ -137,9 +138,7 @@ export class FormsPanelComponent {
           this.profileForm.controls.emailAgain.setValue(result.email);
         }
       });
-    this.login$.subscribe((login) => {
-      this.isLogged = login;
-    });
+
     this.blikServiceCode.getBlik().subscribe((num) => {
       this.blikCode = num.code;
     });

@@ -16,6 +16,7 @@ export class SendReservationService {
   private http = inject(HttpClient);
 
   postReservation(reservationInfo: SingleReservation, arrayId: number[]) {
+    console;
     return this.http
       .post<SingleReservation>(`http://localhost:3000/tickets-reservation`, {
         id: NaN,

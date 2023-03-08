@@ -145,14 +145,9 @@ export class SendTicketsService {
   }
 
   sendReservationData() {
-    this.reservationInfo$$
-      .subscribe((info) => {
-        this.urlInfo$$
-          .subscribe((arrayId) => {
-            this.sendReservation.postReservation(info, arrayId);
-          })
-          .unsubscribe();
-      })
-      .unsubscribe();
+    this.sendReservation.postReservation(
+      this.reservationInfo$$.value,
+      this.urlInfo$$.value
+    );
   }
 }

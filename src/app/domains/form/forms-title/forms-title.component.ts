@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { tick } from '@angular/core/testing';
-import { tap } from 'rxjs';
+import { Subject, takeUntil, tap } from 'rxjs';
 
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
 import { TicketsService } from '../../cinema-hall/reservation/services/tickets.service';
@@ -17,6 +17,7 @@ export class FormsTitleComponent {
   private promotionService = inject(PromotionService);
   private cinemaHall = inject(CinemaHallService);
   private ticketService = inject(TicketsService);
+  private unsubscribe$ = new Subject();
 
   reservation$ = this.cinemaHall.reservation$;
   tickets$ = this.ticketService.tickets$;
@@ -28,14 +29,15 @@ export class FormsTitleComponent {
   price() {
     this.tickets$
       .pipe(
+        takeUntil(this.unsubscribe$),
         tap((ticket) => {
           ticket.map((elem) => {
             this.ticketPrice += Number(elem.type.match(/\d+/g));
           });
         })
       )
-      .subscribe()
-      .unsubscribe();
+      .subscribe(); // ???
+    // .unsubscribe();
   }
 
   ngOnInit() {
@@ -45,5 +47,10 @@ export class FormsTitleComponent {
     });
 
     this.price();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next({});
+    this.unsubscribe$.complete();
   }
 }

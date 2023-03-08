@@ -346,6 +346,17 @@
         44,
         45
       ]
+    },
+    {
+      "id": 15,
+      "userId": 11,
+      "date": "08-03",
+      "title": "Kot w butach 2",
+      "ticketIdsArray": [
+        46,
+        47,
+        48
+      ]
     }
   ],
   "screening": [
@@ -1501,23 +1512,23 @@
     },
     {
       "seat": "G6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 72,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 73,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "G8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 74,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -2385,6 +2396,36 @@
       "places": {
         "seat": "A7",
         "type": "bilet rodzinny 20 zł"
+      }
+    },
+    {
+      "id": 46,
+      "title": "Kot w butach 2",
+      "date": "08-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "G7",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 47,
+      "title": "Kot w butach 2",
+      "date": "08-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "G8",
+        "type": "bilet rodzinny 20 zł"
+      }
+    },
+    {
+      "id": 48,
+      "title": "Kot w butach 2",
+      "date": "08-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "G6",
+        "type": "voucher 15 zł"
       }
     }
   ]
