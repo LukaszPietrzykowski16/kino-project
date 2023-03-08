@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NonNullableFormBuilder, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
@@ -14,59 +14,59 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./admin.component.css'],
 })
 export class AdminComponent {
-  private fb = inject(FormBuilder);
+  private fb = inject(NonNullableFormBuilder);
   private store = inject<Store<FilmAdminState>>(Store);
   private snackBar = inject(MatSnackBar);
 
   admin$ = this.store.select('AdminFilm');
 
-  filmForm!: FormGroup;
+  filmForm = this.createForm();
   durationInSeconds = 3;
 
   createForm() {
-    this.filmForm = this.fb.group({
-      title: [
-        '',
-        [
+    return this.fb.group({
+      title: this.fb.control('', {
+        validators: [
           Validators.required,
           Validators.minLength(3),
           Validators.pattern('[a-zA-Z ]*'),
           Validators.maxLength(50),
           trimValidator,
         ],
-      ],
-      types: [
-        '',
-        [
+      }),
+      types: this.fb.control('', {
+        validators: [
           Validators.required,
           Validators.minLength(3),
           Validators.pattern('[a-zA-Z ]*'),
           Validators.maxLength(20),
           trimValidator,
         ],
-      ],
-      image: [
-        '',
-        [
+      }),
+      image: this.fb.control('', {
+        validators: [
           Validators.required,
           Validators.minLength(3),
           Validators.pattern('[a-zA-Z ]*'),
           Validators.maxLength(200),
           trimValidator,
         ],
-      ],
-      description: [
-        '',
-        [
+      }),
+      description: this.fb.control('', {
+        validators: [
           Validators.required,
           Validators.minLength(3),
           Validators.pattern('[a-zA-Z ]*'),
           Validators.maxLength(200),
           trimValidator,
         ],
-      ],
-      rating: ['', [Validators.required, Validators.maxLength(2)]],
-      length: ['', [Validators.required]],
+      }),
+      rating: this.fb.control('', {
+        validators: [Validators.required, Validators.maxLength(2)],
+      }),
+      length: this.fb.control('', {
+        validators: [Validators.required],
+      }),
     });
   }
 
@@ -102,24 +102,27 @@ export class AdminComponent {
   }
 
   addFilm() {
-    this.openSnackBar('Dodano film do bazy danych!');
-    const filmsNew: Film = {
-      id: NaN,
-      title: this.titleCtrl.value,
-      types: this.typesCtrl.value,
-      image: this.imageCtrl.value,
-      description: this.descriptionCtrl.value,
-      rating: this.ratingCtrl.value,
-      length: this.lengthCtrl.value,
-    };
-
-    this.store.dispatch(
-      addFilmsFromApiActions.addSingleFilm({ films: filmsNew })
-    );
+    if (this.filmForm.valid) {
+      this.openSnackBar('Dodano film do bazy danych!');
+      const filmsNew: Film = {
+        id: NaN,
+        title: this.titleCtrl.value,
+        types: this.typesCtrl.value,
+        image: this.imageCtrl.value,
+        description: this.descriptionCtrl.value,
+        rating: Number(this.ratingCtrl.value),
+        length: Number(this.lengthCtrl.value),
+      };
+      this.store.dispatch(
+        addFilmsFromApiActions.addSingleFilm({ films: filmsNew })
+      );
+      this.filmForm.reset();
+    } else {
+      this.openSnackBar('Wprowadź właściwe dane!');
+    }
   }
 
   ngOnInit() {
     this.store.dispatch(addFilmsFromApiActions.getFilms());
-    this.createForm();
   }
 }
