@@ -9,6 +9,7 @@ import { WantWatchFilmComponent } from './want-watch-film/want-watch-film.compon
   styleUrls: ['./want-watch.component.css'],
   standalone: true,
   imports: [NgIf, AsyncPipe, NgFor, WantWatchFilmComponent],
+  providers: [FilmService],
 })
 export default class WantWatchComponent {
   private filmService = inject(FilmService);
@@ -16,6 +17,7 @@ export default class WantWatchComponent {
   filmService$ = this.filmService.getFilms$;
 
   ngOnInit() {
+    this.filmService.resetArray();
     this.filmService.getArrayOfFilmId();
   }
 

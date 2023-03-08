@@ -47,8 +47,7 @@ export class FilmService {
           })
         )
         // here
-        .subscribe()
-        .unsubscribe();
+        .subscribe();
     });
   }
 

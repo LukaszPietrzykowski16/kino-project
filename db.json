@@ -357,6 +357,16 @@
         47,
         48
       ]
+    },
+    {
+      "id": 16,
+      "userId": 11,
+      "date": "08-03",
+      "title": "Avatar 1",
+      "ticketIdsArray": [
+        49,
+        50
+      ]
     }
   ],
   "screening": [
@@ -1176,16 +1186,16 @@
     },
     {
       "seat": "C2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 24,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "C3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 25,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1330,23 +1340,23 @@
     },
     {
       "seat": "E2",
-      "avaliable": true,
+      "avaliable": false,
       "id": 46,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 47,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "E4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 48,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1782,7 +1792,9 @@
       "phoneNumber": "489394930",
       "id": 11,
       "movies": [
-        2
+        1,
+        0,
+        4
       ],
       "tickets": [
         {
@@ -2426,6 +2438,26 @@
       "places": {
         "seat": "G6",
         "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 49,
+      "title": "Avatar 1",
+      "date": "08-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "C3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 50,
+      "title": "Avatar 1",
+      "date": "08-03",
+      "hour": "15:00",
+      "places": {
+        "seat": "C2",
+        "type": "bilet ulgowy 18 zł"
       }
     }
   ]

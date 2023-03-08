@@ -21,4 +21,8 @@ export class WantWatchFilmComponent {
     this.wantWatch.removeFilm(filmId);
     this.isShow = !this.isShow;
   }
+
+  ngOnInit() {
+    console.log(this.film);
+  }
 }
