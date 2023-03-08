@@ -148,6 +148,10 @@ export class AdminScreeningsComponent {
 
   resetPage() {
     this.page = 0;
+    this.screeningForm.reset();
+    this.skillsForm.reset();
+    this.allFilms$$.next([]);
+    this.finalArr = [];
     // here reset of the form
   }
 
