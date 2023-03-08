@@ -18,6 +18,7 @@ main {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
+  padding-bottom: 16px;
 }
 
 .container-places__seat {
@@ -42,11 +43,17 @@ main {
   background-color: rgb(58, 57, 57);
 }
 
+.gap {
+  padding: 8px;
+}
+
 .container-tickets {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80vw;
+  padding-top: 16px;
+  padding: 4px;
 }
 
 .container-next {

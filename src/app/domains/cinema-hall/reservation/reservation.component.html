@@ -26,7 +26,7 @@
   </div>
   <div *ngIf="tickets$ | async as tickets">
     <div *ngFor="let ticket of tickets" class="container-tickets">
-      Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}
+      <p class="gap">Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
       <!-- <select
         #ticketType
         (change)="changeKey(ticket.position, ticketType.value)"
@@ -49,7 +49,7 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-      <div>
+      <div class="gap">
         <i-feather
           name="trash-2"
           (click)="changeColor(ticket.position, ticket.seat)"
