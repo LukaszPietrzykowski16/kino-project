@@ -27,14 +27,6 @@
   <div *ngIf="tickets$ | async as tickets">
     <div *ngFor="let ticket of tickets" class="container-tickets">
       <p class="gap">Rząd {{ ticket.seat[0] }} Miejsce {{ ticket.seat[1] }}</p>
-      <!-- <select
-        #ticketType
-        (change)="changeKey(ticket.position, ticketType.value)"
-      >
-        <option *ngFor="let ticketType of ticketTypeArray[0] | keyvalue">
-          {{ ticketType.key }} {{ ticketType.value }}zł
-        </option>
-      </select> -->
       <mat-form-field appearance="fill">
         <mat-label>Rodzaj biletu</mat-label>
         <mat-select #ticketType>

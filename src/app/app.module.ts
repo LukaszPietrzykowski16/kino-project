@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsMainComponent } from './domains/form/forms-main/forms-main.component';
 import { FormsTitleComponent } from './domains/form/forms-title/forms-title.component';
-import { TicketsPriceComponent } from './domains/cinema-hall/tickets-price/tickets-price.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { RouterModule } from '@angular/router';
@@ -71,7 +70,6 @@ export interface AppState {
     FormsPanelComponent,
     FormsTitleComponent,
     FormsMainComponent,
-    TicketsPriceComponent,
     FilmComponent,
     MainDateComponent,
     UserTicketsComponent,
