@@ -10,9 +10,9 @@ import { FilmLimiterService } from './film-limiter.service';
 })
 export class ExactScreeningService {
   private http = inject(HttpClient);
-  private screeningInDay$$ = new BehaviorSubject<Number[]>([]);
   private changeDayService = inject(ChangeDayService);
 
+  private screeningInDay$$ = new BehaviorSubject<Number[]>([]);
   get getScreeningInDay$() {
     return this.screeningInDay$$.asObservable();
   }
@@ -20,6 +20,7 @@ export class ExactScreeningService {
   date = '';
 
   getScreening(date: Date) {
+    this.screeningInDay$$.next([]);
     this.date = this.changeDayService.formatDate(date);
     this.fetchScreening().subscribe((screening) => {
       const ids = screening.map(({ filmId }) => filmId);

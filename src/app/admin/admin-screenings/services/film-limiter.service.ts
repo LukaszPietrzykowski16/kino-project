@@ -20,7 +20,13 @@ export class FilmLimiterService {
 
   filmsIdNumber$ = this.exactScreening.getScreeningInDay$;
 
+  resetArrayFilms() {
+    this.newArr$$.next([]);
+    this.arr = [];
+  }
+
   limitFilms() {
+    this.resetArrayFilms();
     this.filmsIdNumber$.subscribe((test) => {
       this.arr = test;
     });
