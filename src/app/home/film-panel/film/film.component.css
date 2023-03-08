@@ -4,6 +4,15 @@
   padding: 8px;
 }
 
+h1 {
+  padding-bottom: 16px;
+}
+
+h2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .film-container__paragraph {
   position: relative;
   top: 40px;
@@ -37,6 +46,15 @@
 
 .hour-container {
   display: flex;
+}
+
+.film-container__about_types {
+  padding-bottom: 5px;
+}
+
+.film-container__about_paragraph a {
+  cursor: pointer;
+  color: #5800ff;
 }
 
 .film {

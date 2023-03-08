@@ -83,171 +83,31 @@
     {
       "id": 1,
       "userId": 11,
-      "date": "06-03",
-      "title": "Szczęki 2",
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
       "ticketIdsArray": [
-        240,
-        241,
-        242,
-        243
+        117,
+        118
       ]
     },
     {
       "id": 2,
       "userId": 11,
-      "date": "05-03",
-      "title": "Avatar 1",
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
       "ticketIdsArray": [
-        248,
-        249
+        117,
+        118
       ]
     },
     {
       "id": 3,
       "userId": 11,
-      "date": "06-03",
-      "title": "Szczęki 2",
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
       "ticketIdsArray": [
-        282,
-        283
-      ]
-    },
-    {
-      "id": 4,
-      "userId": 11,
-      "ticketIdsArray": []
-    },
-    {
-      "id": 5,
-      "userId": 11,
-      "ticketIdsArray": []
-    },
-    {
-      "id": 6,
-      "userId": 11,
-      "ticketIdsArray": []
-    },
-    {
-      "id": 7,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        37,
-        36,
-        38,
-        39,
-        40
-      ]
-    },
-    {
-      "id": 8,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        37,
-        36,
-        38,
-        39,
-        40
-      ]
-    },
-    {
-      "id": 9,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        37,
-        36,
-        38,
-        39,
-        40
-      ]
-    },
-    {
-      "id": 10,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        41,
-        42,
-        43
-      ]
-    },
-    {
-      "id": 11,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        41,
-        42,
-        43
-      ]
-    },
-    {
-      "id": 12,
-      "userId": 11,
-      "date": "07-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        41,
-        42,
-        43
-      ]
-    },
-    {
-      "id": 13,
-      "userId": 11,
-      "date": "10-03",
-      "title": "NMF: MINIMARATON KRZYK",
-      "ticketIdsArray": [
-        44,
-        45
-      ]
-    },
-    {
-      "id": 14,
-      "userId": 11,
-      "date": "10-03",
-      "title": "NMF: MINIMARATON KRZYK",
-      "ticketIdsArray": [
-        44,
-        45
-      ]
-    },
-    {
-      "id": 15,
-      "userId": 11,
-      "date": "08-03",
-      "title": "Kot w butach 2",
-      "ticketIdsArray": [
-        46,
-        47,
-        48
-      ]
-    },
-    {
-      "id": 16,
-      "userId": 11,
-      "date": "08-03",
-      "title": "Avatar 1",
-      "ticketIdsArray": [
-        49,
-        50
-      ]
-    },
-    {
-      "id": 17,
-      "userId": 11,
-      "date": "08-03",
-      "title": "Avatar 1",
-      "ticketIdsArray": [
-        51,
-        52
+        117,
+        118
       ]
     }
   ],
@@ -685,7 +545,7 @@
       "id": 42,
       "filmId": 3,
       "premiere": true,
-      "date": "07-03",
+      "date": "14-03",
       "hours": [
         "12:00"
       ]
@@ -694,7 +554,7 @@
       "id": 43,
       "filmId": 4,
       "premiere": true,
-      "date": "07-03",
+      "date": "14-03",
       "hours": [
         "12:00",
         "15:00"
@@ -756,9 +616,9 @@
     },
     {
       "id": 50,
-      "filmId": 2,
+      "filmId": 4,
       "premiere": true,
-      "date": "09-03",
+      "date": "12-03",
       "hours": [
         "12:00",
         "15:00",
@@ -780,7 +640,7 @@
       "id": 52,
       "filmId": 3,
       "premiere": true,
-      "date": "08-03",
+      "date": "13-03",
       "hours": [
         "12:00",
         "15:00",
@@ -802,7 +662,7 @@
       "id": 54,
       "filmId": 3,
       "premiere": true,
-      "date": "09-03",
+      "date": "12-03",
       "hours": [
         "12:00",
         "15:00",
@@ -822,9 +682,9 @@
     },
     {
       "id": 56,
-      "filmId": 3,
+      "filmId": 1,
       "premiere": true,
-      "date": "30-03",
+      "date": "11-03",
       "hours": [
         "12:00",
         "15:00",
@@ -835,7 +695,7 @@
       "id": 57,
       "filmId": 2,
       "premiere": true,
-      "date": "08-03",
+      "date": "11-03",
       "hours": [
         "12:00"
       ]
@@ -879,7 +739,7 @@
       "id": 61,
       "filmId": 4,
       "premiere": true,
-      "date": "09-03",
+      "date": "02-03",
       "hours": [
         "12:00",
         "15:00"
@@ -900,7 +760,7 @@
       "id": 63,
       "filmId": 1,
       "premiere": false,
-      "date": "09-03",
+      "date": "10-03",
       "hours": [
         "12:00",
         "17:00"
@@ -1190,16 +1050,16 @@
     },
     {
       "seat": "D7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 40,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "D8",
-      "avaliable": true,
+      "avaliable": false,
       "id": 41,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1288,9 +1148,9 @@
     },
     {
       "seat": "E10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 54,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1365,9 +1225,9 @@
     },
     {
       "seat": "F10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 65,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1470,16 +1330,16 @@
     },
     {
       "seat": "H3",
-      "avaliable": true,
+      "avaliable": false,
       "id": 80,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "H4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 81,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1526,16 +1386,16 @@
     },
     {
       "seat": "I0",
-      "avaliable": true,
+      "avaliable": false,
       "id": 88,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
       "seat": "I1",
-      "avaliable": true,
+      "avaliable": false,
       "id": 89,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1686,7 +1546,8 @@
       "movies": [
         1,
         0,
-        4
+        4,
+        2
       ],
       "tickets": [
         {
@@ -1985,7 +1846,7 @@
     {
       "id": 14,
       "title": "Avatar 1",
-      "date": "09-03",
+      "date": "24-03",
       "hour": "17:00",
       "places": {
         "seat": "H5",
@@ -2005,7 +1866,7 @@
     {
       "id": 16,
       "title": "Avatar 1",
-      "date": "09-03",
+      "date": "19-03",
       "hour": "17:00",
       "places": {
         "seat": "I6",
@@ -2369,6 +2230,666 @@
       "hour": "18:00",
       "places": {
         "seat": "I8",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 53,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 54,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 55,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 56,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 57,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 58,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 59,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 60,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 61,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 62,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 63,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 64,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 65,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 66,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 67,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 68,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 69,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 70,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 71,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 72,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 73,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 74,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 75,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 76,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 77,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 78,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 79,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 80,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 81,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 82,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 83,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 84,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 85,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 86,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 87,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 88,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 89,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 90,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 91,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 92,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 93,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 94,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 95,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 96,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 97,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 98,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 99,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 100,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 101,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 102,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 103,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 104,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 105,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 106,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet rodzinny 20 zł"
+      }
+    },
+    {
+      "id": 107,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H4",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 108,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H3",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 109,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 110,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I0",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 111,
+      "title": "Kot w butach 2",
+      "date": "11-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "I1",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 112,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 113,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 114,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 115,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D7",
+        "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 116,
+      "title": "NMF: MINIMARATON KRZYK",
+      "date": "10-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "D8",
+        "type": "bilet rodzinny 20 zł"
+      }
+    },
+    {
+      "id": 117,
+      "title": "Avatar: Istota wody",
+      "date": "09-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "E10",
+        "type": "bilet ulgowy 18 zł"
+      }
+    },
+    {
+      "id": 118,
+      "title": "Avatar: Istota wody",
+      "date": "09-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "F10",
         "type": "voucher 15 zł"
       }
     }

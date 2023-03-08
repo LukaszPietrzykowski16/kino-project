@@ -13,15 +13,15 @@
     <div class="film-container__about_paragraph">
       <div *ngIf="longDescription; else elseBlock">
         {{ film.description.substring(0, 240) }}
-        <button (click)="showMoreDescription()">więcej</button>
+        <a (click)="showMoreDescription()">więcej</a>
       </div>
       <ng-template #elseBlock>
         {{ film.description }}
-        <button (click)="showMoreDescription()">mniej</button>
+        <a (click)="showMoreDescription()">mniej</a>
       </ng-template>
     </div>
 
-    <h2>{{ film.rating }} / 10</h2>
+    <h2>Ocena: {{ film.rating }} / 10</h2>
     <!-- <div *ngFor="let hour of hours">
       <a [routerLink]="['/rezerwacja', selectedDay, hour, film.title]">
         <button
