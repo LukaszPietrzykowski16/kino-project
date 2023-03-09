@@ -1,8 +1,8 @@
-<div>
+<div class="buttons-container">
   <div *ngIf="wantWatch === true; else elseBlock">
     <button (click)="sendAddMovie(filmId)">Chcę obejrzeć!</button>
   </div>
   <ng-template #elseBlock>
-    <button button (click)="sendRemoveMovie(filmId)">Usuń</button>
+    <button button (click)="sendRemoveMovie(filmId)">Nie chcę obejrzeć</button>
   </ng-template>
 </div>

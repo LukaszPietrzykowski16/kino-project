@@ -1,4 +1,6 @@
-<div *ngIf="userRate === 0; else elseBlock">
-  <button (click)="showModal(filmId)">Oceń ten film</button>
+<div class="want-watch">
+  <div *ngIf="userRate === 0; else elseBlock">
+    <button (click)="showModal(filmId)">Oceń</button>
+  </div>
+  <ng-template #elseBlock>Twoja Ocena: {{ userRate }}</ng-template>
 </div>
-<ng-template #elseBlock>Twoja Ocena {{ userRate }}</ng-template>
