@@ -28,7 +28,6 @@ export class FormsPanelComponent {
   private router = inject(Router);
   private formInfo = inject(FormInfoService);
   private seatPostService = inject(SeatPostService);
-  private promotionService = inject(PromotionService);
   private authService = inject(AuthService);
   private sendTickets = inject(SendTicketsService);
   private store = inject<Store<AppState>>(Store);
@@ -79,9 +78,6 @@ export class FormsPanelComponent {
         ],
       }),
       checkbox: new FormControl(''),
-      bonusCode: new FormControl('', {
-        validators: [Validators.minLength(6)],
-      }),
     },
     {
       validators: validatorCompareEmail('email', 'emailAgain'),
@@ -119,12 +115,6 @@ export class FormsPanelComponent {
     }
   }
 
-  promotionCode() {
-    if (this.bonusCode.value === '123456') {
-      this.promotionService.getPromotion().next(true);
-    }
-  }
-
   ngOnInit() {
     this.store
       .select('User')
@@ -146,10 +136,6 @@ export class FormsPanelComponent {
 
   get lastCtrl() {
     return this.profileForm.controls.lastName;
-  }
-
-  get bonusCode() {
-    return this.profileForm.controls.bonusCode;
   }
 
   get firstCtrl() {

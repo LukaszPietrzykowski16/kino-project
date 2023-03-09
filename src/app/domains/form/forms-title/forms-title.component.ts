@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { tick } from '@angular/core/testing';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subject, takeUntil, tap } from 'rxjs';
 
 import { Ticket } from '../../cinema-hall/reservation/reservation.component';
@@ -26,6 +27,16 @@ export class FormsTitleComponent {
   newPrice: number = 0;
   promotion: unknown = false;
 
+  profileForm = new FormGroup({
+    bonusCode: new FormControl('', {
+      validators: [Validators.minLength(6)],
+    }),
+  });
+
+  get bonusCode() {
+    return this.profileForm.controls.bonusCode;
+  }
+
   price() {
     this.tickets$
       .pipe(
@@ -37,7 +48,6 @@ export class FormsTitleComponent {
         })
       )
       .subscribe(); // ???
-    // .unsubscribe();
   }
 
   ngOnInit() {
@@ -47,6 +57,12 @@ export class FormsTitleComponent {
     });
 
     this.price();
+  }
+
+  promotionCode() {
+    if (this.bonusCode.value === '123456') {
+      this.promotionService.getPromotion().next(true);
+    }
   }
 
   ngOnDestroy() {

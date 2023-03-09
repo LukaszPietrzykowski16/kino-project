@@ -16,4 +16,20 @@
       <div *ngIf="promotion" class="strike">Nowa cena: {{ newPrice }} zł</div>
     </div>
   </div>
+
+  <form [formGroup]="profileForm">
+    <div class="bonus-code">
+      <input
+        type="text"
+        id="code"
+        name="code"
+        placeholder="kod znizkowy"
+        formControlName="bonusCode"
+        numbersOnly
+      />
+      <button type="button" placeholder="zamawiam" (click)="promotionCode()">
+        obniż cenę
+      </button>
+    </div>
+  </form>
 </div>
