@@ -25,6 +25,14 @@ h1 {
   display: none;
 }
 
+.no-films {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
 .parent {
   align-items: center;
   justify-content: center;

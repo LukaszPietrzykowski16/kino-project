@@ -2,9 +2,16 @@
   <div class="section-container">
     <h1>Chcę obejrzeć:</h1>
     <div *ngIf="filmService$ | async as films" class="parent">
-      <ng-container *ngFor="let film of films">
-        <app-want-watch-film [film]="film"></app-want-watch-film>
+      <ng-container *ngIf="films.length; else elseBlock">
+        <ng-container *ngFor="let film of films">
+          <app-want-watch-film [film]="film"></app-want-watch-film>
+        </ng-container>
       </ng-container>
+      <ng-template #elseBlock>
+        <div class="no-films">
+          <h2>Dodaj film do obejrzenia!</h2>
+        </div>
+      </ng-template>
     </div>
   </div>
 </section>

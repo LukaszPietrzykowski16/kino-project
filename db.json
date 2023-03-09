@@ -109,6 +109,24 @@
         117,
         118
       ]
+    },
+    {
+      "id": 4,
+      "userId": 11,
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
+      "ticketIdsArray": [
+        119
+      ]
+    },
+    {
+      "id": 5,
+      "userId": 11,
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
+      "ticketIdsArray": [
+        119
+      ]
     }
   ],
   "screening": [
@@ -765,6 +783,18 @@
         "12:00",
         "17:00"
       ]
+    },
+    {
+      "id": 64,
+      "filmId": 2,
+      "premiere": true,
+      "date": "20-03",
+      "hours": [
+        "12:00",
+        "15:00",
+        "17:00",
+        "22:00"
+      ]
     }
   ],
   "reservation": [
@@ -1218,7 +1248,7 @@
     },
     {
       "seat": "F9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 64,
       "isChoosen": false,
       "reservation": false
@@ -1358,9 +1388,9 @@
     },
     {
       "seat": "H7",
-      "avaliable": true,
+      "avaliable": false,
       "id": 84,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1543,10 +1573,7 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [
-        4,
-        2
-      ],
+      "movies": [],
       "tickets": [
         {
           "id": 0,
@@ -2889,6 +2916,16 @@
       "places": {
         "seat": "F10",
         "type": "voucher 15 zł"
+      }
+    },
+    {
+      "id": 119,
+      "title": "Avatar: Istota wody",
+      "date": "09-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "H7",
+        "type": "bilet normalny 25zł"
       }
     }
   ]
