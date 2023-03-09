@@ -1,31 +1,26 @@
-<div *ngIf="screenings$ | async as screenings">
-  <div *ngFor="let screen of screenings">
-    <div class="film-container">
-      <app-film
-        [film]="screen.film"
-        [premiere]="screen.premiere"
-        [hours]="screen.hours"
-        [selectedDay]="selectedDay"
-        [now]="now"
-      ></app-film>
-      <div class="film-container__hour">
-        <!-- <div *ngFor="let hour of screen.hours">
-          <a
-            [routerLink]="['/rezerwacja', selectedDay, hour, screen.film.title]"
-          >
-            <button
-              (click)="moreDetails(screen.film.title, hour)"
-              *ngIf="changeToString(hour) > now"
-            >
-              {{ hour }}
-            </button>
-          </a>
-        </div> -->
-        <div *ngIf="isLogin">
-          <app-rating [filmId]="screen.film.id"></app-rating>
-          <app-want-to-watch [filmId]="screen.film.id"></app-want-to-watch>
+<section *ngIf="screenings$ | async as screenings">
+  <ng-container *ngIf="screenings.length; else elseBlock">
+    <div *ngFor="let screen of screenings">
+      <div class="film-container">
+        <app-film
+          [film]="screen.film"
+          [premiere]="screen.premiere"
+          [hours]="screen.hours"
+          [selectedDay]="selectedDay"
+          [now]="now"
+        ></app-film>
+        <div class="film-container__hour">
+          <div *ngIf="isLogin">
+            <app-rating [filmId]="screen.film.id"></app-rating>
+            <app-want-to-watch [filmId]="screen.film.id"></app-want-to-watch>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </ng-container>
+  <ng-template #elseBlock>
+    <div class="no-films">
+      <h1>W tym dniu nie gramy żadnych filmów</h1>
+    </div>
+  </ng-template>
+</section>
