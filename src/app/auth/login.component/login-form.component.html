@@ -9,18 +9,20 @@
     </div>
 
     <ng-container *ngIf="loginForm.controls.email.errors as errors">
-      <p *ngIf="errors['maxlength']">
+      <p *ngIf="errors['maxlength']" class="padding">
         Email nie może być dłuższy niż 100 znaków.
       </p>
-      <p *ngIf="errors['pattern']">
+      <p *ngIf="errors['pattern']" class="padding">
         Podaj poprawny adres email według wzoru: nazwa@domena.pl
       </p>
     </ng-container>
     <p
+      class="padding"
       *ngIf="(passwordCtrl.errors?.['required'] &&
        passwordCtrl.touched) ||
       (emailCtrl.errors?.['required'] &&
        emailCtrl.touched)
+       
     "
     >
       Pola nie mogą byc puste.
