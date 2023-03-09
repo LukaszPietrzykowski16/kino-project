@@ -1,19 +1,5 @@
 <div class="container-form">
   <form [formGroup]="profileForm">
-    <!-- <div>
-      <input
-        type="text"
-        id="code"
-        name="code"
-        placeholder="kod znizkowy"
-        formControlName="bonusCode"
-        numbersOnly
-      />
-
-      <button type="button" placeholder="zamawiam" (click)="promotionCode()">
-        obniż cenę
-      </button>
-    </div> -->
     <input
       type="text"
       id="fname"
@@ -108,14 +94,14 @@
         <p *ngIf="errors['tooManySpaces']">Nie tym razem 😎</p></small
       >
     </div>
-    <div>
+    <!-- <div>
       chce otrzymywac informacje o znizkach itp
       <label class="switch" formControlName="checkbox">
         <input type="checkbox" />
 
         <span class="slider"> </span>
       </label>
-    </div>
+    </div> -->
 
     <button type="button" placeholder="zamawiam" (click)="showBlik()">
       zamawiam

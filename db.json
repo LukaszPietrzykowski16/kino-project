@@ -1295,9 +1295,9 @@
     },
     {
       "seat": "G9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 75,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
