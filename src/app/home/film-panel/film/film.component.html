@@ -24,14 +24,14 @@
     <h2>Ocena: {{ film.rating }} / 10</h2>
     <div class="hour-container">
       <div *ngFor="let hour of hours">
-        <!-- <a [routerLink]="['/rezerwacja', selectedDay, hour, film.title]"> -->
-        <button
-          (click)="moreDetails(film.title, hour)"
-          *ngIf="changeToString(hour) > now"
-        >
-          {{ hour }}
-        </button>
-        <!-- </a> -->
+        <a [routerLink]="['/rezerwacja', selectedDay, hour, film.title]">
+          <button
+            (click)="moreDetails(film.title, hour)"
+            *ngIf="changeToString(hour) > now"
+          >
+            {{ hour }}
+          </button>
+        </a>
       </div>
     </div>
   </div>

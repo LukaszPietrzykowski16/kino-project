@@ -32,6 +32,8 @@ export class FilmComponent {
   ratings$ = this.userData.ratings$;
 
   changeToString(test: string) {
+    console.log(test);
+    console.log(Number(test[0] + test[1]));
     return Number(test[0] + test[1]);
   }
 
