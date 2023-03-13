@@ -1,14 +1,14 @@
 import { Component, inject, Input } from '@angular/core';
 import { ApiServiceService } from '../services/api-service.service';
-import { map, take } from 'rxjs';
+import { take } from 'rxjs';
 import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
-
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.module';
 import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
 import { TicketsService } from 'src/app/domains/cinema-hall/reservation/services/tickets.service';
+import { FilmData } from './film/film.component';
 
 export interface Screening {
   filmId: number;
@@ -39,7 +39,7 @@ export interface Repertoire {
 @Component({
   selector: 'app-film-panel',
   templateUrl: './film-panel.component.html',
-  styleUrls: ['./film-panel.component.css'],
+  styleUrls: ['./film-panel.component.scss'],
 })
 export class FilmPanelComponent {
   private apiService = inject(ApiServiceService);
@@ -49,9 +49,6 @@ export class FilmPanelComponent {
   private cinemaService = inject(CinemaHallService);
   private authService = inject(AuthService);
 
-  isLogin = false;
-  userId: number = NaN;
-  moviesArray: Array<Number> = [];
   durationInSeconds = 3;
   wantWatch = true;
 
@@ -69,14 +66,18 @@ export class FilmPanelComponent {
     return Number(test[0] + test[1]);
   }
 
-  moreDetails(title: string, hour: string) {
+  moreDetails(filmData: FilmData) {
     this.ticketService.cleanState();
     this.date$
       .pipe(take(1))
       .subscribe((value) => (this.selectedDay = value.dateString))
       .unsubscribe();
 
-    this.cinemaService.setStrings(title, hour, this.selectedDay);
+    this.cinemaService.setStrings(
+      filmData.title,
+      filmData.hour,
+      this.selectedDay
+    );
   }
 
   ngOnInit() {

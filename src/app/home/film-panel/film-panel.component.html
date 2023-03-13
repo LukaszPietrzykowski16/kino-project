@@ -10,6 +10,7 @@
               [hours]="screen.hours"
               [selectedDay]="selectedDay"
               [now]="now"
+              (handleChangingDate)="moreDetails($event)"
             ></app-film>
             <div class="film-container__hour">
               <div *ngIf="auth.hasAuth">

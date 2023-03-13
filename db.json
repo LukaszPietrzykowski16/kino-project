@@ -1084,7 +1084,7 @@
     },
     {
       "seat": "D4",
-      "avaliable": true,
+      "avaliable": false,
       "id": 37,
       "isChoosen": false,
       "reservation": false
@@ -1098,7 +1098,7 @@
     },
     {
       "seat": "D6",
-      "avaliable": true,
+      "avaliable": false,
       "id": 39,
       "isChoosen": false,
       "reservation": false
