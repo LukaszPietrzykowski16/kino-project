@@ -3,10 +3,10 @@ import { NonNullableFormBuilder, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { FilmAdminState } from './admin.module';
 import { addFilmsFromApiActions } from './store/admin.action';
-import { Film } from 'src/app/home/film-panel/film-panel.component';
 import { trimValidator } from '../domains/form/input-vaidator.validator';
 import { NotificationComponent } from '../home/film-panel/notification/notification.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Film } from '../home/film-panel/film-panel.interface';
 
 @Component({
   selector: 'app-admin',

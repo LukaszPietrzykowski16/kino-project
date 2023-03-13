@@ -1,9 +1,9 @@
-import { Repertoire } from '../film-panel/film-panel.component';
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, tap } from 'rxjs';
 import { ChangeDayService } from '../data-panel/services/change-day.service';
 import { CinemaHallService } from 'src/app/domains/cinema-hall/services/cinema-hall.service';
+import { Repertoire } from '../film-panel/film-panel.interface';
 
 @Injectable({
   providedIn: 'root',

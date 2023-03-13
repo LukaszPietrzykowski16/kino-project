@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, map, tap } from 'rxjs';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
-import { Film } from 'src/app/home/film-panel/film-panel.component';
+import { Film } from 'src/app/home/film-panel/film-panel.interface';
 import { UserService } from 'src/app/home/film-panel/services/user.service';
 
 @Injectable({

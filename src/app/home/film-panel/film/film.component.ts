@@ -2,12 +2,8 @@ import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
 
 import { ApiServiceService } from '../../services/api-service.service';
-import { Film } from '../film-panel.component';
 
-export interface FilmData {
-  title: string;
-  hour: string;
-}
+import { Film, FilmData } from '../film-panel.interface';
 
 @Component({
   selector: 'app-film',

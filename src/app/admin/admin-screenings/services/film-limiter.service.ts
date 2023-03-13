@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Film } from 'src/app/home/film-panel/film-panel.component';
+
 import { FilmServiceService } from '../../services/film-service.service';
 import { ExactScreeningService } from './exact-screening.service';
 

@@ -1,5 +1,5 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
-import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
+import { Film, Screening } from 'src/app/home/film-panel/film-panel.interface';
 
 export const addFilmsFromApiActions = createActionGroup({
   source: 'AdminFilm',

@@ -1,4 +1,4 @@
-import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
+import { Film, Screening } from 'src/app/home/film-panel/film-panel.interface';
 
 export interface AdminFilmState {
   films: Film[];

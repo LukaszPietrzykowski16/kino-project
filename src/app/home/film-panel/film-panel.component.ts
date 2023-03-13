@@ -1,40 +1,13 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ApiServiceService } from '../services/api-service.service';
 import { take } from 'rxjs';
-import { Film } from 'angular-feather/icons';
 import { CinemaHallService } from '../../domains/cinema-hall/services/cinema-hall.service';
 import { AuthService } from 'src/app/auth/authentication/auth.service';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.module';
 import { UserTicketService } from 'src/app/domains/user-tickets/services/user-ticket.service';
 import { TicketsService } from 'src/app/domains/cinema-hall/reservation/services/tickets.service';
-import { FilmData } from './film/film.component';
-
-export interface Screening {
-  filmId: number;
-  premiere: boolean;
-  date: string;
-  hours: Array<string>;
-}
-
-export interface Film {
-  id: number;
-  title: string;
-  types: string;
-  image: string;
-  description: string;
-  rating: number;
-  length: number;
-}
-
-export interface Repertoire {
-  filmId: number;
-  premiere: boolean;
-  rating: number;
-  date: string;
-  hours: Array<string>;
-  film: Film;
-}
+import { FilmData } from './film-panel.interface';
 
 @Component({
   selector: 'app-film-panel',

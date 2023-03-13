@@ -2,13 +2,14 @@ import { Component, inject } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { BehaviorSubject } from 'rxjs';
-import { Film, Screening } from 'src/app/home/film-panel/film-panel.component';
+
 import { ScreeningAdminState } from '../admin.module';
 import { FilmServiceService } from '../services/film-service.service';
 import { screeningActions } from '../store/admin.action';
 import { ExactScreeningService } from './services/exact-screening.service';
 import { FilmLimiterService } from './services/film-limiter.service';
 import { ChangeDayService } from 'src/app/home/data-panel/services/change-day.service';
+import { Film, Screening } from 'src/app/home/film-panel/film-panel.interface';
 
 export interface ExpInterface {
   exp: string;

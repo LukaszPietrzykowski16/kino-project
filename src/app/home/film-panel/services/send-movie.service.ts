@@ -1,13 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-
-interface User {
-  email: string;
-  password: string;
-  type: string;
-  id: number;
-  movies: Array<String>;
-}
+import { User } from '../film-panel.interface';
 
 @Injectable({
   providedIn: 'root',

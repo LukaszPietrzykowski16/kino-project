@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Screening } from 'src/app/home/film-panel/film-panel.component';
+import { Screening } from 'src/app/home/film-panel/film-panel.interface';
 
 @Injectable({
   providedIn: 'root',

@@ -1,11 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Ratings } from './rating.service';
-
-export interface UserMovies {
-  movies: Array<Number>;
-  ratings: Array<Ratings>;
-}
+import { UserMovies } from '../film-panel.interface';
 
 @Injectable({
   providedIn: 'root',

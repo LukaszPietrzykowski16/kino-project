@@ -1,13 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
-export interface Ratings {
-  id: number;
-  userId: number;
-  filmId: number;
-  rating: number;
-}
+import { Ratings } from '../film-panel.interface';
 
 @Injectable({
   providedIn: 'root',
