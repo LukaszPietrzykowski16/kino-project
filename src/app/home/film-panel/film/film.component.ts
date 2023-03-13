@@ -22,6 +22,7 @@ export class FilmComponent {
   @Input() now!: number;
 
   @Output() handleChangingDate = new EventEmitter<FilmData>();
+  date = new Date();
 
   private userData = inject(UserTicketService);
   private apiService = inject(ApiServiceService);
@@ -30,12 +31,6 @@ export class FilmComponent {
 
   date$ = this.apiService.date$;
   ratings$ = this.userData.ratings$;
-
-  changeToString(test: string) {
-    console.log(test);
-    console.log(Number(test[0] + test[1]));
-    return Number(test[0] + test[1]);
-  }
 
   moreDetails(title: string, hour: string) {
     this.handleChangingDate.emit({ title: title, hour: hour });
