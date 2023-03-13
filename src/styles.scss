@@ -1,6 +1,9 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
+
+@use "./styles/palettes" as palette;
+@use "./styles/typography" as typography;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -36,6 +39,7 @@ $kino-project-theme: mat.define-light-theme(
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -48,9 +52,9 @@ body {
 /* global styles for buttons */
 button {
   cursor: pointer;
-  background-color: #5800ff;
+  background-color: mat.get-color-from-palette(palette.$purple-palette, 500);
   border: none;
-  color: white;
+  color: mat.get-color-from-palette(palette.$white-palette, 50);
   margin: 4px;
   border-radius: 4px;
   padding: 4px 6px;
@@ -58,13 +62,4 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

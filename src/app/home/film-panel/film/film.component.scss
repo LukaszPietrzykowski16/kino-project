@@ -1,5 +1,8 @@
+@use "@angular/material" as mat;
+@use "../../../../styles/palettes" as palette;
+
 .film-container__image {
-  width: 20vw;
+  width: 15vw;
   margin: 16px;
   padding: 8px;
 }
@@ -30,11 +33,11 @@ h2 {
 
   text-align: center;
   opacity: 1;
-  background-color: #5800ff;
+  background-color: mat.get-color-from-palette(palette.$purple-palette, 500);
 }
 
 .film-container__description {
-  width: 60vw;
+  width: 30vw;
   padding: 32px;
 }
 
