@@ -9,7 +9,7 @@ export class FilmServiceService {
   private http = inject(HttpClient);
 
   postFilms(data: Film) {
-    return this.http.post(`http://localhost:3000/films`, {
+    return this.http.post<Film>(`http://localhost:3000/films`, {
       id: NaN,
       description: data.description,
       image: data.image,

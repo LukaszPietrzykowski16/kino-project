@@ -77,6 +77,12 @@
       "userId": 11,
       "filmId": 1,
       "rating": 9
+    },
+    {
+      "id": 4,
+      "userId": 11,
+      "filmId": 3,
+      "rating": 9
     }
   ],
   "tickets-reservation": [
@@ -126,6 +132,16 @@
       "title": "Avatar: Istota wody",
       "ticketIdsArray": [
         119
+      ]
+    },
+    {
+      "id": 6,
+      "userId": 11,
+      "date": "09-03",
+      "title": "Avatar: Istota wody",
+      "ticketIdsArray": [
+        120,
+        121
       ]
     }
   ],
@@ -795,6 +811,15 @@
         "17:00",
         "22:00"
       ]
+    },
+    {
+      "id": 65,
+      "filmId": 4,
+      "premiere": true,
+      "date": "07-03",
+      "hours": [
+        "12:33"
+      ]
     }
   ],
   "reservation": [
@@ -863,9 +888,9 @@
     },
     {
       "seat": "A9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 9,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -947,9 +972,9 @@
     },
     {
       "seat": "B10",
-      "avaliable": true,
+      "avaliable": false,
       "id": 21,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1094,9 +1119,9 @@
     },
     {
       "seat": "D9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 42,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1143,9 +1168,9 @@
     },
     {
       "seat": "E5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 49,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1171,9 +1196,9 @@
     },
     {
       "seat": "E9",
-      "avaliable": true,
+      "avaliable": false,
       "id": 53,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -1220,9 +1245,9 @@
     },
     {
       "seat": "F5",
-      "avaliable": true,
+      "avaliable": false,
       "id": 60,
-      "isChoosen": false,
+      "isChoosen": true,
       "reservation": false
     },
     {
@@ -2926,6 +2951,26 @@
       "places": {
         "seat": "H7",
         "type": "bilet normalny 25zł"
+      }
+    },
+    {
+      "id": 120,
+      "title": "Avatar: Istota wody",
+      "date": "09-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "B10",
+        "type": "bilet normalny 25 zł"
+      }
+    },
+    {
+      "id": 121,
+      "title": "Avatar: Istota wody",
+      "date": "09-03",
+      "hour": "18:00",
+      "places": {
+        "seat": "A9",
+        "type": "bilet normalny 25 zł"
       }
     }
   ]

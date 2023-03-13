@@ -24,6 +24,7 @@ export class FilmComponent {
   @Input() now!: number;
 
   date$ = this.apiService.date$;
+  ratings$ = this.userData.ratings$;
 
   moreDetails(title: string, hour: string) {
     this.ticketService.cleanState();
@@ -38,8 +39,6 @@ export class FilmComponent {
   changeToString(test: string) {
     return Number(test[0] + test[1]);
   }
-
-  ratings$ = this.userData.ratings$;
 
   longDescription = true;
 

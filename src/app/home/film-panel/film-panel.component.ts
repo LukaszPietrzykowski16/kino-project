@@ -46,6 +46,8 @@ export class FilmPanelComponent {
   private store = inject<Store<AppState>>(Store);
   private userData = inject(UserTicketService);
   private ticketService = inject(TicketsService);
+  private cinemaService = inject(CinemaHallService);
+  private authService = inject(AuthService);
 
   isLogin = false;
   userId: number = NaN;
@@ -57,15 +59,10 @@ export class FilmPanelComponent {
   now = this.date.getHours();
   selectedDay: string = '';
 
-  constructor(
-    private cinemaService: CinemaHallService,
-    private authService: AuthService
-  ) {}
-
   screenings$ = this.apiService.screenings$;
   date$ = this.apiService.date$;
   ratings$ = this.userData.ratings$;
-
+  auth$ = this.authService.isAuth$;
   user$ = this.store.select('User');
 
   changeToString(test: string) {
@@ -84,16 +81,5 @@ export class FilmPanelComponent {
 
   ngOnInit() {
     this.apiService.getShowing();
-
-    this.authService.isAuth$.subscribe((login) => {
-      this.isLogin = login.hasAuth;
-    });
-
-    if (this.isLogin === true) {
-      this.authService.user$.subscribe((user) => {
-        this.userId = user.id;
-        this.userData.mainPageInfo();
-      });
-    }
   }
 }
