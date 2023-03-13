@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-data-panel',
   templateUrl: './data-panel.component.html',
-  styleUrls: ['./data-panel.component.css'],
+  styleUrls: ['./data-panel.component.scss'],
 })
 export class DataPanelComponent {
   private changeDayService = inject(ChangeDayService);

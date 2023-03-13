@@ -1,0 +1,31 @@
+.data-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5800ff;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  border-radius: 16px;
+  &__bar {
+    cursor: pointer;
+  }
+  &__current-day {
+    padding: 16px;
+  }
+  &__day {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #5800ff;
+  }
+}
+
+@media (max-width: 850px) {
+  .data-panel {
+    flex-wrap: wrap;
+  }
+
+  .data-panel__day {
+    margin: 0.25em;
+  }
+}
