@@ -48,3 +48,10 @@ export interface Repertoire {
   hours: Array<string>;
   film: Film;
 }
+
+export interface WantToWatchFilms {
+  id: number;
+  userId: number;
+  filmId: number;
+  rating: number;
+}

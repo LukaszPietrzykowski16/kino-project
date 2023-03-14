@@ -18,7 +18,7 @@ export default class WantWatchComponent {
 
   ngOnInit() {
     this.filmService.resetArray();
-    this.filmService.getArrayOfFilmId();
+    this.filmService.getWantToWatchMovies();
   }
 
   ngOnDestroy() {

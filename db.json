@@ -85,64 +85,60 @@
       "rating": 9
     }
   ],
+  "want-watch": [
+    {
+      "id": 1,
+      "userId": 11,
+      "filmId": 0
+    },
+    {
+      "id": 2,
+      "userId": 11,
+      "filmId": 1
+    }
+  ],
   "tickets-reservation": [
     {
       "id": 1,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        117,
-        118
-      ]
+      "ticketIdsArray": [117, 118]
     },
     {
       "id": 2,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        117,
-        118
-      ]
+      "ticketIdsArray": [117, 118]
     },
     {
       "id": 3,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        117,
-        118
-      ]
+      "ticketIdsArray": [117, 118]
     },
     {
       "id": 4,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        119
-      ]
+      "ticketIdsArray": [119]
     },
     {
       "id": 5,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        119
-      ]
+      "ticketIdsArray": [119]
     },
     {
       "id": 6,
       "userId": 11,
       "date": "09-03",
       "title": "Avatar: Istota wody",
-      "ticketIdsArray": [
-        120,
-        121
-      ]
+      "ticketIdsArray": [120, 121]
     }
   ],
   "screening": [
@@ -345,254 +341,175 @@
       "filmId": 4,
       "premiere": true,
       "date": "02-03",
-      "hours": [
-        "14:00",
-        "17:00",
-        "19:00",
-        "23:00"
-      ]
+      "hours": ["14:00", "17:00", "19:00", "23:00"]
     },
     {
       "id": 17,
       "filmId": 1,
       "premiere": true,
       "date": "06-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 18,
       "filmId": 1,
       "premiere": true,
       "date": "06-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 19,
       "filmId": 0,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "10:00"
-      ]
+      "hours": ["10:00"]
     },
     {
       "id": 20,
       "filmId": 1,
       "premiere": true,
       "date": "02-03",
-      "hours": [
-        "10:00",
-        "15:00",
-        "22:00"
-      ]
+      "hours": ["10:00", "15:00", "22:00"]
     },
     {
       "id": 21,
       "filmId": 4,
       "premiere": true,
       "date": "01-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:30"
-      ]
+      "hours": ["12:00", "15:00", "18:30"]
     },
     {
       "id": 23,
       "filmId": 4,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "12:00",
-        "16:00"
-      ]
+      "hours": ["12:00", "16:00"]
     },
     {
       "id": 26,
       "filmId": 3,
       "premiere": false,
       "date": "03-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "17:00",
-        "21:00"
-      ]
+      "hours": ["09:00", "12:00", "17:00", "21:00"]
     },
     {
       "id": 27,
       "filmId": 3,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     },
     {
       "id": 28,
       "filmId": 4,
       "premiere": true,
       "date": "03-03",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     },
     {
       "id": 29,
       "filmId": 4,
       "premiere": true,
       "date": "2023-03-05T23:00:00.000Z",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     },
     {
       "id": 30,
       "filmId": 4,
       "premiere": true,
       "date": "06-03",
-      "hours": [
-        "13:00",
-        "16:00",
-        "19:00",
-        "22:00"
-      ]
+      "hours": ["13:00", "16:00", "19:00", "22:00"]
     },
     {
       "id": 31,
       "filmId": 1,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "13:00"
-      ]
+      "hours": ["13:00"]
     },
     {
       "id": 32,
       "filmId": 1,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00"
-      ]
+      "hours": ["09:00"]
     },
     {
       "id": 33,
       "filmId": 2,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00"
-      ]
+      "hours": ["09:00"]
     },
     {
       "id": 34,
       "filmId": 2,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00"
-      ]
+      "hours": ["09:00"]
     },
     {
       "id": 35,
       "filmId": 2,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00"
-      ]
+      "hours": ["09:00"]
     },
     {
       "id": 36,
       "filmId": 1,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "17:00",
-        "22:00"
-      ]
+      "hours": ["09:00", "12:00", "17:00", "22:00"]
     },
     {
       "id": 37,
       "filmId": 1,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "17:00",
-        "22:00"
-      ]
+      "hours": ["09:00", "12:00", "17:00", "22:00"]
     },
     {
       "id": 38,
       "filmId": 1,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "17:00",
-        "22:00"
-      ]
+      "hours": ["09:00", "12:00", "17:00", "22:00"]
     },
     {
       "id": 39,
       "filmId": 1,
       "premiere": false,
       "date": "07-03",
-      "hours": [
-        "13:00",
-        "16:00"
-      ]
+      "hours": ["13:00", "16:00"]
     },
     {
       "id": 40,
       "filmId": 1,
       "premiere": false,
       "date": "07-03",
-      "hours": [
-        "13:00",
-        "16:00"
-      ]
+      "hours": ["13:00", "16:00"]
     },
     {
       "id": 41,
       "filmId": 0,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "20:00"
-      ]
+      "hours": ["12:00", "15:00", "20:00"]
     },
     {
       "id": 42,
       "filmId": 3,
       "premiere": true,
       "date": "14-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 43,
       "filmId": 4,
       "premiere": true,
       "date": "14-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 44,
@@ -606,69 +523,49 @@
       "filmId": 2,
       "premiere": false,
       "date": "08-03",
-      "hours": [
-        "NaN:NaN"
-      ]
+      "hours": ["NaN:NaN"]
     },
     {
       "id": 46,
       "filmId": 2,
       "premiere": false,
       "date": "08-03",
-      "hours": [
-        "NaN:NaN"
-      ]
+      "hours": ["NaN:NaN"]
     },
     {
       "id": 47,
       "filmId": 2,
       "premiere": true,
       "date": "08-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 48,
       "filmId": 2,
       "premiere": false,
       "date": "08-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 49,
       "filmId": 2,
       "premiere": false,
       "date": "08-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 50,
       "filmId": 4,
       "premiere": true,
       "date": "12-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "17:00"
-      ]
+      "hours": ["12:00", "15:00", "17:00"]
     },
     {
       "id": 51,
       "filmId": 1,
       "premiere": true,
       "date": "08-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:00"
-      ]
+      "hours": ["12:00", "15:00", "18:00"]
     },
     {
       "id": 52,
@@ -691,140 +588,91 @@
       "filmId": 3,
       "premiere": true,
       "date": "09-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:00"
-      ]
+      "hours": ["12:00", "15:00", "18:00"]
     },
     {
       "id": 54,
       "filmId": 3,
       "premiere": true,
       "date": "12-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:00"
-      ]
+      "hours": ["12:00", "15:00", "18:00"]
     },
     {
       "id": 55,
       "filmId": 4,
       "premiere": true,
       "date": "10-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:00"
-      ]
+      "hours": ["12:00", "15:00", "18:00"]
     },
     {
       "id": 56,
       "filmId": 1,
       "premiere": true,
       "date": "11-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "18:00"
-      ]
+      "hours": ["12:00", "15:00", "18:00"]
     },
     {
       "id": 57,
       "filmId": 2,
       "premiere": true,
       "date": "11-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 58,
       "filmId": 3,
       "premiere": true,
       "date": "08-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "17:30",
-        "21:00"
-      ]
+      "hours": ["12:00", "15:00", "17:30", "21:00"]
     },
     {
       "id": 59,
       "filmId": 1,
       "premiere": true,
       "date": "09-03",
-      "hours": [
-        "12:00"
-      ]
+      "hours": ["12:00"]
     },
     {
       "id": 60,
       "filmId": 0,
       "premiere": true,
       "date": "09-03",
-      "hours": [
-        "09:00",
-        "12:00",
-        "14:30",
-        "16:45",
-        "19:00",
-        "22:00"
-      ]
+      "hours": ["09:00", "12:00", "14:30", "16:45", "19:00", "22:00"]
     },
     {
       "id": 61,
       "filmId": 4,
       "premiere": true,
       "date": "02-03",
-      "hours": [
-        "12:00",
-        "15:00"
-      ]
+      "hours": ["12:00", "15:00"]
     },
     {
       "id": 62,
       "filmId": 2,
       "premiere": true,
       "date": "08-03",
-      "hours": [
-        "03:33",
-        "11:11",
-        "14:00"
-      ]
+      "hours": ["03:33", "11:11", "14:00"]
     },
     {
       "id": 63,
       "filmId": 1,
       "premiere": false,
       "date": "10-03",
-      "hours": [
-        "12:00",
-        "17:00"
-      ]
+      "hours": ["12:00", "17:00"]
     },
     {
       "id": 64,
       "filmId": 2,
       "premiere": true,
       "date": "20-03",
-      "hours": [
-        "12:00",
-        "15:00",
-        "17:00",
-        "22:00"
-      ]
+      "hours": ["12:00", "15:00", "17:00", "22:00"]
     },
     {
       "id": 65,
       "filmId": 4,
       "premiere": true,
       "date": "07-03",
-      "hours": [
-        "12:33"
-      ]
+      "hours": ["12:33"]
     }
   ],
   "reservation": [
@@ -1580,12 +1428,7 @@
       "password": "$2a$10$Tlq2j0NeUVQVfLC14uV21OaPNpj4omdlTHIE6zy6Tjs4Bvvopm8fW",
       "type": "user",
       "id": 9,
-      "movies": [
-        2,
-        1,
-        3,
-        7
-      ]
+      "movies": [2, 1, 3, 7]
     },
     {
       "email": "admin@gmail.com",
@@ -1746,9 +1589,7 @@
       "email": "email@gmail.com",
       "password": "$2a$10$SNKq174KGTt6Qtj7F4v8we5tcnR1IJX6mfKE3HHDxTxuh.d5QERpm",
       "id": 12,
-      "movies": [
-        0
-      ]
+      "movies": [0]
     }
   ],
   "tickets": [
