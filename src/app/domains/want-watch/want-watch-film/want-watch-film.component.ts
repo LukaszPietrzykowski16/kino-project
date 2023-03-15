@@ -4,6 +4,7 @@ import { Film } from 'src/app/home/film-panel/film-panel.interface';
 
 import { WantWatchService } from 'src/app/home/film-panel/services/want-watch.service';
 import { IconsModule } from 'src/app/icons/icons.module';
+import { FilmService } from '../film/film.service';
 
 @Component({
   selector: 'app-want-watch-film',
@@ -14,12 +15,12 @@ import { IconsModule } from 'src/app/icons/icons.module';
 })
 export class WantWatchFilmComponent {
   private wantWatch = inject(WantWatchService);
+  private filmService = inject(FilmService);
 
   @Input() film!: Film;
 
   isShow = false;
   removeFilm(filmId: number) {
-    this.wantWatch.removeFilm(filmId);
-    this.isShow = !this.isShow;
+    this.filmService.removeFromWantToWatchMovies(filmId);
   }
 }

@@ -112,6 +112,7 @@ export class AdminComponent {
         description: this.descriptionCtrl.value,
         rating: Number(this.ratingCtrl.value),
         length: Number(this.lengthCtrl.value),
+        wantToWatchId: NaN,
       };
       this.store.dispatch(
         addFilmsFromApiActions.addSingleFilm({ films: filmsNew })

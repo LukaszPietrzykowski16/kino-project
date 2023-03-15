@@ -18,6 +18,7 @@ export interface Film {
   description: string;
   rating: number;
   length: number;
+  wantToWatchId: number;
 }
 
 export interface Ratings {

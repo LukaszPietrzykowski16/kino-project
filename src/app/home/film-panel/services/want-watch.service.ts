@@ -23,9 +23,7 @@ export class WantWatchService {
   }
 
   removeFilm(filmId: number) {
-    let filtrated = this.ratingArray$$.value.filter((elem) => elem !== filmId);
-    this.ratingArray$$.next(filtrated);
-    this.sendFilmsToDb();
+    console.log(filmId);
   }
 
   sendFilmsToDb() {

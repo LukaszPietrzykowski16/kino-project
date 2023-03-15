@@ -58,11 +58,14 @@ export class FilmService {
 
   removeFilmId(filmId: Number) {}
 
-  getFilm(filmId: Number) {
+  getFilm(filmId: Number, id: number) {
     return this.http
       .get<Film>(`http://localhost:3000/films/${filmId}`)
       .subscribe((film) => {
-        this.films$$.next([...this.films$$.getValue(), film]);
+        this.films$$.next([
+          ...this.films$$.getValue(),
+          { ...film, wantToWatchId: id },
+        ]);
       });
   }
 
@@ -80,10 +83,17 @@ export class FilmService {
       .pipe(
         map((film) => {
           film.map((exactFilm) => {
-            this.getFilm(exactFilm.filmId);
+            this.getFilm(exactFilm.filmId, exactFilm.id);
           });
         })
       )
+      .subscribe();
+  }
+
+  removeFromWantToWatchMovies(filmId: number) {
+    const userId = 11;
+    return this.http
+      .delete(`http://localhost:3000/want-watch/${filmId}`)
       .subscribe();
   }
 }

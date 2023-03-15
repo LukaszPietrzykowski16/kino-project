@@ -3,7 +3,7 @@
     <div class="hover-div">
       <img src="{{ film.image }}" alt="{{ film.title }}" class="image" />
     </div>
-    <div class="middle" (click)="removeFilm(film.id)">
+    <div class="middle" (click)="removeFilm(film.wantToWatchId)">
       <div class="text">Usuń: {{ film.title }}</div>
     </div>
   </div>
