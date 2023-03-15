@@ -1,6 +1,7 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, inject, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { FilmService } from 'src/app/domains/want-watch/film/film.service';
 import { RatingService } from '../services/rating.service';
 import { starsModalComponent } from '../stars-modal.component';
 
@@ -14,6 +15,7 @@ import { starsModalComponent } from '../stars-modal.component';
 })
 export class RatingComponent {
   private ratingService = inject(RatingService);
+  private filmService = inject(FilmService);
   public dialog = inject(MatDialog);
 
   ratings$ = this.ratingService.ratings$;
@@ -29,7 +31,7 @@ export class RatingComponent {
     dialogRef.afterClosed().subscribe((result) => {
       if (!result) return;
       this.userRate = result;
-      this.ratingService.patchRatings(filmId, this.userRate);
+      this.filmService.addWantToWatch(filmId, this.userRate);
     });
   }
 

@@ -1604,7 +1604,9 @@
       "lastName": "Kowalski",
       "phoneNumber": "489394930",
       "id": 11,
-      "movies": [],
+      "movies": [
+        2
+      ],
       "tickets": [
         {
           "id": 0,

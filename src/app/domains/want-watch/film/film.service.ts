@@ -34,28 +34,6 @@ export class FilmService {
     this.moviesArray$$.next([]);
   }
 
-  // getArrayOfFilmId() {
-  //   // here
-  //   this.authService.user$.subscribe((user) => {
-  //     this.userId = user.id;
-  //   });
-  //   this.userService.getUser(this.userId).subscribe((movie) => {
-  //     this.moviesArray$$.next([...this.moviesArray$$.value, ...movie.movies]);
-
-  //     this.moviesArray$$
-  //       .pipe(
-  //         tap((movie) => {
-  //           movie.map((movieId) => {
-  //             this.films$$.next([]);
-  //             this.getFilm(movieId);
-  //           });
-  //         })
-  //       )
-  //       // here
-  //       .subscribe();
-  //   });
-  // }
-
   removeFilmId(filmId: Number) {}
 
   getFilm(filmId: Number, id: number) {
@@ -77,6 +55,17 @@ export class FilmService {
       .subscribe();
   }
 
+  addWantToWatch(filmId: number, rating: number) {
+    return this.http
+      .patch<WantToWatchFilms>(`http://localhost:3000/want-watch`, {
+        id: NaN,
+        userId: 11,
+        filmId: filmId,
+        rating: rating,
+      })
+      .subscribe();
+  }
+
   getWantToWatchMovies() {
     return this.http
       .get<WantToWatchFilms[]>(`http://localhost:3000/want-watch`)
@@ -91,7 +80,6 @@ export class FilmService {
   }
 
   removeFromWantToWatchMovies(filmId: number) {
-    const userId = 11;
     return this.http
       .delete(`http://localhost:3000/want-watch/${filmId}`)
       .subscribe();
