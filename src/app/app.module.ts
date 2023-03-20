@@ -163,6 +163,11 @@ export interface AppState {
             canActivate: [NotAdminGuard],
           },
           {
+            path: 'reservation',
+            loadComponent: () =>
+              import('./domains/reservation-hall/reservation-hall.component'),
+          },
+          {
             path: 'ticket/:id',
             loadComponent: () => import('./domains/tickets/tickets.component'),
           },
