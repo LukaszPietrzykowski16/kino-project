@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { HallService } from './hall.service';
 
 @Component({
   selector: 'app-reservation-hall',

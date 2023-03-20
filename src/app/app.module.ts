@@ -53,6 +53,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 import { AdminGuard } from './shared/guards/admin.guard';
 import { AdminWelcomePanelComponent } from './admin/admin-welcome-panel/admin-welcome-panel.component';
 import { ChangeDatePipe } from './shared/pipes/change-date.pipe';
+import { HallComponent } from './domains/reservation-hall/hall/hall.component';
 
 export interface AppState {
   User: UserState;
@@ -78,6 +79,7 @@ export interface AppState {
     NotificationComponent,
     AdminWelcomePanelComponent,
     ChangeDatePipe,
+    HallComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],
