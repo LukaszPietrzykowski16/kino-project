@@ -166,8 +166,10 @@ export interface AppState {
           },
           {
             path: 'reservation',
-            loadComponent: () =>
-              import('./domains/reservation-hall/reservation-hall.component'),
+            loadChildren: () =>
+              import('./domains/reservation-hall/reservation-hall.module').then(
+                ({ ReservationHallModule }) => ReservationHallModule
+              ),
           },
           {
             path: 'ticket/:id',
