@@ -669,15 +669,15 @@
     "reserved-seats": [
       {
         "rowId": 4,
-        "columns": 3
+        "columnId": 3
       },
       {
         "rowId": 6,
-        "columns": 8
+        "columnId": 8
       },
       {
         "rowId": 10,
-        "columns": 3
+        "columnId": 3
       }
     ]
   },
