@@ -5,6 +5,10 @@ export interface SingleCinemaHall {
   reservedSeatsId: number;
 }
 
+export interface HallState {
+  hall: SingleCinemaHall;
+}
+
 export interface SingleReservedSeats {
   id: number;
   reservedSeats: ReservedSeatsInterface[];

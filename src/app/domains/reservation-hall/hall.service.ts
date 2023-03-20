@@ -9,7 +9,7 @@ export class HallService {
   private http = inject(HttpClient);
 
   getReservation() {
-    return this.http.get<SingleCinemaHall>(
+    return this.http.get<SingleCinemaHall[]>(
       'http://localhost:3000/reservation-hall'
     );
   }

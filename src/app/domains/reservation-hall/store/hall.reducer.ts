@@ -6,6 +6,10 @@ export const addHallReducer = createReducer(
   initialHallState,
   on(addCinemaHallFromApi.getHall, (state, action) => ({
     ...state,
-    hall: action.type,
+    hall: action,
+  })),
+  on(addCinemaHallFromApi.addHall, (state, action) => ({
+    ...state,
+    ...action.hall,
   }))
 );

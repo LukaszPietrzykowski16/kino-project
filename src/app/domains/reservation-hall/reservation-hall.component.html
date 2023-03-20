@@ -1,1 +1,7 @@
+<ng-container *ngIf="hall$ | async as hall">
+  {{ hall.id }}
+  {{ hall.row }}
+  {{ hall.reservedSeatsId }}
+  {{ hall.columns }}
+</ng-container>
 <p>reservation-hall works!</p>
