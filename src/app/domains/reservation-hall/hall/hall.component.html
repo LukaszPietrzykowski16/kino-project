@@ -1,7 +1,13 @@
-{{ hall.id }}
-
-<div
-  *ngFor="let item of [].constructor(hall.columns * hall.row); let i = index"
->
-  <div>item {{ i }}</div>
+<div class="hall">
+  <div class="hall__container">
+    <div
+      *ngFor="
+        let item of [].constructor(hall.columns * hall.row);
+        let i = index
+      "
+      class="hall__seat"
+    >
+      {{ i }}
+    </div>
+  </div>
 </div>

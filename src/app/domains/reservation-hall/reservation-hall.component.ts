@@ -8,7 +8,7 @@ import { HallComponent } from './hall/hall.component';
 @Component({
   selector: 'app-reservation-hall',
   templateUrl: './reservation-hall.component.html',
-  styleUrls: ['./reservation-hall.component.css'],
+  styleUrls: ['./reservation-hall.component.scss'],
   standalone: true,
   imports: [CommonModule, HallComponent],
 })
