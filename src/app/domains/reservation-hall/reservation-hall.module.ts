@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { HallComponent } from './hall/hall.component';
 import { ReservationHallComponent } from './reservation-hall.component';
 import { HallEffects } from './store/hall.effects';
 import { addHallReducer } from './store/hall.reducer';
@@ -13,6 +14,7 @@ import { addHallReducer } from './store/hall.reducer';
     CommonModule,
     ReactiveFormsModule,
     ReservationHallComponent,
+    HallComponent,
     RouterModule.forChild([
       {
         path: '',

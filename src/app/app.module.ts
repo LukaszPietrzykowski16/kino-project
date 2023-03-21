@@ -79,7 +79,6 @@ export interface AppState {
     NotificationComponent,
     AdminWelcomePanelComponent,
     ChangeDatePipe,
-    HallComponent,
   ],
   providers: [UserTicketsComponent],
   bootstrap: [AppComponent],

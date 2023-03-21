@@ -3,13 +3,14 @@ import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { addCinemaHallFromApi } from './store/hall.action';
 import { HallState } from './store/hall.interface';
+import { HallComponent } from './hall/hall.component';
 
 @Component({
   selector: 'app-reservation-hall',
   templateUrl: './reservation-hall.component.html',
   styleUrls: ['./reservation-hall.component.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HallComponent],
 })
 export class ReservationHallComponent {
   private store = inject<Store<HallState>>(Store);
