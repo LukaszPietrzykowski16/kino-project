@@ -668,16 +668,13 @@
     "id": 0,
     "reserved-seats": [
       {
-        "rowId": 4,
-        "columnId": 3
+        "position": 23
       },
       {
-        "rowId": 6,
-        "columnId": 8
+        "position": 41
       },
       {
-        "rowId": 10,
-        "columnId": 3
+        "position": 16
       }
     ]
   },
@@ -688,6 +685,16 @@
       "row": 8,
       "columns": 7,
       "reservedSeatsId": 0
+    }
+  ],
+  "tickets-types": [
+    {
+      "type": "Bilet normalny",
+      "value": 25
+    },
+    {
+      "type": "Bilet ulgowy",
+      "value": 20
     }
   ],
   "reservation": [
