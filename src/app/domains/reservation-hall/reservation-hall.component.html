@@ -1,3 +1,6 @@
 <ng-container *ngIf="hall$ | async as hall">
-  <app-hall [hall]="hall"></app-hall>
+  <app-hall
+    [hall]="hall"
+    (buttonClicked)="handleClickingButton($event)"
+  ></app-hall>
 </ng-container>

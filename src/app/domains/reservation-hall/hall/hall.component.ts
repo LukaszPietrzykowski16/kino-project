@@ -1,6 +1,11 @@
 import { CommonModule, NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 import { SingleCinemaHall } from '../store/hall.interface';
+
+export interface Position {
+  position: number;
+}
 
 @Component({
   selector: 'app-hall',
@@ -12,7 +17,13 @@ import { SingleCinemaHall } from '../store/hall.interface';
 export class HallComponent {
   @Input() hall!: SingleCinemaHall;
 
+  @Output() buttonClicked = new EventEmitter<Position>();
+
   getStyles() {
     return `grid-template-columns: repeat(${this.hall.row}, 1.5fr)`;
+  }
+
+  emitClickingOnSeat(seat: number) {
+    this.buttonClicked.emit({ position: seat });
   }
 }

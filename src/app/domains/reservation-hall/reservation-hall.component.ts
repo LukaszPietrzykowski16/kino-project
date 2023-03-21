@@ -3,7 +3,7 @@ import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { addCinemaHallFromApi } from './store/hall.action';
 import { HallState } from './store/hall.interface';
-import { HallComponent } from './hall/hall.component';
+import { HallComponent, Position } from './hall/hall.component';
 
 @Component({
   selector: 'app-reservation-hall',
@@ -19,5 +19,9 @@ export class ReservationHallComponent {
 
   ngOnInit() {
     this.store.dispatch(addCinemaHallFromApi.getHall());
+  }
+
+  handleClickingButton(test: Position) {
+    console.log(test.position);
   }
 }
