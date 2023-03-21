@@ -1,5 +1,5 @@
 <div class="hall">
-  <div class="hall__container">
+  <div class="hall__container" [style]="getStyles()">
     <div
       *ngFor="
         let item of [].constructor(hall.columns * hall.row);

@@ -685,8 +685,8 @@
   "reservation-hall": [
     {
       "id": 0,
-      "row": 10,
-      "columns": 10,
+      "row": 8,
+      "columns": 7,
       "reservedSeatsId": 0
     }
   ],
