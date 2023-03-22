@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { map, switchMap } from 'rxjs/operators';
+import { map, switchMap, tap } from 'rxjs/operators';
 import { FilmServiceService } from '../services/film-service.service';
 import { ScreeningService } from '../services/screening.service';
 import { addFilmsFromApiActions, screeningActions } from './admin.action';
@@ -24,17 +24,15 @@ export class AdminEffects {
     )
   );
 
-  sendFilms$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(addFilmsFromApiActions.addSingleFilm),
-      switchMap((result) => {
-        return this.filmService.postFilms(result.films).pipe(
-          map((result) => {
-            return addFilmsFromApiActions.addFilm({ films: [] });
-          })
-        );
-      })
-    )
+  sendFilms$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(addFilmsFromApiActions.addSingleFilm),
+        tap((result) => {
+          return this.filmService.postFilms(result.films);
+        })
+      ),
+    { dispatch: false }
   );
 
   screening$ = createEffect(() =>
@@ -50,16 +48,14 @@ export class AdminEffects {
     )
   );
 
-  sendScreenings$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(screeningActions.addSingleScreening),
-      switchMap((result) => {
-        return this.screeningService.postScreening(result.screenings).pipe(
-          map((result) => {
-            return screeningActions.addScreenings({ screenings: [] });
-          })
-        );
-      })
-    )
+  sendScreenings$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(screeningActions.addSingleScreening),
+        tap((result) => {
+          return this.screeningService.postScreening(result.screenings);
+        })
+      ),
+    { dispatch: false }
   );
 }
