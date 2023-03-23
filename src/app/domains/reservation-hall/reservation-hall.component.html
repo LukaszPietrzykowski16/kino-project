@@ -1,4 +1,7 @@
 <ng-container *ngIf="hall$ | async as hall">
+  <ng-container *ngIf="order$ | async as order">
+    {{ order.order.position }}
+  </ng-container>
   <app-hall
     [hall]="hall"
     (buttonClicked)="handleClickingButton($event)"

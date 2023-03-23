@@ -7,7 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { HallComponent } from './hall/hall.component';
 import { ReservationHallComponent } from './reservation-hall.component';
 import { HallEffects } from './store/hall.effects';
-import { addHallReducer } from './store/hall.reducer';
+import { addHallReducer, addOrderReducer } from './store/hall.reducer';
 
 @NgModule({
   imports: [
@@ -22,6 +22,8 @@ import { addHallReducer } from './store/hall.reducer';
       },
     ]),
     StoreModule.forFeature('hall', addHallReducer),
+
+    StoreModule.forFeature('order', addOrderReducer),
     EffectsModule.forFeature(HallEffects),
   ],
 })

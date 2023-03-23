@@ -1,3 +1,10 @@
+export interface HallState {
+  hall: SingleCinemaHall;
+}
+
+export interface OrderState {
+  order: Order;
+}
 export interface SingleCinemaHall {
   id: number;
   row: number;
@@ -7,10 +14,6 @@ export interface SingleCinemaHall {
 
 export interface Position {
   position: number;
-}
-
-export interface HallState {
-  hall: SingleCinemaHall;
 }
 
 export interface Order {

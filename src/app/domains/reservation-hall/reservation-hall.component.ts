@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { addCinemaHallFromApi, addOrderAction } from './store/hall.action';
-import { HallState, Position } from './store/hall.interface';
+import { HallState, OrderState, Position } from './store/hall.interface';
 import { HallComponent } from './hall/hall.component';
-import { selectorHall } from './store/hall.selector';
+import { selectorHall, selectorOrder } from './store/hall.selector';
 
 @Component({
   selector: 'app-reservation-hall',
@@ -14,16 +14,18 @@ import { selectorHall } from './store/hall.selector';
   imports: [CommonModule, HallComponent],
 })
 export class ReservationHallComponent {
-  private store = inject<Store<HallState>>(Store);
+  private hallStore = inject<Store<HallState>>(Store);
+  private orderStore = inject<Store<OrderState>>(Store);
 
-  hall$ = this.store.select(selectorHall);
+  hall$ = this.hallStore.select(selectorHall);
+  order$ = this.orderStore.select(selectorOrder);
 
   ngOnInit() {
-    this.store.dispatch(addCinemaHallFromApi.getHall());
+    this.hallStore.dispatch(addCinemaHallFromApi.getHall());
   }
 
   handleClickingButton(test: Position) {
-    this.store.dispatch(
+    this.orderStore.dispatch(
       addOrderAction.addOrder({
         order: { position: test.position, ticketType: 'Bilet normalny' },
       })
