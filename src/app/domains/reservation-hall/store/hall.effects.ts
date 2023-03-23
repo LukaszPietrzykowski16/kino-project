@@ -33,7 +33,10 @@ export class HallEffects {
 
   order$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(addOrderAction.decideOrder)
+      ofType(addOrderAction.decideOrder),
+      switchMap(() => {
+        return this.addOrder$;
+      })
 
       // switchMap((action) => {
       //   tap((action) => {
@@ -41,6 +44,24 @@ export class HallEffects {
       //   });
       //   return of(action);
       // })
+    )
+  );
+
+  addOrder$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(addOrderAction.addOrder),
+      map((action) => {
+        return addOrderAction.addOrder({ order: action.order });
+      })
+    )
+  );
+
+  removeOrder$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(addOrderAction.removeOrder),
+      map((action) => {
+        return addOrderAction.addOrder({ order: action.order });
+      })
     )
   );
 }
