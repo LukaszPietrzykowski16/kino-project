@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { addCinemaHallFromApi } from './hall.action';
+import { addCinemaHallFromApi, addOrderAction } from './hall.action';
 import { initialHallState, initialOrderState } from './hall.state';
 
 export const addHallReducer = createReducer(
@@ -14,4 +14,10 @@ export const addHallReducer = createReducer(
   }))
 );
 
-export const addOrderReducer = createReducer(initialOrderState);
+export const addOrderReducer = createReducer(
+  initialOrderState,
+  on(addOrderAction.addOrder, (state, action) => ({
+    ...state,
+    ...action.order,
+  }))
+);

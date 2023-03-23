@@ -9,7 +9,7 @@ export const addCinemaHallFromApi = createActionGroup({
   },
 });
 
-export const addOrder = createActionGroup({
+export const addOrderAction = createActionGroup({
   source: 'order',
   events: {
     'add Order': props<{ order: Order }>(),

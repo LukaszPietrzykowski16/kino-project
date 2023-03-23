@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { addCinemaHallFromApi } from './store/hall.action';
+import { addCinemaHallFromApi, addOrderAction } from './store/hall.action';
 import { HallState, Position } from './store/hall.interface';
 import { HallComponent } from './hall/hall.component';
 import { selectorHall } from './store/hall.selector';
@@ -23,6 +23,10 @@ export class ReservationHallComponent {
   }
 
   handleClickingButton(test: Position) {
-    console.log(test.position);
+    this.store.dispatch(
+      addOrderAction.addOrder({
+        order: { position: test.position, ticketType: 'Bilet normalny' },
+      })
+    );
   }
 }
