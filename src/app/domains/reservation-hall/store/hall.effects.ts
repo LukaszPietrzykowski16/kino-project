@@ -3,7 +3,6 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { switchMap, map, tap, of } from 'rxjs';
 import { HallService } from '../hall.service';
 import { addCinemaHallFromApi, addOrderAction } from './hall.action';
-import { Order } from './hall.interface';
 
 @Injectable()
 export class HallEffects {
@@ -23,27 +22,12 @@ export class HallEffects {
     )
   );
 
-  // order$ = createEffect((order: Order) => {
-  //   this.actions$.pipe(ofType(addOrderAction.decideOrder),
-  //   map(() => {
-
-  //   })
-  //   );
-  // })
-
   order$ = createEffect(() =>
     this.actions$.pipe(
       ofType(addOrderAction.decideOrder),
       switchMap(() => {
         return this.addOrder$;
       })
-
-      // switchMap((action) => {
-      //   tap((action) => {
-      //     console.log(action);
-      //   });
-      //   return of(action);
-      // })
     )
   );
 
