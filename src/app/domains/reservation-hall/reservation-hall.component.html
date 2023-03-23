@@ -1,6 +1,6 @@
 <ng-container *ngIf="hall$ | async as hall">
   <ng-container *ngIf="order$ | async as order">
-    {{ order.order | json }}
+    {{ order | json }}
   </ng-container>
   <app-hall
     [hall]="hall"

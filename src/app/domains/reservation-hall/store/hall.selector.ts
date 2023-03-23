@@ -11,5 +11,5 @@ export const selectorHall = createSelector(
 
 export const selectorOrder = createSelector(
   selectOrder,
-  (state: OrderState) => state
+  (state: OrderState) => state.order
 );
