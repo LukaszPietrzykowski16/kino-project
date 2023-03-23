@@ -1,11 +1,7 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { SingleCinemaHall } from '../store/hall.interface';
-
-export interface Position {
-  position: number;
-}
+import { Position, SingleCinemaHall } from '../store/hall.interface';
 
 @Component({
   selector: 'app-hall',

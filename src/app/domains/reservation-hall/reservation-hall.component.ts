@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { addCinemaHallFromApi } from './store/hall.action';
-import { HallState } from './store/hall.interface';
-import { HallComponent, Position } from './hall/hall.component';
+import { HallState, Position } from './store/hall.interface';
+import { HallComponent } from './hall/hall.component';
 import { selectorHall } from './store/hall.selector';
 
 @Component({

@@ -1,8 +1,4 @@
-import {
-  ReservedSeatsInterface,
-  SingleCinemaHall,
-  SingleReservedSeats,
-} from './hall.interface';
+import { Order, SingleCinemaHall } from './hall.interface';
 
 export const initialHallState: SingleCinemaHall = {
   columns: 0,
@@ -11,13 +7,4 @@ export const initialHallState: SingleCinemaHall = {
   row: 0,
 };
 
-// export const initalStateHall: HallState = {
-//   hall: initialHallState,
-// };
-
-export const initialReservedSeats: SingleReservedSeats[] = [];
-
-export const initialReservedSeatsIds: ReservedSeatsInterface = {
-  rowId: 0,
-  columnId: 0,
-};
+export const initialOrderState: Order[] = [];

@@ -5,16 +5,15 @@ export interface SingleCinemaHall {
   reservedSeatsId: number;
 }
 
+export interface Position {
+  position: number;
+}
+
 export interface HallState {
   hall: SingleCinemaHall;
 }
 
-export interface SingleReservedSeats {
-  id: number;
-  reservedSeats: ReservedSeatsInterface[];
-}
-
-export interface ReservedSeatsInterface {
-  rowId: number;
-  columnId: number;
+export interface Order {
+  position: number;
+  ticketType: string;
 }
