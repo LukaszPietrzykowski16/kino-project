@@ -12,6 +12,8 @@ export const addCinemaHallFromApi = createActionGroup({
 export const addOrderAction = createActionGroup({
   source: 'order',
   events: {
+    'decide Order': props<{ order: Order[] }>(),
     'add Order': props<{ order: Order[] }>(),
+    'remove Order': props<{ order: Order[] }>(),
   },
 });

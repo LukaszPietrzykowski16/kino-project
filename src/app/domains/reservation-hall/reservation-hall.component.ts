@@ -24,11 +24,14 @@ export class ReservationHallComponent {
     this.hallStore.dispatch(addCinemaHallFromApi.getHall());
   }
 
-  handleClickingButton(test: Position) {
+  handleClickingButton(position: Position) {
     this.orderStore.dispatch(
-      addOrderAction.addOrder({
-        order: [{ position: test.position, ticketType: 'Bilet normalny' }],
+      addOrderAction.decideOrder({
+        order: [{ position: position.position, ticketType: 'Bilet normalny' }],
       })
     );
+    // addOrderAction.addOrder({
+    //   order: [{ position: position.position, ticketType: 'Bilet normalny' }],
+    // })
   }
 }
