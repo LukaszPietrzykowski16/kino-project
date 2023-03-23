@@ -27,7 +27,7 @@ export class ReservationHallComponent {
   handleClickingButton(test: Position) {
     this.orderStore.dispatch(
       addOrderAction.addOrder({
-        order: { position: test.position, ticketType: 'Bilet normalny' },
+        order: [{ position: test.position, ticketType: 'Bilet normalny' }],
       })
     );
   }

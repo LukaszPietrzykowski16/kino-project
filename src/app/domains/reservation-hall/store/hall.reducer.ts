@@ -16,8 +16,5 @@ export const addHallReducer = createReducer(
 
 export const addOrderReducer = createReducer(
   initialOrderState,
-  on(addOrderAction.addOrder, (state, action) => ({
-    ...state,
-    ...action.order,
-  }))
+  on(addOrderAction.addOrder, (state, action) => [...state, ...action.order])
 );
