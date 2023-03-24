@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { act, Actions, createEffect, ofType } from '@ngrx/effects';
 import { select, Store } from '@ngrx/store';
 import {
   switchMap,
@@ -70,8 +70,15 @@ export class HallEffects {
       ofType(addOrderAction.decideOrder),
       withLatestFrom(this.store.select((state) => state.order)),
       switchMap(([action, myValue]) => {
-        combineLatest;
-        console.log(action.order, myValue.position);
+        const valueToCompare = action.order;
+        // const value = [myValue];
+        console.log(myValue);
+        // value.map((test) => {
+        //   console.log(test.position);
+        // });
+        valueToCompare.map((test) => {
+          console.log(test.position);
+        });
         return this.addOrder$;
       })
     )
