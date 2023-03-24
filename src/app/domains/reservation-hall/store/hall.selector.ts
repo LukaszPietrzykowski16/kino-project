@@ -13,3 +13,15 @@ export const selectorOrder = createSelector(
   selectOrder,
   (state: OrderState) => state.order
 );
+
+export const selectorPosition = createSelector(
+  selectOrder,
+  (state: OrderState) => state.order.position
+);
+
+export const getPositionArray = (state: Order[]) => state;
+
+export const compareValues = (compareValue: any) =>
+  createSelector(getPositionArray, (valuesArray) =>
+    valuesArray.includes(compareValue)
+  );

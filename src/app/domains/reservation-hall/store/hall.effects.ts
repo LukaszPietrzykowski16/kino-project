@@ -1,13 +1,17 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { switchMap, map, tap, of } from 'rxjs';
+import { select, Store } from '@ngrx/store';
+import { switchMap, map, tap, of, withLatestFrom } from 'rxjs';
 import { HallService } from '../hall.service';
 import { addCinemaHallFromApi, addOrderAction } from './hall.action';
+import { Order, OrderState } from './hall.interface';
 
 @Injectable()
 export class HallEffects {
   private hallService = inject(HallService);
   private actions$ = inject(Actions);
+
+  private orderStore = inject<Store<OrderState>>(Store);
 
   hall$ = createEffect(() =>
     this.actions$.pipe(
@@ -25,7 +29,9 @@ export class HallEffects {
   order$ = createEffect(() =>
     this.actions$.pipe(
       ofType(addOrderAction.decideOrder),
-      switchMap(() => {
+      switchMap((result) => {
+        const position = result.order[0].position;
+
         return this.addOrder$;
       })
     )
