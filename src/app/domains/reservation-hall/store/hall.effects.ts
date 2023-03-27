@@ -10,6 +10,7 @@ import {
   combineLatest,
   filter,
   concatMap,
+  take,
 } from 'rxjs';
 import { HallService } from '../hall.service';
 import { addCinemaHallFromApi, addOrderAction } from './hall.action';
@@ -43,6 +44,7 @@ export class HallEffects {
       ofType(addOrderAction.decideOrder),
       withLatestFrom(this.store.select((state) => state.order)),
       switchMap(([action, positionArray]) => {
+        console.log(action, positionArray);
         const compareValue = action.order[0].position;
         const moreThanOne = 1;
         const positionValue = positionArray.filter(
@@ -52,7 +54,7 @@ export class HallEffects {
         if (positionValue <= moreThanOne) {
           return of(addOrderAction.addOrder(action));
         } else {
-          return this.addOrder$;
+          return of(addOrderAction.addOrder(action));
         }
       })
     )
@@ -61,6 +63,7 @@ export class HallEffects {
   addOrder$ = createEffect(() =>
     this.actions$.pipe(
       ofType(addOrderAction.addOrder),
+      take(0),
       map((action) => {
         console.log(action.order);
         return addOrderAction.addOrder({ order: action.order });
