@@ -69,10 +69,18 @@ export class HallEffects {
     this.actions$.pipe(
       ofType(addOrderAction.decideOrder),
       withLatestFrom(this.store.select((state) => state.order)),
-      switchMap(([action, position]) => {
-        const valueToCompare = action.order;
-
-        return this.addOrder$;
+      switchMap(([action, positionArray]) => {
+        const compareValue = action.order[0].position;
+        const moreThanOne = 1;
+        const positionValue = positionArray.filter(
+          (x) => x.position == compareValue
+        ).length;
+        console.log(positionValue, moreThanOne);
+        if (positionValue <= moreThanOne) {
+          return this.addOrder$;
+        } else {
+          return this.removeOrder$;
+        }
       })
     )
   );
