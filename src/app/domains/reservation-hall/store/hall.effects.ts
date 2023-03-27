@@ -9,6 +9,7 @@ import {
   withLatestFrom,
   combineLatest,
   filter,
+  concatMap,
 } from 'rxjs';
 import { HallService } from '../hall.service';
 import { addCinemaHallFromApi, addOrderAction } from './hall.action';
@@ -37,34 +38,6 @@ export class HallEffects {
     )
   );
 
-  // order$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(addOrderAction.decideOrder),
-  //     combineLatest(
-  //       this.orderStore.pipe(select((state) => state.order.position)),
-  //       this.orderStore.pipe(select((state) => state.order.position)),
-  //     )
-  //     filter(([action, val1, val2]) => )
-  //   )
-  // );
-
-  /*
- combineLatest(
-        this.store.pipe(select((state) => state)),
-        this.store.pipe(select((state) => state))
-      )
-
-  */
-
-  // compareValues$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(addOrderAction.decideOrder),
-  //     switchMap(() => {
-  //       return this.addOrder$;
-  //     })
-  //   )
-  // );
-
   myEffect$ = createEffect(() =>
     this.actions$.pipe(
       ofType(addOrderAction.decideOrder),
@@ -75,11 +48,11 @@ export class HallEffects {
         const positionValue = positionArray.filter(
           (x) => x.position == compareValue
         ).length;
-        console.log(positionValue, moreThanOne);
+
         if (positionValue <= moreThanOne) {
-          return this.addOrder$;
+          return of(addOrderAction.addOrder(action));
         } else {
-          return this.removeOrder$;
+          return this.addOrder$;
         }
       })
     )
@@ -89,6 +62,7 @@ export class HallEffects {
     this.actions$.pipe(
       ofType(addOrderAction.addOrder),
       map((action) => {
+        console.log(action.order);
         return addOrderAction.addOrder({ order: action.order });
       })
     )
@@ -98,7 +72,7 @@ export class HallEffects {
     this.actions$.pipe(
       ofType(addOrderAction.removeOrder),
       map((action) => {
-        return addOrderAction.addOrder({ order: action.order });
+        return addOrderAction.removeOrder({ order: action.order });
       })
     )
   );
