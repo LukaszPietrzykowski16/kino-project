@@ -3,7 +3,7 @@ export interface HallState {
 }
 
 export interface OrderState {
-  order: Order;
+  order: Order[];
 }
 export interface SingleCinemaHall {
   id: number;

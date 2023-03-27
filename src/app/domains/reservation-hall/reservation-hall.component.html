@@ -1,6 +1,8 @@
 <ng-container *ngIf="hall$ | async as hall">
   <ng-container *ngIf="order$ | async as order">
-    {{ order | json }}
+    <ng-container *ngFor="let exactOrder of order">
+      <app-select-ticket [order]="exactOrder"> </app-select-ticket>
+    </ng-container>
   </ng-container>
   <app-hall
     [hall]="hall"

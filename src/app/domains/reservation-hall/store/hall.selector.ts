@@ -16,7 +16,7 @@ export const selectorOrder = createSelector(
 
 export const selectorPosition = createSelector(
   selectOrder,
-  (state: OrderState) => state.order.position
+  (state: OrderState) => state.order
 );
 
 export const getPositionArray = (state: Order[]) => state;
