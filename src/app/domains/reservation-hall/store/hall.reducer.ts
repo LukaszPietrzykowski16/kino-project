@@ -17,9 +17,11 @@ export const addHallReducer = createReducer(
 export const addOrderReducer = createReducer(
   initialOrderState,
   on(addOrderAction.decideOrder, (state, action) => state),
-  on(addOrderAction.removeOrder, (state, action) => [
-    ...state,
-    ...state.filter((i) => i !== action.order[0]),
-  ]),
+  on(addOrderAction.removeOrder, (state, action) => {
+const updatedItems = state.map((i) => (i.position === action ? item : i));
+return { ...state, : updatedItems };
+  }
+    
+  ),
   on(addOrderAction.addOrder, (state, action) => [...state, ...action.order])
 );
