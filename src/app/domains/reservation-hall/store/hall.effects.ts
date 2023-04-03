@@ -47,9 +47,8 @@ export class HallEffects {
         ofType(addOrderAction.decideOrder),
         withLatestFrom(this.store.select((state) => state.order)),
         map(([action, positionArray]) => {
-          console.log(action, positionArray);
           const compareValue = action.order[0].position;
-          const moreThanOne = 1;
+          const moreThanOne = 0;
           const positionValue = positionArray.filter(
             (x) => x.position == compareValue
           ).length;
@@ -57,7 +56,7 @@ export class HallEffects {
           if (positionValue <= moreThanOne) {
             return this.seatsService.addOrder(action.order);
           } else {
-            return this.seatsService.addOrder(action.order);
+            return this.seatsService.removeOrder(action.order);
           }
         })
       ),
